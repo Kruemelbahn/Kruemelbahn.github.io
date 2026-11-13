@@ -1,0 +1,2800 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" + "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<head>
+<title>Kr&uuml;melbahn - DCC-Decodereinbauten</title>
+<script language="JavaScript" src="js/main.js" type="text/javascript"></script>
+<link href="css/layout_shiny_buttons.css" rel="stylesheet" type="text/css"/>
+<!--[if lte IE 7]>
+<link href="css/patches/patch_shiny_buttons.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<script language="JavaScript">
+<!--
+   function view(url)
+   {
+    if(url == 'null')
+      return;
+
+    window.location.href = url;
+   }
+//-->
+</script>
+</head>
+<body>
+<div id="page_margins">
+  <div id="page">
+<!--INC:"kb_head.inc","08.08.2024 14:46:16"-->
+    <div id="header">
+      <div id="topnav">
+        <!-- start: skip link navigation -->
+        <a class="skip" href="#navigation" title="skip link">Direkt zur Navigation</a><span class="hideme">.</span>
+        <a class="skip" href="#content" title="skip link">Direkt zum Inhalt</a><span class="hideme">.</span>
+        <!-- end: skip link navigation -->
+        <span><a href="index.html">Startseite</a> | <a href="suchen.htm">Suchen</a> | <a href="impressum.htm">Impressum</a></span>
+      </div>
+      <h1><img alt="Frontansicht einer Dampflok" src="images/dlok.gif" /> Kr&uuml;melbahn</h1>
+    </div>
+<!--/INC:"kb_head.inc"-->
+    <!-- begin: main navigation #nav -->
+    <div id="nav"> <a id="navigation" name="navigation"></a>
+      <!-- skiplink anchor: navigation -->
+<!--INC:"kb_menu_4.inc","14.12.2015 18:11:22"-->
+      <div id="nav_main">
+        <ul>
+          <li><a href="bahnhof.htm">Bahnen in Solingen</a></li>
+          <li><a href="gueterzug.htm">Bahnsinniges</a></li>
+          <li id="current"><a href="#">Modellbahn</a></li>
+          <li><a href="literat.htm">Literatur</a></li>
+          <li><a href="link_bn.htm">Links</a></li>
+        </ul>
+      </div>
+<!--/INC:"kb_menu_4.inc"-->
+      <div id="nav_main2">
+        <ul>
+          <li><a href="bahn.htm">Aktivit&auml;ten</a></li>
+          <li><a href="ne1.htm">Anlagengestaltung</a></li>
+          <li><a href="bau_asf.htm">Fahrzeugbau</a></li>
+          <li><a href="signalz.htm">Elektronik</a></li>
+          <li id="current2"><a href="#">Digitalbetrieb (DCC)</a></li>
+          <li><a href="modulbau.htm">Modulbau</a></li>
+          <li><a href="modelle.htm">Modellfahrzeuge aus Solingen</a></li>
+          <li><a href="jahreswg.htm">Mercedes-Benz Jahresmodell</a></li>
+        </ul>
+      </div>
+      <div id="nav_main3">
+        <ul>
+          <li><a href="modulbau-digital.htm">Modulbau Digital</a></li>
+          <li id="current3"><a href="#">Decodereinbauten</a></li>
+          <li><a href="cvadr.htm">Adressierung mit CV 1 / 17,18</a></li>
+          <li><a href="cv8.htm">Herstellercode in CV8</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="printnav"><p>Modellbahn &gt; Digitalbetrieb (DCC) &gt; Decodereinbauten</p></div>
+    <!-- end: main navigation -->
+    <!-- begin: main content area #main -->
+    <div id="main">
+      <!-- begin: #col1 - first float column -->
+      <div id="col1">
+        <div id="col1_content" class="clearfix">
+          <!-- skiplink anchor: content -->
+          <a id="content" name="content"></a>
+           <h2>DCC-Decodereinbauten</h2>
+           <div id="subnav">
+           <img alt="Gehe zu Decodereinbauten" src="images/arrowdwn.gif"/><a href="#einbau">Decodereinbauten</a><br/><br/>
+           </div>
+           <!-- Decodersuche -->
+           <h3>Wie finde ich den richtigen Decoder f&uuml;r mein Fahrzeug?</h3>
+           <ul>
+             Es gibt einige Auswahlkriterien, hier die wichtigsten:
+             <li>Ist ein Schnittstellenstecker vorhanden? (entscheidend f&uuml;r die Steckerwahl)</li>
+             <li>Welcher Einbauplatz steht zur Verf&uuml;gung? (entscheidend f&uuml;r die Decodergr&ouml;&szlig;e)</li>
+             <li>Welche (Sonder-)Funktionen werden ben&ouml;tigt?</li>
+             <li>Wie gro&szlig; ist der maximale Motordauerstrom?<br/>
+             <u>Messverfahren:</u> das Fahrzeug <u><b>vor</b></u> dem Umbau auf ein Testgleis stellen und bei maximaler Fahrspannung vor einen Prellbock fahren lassen, die R&auml;der drehen dann durch. Der jetzt gemessene Strom ist ein guter Richtwert f&uuml;r den maximalen Dauerstrom.<br/>
+                Doch Vorsicht: man kennt jetzt zwar einen Richtwert f&uuml;r den Dauerstrom, ein m&ouml;glicher Spitzenstrom, der z.B. beim Anfahren auftreten kann, wird so nicht erfasst. Insbesonders &auml;ltere Motoren haben oftmals einen hohen Spitzenstrom. Hier gilt es, die Decoderanleitung genau zu lesen.</li>
+             <li>eine ausf&uuml;hrliche Beschreibung zur Decoderauswahl gibt es z.B. bei <a href="https://tams-online.de/WebRoot/Store11/Shops/642f1858-c39b-4b7d-af86-f6a1feaca0e4/MediaGallery/15_Download/Infothek/Infothek-Blaetter/Digitalumbauten_von_analogen_Loks_Infothek_2013_02.pdf" target="_blank">Tams</a></li>
+           </ul>
+           <br/>
+           <hr/>
+           <!-- Decodersuche ende-->
+
+           <!-- allgemeine Hinweise -->
+           <h3>allgemeine Hinweise und Erfahrungen</h3>
+           <ul>
+             <li>Alle Angaben wurden nach bestem Wissen und Gewissen gemacht.
+             F&uuml;r eventuelle Fehler, Sch&auml;den, o.&auml;. bin ich nicht verantwortlich: <i>jeder ist f&uuml;r sein eigenes Tun verantwortlich.</i>
+             Durch solche Eingriffe in die Fahrzeuge erlischt i.d.R. jegliche Gew&auml;hrleistung des Herstellers.</li>
+             <br/><br/>
+             <li>Ein Hinweis zum Thema <b><u>Fahrzeugbeleuchtung</u></b>:<br>
+             Ins besonders bei &auml;lteren Fahrzeuge ist das Leuchtmittel eine kleine Gl&uuml;hlampe, angepasst f&uuml;r die analoge Fahrspannung.<br>
+             Im Digitalsystem ist die effektive Digitalspannung h&ouml;her als die analoge Fahrspannung,
+             <ul>
+              <li>die Gl&uuml;hlampe bekommt eine h&ouml;here Spannung,</li>
+              <li>leuchtet somit heller</li>
+              <li> - wird aber auch hei&szlig;er!</li>
+             </ul> Und hier ger&auml;t dann das Geh&auml;use des Fahrzeugs in Gefahr!<br>
+             <b><i>Hier ist es in den meisten F&auml;llen besser, die vorhandenen Gl&uuml;hlampen gegen eine entsprechende LED mit Vorwiderstand auszutauschen. LED-Bauformen gibt es mehr als genug...</i></b>
+             </li>
+             <br/><br/>
+             <li>
+             Vermutlich im Zusammenspiel mit dem Kehrschleifenmodul kam es dazu, das sporadisch Triebfahrzeuge mit Decodern, die auch f&uuml;r Analogbetrieb geeignet sind, 'unmotiviert' und unkontrolliert mit voller Geschwindigkeit anfuhren. Dies konnte nur durch Zuweisen des Fahrzeugs zu einem Fahrregler (FRED) behoben werden.<br/>
+             <u>Abhilfe kann schaffen:</u>
+               <ul>
+                <li>das Deaktivieren des Analogbetriebes: bei <a href="https://www.lenz-elektronik.de/" target="_blank">Lenz</a>-Decodern hei&szlig;t dies: CV29 Bit 2 auf 0 (Null) setzen.
+                (<u>Achtung:</u> <a href="https://www.lenz-elektronik.de/" target="_blank">Lenz</a> z&auml;hlt die Bits von 1 bis 8, ich z&auml;hle wie die meisten Hersteller von 0 bis 7!)</li>
+                <li>das Einteilen der Anlage in kleinere Booster/Versorgungsabschnitte: manche Decoder reagieren eigenwillig auf unsaubere Signale...(insbesondere bei zu d&uuml;nnen Fahrspannungsversorgungsdr&auml;hten)</li>
+               </ul>
+             </li>
+             <a name="licht"></a>
+             <li><u>Vorbildgerechte wechselnde Stirn/Schlu&szlig;beleuchtung</u><br>
+               Nicht alle Decoder (hier besonders &auml;ltere Decoder) unterst&uuml;tzen eine vorbildgerechte Lichtsteuerung, so ist beispielsweise das beidseitige Spitzensignal beim Rangieren nicht schaltbar.<br>
+               Auf eine notwendige (Um)verdrahtung bin ich durch einen Artikel in der <a href="https://www.fremo-net.eu/" target="_blank">Fremo</a>-Zeitschrift Hp1 (Heft 3-1999) gestossen.<br>
+               Die entsprechende Ansteuerung habe ich so bei einigen meiner Triebfahrzeuge genutzt.<br>
+               Tats&auml;chlich ist dieser Umbauvorschlag bei modernen Decodern hinf&auml;llig, hier kann das gew&uuml;nschte Verhalten mit CV-Einstellungen und <u>ohne</u> Umverdrahtungen erreicht werden.
+             </li>
+           </ul>
+           <br/>
+           <hr/>
+           <!-- allgemeine Hinweise ende-->
+
+           <a name="einbau"></a>
+           <h3 style="page-break-before:always">&Uuml;bersicht</h3>
+           Noch eine Seite mit Einbauanleitungen?<br/>
+           Gibt es derer nicht schon genug?<br/>
+           Ich meine: es kann nicht genug geben!<br/>
+           Deshalb hier eine &Uuml;bersicht &uuml;ber meine Decodereinbauten - die entweder v&ouml;llig neu sind oder sich an bereits bestehenden Umbauanleitungen anlehnen.<br/>
+           <span id="to_crt">(&Uuml;brigens: eine &Uuml;bersicht meiner digitalisierten Fahrzeuge gibt es auch hier:
+           <script language="JavaScript">
+             cloud("fahrzeuge");
+           </script>
+           )</span>
+           <p></p>
+           <table border="1">
+             <tr>
+               <th rowspan="2"></th>
+               <th colspan="3"><span id="to_crt"><a href="https://www.tams-online.de" target="_blank">Tams</a></span><span id="to_prn">Tams</span></th>
+               <th colspan="5"><span id="to_crt"><a href="https://web.archive.org/web/20231111075751/https://www.kuehn-digital.de/" target="_blank">Kuehn</a></span><span id="to_prn">Kuehn</span></th>
+               <th colspan="6"><span id="to_crt"><a href="https://www.lenz-elektronik.de/" target="_blank">Lenz</a></span><span id="to_prn">Lenz</span></th>
+               <th colspan="2"><span id="to_crt"><a href="https://www.esu.eu" target="_blank">ESU</a></span><span id="to_prn">ESU</span></th>
+               <th colspan="1"><span id="to_crt"><a href="https://www.uhlenbrock.de/de_DE/index.htm" target="_blank">Uhlen-<br>brock</a></span><span id="to_prn">Uhlen-<br>brock</span></th>
+               <th colspan="1"><span id="to_crt"><a href="https://www.rautenhaus-digital.de/" target="_blank">Rauten-<br>haus</a></span><span id="to_prn">Rauten-<br>haus</span></th>
+               <th colspan="1"><span id="to_crt"><a href="https://www.zimo.at" target="_blank">Zimo</a></span><span id="to_prn">Zimo</span></th>
+             </tr>
+             <tr>
+               <th>LD-G-7</th>
+               <th>LD-G-8</th>
+               <th>FD-R<br>Basic.3</th>
+               <th>N025</th>
+               <th>N045</th>
+               <th>T65</th>
+               <th>T125</th>
+               <th>LH10</th>
+               <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+               <th>LE<br>0511D</th>
+               <th>LE<br>1014E</th>
+               <th>LE<br>1035A</th>
+               <th>LE<br>1835A</th>
+               <th>Gold<br>mini</th>
+               <th>Lok Pilot 3</th>
+               <th>Lok Sound 4</th>
+               <th>76320</th>
+               <th>SLX871</th>
+               <th>MX617</th>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu 01 1518-8" src="images/arrowdwn.gif"/><a href="#br01.5">BR 01.5</a></span><span id="to_prn">BR 01.5</span></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu w&uuml; C" src="images/arrowdwn.gif"/><a href="#wueC">w&uuml; C<br>(BR 18.1)</a></span><span id="to_prn">w&uuml; C (BR 18.1)</span></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu pr. P8" src="images/arrowdwn.gif"/><a href="#br38">pr. P8<br>(BR 38.10)</a></span><span id="to_prn">pr. P8 (BR 38.10)</span></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu BR41&Ouml;l" src="images/arrowdwn.gif"/><a href="#br41">BR 41&Ouml;l</a></span><span id="to_prn">BR 41&Ouml;l</span></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu BR50Kab" src="images/arrowdwn.gif"/><a href="#br50kab">BR 50Kab</a></span><span id="to_prn">BR 50Kab</span></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu w&uuml; Hh" src="images/arrowdwn.gif"/><a href="#wueHh">w&uuml; Hh<br>(BR 57.4)</a></span><span id="to_prn">w&uuml; Hh (BR 57.4)</span></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu w&uuml; G12" src="images/arrowdwn.gif"/><a href="#wueG12">w&uuml; G12<br>(BR 58.5)</a></span><span id="to_prn">w&uuml; G12 (BR 58.5)</span></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu w&uuml; K" src="images/arrowdwn.gif"/><a href="#wueK">w&uuml; K<br>(BR 59)</a></span><span id="to_prn">w&uuml; K (BR 59)</span></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu w&uuml; T5" src="images/arrowdwn.gif"/><a href="#wueT5">w&uuml; T5<br>(BR 75.0)</a></span><span id="to_prn">w&uuml; T5 (BR 75.0)</span></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu w&uuml; T3" src="images/arrowdwn.gif"/><a href="#wueT3">w&uuml; T3<br>(BR 89.3-4)</a></span><span id="to_prn">w&uuml; T3 (BR 89.3-4)</span></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu T3" src="images/arrowdwn.gif"/><a href="#t3">T3<br>(BR 89.70)</a></span><span id="to_prn">T3 (BR 89.70)</span></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu w&uuml; Tn" src="images/arrowdwn.gif"/><a href="#wuetn">w&uuml; Tn<br>(BR 94.1)</a></span><span id="to_prn">w&uuml; Tn (BR 94.1)</span></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu V36.4" src="images/arrowdwn.gif"/><a href="#v36">V36.4</a></span><span id="to_prn">V36.4</span></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu V60" src="images/arrowdwn.gif"/><a href="#v60">V60</a></span><span id="to_prn">V60</span></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu V100.10" src="images/arrowdwn.gif"/><a href="#vau100">V100.10</a></span><span id="to_prn">V100.10</span></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu V188" src="images/arrowdwn.gif"/><a href="#d311">V188</a></span><span id="to_prn">V188</span></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu V200" src="images/arrowdwn.gif"/><a href="#v200">V200</a></span><span id="to_prn">V200</span></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu K&ouml;f II" src="images/arrowdwn.gif"/><a href="#koef2">K&ouml;f II</a></span><span id="to_prn">K&ouml;f II</span></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu Klv 12" src="images/arrowdwn.gif"/><a href="#klv12">Klv 12</a></span><span id="to_prn">Klv 12</span></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu Klv 20" src="images/arrowdwn.gif"/><a href="#klv20">Klv 20</a></span><span id="to_prn">Klv 20</span></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu Klv 51" src="images/arrowdwn.gif"/><a href="#klv51">Klv 51</a></span><span id="to_prn">Klv 51</span></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu Klv 60" src="images/arrowdwn.gif"/><a href="#klv60">Klv 60</a></span><span id="to_prn">Klv 60</span></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu ASF 1" src="images/arrowdwn.gif"/><a href="#asf">ASF 1</a></span><span id="to_prn">ASF 1</span></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu DH500Ca" src="images/arrowdwn.gif"/><a href="#dh500">DH500Ca</a></span><span id="to_prn">DH500Ca</span></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu ETA 150" src="images/arrowdwn.gif"/><a href="#eta">ETA 150</a></span><span id="to_prn">ETA 150</span></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu ETA 180" src="images/arrowdwn.gif"/><a href="#eta180">ETA 180</a></span><span id="to_prn">ETA 180</span></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu bad. DW8" src="images/arrowdwn.gif"/><a href="#dw8">DW8<br>(Kittel, gn)</a></span><span id="to_prn">DW8 (Kittel, gn)</span></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu w&uuml;. DW8" src="images/arrowdwn.gif"/><a href="#dw8_2">DW8<br>(Kittel, bn)</a></span><span id="to_prn">DW8 (Kittel, bn)</span></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu SVT877" src="images/arrowdwn.gif"/><a href="#svt877">SVT877</a></span><span id="to_prn">SVT877</span></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu VT70.9" src="images/arrowdwn.gif"/><a href="#vt709">VT70.9</a></span><span id="to_prn">VT70.9</span></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu VT95.9" src="images/arrowdwn.gif"/><a href="#vt959">VT95.9<br>VB140.7</a></span><span id="to_prn">VT95.9<br>VB140.7</span></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu VT137 240" src="images/arrowdwn.gif"/><a href="#vt137">VT137 240</a></span><span id="to_prn">VT137 240</span></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu Schiene-Stra&szlig;e-Bus" src="images/arrowdwn.gif"/><a href="#db29">Schiene-<br/>Stra&szlig;e-<br>Bus</a></span><span id="to_prn">Schiene-<br/>Stra&szlig;e-Bus</span></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu VB147.0" src="images/arrowdwn.gif"/><a href="#vb147">VB147.0<br></a></span><span id="to_prn">VB147.0</span></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu VS145.1" src="images/arrowdwn.gif"/><a href="#vs145">VS145.1</a></span><span id="to_prn">VS145.1</span></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu BN 2267" src="images/arrowdwn.gif"/><a href="#gp38-2">BN 2267</a></span><span id="to_prn">BN 2267</span></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu 4-achsige Umbauwagen" src="images/arrowdwn.gif"/><a href="#4yg">4-achs.<br/>Umbauwagen</a></span><span id="to_prn">4-achsige<br/>Umbauwagen</span></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu 4achsige n-Wagen" src="images/arrowdwn.gif"/><a href="#bdnf">4-achs.<br/>n-Wagen<br>BDnf<sup>738</sup></span></a></span><span id="to_prn">4-achsige<br/>n-Wagen</span></td>
+               <td></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td><span id="to_crt"><img alt="Gehe zu 4achsige n-Wagen" src="images/arrowdwn.gif"/><a href="#bnrzb">4-achs.<br/>n-Wagen<br>Bnrzb<sup>725</sup></span></a></span><span id="to_prn">4-achsige<br/>n-Wagen</span></td>
+               <td></td>
+               <td></td>
+               <td style="text-align:center">X</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+           </table>
+
+           <!-- BR 01.5 -->
+           <hr/>
+           <a name="br01.5"></a>
+           <h3 style="page-break-before:always">BR 01.5</h3>
+           <p>
+           <li><p>Fahrzeug: 01 1518-8, <a href="https://www.piko.de/" target="_blank">Piko</a> #5/6325, DC=, ohne Schnittstellenstecker</p></li>
+           <li><p>Decoder: <a href="https://web.archive.org/web/20231111075751/https://www.kuehn-digital.de/" target="_blank">Kuehn</a> N045</p></li>
+           <li><p>Umbaubeschreibung</p>
+
+             <ul style="list-style-type:circle">
+             <li>Hierzu gibt es einen Infoletter
+              <script language="JavaScript">
+                githubinfo("Krümelbahn Info 30 - L1 für die 01 1518-8", "/blob/main/Modellbahn/Fahrzeuge/Krümelbahn%20Info%2030%20-%20L1%20für%20die%2001%201518-8.pdf");
+              </script>
+              </li>
+             </ul>
+
+           </li>
+           <li><p>Vorbildinformationen</p>
+            <ul style="list-style-type:square">
+             <li><a href="http://albert-gieseler.de/dampf_de/lokdaten16/lokdet164964.shtml">Albert Gieseler</a></li>
+            </ul>
+           </li>
+           </p>
+
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- BR 01.5 ende -->
+
+           <!-- wü C -->
+           <hr/>
+           <a name="wueC"></a>
+           <h3 style="page-break-before:always">w&uuml; C (BR 18.1)</h3>
+           <p>
+           <li><p>Fahrzeug: 2025, <a href="https://www.roco.cc/" target="_blank">Roco</a> #43216, DC=, ohne Schnittstellenstecker</p></li>
+           <li><p>Decoder: <a href="https://www.lenz-elektronik.de/" target="_blank">Lenz</a> LE1014E</p></li>
+           <li><p>Umbaubeschreibung</p>
+
+             <ul style="list-style-type:circle">
+             <li>Beim Umbau meiner w&uuml; C habe ich mich an die Anleitung von Hans-Peter Pfeiffer gehalten.</li>
+             </ul>
+
+           </li>
+           <li><p>Vorbildinformationen</p>
+            <ul style="list-style-type:square">
+             <li>Thomas Scherer: Die Baureihe 18<sup>1</sup> Die &raquo;Sch&ouml;ne W&uuml;rttembergerin&laquo;, <a href="https://www.eisenbahn-kurier.de/" target="_blank">Eisenbahn-Kurier Verlag</a> 1986</li>
+             <li><a href="http://albert-gieseler.de/dampf_de/lokdaten13/lokdet139299.shtml">Albert Gieseler</a></li>
+            </ul>
+           </li>
+           </p>
+
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- wü C ende -->
+
+           <!-- br38 -->
+           <hr/>
+           <a name="br38"></a>
+           <h3 style="page-break-before:always">pr. P8 (BR38.10)</h3>
+           <p>
+           <li><p>Fahrzeug: 38 3440, <a href="https://www.fleischmann.de/" target="_blank">Fleischmann</a> #4165, DC=, ohne Schnittstellenstecker</p></li>
+           <li><p>Decoder: <a href="https://www.tams-online.de" target="_blank">Tams</a> LD-G-8</p></li>
+           <li><p>Umbaubeschreibung</p>
+
+             <ul style="list-style-type:circle">
+               <li>
+               Inspiriert wurde ich durch den Umbau, den Andreas Nothaft (s.u.) auf seiner Homepage beschreibt.
+               </li>
+               <li>Umbau der insgesamt drei <span id="to_crt"><img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/p6210183.jpg');">Leiterplatten</a></span><span id="to_prn">Leiterplatten<br/><img src="images/modelbau/p6210183.jpg" style="width:80%;" /><br/></span></li>
+               <li><span id="to_crt"><img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/p6210186.jpg');">Anschlu&szlig; und Aufbau</a></span><span id="to_prn">Anschlu&szlig; und Aufbau<br/><img src="images/modelbau/p6210186.jpg" style="width:80%;" /><br/></span>&nbsp;des Decoders im Bereich der Feuerb&uuml;chse.<br/>
+               Die im Bild gezeigte PVC-Platte h&auml;lt den Decoder nach dem Einbau auf Abstand zum Kesselballastgewicht.<br/>
+               Die Gl&uuml;hlampe wird von Masse getrennt. Dazu mu&szlig; die Lampenhalterung vorne aufgefeilt werden, damit die (Silikonschlauch) isolierte Gl&uuml;hlampe weiterhin Platz findet.</li>
+               <li>Durch den Kabelschacht (siehe auf der Homepage von H.P.Pfeiffer, s.u.) kommen nun ein gelbes, ein blaues, ein graues und ein oranges Kabel. Der Tender wird weiterhin zur Stromabnahme verwendet, dazu dienen die beiden Kabel in der schwarzen Tenderkupplung.</li>
+               <li>Damit die vier neuen Kabel dann auch in den Tender gelangen k&ouml;nnen, sind kleine <span id="to_crt"><img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/p6210189.jpg');">Fr&auml;sarbeiten erforderlich</a>.</span><span id="to_prn">Fr&auml;sarbeiten erforderlich<br/><img src="images/modelbau/p6210189.jpg" style="width:80%;" /><br/></span></li>
+               <li>Auch im Tender wird die Gl&uuml;hlampe isoliert. Dazu mu&szlig; dann das Halteloch aufgebohrt werden und neu angesenkt werden, damit der an die Lampr neu anzul&ouml;tende (blaue) Draht nicht die Masse ber&uuml;hrt.</li>
+               <li>Der Anschlu&szlig; der Kabel im Tender wird <span id="to_crt"><img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/p6210183.jpg');">hier</a></span><span id="to_prn">oben</span> gezeigt, wenn die Leiterplatten wieder montiert sind, sollte alles <span id="to_crt"><img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/p6220190.jpg');">so</a> aussehen.</span><span id="to_prn">so aussehen:<br/><img src="images/modelbau/p6220190.jpg" style="width:80%;" /><br/></span></li>
+             </ul>
+
+           </li>
+           <li><p>weitere Umbaum&ouml;glichkeiten:</p>
+           <ul style="list-style-type:circle">
+             <li>Inzwischen habe ich meiner pr. P8 sowohl eine Triebwerks- als auch eine F&uuml;hrerstandsbeleuchtung geg&ouml;nnt.<br/>
+             Verwendet wurden hierzu warm-weisse LED's der Baugr&ouml;&szlig;e 0603.
+             </li>
+             <li>Anbau eines Vorsatzschneepflugs: <a href="https://www.bw-rheinbrueck.de/projekte/" target="_blank">https://www.bw-rheinbrueck.de</a><br/>
+             <div>Dieser Umbau ist auch erschienen im <a href="https://eisenbahnmagazin.de/" target="_blank">Eisenbahnmagazin</a> 03/07 (Seite 70): <font color="#FF0000">P8 im Schneer&auml;um-Einsatz</font></div>
+             </li>
+
+           </ul>
+           </li>
+           <li><p>Vorbildinformationen</p>
+            <ul style="list-style-type:square">
+             <li>Hansj&uuml;rgen Wenzel: Die preu&szlig;ische P8 - Die Baureihe 38<sup>10</sup>, <a href="https://www.eisenbahn-kurier.de/" target="_blank">Eisenbahn-Kurier Verlag</a> 1994</li>
+             <li>100 Jahre Preu&szlig;ische P8, <a href="https://www.eisenbahn-kurier.de/" target="_blank">Eisenbahn-Kurier</a> Spezial 80 (I/2006)</li>
+             <li>Horst J. Obermayer, Manfred Weisbrod: Die P8 - Baureihe 38<sup>10-40</sup>, <a href="https://www.vgbahn.shop/magazine/eisenbahn-journal/" target="_blank">Eisenbahn-Journal</a> Sonderausgabe IV/1995</li>
+             <li><a href="http://albert-gieseler.de/dampf_de/lokdaten0/lokdatendet594.shtml">Albert Gieseler</a></li>
+            </ul>
+           </li>
+           <li><p>siehe auch:</p>
+             <ul style="list-style-type:square">
+             <li>
+               <a href="https://andreas-nothaft.de/index.php/fremo-mainmenu-36/digital-umbauten-mainmenu-48?showall=&start=2" target="_blank">https://www.andreas-nothaft.de</a>
+             </li>
+             </ul>
+           </li>
+           </p>
+
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- br38 ende -->
+
+           <!-- BR41Öl -->
+           <hr/>
+           <a name="br41"></a>
+           <h3 style="page-break-before:always">BR 41&Ouml;l</h3>
+           <p>
+           <li><p>Fahrzeug: 41 360, <a href="https://www.roco.cc/" target="_blank">Roco</a> #43244, DC=, ohne Schnittstellenstecker</p></li>
+           <li><p>Decoder: <a href="https://web.archive.org/web/20231111075751/https://www.kuehn-digital.de/" target="_blank">Kuehn</a> N045</p></li>
+           <li><p>Umbaubeschreibung</p>
+
+             <ul style="list-style-type:circle">
+             <li>Beim Umbau meiner BR41 habe ich mich an die Anleitung von Hans-Peter Pfeiffer (s.u.) gehalten.<br/>
+             Durch die Verwendung des kleinen <a href="https://web.archive.org/web/20231111075751/https://www.kuehn-digital.de/" target="_blank">Kuehn</a>-Decoders waren Aussparungen am Tendergewicht nicht erforderlich, der Decoder wurde mit einem Klebepad auf den Motor geklebt.
+             </li>
+             <li>Um auch die vordere Kupplung verwenden zu k&ouml;nnen, wurde der dem Modell beigelegte Kupplungsadapter an der Deichsel montiert.
+             Leider liegt bei meinem Modell der NEM-Schacht zu tief, somit h&auml;ngt auch die eingesetzte Kadee-Kupplung #18 zu tief!
+             Abhilfe schafft hier der Roco-Kupplungsadapter 40396. Dieser hat eine Schwalbenschwanzf&uuml;hrung. Eine Kadee-Kupplung #17 wird so zugeschnitten, dass sie in den Kupplungsadapter passt.
+             Der Kupplungsadapter kann in der H&ouml;he gestutzt werden, die Kadee-Kupplung selbst wird nach der Justage mit Sekundenkleber fixiert.
+             </li>
+             <li>
+             <span id="to_crt"><img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/kupplung-50.png');">Montageskizze</a> f&uuml;r die vordere Kupplung</span>
+             <span id="to_prn">Montageskizze f&uuml;r die vordere Kupplung:<img src="images/modelbau/kupplung-50.png"></span>
+             </li>
+             </ul>
+
+           </li>
+
+           <li><p>Haftreifenwechsel am Tender</p>
+           So einfach, wie es in der Bedienungsanleitung steht, ging es bei meiner 41 leider nicht:
+           <ul style="list-style-type:circle">
+              <li>die <i>aktuelle</i> Bestellnummer lautet 40069 (10 St&uuml;ck, 6,90&euro;, Stand 2022)</li>
+              <li>Roco beschreibt, dass es gen&uuml;ge, die Drehgestellblenden abzuziehen</li>
+              <li>ich habe es so nicht geschafft - sondern musste den Tender komplett zerlegen, um an die Achsen in den beiden Drehgestellen zu kommen. Erst nachdem die Achsen frei vor mir lagen, war es m&ouml;glich, alle vier Haftreifen zu erneuern.</li>
+           </ul>
+
+           </li>
+
+           <li><p>weitere Umbaum&ouml;glichkeiten:</p>
+           <ul style="list-style-type:circle">
+             <li>Inzwischen habe ich meiner 41 sowohl eine Triebwerks- als auch eine F&uuml;hrerstandsbeleuchtung geg&ouml;nnt.<br/>
+             Verwendet wurden hierzu warm-weisse LED's der Baugr&ouml;&szlig;e 0603.
+             </li>
+
+           </ul>
+           <li><p>Vorbildinformationen</p>
+            <ul style="list-style-type:square">
+             <li>Manfred Weisbrod, Horst Obermayer: Baureihe 41, <a href="https://www.vgbahn.shop/magazine/eisenbahn-journal/" target="_blank">Eisenbahn-Journal</a> Sonderausgabe 12/1984</li>
+             <li>Carl Asmus: Die Baureihe 042, <a href="https://www.vgbahn.shop/magazine/eisenbahn-journal/" target="_blank">Eisenbahn-Journal</a> Sonderausgabe I/1989</li>
+              <li><a href="http://albert-gieseler.de/dampf_de/lokdaten15/lokdet154740.shtml" target="_blank">Albert Gieseler</a></li>
+            </ul>
+           </li>
+           </li>
+           </p>
+
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- BR41Öl ende -->
+
+           <!-- BR50Kab -->
+           <hr/>
+           <a name="br50kab"></a>
+           <h3 style="page-break-before:always">BR 50Kab</h3>
+           <p>
+           <li><p>Fahrzeug: 50 579 (ex 50 888), <a href="https://www.roco.cc/" target="_blank">Roco</a> #43306, DC=, ohne Schnittstellenstecker</p></li>
+           <li><p>Decoder: <a href="https://web.archive.org/web/20231111075751/https://www.kuehn-digital.de/" target="_blank">Kuehn</a> N045</p></li>
+           <li><p>Umbaubeschreibung</p>
+
+             <ul style="list-style-type:circle">
+             <li>Beim Umbau meiner BR50 habe ich mich an die Anleitung von Hans-Peter Pfeiffer (s.u.) gehalten.<br/>
+             Da es in unserer Modulgruppe bereits eine (identische) Lok (n&auml;mlich mit der Nummer 50 888) gibt, habe ich meine 50 mit einem neuen Schildersatz von <a href="https://www.kuswa.de/" target="_blank">Kuswa</a> versehen.</li>
+             <li>Um auch die vordere Kupplung verwenden zu k&ouml;nnen, wurde der dem Modell beigelegte Kupplungsadapter an der Deichsel montiert.
+             Leider liegt bei meinem Modell der NEM-Schacht 1mm zu tief und ist nach unten geneigt. Nach dem Einsetzen der Kadee-Kupplung #18 h&auml;ngt diese am Kupplungskopf 2mm zu tief!
+             Abhilfe schafft hier der Roco-Kupplungsadapter 40396. Dieser hat eine Schwalbenschwanzf&uuml;hrung. Eine Kadee-Kupplung #17 wird so zugeschnitten, dass sie in den Kupplungsadapter passt.
+             Der Kupplungsadapter kann in der H&ouml;he auf 3,5mm gestutzt werden, die Kadee-Kupplung selbst wird nach der Justage mit Sekundenkleber fixiert.</li>
+             <li>
+             <span id="to_crt"><img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/kupplung-50.png');">Montageskizze</a> f&uuml;r die vordere Kupplung</span>
+             <span id="to_prn">Montageskizze f&uuml;r die vordere Kupplung:<img src="images/modelbau/kupplung-50.png"></span>
+             </li>
+             </ul>
+
+           </li>
+           <li><p>weitere Umbaum&ouml;glichkeiten:</p>
+             <ul style="list-style-type:circle">
+               <li>Inzwischen habe ich die 50 579 sowohl mit einer Triebwerks- als auch einer F&uuml;hrerstands- sowie einer Kabinentenderbeleuchtung versehen.<br/>
+               Verwendet wurden hierzu warm-weisse LED's der Baugr&ouml;&szlig;e 0603, die mit Kupferlackdraht und Microsteckern am Decoder verdrahtet wurden.
+               </li>
+             </ul>
+           </li>
+
+           <li><p>Vorbildinformationen</p>
+            <ul style="list-style-type:square">
+              <li>J&uuml;rgen U. Ebel, Hansj&uuml;rgen Wenzel: Die Baureihe 50 - Band 1: Deutsche Reichsbahn, <a href="https://www.eisenbahn-kurier.de/" target="_blank">Eisenbahn-Kurier Verlag</a> 2007</li>
+              <li>J&uuml;rgen U. Ebel, Hansj&uuml;rgen Wenzel: Die Baureihe 50 - Band 2: Deutsche Bundesbahn, <a href="https://www.eisenbahn-kurier.de/" target="_blank">Eisenbahn-Kurier Verlag</a> 2007</li>
+              <li>Ulf Heitmann, Peter Melcher, Egbert von Steuber: Die Lokomotiven der Baureihe 50 und ihr Verbleib, Lokrundschau Verlag 2008</li>
+              <li><a href="http://albert-gieseler.de/dampf_de/lokdaten14/lokdet143888.shtml" target="_blank">Albert Gieseler</a></li>
+              <li><a href="https://eisenbahnmagazin.de/" target="_blank">Eisenbahn-Magazin</a> 4/2025 (Seite 10ff.): <font color="#FF0000">Lokomotivtender f&uuml;r die Dienstreise des Zugf&uuml;hrers</font></li>
+           </ul>
+
+           </li>
+           <li><p>siehe auch:</p>
+             <ul style="list-style-type:square">
+                <li><a href="https://www.modellbahn.net/index.php/startseite/digitalisierung-dcc-h0/roco-50kab-alt-mit-schnittstelle-ausgeruestet" target="_blank">https://www.modellbahn.net/index.php/startseite/digitalisierung-dcc-h0/roco-50kab-alt-mit-schnittstelle-ausgeruestet</a></li>
+             </ul>
+           </li>
+           </p>
+
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- BR50Kab ende -->
+
+           <!-- wü Hh -->
+           <hr/>
+           <a name="wueHh"></a>
+           <h3 style="page-break-before:always">w&uuml; Hh (BR 57.4)</h3>
+           <p>
+           <li><p>Fahrzeug: 824, <a href="https://www.brawa.de/" target="_blank">Brawa</a> #40154, DC=, Schnittstellenstecker nach NEM 660 (21MTC)</p></li>
+           <li><p>Decoder: <a href="https://www.esu.eu" target="_blank">ESU</a> Lok Sound 4 (54499)</p></li>
+           <li><p>Umbaubeschreibung</p>
+             <ul style="list-style-type:circle">
+             <li>Das Fahrzeug ist mit einer Schnittstelle nach NEM 660 (21MTC) ausger&uuml;stet. Der Decoder wird anstelle des Br&uuml;ckensteckers eingesetzt, der Lautsprecher (ESU <a href="https://www.esu.eu/produkte/zubehoer/lautsprecher/loksound-micro-v40/" target="_blank">50332</a>) an der vorgesehenen Stelle festgeschraubt.<br>
+             Auf den Decoder wurde der passende Sound (ESU-Soundprojekt <a href="https://projects.esu.eu/projects/print/17456" target="_blank">17456</a>) aufgespielt.</li>
+             </ul>
+           </li>
+           <li><p>Vorbildinformationen</p>
+            <ul style="list-style-type:square">
+              <li><a href="http://albert-gieseler.de/dampf_de/lokdaten13/lokdet139397.shtml">Albert Gieseler</a></li>
+            </ul>
+           </li>
+<!--
+           <li><p>siehe auch:</p>
+             <ul style="list-style-type:square">
+                <li></li>
+             </ul>
+           </li>
+-->
+           </p>
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- wü Hh ende -->
+
+           <!-- wü G12 -->
+           <hr/>
+           <a name="wueG12"></a>
+           <h3 style="page-break-before:always">w&uuml; G12 (BR 58.5)</h3>
+           <p>
+           <li><p>Fahrzeug: 1932, <a href="https://uk.hornby.com" target="_blank">Rivarossi</a> #2148, DC=, Schnittstellenstecker nach NEM 660 (21MTC)</p></li>
+           <li><p>Decoder: <a href="https://www.esu.eu" target="_blank">ESU</a> Lok Pilot 3 21mtc (52614)</p></li>
+           <li><p>Umbaubeschreibung</p>
+             <ul style="list-style-type:circle">
+             <li>Das Fahrzeug ist mit einer Schnittstelle nach NEM 660 (21MTC) ausger&uuml;stet. Der Decoder wird anstelle des Br&uuml;ckensteckers eingesetzt.</li>
+             </ul>
+           </li>
+           <li><p>Vorbildinformationen</p>
+            <ul style="list-style-type:square">
+              <li><a href="http://albert-gieseler.de/dampf_de/lokdaten13/lokdet139423.shtml">Albert Gieseler</a></li>
+            </ul>
+           </li>
+<!--
+           <li><p>siehe auch:</p>
+             <ul style="list-style-type:square">
+                <li></li>
+             </ul>
+           </li>
+-->
+           </p>
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- wü G12 ende -->
+
+           <!-- wü K -->
+           <hr/>
+           <a name="wueK"></a>
+           <h3 style="page-break-before:always">w&uuml; K (BR 59)</h3>
+           <p>
+           <li><p>Fahrzeug: 1810, <a href="https://uk.hornby.com" target="_blank">Rivarossi</a> #1302, DC=, ohne Schnittstellenstecker</p></li>
+           <li><p>Decoder: <a href="https://www.lenz-elektronik.de/" target="_blank">Lenz</a> LE1014E</p></li>
+
+           <li><p>Umbaubeschreibung</p>
+
+             <ul style="list-style-type:circle">
+             <li>Leider hat das Modell nur einen NEM-Schacht am Tender, vorne fehlt jegliche Kupplungsm&ouml;glichkeit.<br/>
+             Abhilfe schafft hier der Roco-Kupplungsadapter 40396. Der f&uuml;r den Einsatz im NEM-Schacht vorgesehene schwalbenschwanzf&ouml;rmigen elastischen Ansatz wird so bearbeitet, das er in die Aufnahme f&uuml;r den Kupplungshaken in der vorderen Pufferbohle passt.
+             F&uuml;r den Einsatz in der vorderen Schwalbenschwanzf&uuml;hrung des Kupplungsadapters wird eine Kadee-Kupplung #17 so zugeschnitten, dass sie in den Kupplungsadapter passt.
+             Die Kadee-Kupplung wird nach der Justage in der H&ouml;he mit Sekundenkleber fixiert.<br/>
+             Nach dem Einsetzen der Kupplung in die Pufferbohle wird von unten eine kleine Bohrung (ca. &Oslash; 0,5mm) eingebracht, die auch durch den Kupplungsadapter f&uuml;hrt. Alternativ/zus&auml;tzlich kann der Kupplungsadapter auch eingeklebt werden.
+             </li>
+             <li>
+             <span id="to_crt"><img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/kupplung-59.png');">Montageskizze</a> f&uuml;r die vordere Kupplung</span>
+             <span id="to_prn">Montageskizze f&uuml;r die vordere Kupplung:<img src="images/modelbau/kupplung-59.png"></span>
+             </li>
+             </ul>
+
+           </li>
+           <li><p>Vorbildinformationen</p>
+            <ul style="list-style-type:square">
+             <li>Rudolf R&ouml;der: Die Baureihe 59<sup>0</sup> - W&uuml;rttembergs G&uuml;terzuggigant und seine Vorg&auml;nger, <a href="https://www.eisenbahn-kurier.de/" target="_blank">Eisenbahn-Kurier Verlag</a> 2007</li>
+             <li><a href="http://albert-gieseler.de/dampf_de/lokdaten13/lokdet139464.shtml">Albert Gieseler</a></li>
+            </ul>
+           </li>
+<!--
+           <li><p>siehe auch:</p>
+             <ul style="list-style-type:square">
+                <li></li>
+             </ul>
+           </li>
+-->
+           </p>
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- wü K ende -->
+
+           <!-- T5 -->
+           <hr/>
+           <a name="wueT5"></a>
+           <h3 style="page-break-before:always">w&uuml; T5 (BR 75.0)</h3>
+           <p>
+           <li><p>Fahrzeug: 1203, <a href="https://www.brawa.de/" target="_blank">Brawa</a> #40000, DC=, Schnittstellenstecker nach NEM 660 (21MTC)</p></li>
+           <li><p>Decoder: <a href="https://web.archive.org/web/20231111075751/https://www.kuehn-digital.de/" target="_blank">Kuehn</a> T125</p></li>
+           <li><p>Umbaubeschreibung</p>
+
+             <ul style="list-style-type:circle">
+             <li>Das Fahrzeug ist mit einer Schnittstelle nach NEM 660 (21MTC) ausger&uuml;stet. Der Decoder wird anstelle des Br&uuml;ckensteckers eingesetzt.</li>
+             </ul>
+
+           </li>
+           <li><p>Vorbildinformationen</p>
+            <ul style="list-style-type:square">
+             <li>Werner Willhaus: Die Baureihe 75<sup>0</sup> - Die w&uuml;rttembergische T5, <a href="https://www.eisenbahn-kurier.de/" target="_blank">Eisenbahn-Kurier Verlag</a> 2005</li>
+             <li><a href="http://albert-gieseler.de/dampf_de/lokdaten13/lokdet139501.shtml">Albert Gieseler</a></li>
+            </ul>
+           </li>
+           </p>
+
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- T5 ende -->
+
+           <!-- T3 -->
+           <hr/>
+           <a name="t3"></a>
+           <h3 style="page-break-before:always">T3 (BR 89.70)</h3>
+           <p>
+           <li><p>Fahrzeug: WN2, <a href="https://www.fleischmann.de/" target="_blank">Fleischmann</a> #4822, DC=, ohne Schnittstellenstecker</p></li>
+           <li><p>Decoder: <a href="https://web.archive.org/web/20231111075751/https://www.kuehn-digital.de/" target="_blank">Kuehn</a> N025</p></li>
+           <li><p>Umbaubeschreibung</p>
+
+             <ul style="list-style-type:circle">
+             <li>Beim Umbau meiner pr.T3 mit L&auml;nderbahnlackierung habe ich mich an die Anleitung von Hans-Peter Pfeiffer (s.u.) gehalten.
+             Der von mir verwendete Decoder entspricht den Abmessungen des in der Umbauanleitung verwendeten Decoders.<br/>
+             <u>Ge&auml;nderte Beleuchtung:</u>
+             <ul>
+               Im Gegensatz zur Umbauanleitung von Hans-Peter Pfeiffer habe ich die Beleuchtung ge&auml;ndert:
+               <li>vorne<br/>
+               die Gl&uuml;hlampe wird isoliert und die Halterung im Geh&auml;use mit einem Kugelfr&auml;ser vorsichtig erweitert, bis die vollst&auml;ndig isolierte Gl&uuml;hlampe wieder in die Aufnahme passt.</li>
+
+               <li>hinten<br/>
+               die hintere Beleuchtung erfolgt mit den bew&auml;hrten Microlampen (1,2V/15mA, &Oslash; 1,2mm [<a href="https://www.conrad.de/" target="_blank">Conrad</a> 720120])
+               <span id="to_crt"><img alt="Foto &ouml;ffnen" src="images/foto.gif" /> (</span><span id="to_prn"><br/><img src="images/modelbau/v188_micro.jpg" style="width:33%;" /><br/></span><span id="to_crt"><a href="javascript:openWindow('images/modelbau/v188_micro.jpg');">Schaltbild</a>). </span><span id="to_prn"><br/></span><br/>
+               Damit die Microlampen auch nach hinten leuchten k&ouml;nnen, wurden die "Hubbel", an denen die Laternen befestigt sind, mit einem Bohrer (&Oslash; 1,3mm) aufgebohrt, eine selbstgedrehte Zentrierhilfe ermittelte den Mittelpunkt.
+               Das Ganze sieht dann vor dem Einbau <span id="to_crt"><img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/t3_1.jpg');">so</a> aus.</span>
+               <span id="to_prn">so aus:<br/><img src="images/modelbau/t3_1.jpg" style="width:50%;" /><br/></span><br/>
+               Der Spannungsregler wird vor dem Zusammenbau mit einem Tropfen Sekundenkleber von innen angebracht.</li>
+               <li>Fehlt noch der gemeinsame blaue Anschlu&szlig; am verwendeten Decoder: eine Anleitung hierf&uuml;r gab es auf der Seite des Dekoderherstellers.</li>
+               </ul>
+             </li>
+             </ul>
+           </li>
+           <li><p>siehe auch:</p>
+            <ul style="list-style-type:square">
+              <li><a href="http://albert-gieseler.de/dampf_de/lokdaten0/lokdatendet352.shtml">Albert Gieseler</a></li>
+            </ul>
+           </li>
+           </p>
+
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- T3 ende -->
+
+           <!-- wü T3 -->
+           <hr/>
+           <a name="wuet3"></a>
+           <h3 style="page-break-before:always">w&uuml; T3 (BR 89.3-4)</h3>
+           <p>
+           <li><p>Fahrzeug: 950, <a href="https://www.brawa.de/" target="_blank">Brawa</a> #600=, DC=, Schnittstellenstecker nach NEM 652</p></li>
+           <li><p>Decoder: <a href="https://www.esu.eu" target="_blank">ESU</a> Lok Pilot 3 21mtc (52614)</p></li>
+           <li><p>Umbaubeschreibung</p>
+           Es gibt keine Umbaubeschreibung: ich habe das Fahrzeug gebraucht erworben - mit eingebautem Lok Pilot 3 21mtc.
+           </li>
+           <li><p>Vorbildinformationen</p>
+            <ul style="list-style-type:square">
+             <li>Werner Willhaus: Die Baureihe 89<sup>3-4</sup> - Die w&uuml;rttembergische T3, <a href="https://www.eisenbahn-kurier.de/" target="_blank">Eisenbahn-Kurier Verlag</a> 2001</li>
+             <li><a href="http://albert-gieseler.de/dampf_de/lokdaten13/lokdet139633.shtml">Albert Gieseler</a></li>
+            </ul>
+           </li>
+           </p>
+
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- wü T3 ende -->
+
+           <!-- wü Tn -->
+           <hr/>
+           <a name="wuetn"></a>
+           <h3 style="page-break-before:always">w&uuml; Tn (BR 94.1)</h3>
+           <p>
+           <li><p>Fahrzeug: 1008, <a href="https://www.brawa.de/" target="_blank">Brawa</a> #40300, DC=, Schnittstellenstecker nach NEM 660 (21MTC)</p></li>
+           <li><p>Decoder: <a href="https://web.archive.org/web/20231111075751/https://www.kuehn-digital.de/" target="_blank">Kuehn</a> T125</p></li>
+           <li><p>Umbaubeschreibung</p>
+             <ul style="list-style-type:circle">
+               <li>Das Fahrzeug ist mit einer Schnittstelle nach NEM 660 (21MTC) ausger&uuml;stet. Der Decoder wird anstelle des Br&uuml;ckensteckers eingesetzt.</li>
+             </ul>
+           </li>
+           <li><p>Vorbildinformationen</p>
+            <ul style="list-style-type:square">
+              <li><a href="http://albert-gieseler.de/dampf_de/lokdaten13/lokdet139739.shtml">Albert Gieseler</a></li>
+            </ul>
+           </li>
+           </p>
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- wü Tn ende -->
+
+           <!-- V36 -->
+           <hr/>
+           <a name="v36"></a>
+           <h3 style="page-break-before:always">V36.4</h3>
+           <p>
+           <li><p>Fahrzeug: V36 418, <a href="https://www.lenz-elektronik.de/" target="_blank">Lenz</a> #30110, DC=, mit integriertem Decoder</p></li>
+           <li><p>Decoder: <a href="https://www.lenz-elektronik.de/" target="_blank">Lenz</a></p></li>
+           <li><p>Umbaubeschreibung</p>
+
+             <ul style="list-style-type:circle">
+               <li>Die Lok wird komplett mit integriertem Decoder geliefert - es gibt keine Umbaubeschreibung f&uuml;r den Decodereinbau.</li>
+               <li>
+               <u>Umbau der Kupplung auf das Kadee-System:</u><br/>
+               Angeregt durch den Artikel in der <a href="https://www.miba.de/" target="_blank">Miba-Spezial</a> (s.u.) habe ich meine V36 auch mit der bei mir verwendeten Kadee-Kupplung versehen.
+               Wie im Bericht, so habe auch ich eine einfache starre Kadee-Kupplung anstelle einer Metall-Kupplung mit Entkupplungsb&uuml;gel verwendet.<br>
+               Der Grund: die Kupplung wird durch eine kleines Gegengewicht waagerecht gehalten. W&auml;hrend des Kuppelns/Entkuppelns wird dieses Gewicht magnetisch nach oben gezogen - der Haken geht nach unten, es wird entkuppelt.
+               Ist nun die Kadee-Kupplung zu "schwer", kommt die Kupplung durch ein zu geringes Gegengewicht nicht mehr in die waagerechte Position <span id="to_crt">(<img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/v36.png');">Bild</a>)</span><span id="to_prn"><img src="images/modelbau/v36.png" style="width:50%;" /></span>.<br>
+               Abhilfe schafft hier ein kleines Messingpl&auml;ttchen (6 * 6 * 0,4mm; es ist auszuprobieren, ob und welche Gr&ouml;&szlig;e erforderlich ist), das zus&auml;tzlich mit Sekundenkleber auf das Gegengewicht geklebt wird. Zus&auml;tzlich ist an diesen Stellen das Geh&auml;use etwas auszufr&auml;sen, um Platz f&uuml;r das Messingpl&auml;ttchen zu schaffen.<br>
+               Weiterhin ist der Kadee-Kupplungskopf nicht nur so flach wie m&auml;glich zu feilen, ggf. ist auch die Klaue seitlich und am Kopf so zu befeilen, dass ein einwandfreise Kuppeln bzw. Entkuppeln m&ouml;glich ist.<br>
+               </li>
+             </ul>
+
+           </li>
+           <li><p>weitere Umbaum&ouml;glichkeiten:</p>
+           <ul style="list-style-type:circle">
+             <li>
+             Umbau der Kupplung: <a href="https://www.miba.de/" target="_blank">Miba-Spezial</a> 59 S50..51: <font color="#FF0000">Neue KK-K&ouml;pfe braucht das Land</font>
+             </li>
+             <li>
+             Umbau der Kupplung: <a href="https://www.drehscheibe-online.de/foren/read.php?10,5346000,5346000,sv=0#msg-5346000" target="_blank">Kadee und Lenz K&ouml;f</a>
+             </li>
+           </ul>
+           </li>
+           <li><p>Vorbildinformationen</p>
+             <ul style="list-style-type:square">
+             <li>Stefan Lauscher: Die Diesellokomotiven der Wehrmacht, <a href="https://www.eisenbahn-kurier.de/" target="_blank">Eisenbahn-Kurier Verlag</a> 1999</li>
+             <li><a href="http://v36.de/" target="_blank">http://v36.de/</a></li>
+             <li><a href="https://www.rangierdiesel.de/index.php?nav=1402533&lang=1&id=10240&action=portrait" target="_blank">Rangierdiesel</a></li>
+             </ul>
+           </li>
+           </p>
+
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- V36 ende -->
+
+           <!-- V60 -->
+           <hr/>
+           <a name="v60"></a>
+           <h3 style="page-break-before:always">V60</h3>
+           <p>
+           <li><p>Fahrzeug: V60 423, <a href="https://www.roco.cc/" target="_blank">Roco</a> #43620, DC=, ohne Schnittstellenstecker</p></li>
+           <li><p>Decoder: <a href="https://www.zimo.at" target="_blank">Zimo</a> MX617</p></li>
+           <li><p>Umbaubeschreibung</p>
+             Das Fahrzeug wurde gebraucht erworben, ohne Verpackung, Anleitung oder Zur&uuml;stbeutel.
+             So fehlten dann auch (fast) alle Griffstangen.
+             Der originale Zur&uuml;stbeutel (95712) ist bei Roco nicht mehr erh&auml;ltlich, der einzig verf&uuml;gbare Zur&uuml;stbeutel (131259) geh&ouml;rte zu eine V60 der Bocholter Eisenbahn - mit grauen Griffstangen.<br>
+             Was der Lok altroten Lok jetzt so schlecht auch nicht steht...<br><br>
+             Zum eigentlichen Umbau:
+             <ul style="list-style-type:square">
+              <li>am Gewicht muss eine Ausfr&auml;sung vorgenommen werden, um Platz f&uuml;r den ZIMO-Decoder zu schaffen <span id="to_crt">(<img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/aussparung am gewicht.jpg');">Bild</a>)</span><span id="to_prn"><img src="images/modelbau/aussparung am gewicht.jpg" style="width:50%;" /></span></li>
+              <li>von der Platine werden die beiden Dioden entfernt und es sind die Leiterbahnen an drei Stellen zu unterbrechen</li>
+              <li>der Decoder wird wie gezeigt angeschlossen <span id="to_crt">(<img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/platine nach dem umbau.jpg');">Bild</a>)</span><span id="to_prn"><img src="images/modelbau/platine nach dem umbau.jpg" style="width:50%;" /></span></li>
+              <li>weiterhin vorgesehen war:
+                <ul style="list-style-type:circle">
+                  <li>eine vorbildgerechte <a href="#licht">wechselnde Stirn/Schlu&szlig;beleuchtung</a></li>
+                  <li>eine F&uuml;hrerstandsbeleuchtung</li>
+                  <li>eine Triebwerksbeleuchtung</li>
+                </ul>
+                F&uuml;r dies alles war jedoch kein Platz f&uuml;r einen vern&uuml;nfigen Einbau und eine Verkabelung zu finden, daher ist der Umbau (zun&auml;chst) unterblieben...
+              </li>
+            </ul>
+           </li>
+
+           <li><p>Vorbildinformationen</p>
+           <ul style="list-style-type:square">
+             <li>Arno Bretschneider; Manfred Traube: Die Baureihe V60 - Das Arbeitstier der DB, <a href="https://www.eisenbahn-kurier.de/" target="_blank">Eisenbahn-Kurier Verlag</a> 1997</li>
+             <li>Andreas Christopher: Deutsche Kleinlokomotiven - Geschichte und Verbleib der Staatsbahn-Rangierlokomotiven der Leistungsgruppen I-II-II-V60, <a href="http://www.verlag-kenning.de/">Verlag Kenning</a> 1989</li>
+             <li>Andreas Christopher: Kleinlokomotiven deutscher Staatsbahnen, Lg I, II, II, V15, V23, V60 - Lieferung und Verbleib, <a href="https://www.drehscheibe-online.de/">Drehscheibe-Verlag</a> Sonderheft 19 2000</li>
+             <li><a href="https://www.rangierdiesel.de/index.php?nav=1405211&lang=1&id=10594&action=portrait" target="_blank">Rangierdiesel</a></li>
+           </ul>
+           </li>
+
+           <li><p>siehe auch:</p>
+            <ul style="list-style-type:square">
+              <li>
+              <a href="http://www.bahnwahn.de/steckbrief/rodbv60423/" target="_blank">BahnWahn</a>
+              </li>
+              <li>
+              <a href="https://andreas-nothaft.de/index.php/fremo-mainmenu-36/digital-umbauten-mainmenu-48?start=7" target="_blank">Andreas Nothaft</a>
+              </li>
+              <li>
+              <a href="https://projekte.lokbahnhof.de/forum/index.php?thread/1622-noch-einmal-zu-mitschreiben-die-v60-von-roco/" target="_blank">Projekte.Lokbahnhof.de</a>
+              </li>
+              <li>
+              <a href="https://www.stummiforum.de/viewtopic.php?f=21&t=123395&start=50" target="_blank">Stummi-Forum</a>
+              </li>
+              <li>
+              <a href="https://mobatron.4lima.de/2020/04/umbau-einer-roco-v60" target="_blank">Bahn in Haan</a>
+              </li>
+              <li>
+              <a href="https://atw.huebsch.at/Modell/H0/Roco_V60.htm" target="_blank">ATW.Huebsch.at</a>
+              </li>
+              <li>
+              <a href="http://www.lokodex.de/mo/m_digital_einb01.htm" target="_blank">Lokodex.de</a>
+              </li>
+              <li>
+              <a href="http://dcc-mueller.de/decoder/260__dec.htm" target="_blank">DCC-M&uuml;ller</a>
+              </li>
+            </ul>
+           </li>
+           </p>
+
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- V60 ende -->
+
+           <!-- V100 -->
+           <hr/>
+           <a name="vau100"></a>
+           <h3 style="page-break-before:always">V100.10</h3>
+           <p>
+           <li><p>Fahrzeug: V100 1088, <a href="https://www.roco.cc/" target="_blank">Roco</a> #43644, DC=, ohne Schnittstellenstecker</p></li>
+           <li><p>Decoder: <a href="https://web.archive.org/web/20231111075751/https://www.kuehn-digital.de/" target="_blank">Kuehn</a> N025</p></li>
+           <li><p>Umbaubeschreibung</p>
+               Will man den freien Durchblick durch den F&uuml;hrerstand erhalten, bleibt nur etwas Platz f&uuml;r den Decoder im langen Vorbau direkt hinter den Gl&uuml;hl&auml;mpchen.<br/>
+               <ul style="list-style-type:circle">
+               <li>
+               <u>Es war einmal (...oder der erste Decoder...): <a href="https://www.tams-online.de" target="_blank">Tams</a> LD-G-7</u><br/>
+               Hierzu ist am Geh&auml;use der Trennsteg zwischen den L&auml;mpchen etwas zu k&uuml;rzen sowie die Deckelplatte am Abgasstutzen zu entfernen <span id="to_crt">(<img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/v100_dcc_0.jpg');">Bild</a>).</span><span id="to_prn"><img src="images/modelbau/v100_dcc_0.jpg" style="width:80%;" /><br/></span>
+               <ul>
+                 <li>Weiterhin ist die Platine umzubauen:<br/>
+                 - die 4 Dioden und die Funkentst&ouml;relemente sind zu entfernen <span id="to_crt">(<img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/v100_dcc_1.jpg');">Bild 1</a>)</span><span id="to_prn"><img src="images/modelbau/v100_dcc_1.jpg" style="width:80%;" /></span><br/>
+                 - an den angebenen Stellen sind die Leiterbahnen aufzutrennen, der Anschlu&szlig; vom vorderen Drehgestell rechts ist zu versetzen <span id="to_crt">(<img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/v100_dcc_2.jpg');">Bild 2</a>)</span><span id="to_prn"><img src="images/modelbau/v100_dcc_2.jpg" style="width:80%;" /><br/>(Bild 2)</span><br/>
+                 - die L&auml;mpchen sind neu zu verdrahten, die Federkontakte an den vorderen L&auml;mpchen sind jeweils durch einen d&uuml;nnen Draht zu ersetzen <span id="to_crt">(<img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/v100_dcc_3.jpg');">Bild 3</a>)</span><span id="to_prn"><img src="images/modelbau/v100_dcc_3.jpg" style="width:80%;" /><br/>(Bild 3)</span><br/>
+                 - der Decoder ist gem&auml;&szlig; <span id="to_crt"><img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/v100_dcc_2.jpg');">Bild 2</a></span> und <span id="tocrt"><img alt="Foto &ouml;ffnen" src="images/foto.gif" /></span><a href="javascript:openWindow('images/modelbau/v100_dcc_3.jpg');">Bild 3</a> anzuschlie&szlig;en.<br/>
+                 - damit die Platine massefrei befestigt wird, sind die Befestigungsschrauben zu versetzen <span id="to_crt">(<img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/v100_dcc_2.jpg');">Bild 2</a>)</span>
+                 </li>
+               </ul>
+               </li>
+               <li>
+               <u>Der zweite Versuch: <a href="https://web.archive.org/web/20231111075751/https://www.kuehn-digital.de/" target="_blank">Kuehn</a> N025</u><br/>
+               Abgestellt auf einem Nebengleis und keiner wei&szlig;, wie es geschah: der <a href="https://www.tams-online.de" target="_blank">Tams</a>-Decoder gab Rauchzeichen von sich und verabschiedete sich.<br/>
+               Da auch die Platine in Mitleidenschaft gezogen wurde, wurden hier sogleich N&auml;gel mit K&ouml;pfen gemacht:
+               <ul>
+                 <li>Einsatz eines kleineren Decoders</li>
+                 <li>Ersatz der L&auml;mpchen durch wartungsfreie LED's:<br/>
+                 - Led weiss = <a href="https://www.reichelt.de/" target="_blank">Reichelt</a> LED 3-2000WS, Vorwiderstand 2,7kOhm<br/>
+                 - Led rot = <a href="https://www.reichelt.de/" target="_blank">Reichelt</a> LED 3-3500RT, Vorwiderstand 2,7kOhm<br/>
+                 </li>
+               </ul>
+               und das alles auf einer neuen Platine, wo dann auch der Decoder "versenkt" eingebaut werden kann:
+               <span id="to_crt"><img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/img_1540.jpg');">Bild 4</a><br/></span><span id="to_prn"><br/><img src="images/modelbau/img_1540.jpg" style="width:75%;"><br/></span>
+               Von <a href="https://amw.huebsch.at/Produkte/V100_West.htm" target="_blank">A.Huebsch</a> wurde zwischenzeitlich eine Tauschplatine entwickelt.
+               </li>
+               <br/><br/>
+               <li>vorbildgerechte <a href="#licht">wechselnde Stirn/Schlu&szlig;beleuchtung</a></li>
+             </ul>
+           </li>
+           <li><p>weitere Umbaum&ouml;glichkeiten:</p>
+           <ul style="list-style-type:circle">
+             <li>
+             Anbau eines Schneer&auml;umers, z.B. von <a href="https://www.krueger-modellbau.de" target="_blank">Kr&uuml;ger-Modellbau</a> H0 98211.02<br/>
+             <a href="https://www.eisenbahn-kurier.de/" target="_blank">Eisenbahn-Kurier</a> 08/06 (Seite 116 und 117): <font color="#FF0000">Schneer&auml;umer f&uuml;r die V100</font>
+             </li>
+             <li>Die Firma <a href="https://www.krueger-modellbau.de" target="_blank">Kr&uuml;ger-Modellbau</a> bietet unter den Nummern H0 98211.?? zahlreiche Zur&uuml;st- und Umbaum&ouml;glichkieten f&uuml;r eine V100 an.</li>
+           </ul>
+           </li>
+           <li><p>Vorbildinformationen</p>
+            <ul style="list-style-type:square">
+              <li>Peter Gro&szlig;e, Josef H&ouml;gemann: Die Baureihe V100 - Generationswechsel bei der Deutschen Bundesbahn, <a href="https://www.eisenbahn-kurier.de/" target="_blank">Eisenbahn-Kurier Verlag</a> 2005</li>
+              <li>Manfred Weisbrod, Horst J. Obermayer: Die V100 DB und DR, <a href="https://www.vgbahn.shop/magazine/eisenbahn-journal/" target="_blank">Eisenbahn-Journal</a> Spezial 7/1995</li>
+              <li><a href="https://www.v100.de/" target="_blank">https://www.v100.de/</a></li>
+            </ul>
+           </li>
+           <li><p>siehe auch:</p>
+            <ul style="list-style-type:square">
+              <li>
+              <a href="https://www.dhuenntalbahn.de/fahrzeuge/v100-von-roco/" target="_blank">https://www.dhuenntalbahn.de</a>
+              </li>
+            </ul>
+           </li>
+           </p>
+
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- V100 ende -->
+
+           <!-- V188 -->
+           <hr/>
+           <a name="d311"></a>
+           <h3 style="page-break-before:always">V188</h3>
+           <p>
+           <li><p>Fahrzeug: V188 001a+b, <a href="https://uk.hornby.com" target="_blank">Lima</a> #208113L, DC=, ohne Schnittstellenstecker</p></li>
+           <li><p>Decoder: <a href="https://www.tams-online.de" target="_blank">Tams</a> LD-G-7</p></li>
+           <li><p>Umbaubeschreibung</p>
+
+             <ul style="list-style-type:circle">
+             <li>Platz f&uuml;r den Einbau des Decoders findet sich im Lokteil b, wenn dort kein zweiter Antrieb montiert wurde.<br/>
+             Vorteil: viel Platz<br/>
+             Nachteil: es sind zus&auml;tzliche Drahtverbindungen vom B-Teil in den A-Teil zu verlegen.</li>
+             <li>Ich habe f&uuml;r meinen Umbau Platz im A-Teil gesucht (und gefunden), um vier weitere Verbindungen von A- und B-Teil zu vermeiden.<br/>
+             Um Platz f&uuml;r den Decoder zu schaffen, ist jedoch das Balastgewicht, in dem auch der Motor lagert, zu k&uuml;rzen. Das hintere Ende wird um ca. 7mm gek&uuml;rzt um Platz f&uuml;r den Decoder zu schaffen.<span id="to_crt">(<img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/v188_decoder.jpg');">Bild</a>)</span><span id="to_prn"><img src="images/modelbau/v188_decoder.jpg" style="width:80%;" /><br/></span><br/>
+             Zwischen Balastgewicht und Decoder ist eine Isolierung (z.B. Pappe) anzubringen.<br/>
+             Nicht vergessen: die Funkenst&ouml;relemente werden alle entfernt.
+             </li>
+             <li>Die Lokr&auml;der haben eine Spurkranzh&ouml;he von 1,5mm. Damit die Lok auch auf Gleisen mit Code83-Profile eingesetzt werden kann, sind die Spurkr&auml;nze auf 1,1mm abzudrehen.</li>
+             <li>Aktivieren des oberen Spitzenlichts<br/>
+             Bei meinem Modell ist das dritte obere Spitzenlicht nur eine Attrappe. Da zu diesem Spitzenicht auch kein Lichtleiter verlegt werden kann, kommt hier nur der Einbau einer Microlampe in Frage.<br/>
+             Passend zum direkten Anschlu&szlig; an den DCC-Decoder sind z.B. Gl&uuml;hlampen mit 16V/20mA, &Oslash; 1,8mm. Da diese Gl&uuml;hlampen aber zu hei&szlig; werden (mein Geh&auml;use wurde hierdurch verschmort) kann ich diese Art <b>nicht</b> empfehlen!<br/>
+             Beim Einsatz der Microlampen (1,2V/15mA, &Oslash; 1,2mm [<a href="https://www.conrad.de/" target="_blank">Conrad</a> 720120]) mu&szlig; jedoch eine Spannungsbegrenzung vorgenommen werden
+             <span id="to_crt">(<img alt="Foto &ouml;ffnen" src="images/foto.gif" /></span><span id="to_prn"><br/><img src="images/modelbau/v188_micro.jpg" style="width:40%;" /><br/></span><a href="javascript:openWindow('images/modelbau/v188_micro.jpg');">Schaltbild</a>
+             <span id="to_crt">,<img alt="Foto &ouml;ffnen" src="images/foto.gif" /></span><span id="to_prn"><br/><img src="images/modelbau/v188_licht.jpg" style="width:80%;" /><br/></span><a href="javascript:openWindow('images/modelbau/v188_licht.jpg');">Zusammenbau</a>
+             <span id="to_crt">,<img alt="Foto &ouml;ffnen" src="images/foto.gif" /></span><span id="to_prn"><br/><img src="images/modelbau/v188_licht_1.jpg" style="width:50%;" /><br/></span><a href="javascript:openWindow('images/modelbau/v188_licht_1.jpg');">Einbau</a><span id="to_crt">)</span><br/>
+             Bei der Verdrahtung ist unbedingt auf die Polarit&auml;t am Decoder zu achten, d.h. der im Schaltbild als 'Masse' bezeichnete Anschluss ist mit dem Anschluss am Decoder zu verbinden, der auf Massepotential liegt. Dies ist nicht unbedingt der gemeinsame Anschluss f&uuml;r die Beleuchtung!
+             </li>
+             </ul>
+
+           </li>
+           <li><p>Vorbildinformationen</p>
+           <ul style="list-style-type:square">
+             <li>Stefan Lauscher: Die Diesellokomotiven der Wehrmacht, <a href="https://www.eisenbahn-kurier.de/" target="_blank">Eisenbahn-Kurier Verlag</a> 1999</li>
+             <li><a href="http://www.e94114.de/V188.htm" target="_blank">http://www.e94114.de</a></li>
+             <li><a href="https://eisenbahnmagazin.de/" target="_blank">Eisenbahnmagazin</a> 05/23 (Seite 10ff): <font color="#FF0000">Diesel-P&auml;rchen in Friedenseins&auml;tzen</font></li>
+           </ul>
+           </li>
+           <li><p>siehe auch:</p>
+            <ul style="list-style-type:square">
+              <li><a href="http://www.bahnwahn.de/limadb288/" target="_blank">http://www.bahnwahn.de</a></li>
+              <li><a href="https://eisenbahnmagazin.de/" target="_blank">Eisenbahnmagazin</a> 05/23 (Seite 18ff): <font color="#FF0000">Deutsche Doppellok in der Modellumschau</font></li>
+            </ul>
+           </li>
+           </p>
+
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- V188 ende -->
+
+           <!-- V200 -->
+           <hr/>
+           <a name="v200"></a>
+           <h3 style="page-break-before:always">V200</h3>
+           <p>
+           <li><p>Fahrzeug: V200 013, <a href="https://www.roco.cc/" target="_blank">Roco</a> #43522, DC=, ohne Schnittstellenstecker</p></li>
+           <li><p>Decoder: <a href="https://web.archive.org/web/20231111075751/https://www.kuehn-digital.de/" target="_blank">Kuehn</a> T65</p></li>
+           <li><p>Umbaubeschreibung</p>
+             <table border = "2">
+              <tr>
+               <td>
+                 Das etwas &auml;ltere Modell der V200 von Roco wird u.a. auch mit einem gro&szlig;en (ca. 30mm im Durchmesser) Motor geliefert. Hier gibt es zwei Bauarten:
+                 <ul>
+                   <li>mit heller Wandung und wei&szlig;em Motorschild: hier liegt die Stromaufnahme in der Regel deutlich &uuml;ber 1A; somit ist nicht jeder Decoder geeignet.</li>
+                   <li>mit dunkler Wandung: die Stromaufnahme liegt deutlich unter 1A; somit k&ouml;nnen im Prinzip die meisten Decoder verwendet werden.</li>
+                 </ul>
+                 Auch hier gilt: nachmessen (s.o.) beugt einem Decoderschaden vor. Ein Ersatzmotor mit niedriger Stromaufnahme ist z.B. unter der Ersatzteilnummer <a href="https://www.roco.cc/" target="_blank">Roco</a> 85114 erh&auml;ltlich, eine Adapterschale f&uuml;r den Motor unter der Ersatzteilnummer <a href="https://www.roco.cc/" target="_blank">Roco</a> 101367.<br/>
+               </td>
+              </tr>
+             </table>
+
+             <ul style="list-style-type:circle">
+             <li>Bei der Auwahl des Decoders spielt neben dem verf&uuml;gbaren Motorstrom auch die Anzahl der verf&uuml;gbaren Funktionsausg&auml;nge eine wichtige Rolle.<br/>
+             Zusammen mit einer vorbildgerechten Lichtsteuerung und F&uuml;hrerstandsbeleuchtungen, sind sechs Funktionsausg&auml;nge erforderlich. N025 und N045 sind zu klein: also wurde ein T65 eingebaut.<br/>
+             Gem&auml;&szlig; Decoderanleitung wurde die Entst&ouml;relemente <u>nicht</u> ausgebaut; es wurden nur die beiden Dioden f&uuml;r die (alte) Beleuchtung ausgel&ouml;tet.</li>
+
+             <li><u>Vorbildgerechte <a href="#licht">wechselnde Stirn/Schlu&szlig;beleuchtung</a></u><br/>
+             Als Ersatz f&uuml;r die eingebauten Gl&uuml;hlampen werden vier LED's verwendet: zwei rote LED's (z.B. LS E67B von <a href="https://www.reichelt.de/" target="_blank">Reichelt</a>, PLCC-4-Geh&auml;use, Vorwiderstand jeweils 470Ohm) und zwei weisse LED's (z.B. LCW E6SG von <a href="https://www.reichelt.de/" target="_blank">Reichelt</a>, PLCC-4-Geh&auml;use, Vorwiderstand jeweils 1kOhm).<br/>
+             Jede LED wird mit ihrem Vorwiderstand auf ein kleines St&uuml;ckchen Platine gel&ouml;tet <span id="to_crt">(<img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/v200_led.png');">Bild</a>)</span>,
+             <span id="to_prn"><br/><img src="images/modelbau/v200_led.png"/><br/></span> anschlie&szlig;end wird jeweils eine rote und eine weisse LED R&uuml;cken an R&uuml;cken zusammengeklebt und anstelle der (zuvor ausgebauten) Gl&uuml;hlampe eingesetzt.<br/>
+             Wichtigste und zugleich schwierigste Aufgabe ist jetzt: alles lichtdicht wieder zusammenzubauen. Hier helfen einige Streifen schwarzes Isolierband und zurecht geschnittenes schwarzes Moosgummi.<br/>
+             Indes der F&uuml;hrerstand wehrt sich hartn&auml;ckig: durch die (verkorkste) Lichtleiterf&uuml;hrung f&uuml;r das dritte obere Spitzenlicht ist der F&uuml;hrerstand immer minimal beleuchtet - da muss ich jetzt mit Leben (bis ich eine neue Idee hierzu habe...).</li>
+
+             <li><u>F&uuml;hrerstandsbeleuchtung:</u><br/>
+             Verwendet wurden zwei SMD-LED's (Bauform 0603) jeweils mit einem Vorwiderstand 10k. Der Anschlu&szlig; an den Decoder erfolgte &uuml;ber 2-polige Steckverbinder.</li>
+           </ul>
+
+           </li>
+           <li><p>Vorbildinformationen</p>
+             <ul style="list-style-type:square">
+               <li>Matthias Maier: Die Baureihe V200 - Die erste Gro&szlig;diesellokomotive der Deutschen Bundesbahn, <a href="https://www.eisenbahn-kurier.de/" target="_blank">Eisenbahn-Kurier Verlag</a> 2005</li>
+               <li>Horst J. Obermayer: Die Baureihe V200 - 40 Jahre deutsche Gro&szlig;diesellokomotiven, <a href="https://www.vgbahn.shop/magazine/eisenbahn-journal/" target="_blank">Eisenbahn-Journal</a> Spezial 5/1993</li>
+               <li>Konrad Koschinski: V200 - DB Baureihen V200<sup>0</sup>, V200<sup>1</sup> und V300, <a href="https://www.vgbahn.shop/magazine/eisenbahn-journal/" target="_blank">Eisenbahn-Journal</a> Extra 1/2011</li>
+             </ul>
+           </li>
+           <li><p>siehe auch:</p>
+            <ul style="list-style-type:square">
+              <li><a href="http://www.ralf-bueker.de/Roco_V_200_mit_LED_Licht.htm" target="_blank">http://www.ralf-bueker.de</a></li>
+              <li><a href="https://www.vgbahn.de" target="_blank">Digitale Modellbahn</a> 3/2014 (Seite 38 und 39): <font color="#FF0000">Revitalisiert: V200 von Roco remotorisiert und digitalisiert</font></li>
+            </ul>
+           </li>
+           </p>
+
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- V200 ende -->
+
+           <!-- KöfII -->
+           <hr/>
+           <a name="koef2"></a>
+           <h3 style="page-break-before:always">K&ouml;f II</h3>
+           <p>
+           <li><p>Fahrzeug: 322 156-1, <a href="https://www.brawa.de/" target="_blank">Brawa</a> #460=, DC=, ohne Schnittstellenstecker</p></li>
+           <li><p>Decoder: <a href="https://www.lenz-elektronik.de/" target="_blank">Lenz</a> LE0511D</p></li>
+           <li><p>Umbaubeschreibung</p>
+
+             <ul style="list-style-type:circle">
+             <li>Beim Umbau meiner K&ouml;f II habe ich mich an die Anleitung von Reinhard M&uuml;ller (s.u.) gepaart mit den Bildern von Hans-Peter Pfeiffer (s.u.) gehalten.<br/>
+             Der von mir verwendete Decoder entspricht den Abmessungen der in den Umbauanleitungen verwendeten Decoder. Somit gibt es eigentlich nichts, was hier noch berichtet werden kann.</li>
+             <li>Den ledernen T&uuml;rvorhang habe ich aus braunem Krepppapier hergestellt, die dem Modell beiliegenden Kunststoffeins&auml;tze gefielen mir nicht.</li>
+             </ul>
+
+           </li>
+           <li><p>weitere Umbaum&ouml;glichkeiten:</p>
+           <ul style="list-style-type:circle">
+             <li>
+             Anbau eines Schneepflugs, z.B. <a href="https://www.brawa.de/" target="_blank">Brawa</a> H0 0475
+             </li>
+           </ul>
+           </li>
+           <li><p>Vorbildinformationen</p>
+            <ul style="list-style-type:square">
+              <li>Andreas Christopher: Deutsche Kleinlokomotiven - Geschichte und Verbleib der Staatsbahn-Rangierlokomotiven der Leistungsgruppen I-II-II-V60, <a href="http://www.verlag-kenning.de/">Verlag Kenning</a> 1989</li>
+              <li>Andreas Christopher: Kleinlokomotiven deutscher Staatsbahnen, Lg I, II, II, V15, V23, V60 - Lieferung und Verbleib, <a href="https://www.drehscheibe-online.de/">Drehscheibe-Verlag</a> Sonderheft 19 2000</li>
+              <li><a href="https://www.deutsche-kleinloks.de/" target="_blank">https://www.deutsche-kleinloks.de</a></li>
+            </ul>
+           </li>
+           <li><p>siehe auch:</p>
+             <ul style="list-style-type:square">
+                <li><a href="http://www.dcc-mueller.de/decoder/koef2dec.htm" target="_blank">http://www.dcc-mueller.de</a></li>
+                <li><a href="https://www.vgbahn.de" target="_blank">Digitale Modellbahn</a> 4/22 S46..48: <font color="#FF0000">Umbau-Klassiker: Remotorisierung und Erleuchtung einer Brawa-K&ouml;f</font></li>
+             </ul>
+           </li>
+           </p>
+
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- KöfII ende -->
+
+           <!-- Klv12 -->
+           <hr/>
+           <a name="klv12"></a>
+           <h3 style="page-break-before:always">Klv 12</h3>
+           <p>
+           <li><p>Fahrzeug: Klv 12-4823, <a href="https://brekina.de" target="_blank">Brekina</a> #63040, DC=, integrierter Decoder</p></li>
+           <li><p>Decoder: integriert, entspricht <a href="https://www.uhlenbrock.de/de_DE/index.htm" target="_blank">Uhlenbrock</a> 76320</p></li>
+           <li><p>Umbaubeschreibung</p>
+             keine, der Decoder ist bereits werksseitig eingebaut.
+           </li>
+           <li><p>Vorbildinformationen</p>
+           <ul style="list-style-type:square">
+            <li>Stefan John: Vom Schienenfahrrad zum Turmtriebwagen - Deutsche Draisinen Sammlung, <a href="http://www.draisine.de/">DDS</a> 1991</li>
+           </ul>
+           </li>
+           </p>
+
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- Klv12 ende -->
+
+           <!-- Klv20 -->
+           <hr/>
+           <a name="klv20"></a>
+           <h3 style="page-break-before:always">Klv 20</h3>
+           <p>
+           <li><p>Fahrzeug: Klv 20-5010, <a href="https://brekina.de" target="_blank">Brekina</a> #63030, DC=, Schnittstellenstecker nach NEM 652</p></li>
+           <li><p>Decoder: <a href="https://web.archive.org/web/20231111075751/https://www.kuehn-digital.de/" target="_blank">Kuehn</a> N025</p></li>
+           <li><p>Umbaubeschreibung</p>
+             <ul style="list-style-type:circle">
+             <li>Im Klv20 ist nur sehr wenig Platz zur Unterbringung eines Decoders, der <a href="https://web.archive.org/web/20231111075751/https://www.kuehn-digital.de/" target="_blank">Kuehn</a>decoder passt hier soeben liegend auf die Sitzbank.<br/>
+             Trotzdem gibt es einige Einbaum&ouml;glichkeiten:<br/>
+             - Schnittstellenbuchse ausl&ouml;ten und den Decoder direkt an die Motorplatine anl&ouml;ten<br/>
+             - den Decoder an die Schnittstellenbuchse anl&ouml;ten<br/>
+             - mit ganz kurzen Dr&auml;hten den Decoder an einen Schnittstellenstecker anl&ouml;ten
+             <span id="to_crt">(<img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/klv20_1.jpg');">=meine L&ouml;sung</a>)</span>
+             <span id="to_prn"><br/><img src="images/modelbau/klv20_1.jpg" style="width:50%;" /><br/></span>
+             <br/>
+             Das Ganze sieht dann <span id="to_crt"><img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/klv20_2.jpg');">so</a> aus.</span>
+             <span id="to_prn">so aus:<br/><img src="images/modelbau/klv20_2.jpg" style="width:50%;" /><br/></span>
+             Die vier ben&ouml;tigten Dr&auml;hte (rot, schwarz, orange, grau) wurden auf die notwendige L&auml;nge gek&uuml;rzt, die nicht ben&ouml;tigten Dr&auml;hte (wei&szlig;, gelb) direkt am Decoder abgel&ouml;tet/entfernt.</li>
+             </ul>
+           </li>
+           <li><p>Vorbildinformationen</p>
+           <ul style="list-style-type:square">
+            <li>Stefan John: Vom Schienenfahrrad zum Turmtriebwagen - Deutsche Draisinen Sammlung, <a href="http://www.draisine.de/">DDS</a> 1991</li>
+           </ul>
+           </li>
+           </p>
+
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- Klv20 ende -->
+
+           <!-- Klv51 -->
+           <hr/>
+           <a name="klv51"></a>
+           <h3 style="page-break-before:always">Klv 51</h3>
+           <p>
+           <li><p>Fahrzeug: Klv 51-9234, <a href="https://www.brawa.de/" target="_blank">Brawa</a> #456, DC=, ohne Schnittstellenstecker</p></li>
+           <li><p>Decoder: <a href="https://web.archive.org/web/20231111075751/https://www.kuehn-digital.de/" target="_blank">Kuehn</a> N025</p></li>
+           <li><p>Umbaubeschreibung</p>
+             <ul style="list-style-type:circle">
+             <li>Im 'Bauch' unter der Ladefl&auml;che des Klv51 ist gen&uuml;gend Platz, um den Decoder vor der Hinterachse anzubringen.<br/>
+             Die vier ben&ouml;tigten Dr&auml;hte (rot, schwarz, orange, grau) wurden auf die notwendige L&auml;nge gek&uuml;rzt, die nicht ben&ouml;tigten Dr&auml;hte (wei&szlig;, gelb) direkt am Decoder abgel&ouml;tet/entfernt.</li>
+             </ul>
+           </li>
+           <li><p>Vorbildinformationen</p>
+           <ul style="list-style-type:square">
+            <li>Stefan John: Vom Schienenfahrrad zum Turmtriebwagen - Deutsche Draisinen Sammlung, <a href="http://www.draisine.de/">DDS</a> 1991</li>
+           </ul>
+           </li>
+           </p>
+
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- Klv51 ende -->
+
+           <!-- Klv60 -->
+           <hr/>
+           <a name="klv60"></a>
+           <h3 style="page-break-before:always">Klv 60</h3>
+           <p>
+           <li><p>Fahrzeug: Klv 60-9001, <a href="https://www.brawa.de/" target="_blank">Brawa</a> #520, DC=, ohne Schnittstellenstecker</p></li>
+           <li><p>Decoder: <a href="https://www.zimo.at" target="_blank">Zimo</a> MX617</p></li>
+           <li><p>Umbaubeschreibung</p>
+             Tats&auml;chlich hat mein gebraucht erworbener Klv
+             <ul style="list-style-type:circle">
+              <li>keine Platine</li>
+              <li>und somit auch keine Gl&uuml;hlampen (weder weiss noch rot)</li>
+              <li>daf&uuml;r aber zumindest die beiden Lichtleiter</li>
+             </ul>
+             Der Umbau:
+             <ul style="list-style-type:circle">
+               <li>Damit f&uuml;r den Deodereinbau die Radschleifer vom Motor getrennt werden, habe ich auf beiden Seiten einen hauchd&uuml;nne Kunststoffstreifen zur Trennung zwischen Radschleiferblech und Motoranschluss geschoben.<br>
+                   An der Innenseite (also zum Motoranschluss hin) wurde ein Kontaktstreifen aus Federbronze auf den Kunststoffstreifen geklebt
+                   <span id="to_crt">(<img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/KLV60-Motoranschluss.jpg');">Bild</a>)</span>
+                   <span id="to_prn"><br/><img src="images/modelbau/KLV60-Motoranschluss.jpg"/><br/></span>.
+               </li>
+               <li>
+                 Der Einbauaufwand f&uuml;r das Spitzensignal h&auml;ngt massgeblich von den verwendeten LEDs ab.<br>
+                 Einige Tests haben dann ergeben, das Tower-LEDs aufgrund der Bautiefe nicht passen - hier sind bei mir die Sitzb&auml;nke im Weg.<br>
+                 Statt dessen habe ich DUO-LEDs (rot/wei&szlig;) der Baugr&ouml;&szlig;e 0605 verwendet und diese R&uuml;cken an R&uuml;cken in die Lichtleiterl&uuml;cke geklebt
+                 <span id="to_crt">(<img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/KLV60-Front-Stirnlicht.jpg');">Bild</a>)</span>
+                 <span id="to_prn"><br/><img src="images/modelbau/KLV60-Front-Stirnlicht.jpg"/><br/></span>.<br>
+                 Da ich das in den 60er-Jahren f&uuml;r Dienstfahrzeuge &uuml;bliche vereinfachte Zugschlu&szlig;signal Zg4 anzeigen m&ouml;chte, wird an der in Fahrtlichtung links liegenden LED der Draht f&uuml;r rot an der DUO-LED nicht angeschlossen.
+                 Die DUO-LEDs jeweils einer Fahrtrichtung werden zusammengeschaltet <span id="to_crt">(<img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/Klv60-9001.gif');">Bild</a>)</span>
+                 <span id="to_prn"><br/><img src="images/modelbau/Klv60-9001.gif"/><br/></span>.
+               </li>
+               <li>vorbildgerechte <a href="#licht">wechselnde Stirn/Schlu&szlig;beleuchtung</a></li>
+               <li>
+                 F&uuml;r die Innenbeleuchtung habe ich ein Restst&uuml;ck einer Wagenbeleuchtung verwendet, diese hatte bereits einen LED mit Vorwiderstand auf der Platine. Die Platine wurde in der L&auml;nge auf das Innenma&szlig; des Wagenkastens gek&uuml;rzt
+                 <span id="to_crt">(<img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/KLV60-Innenbeleuchtung.jpg');">Bild</a>)</span>
+                 <span id="to_prn"><br/><img src="images/modelbau/KLV60-Innenbeleuchtung.jpg"/><br/></span>.<br>
+               </li>
+               <li>
+                 F&uuml;r das Licht &uuml;ber dem F&uuml;hrerstand 2 wurde eine <a href="https://weinert-modellbau.de/" target="_blank">Weinert</a>laterne (9016) eingebaut.
+                 Diese Laterne erh&auml;lt zun&auml;chst ein Loch (&Oslash; 0,5mm) zur Kabeldurchf&uuml;hrung. F&uuml;r die Lampe wurde eine weisse LED der Baugr&ouml;&szlig;e 0402 verwendet, die zusammen mit dem Frontglas der Laterne mit Sekundenkleber eingeklebt wurde
+                 <span id="to_crt">(<img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/KLV60-3.Spitzenlicht.jpg');">Bild</a>)</span>
+                 <span id="to_prn"><br/><img src="images/modelbau/KLV60-3.Spitzenlicht.jpg"/><br/></span>.<br>
+                 <table border = "2">
+                   <tr>
+                     <td>
+                       Die Frage um das dritte Spitzenlicht wird im Heft <a href="https://www.vgbahn.de" target="_blank">Digitale Modellbahn</a> 3/24 S54..57 beantwortet:<br>
+                       Das Fahrzeug ist Baujahr 1954 und das dritte Spitzenlicht wurde bei der DB erste 1956 eingef&uuml;hrt.
+                       Es ist daher anzunehmen, dass es sich um eine Arbeitsleuchte handelt, zumal sich an dieser Fahrzeugseite eine T&uuml;re, eine Klapptreppe und die Leiter f&uuml;r den Dachaufstieg befindet.
+                     </td>
+                   </tr>
+                 </table>
+               </li>
+               <li>
+                 Um der Aufstiegsleiter zur B&uuml;hne den Messingglanz zu nehmen, wurde diese br&uuml;niert.<br>
+               </li>
+             </ul>
+           </li>
+           <p>Vorbildinformationen</p>
+           <ul style="list-style-type:square">
+            <li>Stefan John: Vom Schienenfahrrad zum Turmtriebwagen - Deutsche Draisinen Sammlung, <a href="http://www.draisine.de/">DDS</a> 1991</li>
+           </ul>
+           <li><p>siehe auch:</p>
+            <ul style="list-style-type:square">
+              <li><a href="https://www.vgbahn.de" target="_blank">Digitale Modellbahn</a> 3/24 S54..57: <font color="#FF0000">B&uuml;hnenreif</font> Brawas Klv60 mit Sound, Beleuchtungseffekten und freiem Durchblick</li>
+              <li><a href="https://www.stummiforum.de/t157923f21-RE-Elektrik-eines-Brawa-KLV-Turmtriebwagen-in-AC.html" target="_blank">Stummiforum: Elektrik eines Brawa KLV</a></li>
+              <li><a href="https://www.drehscheibe-online.de/foren/read.php?010,8949980" target="_blank">Drehscheibe-Online: Umbau - Brawa Klv 60-9001 Turmtriebwagen mit Sound [1 Video]</a></li>
+              <li><a href="https://www.mittelleiter-magazin.de/umbauten/brawa-klv-60-9001-turmtriebwagen-mit-sound/" target="_blank">Modellbauh&uuml;tte</a></li>
+              <li><a href="https://eisenbahnmagazin.de/" target="_blank">Eisenbahn-Magazin</a> 3/24, S56..57: <font color="#FF0000">Vorkriegswagen f&uuml;r die Oberleitungsinstandhaltung</font> DB-Baureihe 703</li>
+              <li><a href="https://eisenbahnmagazin.de/" target="_blank">Eisenbahn-Magazin</a> 4/24, S44..45: <font color="#FF0000">Kompakte Turmwagen f&uuml;r die Fahrleitungsmeistereien</font> Klv 60 und 61 der DB</li>
+              <li><a href="https://eisenbahnmagazin.de/" target="_blank">Eisenbahn-Magazin</a> 5/24, S52..54: <font color="#FF0000">Die Regelturmtriebwagen mit der Schwenkb&uuml;hne und der Leiter</font> DB-Baureihen 701/702</li>
+              <li><a href="https://eisenbahnmagazin.de/" target="_blank">Eisenbahn-Magazin</a> 6/24, S42..43: <font color="#FF0000">F&uuml;nf Vierachser als schnelle Einsatzfahrzeuge</font> DB-Baureihen 704</li>
+              <li><a href="https://eisenbahnmagazin.de/" target="_blank">Eisenbahn-Magazin</a> 7/24, S55: <font color="#FF0000">Rollendes Unikat f&uuml;r Tunneluntersuchungen</font> DB-Baureihen 705</li>
+            </ul>
+           </li>
+           </p>
+
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- Klv60 ende -->
+
+           <!-- ASF 1 -->
+           <hr/>
+           <a name="asf"></a>
+           <h3 style="page-break-before:always">ASF 1</h3>
+           <p>
+           <li><p>Fahrzeug: ASF 1, <a href="bau_asf.htm">Selbstbau</a>, DC=, ohne Schnittstelle</p></li>
+           <li><p>Decoder: <a href="https://web.archive.org/web/20231111075751/https://www.kuehn-digital.de/" target="_blank">Kuehn</a> N045</p></li>
+           <li><p>Einbaubeschreibung</p>
+             <ul style="list-style-type:circle">
+             <li>der Decoder wurde am Getriebeblock montiert. Die vier ben&ouml;tigten Dr&auml;hte (rot, schwarz, orange, grau) wurden auf die notwendige L&auml;nge gek&uuml;rzt, die nicht ben&ouml;tigten Dr&auml;hte (wei&szlig;, gelb) direkt am Decoder abgel&ouml;tet/entfernt.</li>
+             </ul>
+           </li>
+           </p>
+
+           <li><p>Vorbildinformationen</p>
+           <ul style="list-style-type:square">
+             <li><a href="bau_asf.htm#al">siehe hier</a></li>
+           </ul>
+           </li>
+
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- ASF 1 ende -->
+
+           <!-- DH500Ca -->
+           <hr/>
+           <a name="dh500"></a>
+           <h3 style="page-break-before:always">DH500Ca</h3>
+           <p>
+           <li><p>Fahrzeug: Thyssen 2, Hobbytrade #155001, DC=, Schnittstellenstecker nach NEM 660 (21MTC)</p></li>
+           <li><p>Decoder: <a href="https://web.archive.org/web/20231111075751/https://www.kuehn-digital.de/" target="_blank">Kuehn</a> T125</p></li>
+           <li><p>Umbaubeschreibung</p>
+             <ul style="list-style-type:circle">
+             <li>Das Fahrzeug ist mit einer Schnittstelle nach NEM 660 (21MTC) ausger&uuml;stet. Der Decoder wird anstelle des Br&uuml;ckensteckers eingesetzt.<br>
+             <u>Hinweise:</u> Hobbytrade empfiehlt den Einsatz seines Decoders HT75332.<br>
+             Es kann eigentlich jeder Decoder mit 21MTC-Schnittstelle verwendet werden.<br>
+             Weiterhin sind f&uuml;r eine vorbildgerechte Lichtsteuerung die entsprechenden CVs des Decoders anzupassen (an AUX1 ist Zg2 vorn, an AUX2 ist Zg2 hinten angeschlossen).<br>
+             </li>
+             </ul>
+           </li>
+           </p>
+
+           <li><p>Vorbildinformationen</p>
+           <ul style="list-style-type:square">
+             <li>
+             <a href="https://www.rangierdiesel.de/index.php?nav=1403624&lang=1&id=43590&action=portrait" target="_blank">Rangierdiesel</a>
+             </li>
+           </ul>
+           </li>
+
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- DH500Ca ende -->
+
+           <!-- ETA150 -->
+           <hr/>
+           <a name="eta"></a>
+           <h3 style="page-break-before:always">ETA 150</h3>
+           <p>
+           <li><p>Fahrzeug: ETA 150 553, <a href="https://www.katomodels.com/" target="_blank">Kato</a> #30801, DC=, Schnittstellenstecker nach NEM 652<br>
+           &nbsp;&nbsp;&nbsp;&nbsp;Fahrzeug: ESA 150 106, <a href="https://www.katomodels.com/" target="_blank">Kato</a> #30801, DC=, kein Schnittstellenstecker</p></li>
+           <li><p>Decoder: <a href="https://web.archive.org/web/20231111075751/https://www.kuehn-digital.de/" target="_blank">Kuehn</a> N045<br>
+           &nbsp;&nbsp;&nbsp;&nbsp;Decoder: <a href="https://web.archive.org/web/20231111075751/https://www.kuehn-digital.de/" target="_blank">Kuehn</a> LH10</p></li>
+           <li><p>Umbaubeschreibung</p>
+
+             <ul style="list-style-type:circle">
+               <li>Platz f&uuml;r den Decoder findet sich in der Batteriewanne unterhalb der Platine<br/>
+               - Decoder schr&auml;g liegend einbauen<br/>
+               - Platine mit Isolierband von unten abkleben<br/>
+               - Anschlu&szlig;dr&auml;hte zum Decoder sind zu k&uuml;rzen</li>
+               <li>Weiterhin werden die vorhandenen Funkentst&ouml;relemente von der Platine entfernt und der Motor direkt an der Platine angeschlossen.</li>
+               <li>es empfiehlt sich die Verwendung eines hochfrequenten Decoders (<a href="https://www.tams-online.de" target="_blank">Tams</a> LD-G-7 erzeugte st&ouml;rende Motorger&auml;usche)</li><br/>
+               <li><u>Beseitigung m&ouml;glicher Kontaktprobleme</u><br/>
+               Die Rads&auml;tze sind geteilt und lagern in Achslagern aus Messingblech. Die Messingbleche haben oben einen Zapfen, der gegen ein Bronzeblech dr&uuml;ckt, das durch den gesamten Triebwagen verl&auml;uft. Auf diese Bleche dr&uuml;ckt von der Platine jeweils ein Federdraht. Die Motorkontakte sind entsprechend.<br/>
+               Zur Verbesserung der Stromabnahme wird direkt an die Messingblechzapfen der Drehgestelle je ein roter Draht f&uuml;r die in Fahrtrichtung rechte Stromabnahme und je ein schwarzer Draht f&uuml;r die linke Stromabnahme angel&ouml;tet. Nach Einbau der Drehgestelle werden diese Dr&auml;hte direkt an die Platine angel&ouml;tet, die Bronzestreifen k&ouml;nnen dann entfallen.<br/>
+               </li>
+               <li>
+               vorbildgerechte <a href="#licht">wechselnde Stirn/Schlu&szlig;beleuchtung</a></br>
+               Hierzu sind einige Umbauten auf der
+               <span id="to_crt"><img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/img_1739.png');">Platine</a> erforderlich:</span>
+               <span id="to_prn"> Platine erforderlich: <img src="images/modelbau/img_1739.png"/></span>
+               <ul>
+                 <li>der Widerstand 270 Ohm ist durch eine Drahtbr&uuml;cke zu ersetzen</li>
+                 <li>die Leiterbahnen zu den LEDs sind zu unterbrechen, die Unterbrechung ist jeweils durch einen Widerstand 560 Ohm zu ersetzen</li>
+                 <li>die gelbe(weisse) LED vorn wird mit dem gr&uuml;nen Draht des Decoders verbunden</li>
+                 <li>die gelbe(weisse) LED hinten wird mit dem violetten Draht des Decoders verbunden</li>
+               </ul>
+               </li>
+               <li>
+               Der Umbau des Steuerwagens erfolgt gem&auml;&szlig; den Ideen, die ich im Newsletter#19 beschrieben habe.<br/>
+               Hierzu sind einige Umbauten auf der Platine erforderlich, das sieht dann wie folgt aus:
+               <ul>
+                 <li>der Widerstand 270 Ohm wird entfernt</li>
+                 <li>die Leiterbahnen zm Schleppschalter werden unterbrechen, der Schleppschalter stillgelegt<br/>Zur Verbesserung der Stromabnahme wird direkt an die Messingblechzapfen der Drehgestelle je ein roter Draht f&uuml;r die in Fahrtrichtung rechte Stromabnahme und je ein schwarzer Draht f&uuml;r die linke Stromabnahme angel&ouml;tet. Nach Einbau der Drehgestelle werden diese Dr&auml;hte direkt an die Platine angel&ouml;tet, die Bronzestreifen k&ouml;nnen dann entfallen.</li>
+                 <li>die gelbe(weisse) LED wird um 180&deg; gedreht eingel&ouml;tet</li>
+                 <li>f&uuml;r die Innenebleuchtung wird die Lichtleiste LH10 von <a href="https://web.archive.org/web/20231111075751/https://www.kuehn-digital.de/" target="_blank">Kuehn</a> verwendet, hieran werden auch die beiden LEDs angeschlossen</li>
+                 <li>die Verbindung der Lichtleiste mit der Fahrzeugplatine erfolgt &uuml;ber einen Mehrfachstecker.</li>
+               </ul>
+               </li>
+               <li>
+               Da wir gerade die Platine umbauen: die jeweils gelben LED's k&ouml;nnen durch jeweils weisse LED ersetzt werden (LED z.B. <a href="https://www.reichelt.de/" target="_blank">Reichelt</a> LED 3-2000WS mit Vorwiderstand 2,7kOhm)<br/>(Bei diesem Umbau bitte den Steuerwagen nicht vergessen...)
+               </li>
+               <li>
+               Wer m&ouml;chte, kann den Innenraum farblich gestalten:<br/>
+               - W&auml;nde und F&uuml;hrerstandspult: hellbraun [RAL1011]<br/>
+               - Boden: dunkelgrau [RAL7024]<br/>
+               - Sitze 2. Klasse: rotbraun [RAL3009]<br/>
+               - Sitze 1. Klasse: gr&uuml;n [RAL6003]<br/>
+               </li>
+               <li>Leider fehlt dem Lenz-Decoder ein f&uuml;nfter Funktionsausgang zur Ansteuerung einer Innenbeleuchtung.<br/>
+               Daher habe ich den LE1835 gegen den N045-P8 von <a href="https://web.archive.org/web/20231111075751/https://www.kuehn-digital.de/" target="_blank">Kuehn</a> getauscht.<br/>
+               Der Funktionsausgang E (Achtung: nicht belastbar, da nur ein Logikausgang) schaltet jetzt &uuml;ber einen zus&auml;tzlichen Transistor eine LED-Lichtleiste von <a href="https://www.malutronik.de/epages/83087492.sf/de_DE/?ObjectPath=/Shops/83087492/Products/1002" target="_blank">Malutronik</a> (WB ad 230mm warmwei&szlig;), diese wurde auf eine L&auml;nge von 195mm gek&uuml;rzt.
+               </li>
+             </ul>
+
+           </li>
+           <li><p>Vorbildinformationen</p>
+           <ul style="list-style-type:square">
+             <li>Dr. Franz Rittig: Akkutriebwagen, <a href="https://www.vgbahn.shop/magazine/eisenbahn-journal/" target="_blank">Eisenbahn-Journal</a> Sonderausgabe 3/2006</li>
+             <li>Andreas Dessel: Mit 440 Volt durch Ruhrpott und Rheinland, <a href="https://www.drehscheibe-online.de/">Drehscheibe-Verlag</a> Sonderheft 15, 1992</li>
+             <li><a href="https://www.woernitz-franken.de/akku.htm" target="_blank">Die Zeit der Akkutriebwagen</a></li>
+             <li><a href="https://www.schrankenposten.de/Themen/worms.html" target="_blank">ETA-Unterhaltung im Bw Worms</a></li>
+             <li><a href="https://www.schrankenposten.de/Themen/515.html" target="_blank">Wormser ETA-Herbst</a></li>
+           </ul>
+           </li>
+           <li><p>siehe auch:</p>
+           <ul style="list-style-type:square">
+             <li>
+               <a href="https://andreas-nothaft.de/index.php/fremo-mainmenu-36/digital-umbauten-mainmenu-48?showall=&start=5" target="_blank">https://www.andreas-nothaft.de</a>
+             </li>
+             <li>
+                <a href="https://www.stahlbahn.de/cnt/post173.php" target="_blank">http://www.stahlbahn.de</a>
+             </li>
+           </ul>
+           </li>
+           </p>
+
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- ETA150 ende -->
+
+           <!-- ETA 180 -->
+           <hr/>
+           <a name="eta180"></a>
+           <h3 style="page-break-before:always">ETA 180</h3>
+           <p>
+           <li><p>Fahrzeug: ETA 180 015 a+b, <a href="https://liliput.de/" target="_blank">Liliput</a> #177 89, DC=, ohne Schnittstellenstecker</p></li>
+           <li><p>Decoder: <a href="https://www.lenz-elektronik.de/" target="_blank">Lenz</a> Gold mini</p></li>
+           <li><p>Umbaubeschreibung</p>
+
+             <ul style="list-style-type:circle">
+               <li>Den Triebwagen habe ich gebraucht mit bereits eingebautem Decoder gekauft - es gibt keine Umbaubeschreibung.</li>
+             </ul>
+
+           </li>
+
+           <li><p>Fahrzeug: ETA 180 016 a+b, <a href="https://liliput.de/" target="_blank">Liliput</a> #177 03, DC=, ohne Schnittstellenstecker</p></li>
+           <li><p>Decoder: <a href="https://rautenhaus-digital.de/" target="_blank">Rautenhaus</a> SLX871</p></li>
+           <li><p>Umbaubeschreibung</p>
+
+             <ul style="list-style-type:circle">
+               <li>Vom Schrottfahrzeug zum rollf&auml;higen Dummy - Restaurierung des ETA 180 016.pdf
+                 <script language="JavaScript">
+                   githubinfo("Restaurierung des ETA 180 016", "/blob/main/Modellbahn/Fahrzeuge/Krümelbahn%20Info%2019%20-%20Restaurierung%20des%20ETA%20180%20016.pdf");
+                 </script>
+               </li>
+             </ul>
+
+           </li>
+
+           <li><p>Vorbildinformationen</p>
+            <ul style="list-style-type:square">
+             <li>Horst Troche: Die Akkumulator-Triebwagen der Preu&szlig;isch-Hessischen Staatseisenbahnen und der Deutschen Reichsbahngesellschaft (DB-Baureihen ETA 177 bis 180), <a href="https://www.eisenbahn-kurier.de/" target="_blank">Eisenbahn-Kurier Verlag</a> 1997</li>
+             <li>Dr. Franz Rittig: Akkutriebwagen, <a href="https://www.vgbahn.shop/magazine/eisenbahn-journal/" target="_blank">Eisenbahn-Journal</a> Sonderausgabe 3/2006</li>
+            </ul>
+           </li>
+           </p>
+
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- ETA 180 ende -->
+
+           <!-- DW8 gn -->
+           <hr/>
+           <a name="dw8"></a>
+           <h3 style="page-break-before:always">DW 8 (Kittel, gr&uuml;n)</h3>
+           <p>
+           <li><p>Fahrzeug: DW8, Rai-Mo #1020, DC=, ohne Schnittstellenstecker</p></li>
+           <li><p>Decoder: <a href="https://www.lenz-elektronik.de/" target="_blank">Lenz</a> LE1014E</p></li>
+<!--
+           <li><p>Umbaubeschreibung</p>
+             <ul style="list-style-type:circle">
+             </ul>
+           </li>
+-->
+           <li><p>Vorbildinformationen</p>
+            <ul style="list-style-type:square">
+              <li>Dieser Bausatz entspricht einem Kittel-Dampftriebwagen, der f&uuml;r die Bad.St.B. beschafft wurde.</li>
+            </ul>
+           </li>
+<!--
+           <li><p>siehe auch:</p>
+             <ul style="list-style-type:square">
+                <li></li>
+             </ul>
+           </li>
+-->
+           </p>
+
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- DW8 gn ende -->
+
+           <!-- DW8 bn -->
+           <hr/>
+           <a name="dw8_2"></a>
+           <h3 style="page-break-before:always">DW 8 (Kittel, braun)</h3>
+           <p>
+           <li><p>Fahrzeug: DW8, <a href="https://www.trix.de/" target="_blank">Trix</a> 22485, DC=, ohne Schnittstellenstecker</p></li>
+           <li><p>Decoder: <a href="https://web.archive.org/web/20231111075751/https://www.kuehn-digital.de/" target="_blank">Kuehn</a> N045</p></li>
+           <li><p>Umbaubeschreibung</p>
+
+             <ul style="list-style-type:circle">
+               <li>Platz f&uuml;r den Decoder findet sich im vorderen Gep&auml;ckkasten unterhalb der Motorwelle zur Hinterachse.</li>
+               <li>Die vorhandenen Funkentst&ouml;relemente werden von der Platine entfernt.</li>
+               <li>Die eingebaute <span id="to_crt"><img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/dw8_platine.jpg');">Platine</a></span> (bei mir mit der Kennung '13-3272-') muss angepasst werden:<br>
+               - zur Durchf&uuml;hrung der Kabel vom Dekoder wird an Stelle der drei L&ouml;tanschl&uuml;sse eine (l&auml;ngliche) Bohrung eingebracht, die L&ouml;tanschl&uuml;sse werden nicht weiter ben&ouml;tigt.<br>
+               - es m&uuml;ssen sieben Unterbrechungen vorgenommen werden (sofern nicht bereits vorhanden, violette Markierungen).</li>
+               - die Anschl&uuml;sse vom Decoder werden in etwa da angebracht, wo im Bild die farbigen Markierungen (Punkte) sind.<br>
+               - die beiden Widerst&auml;nde links und rechts am Motor (270 Ohm) werden gegen Widerst&auml;nde mit 560 Ohm getauscht.<br>
+               - damit die Sitzbankeinsatz wieder plan auf die Platine gelegt werden kann, ist im Bereich der neuen Platinenbohrung der Boden in Richtung Motor f&uuml;r die Decoderkabel von unten vorsichtig ca. 0,5mm d&uuml;nner zu fr&auml;sen. F&uuml;r (zus&auml;tzliche) Verbindungen ist bevorzugt Kupferlackdraht zu verwenden.
+               <li>
+               <span id="to_prn"><img src="images/modelbau/dw8_platine.jpg" style="width:80%;" /><br>Platine<br></span>
+               Weiterhin habe ich die Gl&uuml;hlampen f&uuml;r die Innenraumbeleuchtung gegen LEDs getauscht (warmweiss, Vorwiderstand 10 kOhm).
+               </li>
+             </ul>
+
+           </li>
+           <li><p>Vorbildinformationen</p>
+            <ul style="list-style-type:square">
+              <li>Dieser Fahrzeug entspricht einem Kittel-Dampftriebwagen, der f&uuml;r die K.w&uuml;.St.E. beschafft wurde.</li>
+              <li>Werner Willhaus: Kittel-Dampftriebwagen - Innovation des Nahverkehrs vor 100 Jahren, <a href="https://www.eisenbahn-kurier.de/" target="_blank">Eisenbahn-Kurier Verlag</a> 2008</li>
+            </ul>
+           </li>
+
+           <li><p>siehe auch:</p>
+             <ul style="list-style-type:square">
+                <li><a href="https://stummiforum.de/viewtopic.php?f=27&t=109474" target="_blank">Umbau Trix Dampftriebwagen Kittel mit Sound und Rauchsatz</a></li>
+             </ul>
+           </li>
+
+           </p>
+
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- DW8 bn ende -->
+
+           <!-- SVT877 -->
+           <hr/>
+           <a name="svt877"></a>
+           <h3 style="page-break-before:always">SVT877</h3>
+           <p>
+           <li><p>Fahrzeug: SVT877a+b, <a href="https://www.katomodels.com/" target="_blank">Kato</a> #30701, DC=, ohne Schnittstellenstecker</p></li>
+           <li><p>Decoder: <a href="https://www.lenz-elektronik.de/" target="_blank">Lenz</a> LE1035A</p></li>
+           <li><p>Umbaubeschreibung</p>
+
+             <ul style="list-style-type:circle">
+             <li>Bei meiner Ausf&uuml;hrung des SVT877 fingen die Probleme bereits beim &Ouml;ffnen des Geh&auml;use an: nirgendwo waren Rastnasen, Schrauben oder &auml;hnliches zu erkennen.<br/>
+             Erst eine Nachfrage beim Hersteller brachte die L&ouml;sung:<br/>
+             - zun&auml;chst ist das Dach gem&auml;&szlig; der Bedienungsanleitung zum Einbau einer Innenbeleuchtung zu &ouml;ffnen<br/>
+             - anschlie&szlig;end kann durch vorsichtiges Dr&uuml;cken des Geh&auml;uses von innen nach aussen das Geh&auml;use vom Fahrgestell getrennt werden; wo die insgesamt 16 Rastnasen liegen, zeigt zudem dieses <span id="to_crt"><img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/svt-gesamt.jpg');">Bild.</a></span><span id="to_prn">Bild:<br/><img src="images/modelbau/svt-gesamt.jpg" style="width:80%;" /><br/></span></li>
+             <ul>
+             <li>Platz f&uuml;r den Decodereinbau findet sich im B-Teil (Motorwagen) des Triebzuges unter der Innenraumnachbildung. Hierzu mu&szlig; jedoch bei der Innenraumnachbildung ein Teil entfernt werden <span id="to_crt">(<img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/svt-decoder-eingebaut.jpg');">Bild</a>).</span><span id="to_prn"><br/><img src="images/modelbau/svt-decoder-eingebaut.jpg" style="width:80%;" /><br/></span></li>
+             <li>von der Motorplatine werden die drei Entst&ouml;relemente entfernt, in den zugeh&ouml;rigen Platinenl&ouml;chern kann dann der Decoder direkt angel&ouml;tet werden <span id="to_crt">(siehe <img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/svt-decoder-eingebaut.jpg');">Bild</a>)</span>.<br/>
+             Der Decoder selbst wird mit dem doppelseitigen Klebeband an den Balastgewichten befestigt.</li>
+             <li>Die Front- bzw. Stirnbeleuchtung <span id="to_crt">(<img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/svt-lichtplatine.jpg');">Bild</a>)</span><span id="to_prn"><br/><img src="images/modelbau/svt-lichtplatine.jpg" style="width:80%;" /><br/></span> wird &uuml;ber ein St&uuml;ck Flachbandkabel von den Wagenenden zum Decoder gef&uuml;hrt. Es ist darauf zu achten, das das Kabel nach oben weg gef&uuml;hrt wird, um die Drehbewegung des Fahrgestelles nicht zu beeintr&auml;chtigen <span id="to_crt">(<img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/svt-lichtplatine-neuer_anschluss.jpg');">Bild</a>)!</span><span id="to_prn">!<br/><img src="images/modelbau/svt-lichtplatine-neuer_anschluss.jpg" style="width:80%;" /><br/></span>Nicht vergessen: die Dioden sind unbedingt auszul&ouml;ten!</li>
+             <li>Einen weiteren freien Ausgang des Decoders habe ich mit den Anschl&uuml;ssen zur Innenbeleuchtung verbunden, damit diese mit einer Funktionstaste geschaltet werden kann.<br/>
+             Hierzu ist es unbedingt erforderlich, dass die seitlichen Kontakte vom Balastgewicht (das mit den Drehgestellkontakten verbunden ist) elektrisch getrennt werden. Hierzu habe ich eine hauchd&uuml;nne Kunststoffplatte zwischen Kontakt und Balastgewicht geklebt und die Kontakte mit dem blauen bzw. gr&uuml;nen Decoderanschlussdraht verbunden <span id="to_crt">(<img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/svt-lichtanschluss.jpg');">Bild</a>).</span><span id="to_prn"><br/><img src="images/modelbau/svt-lichtanschluss.jpg" style="width:80%;" /><br/></span><br/>
+             Zum Einsatz kamen insgesamt zwei LED-Lichtleisten von <a href="https://www.malutronik.de/epages/83087492.sf/de_DE/?ObjectPath=/Shops/83087492/Products/1002" target="_blank">Malutronik</a> (WB ad 230mm warmwei&szlig;), diese wurden auf eine L&auml;nge von 195mm gek&uuml;rzt.<br/>
+             </li>
+             <li><u>Beseitigung m&ouml;glicher Kontaktprobleme</u><br/>
+             Die Rads&auml;tze sind geteilt und lagern in Achslagern aus Messingblech. Die Messingbleche haben oben einen Zapfen, der gegen ein Bronzeblech dr&uuml;ckt, das durch den gesamten Triebwagen verl&auml;uft. Auf diese Bleche dr&uuml;ckt von der Platine jeweils ein Federdraht. Die Motorkontakte sind entsprechend.<br/>
+             Zur Verbesserung der Stromabnahme wird direkt an die Messingblechzapfen der Drehgestelle je ein roter Draht f&uuml;r die in Fahrtrichtung rechte Stromabnahme und je ein schwarzer Draht f&uuml;r die linke Stromabnahme angel&ouml;tet. Nach Einbau der Drehgestelle werden diese Dr&auml;hte direkt an die Platine angel&ouml;tet, die Bronzestreifen k&ouml;nnen dann entfallen.<br/>
+             </li>
+             </ul>
+             <li>
+             Wer m&ouml;chte, kann den Innenraum gestalten:<br/>
+             <ul style="list-style-type:circle">
+             <li>farblich:<br/>
+             - W&auml;nde: hellbraun [RAL1011]<br/>
+             - Boden: dunkelgrau [RAL7024]<br/>
+             - Sitze: rotbraun [RAL3009]<br/>
+             </li>
+             <li>und/oder durch Platzieren von Reisenden</li>
+             </ul>
+             </li>
+             </ul>
+           </li>
+           <li><p>Vorbildinformationen</p>
+            <ul style="list-style-type:square">
+             <li>Heinz R. Kurz: Fliegende Z&uuml;ge - Vom "Fliegenden Hamburger" zum "Fliegenden K&ouml;lner", <a href="https://www.eisenbahn-kurier.de/" target="_blank">Eisenbahn-Kurier Verlag</a> 1994</li>
+            </ul>
+           </li>
+           <li><p>siehe auch:</p>
+           <ul style="list-style-type:square">
+             <li>
+               <a href="https://www.opendcc.de/modell/decodereinbau/kato_vt04.html" target="_blank">Decodereinbau mit Fahrzeuginnenbeleuchtung</a>
+             </li>
+           </ul>
+           </li>
+           </p>
+
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- SVT877 ende -->
+
+           <!-- VT70.9 -->
+           <hr/>
+           <a name="vt709"></a>
+           <h3 style="page-break-before:always">VT70.9</h3>
+           <p>
+           <li><p>Fahrzeug: VT70 937, <a href="https://www.piko.de/" target="_blank">Piko</a> #6104, DC=, ohne Schnittstellenstecker</p></li>
+           <li><p>Decoder: <a href="https://www.tams-online.de" target="_blank">Tams</a> LD-G-8</p></li>
+           <li><p>Umbaubeschreibung</p>
+
+             <ul style="list-style-type:circle">
+               <li>
+               Bereits vor langer Zeit habe ich den originalen Antrieb entfernt und durch den Umbausatz #2227 der Firma Verbeck ersetzt.
+               </li>
+               <li>
+               Der Decoder findet bequem im Triebwagengeh&auml;use Platz, wegen des Einfachheit verzichte ich an dieser Stelle auf Detailbeschreibungen bzw. Fotos.
+               </li>
+               <li>
+               Weiterhin wurden die Fenster (Bakelit?) durch selbstgefr&auml;ste Plexiglasscheibchen ersetzt und zahlreiche Zur&uuml;stteile von <a href="https://weinert-modellbau.de/" target="_blank">Weinert</a> angebracht.
+               </li>
+               <li>vorbildgerechte <a href="#licht">wechselnde Stirn/Schlu&szlig;beleuchtung</a><br/>
+               Verwendet werden hier DUO-LEDs weiss/rot mit &Oslash; 3mm, planer Oberfl&auml;che, gemeinsamer Anode und jeweils einem 10kOhm-Vorwiderstand.
+               </li>
+             </ul>
+
+           </li>
+           <li><p>weitere Umbaubeschreibungen:</p>
+           <ul style="list-style-type:circle">
+
+             <li><a href="https://eisenbahnmagazin.de/" target="_blank">Eisenbahnmagazin</a> 05/90 (Seite 81 bis 83): <font color="#FF0000">Renoviert: <a href="https://www.piko.de" target="_blank">Piko</a> VT70.9</font></li>
+             <li><a href="https://www.miba.de/" target="_blank">Miba</a> 04/97 (Seite 48 bis 50): <font color="#FF0000">Ein betagtes Modell wird aufgem&ouml;belt: Jungbrunnen f&uuml;r den VT70</font></li>
+
+           </ul>
+           </li>
+           <li><p>Vorbildinformationen</p>
+            <ul style="list-style-type:square">
+             <li>Heinz Kurz: Triebwagen der Deutschen Reichsbahn - Die Baureihen VT 133 bis VT 137, <a href="https://www.eisenbahn-kurier.de/" target="_blank">Eisenbahn-Kurier Verlag</a> 2013</li>
+            </ul>
+           </li>
+           </p>
+
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- VT70.9 ende -->
+
+           <!-- VT95.9 -->
+           <hr/>
+           <a name="vt959"></a>
+           <h3 style="page-break-before:always">VT95.9 und VB140.7</h3>
+           <p>
+           <li><p>Fahrzeug: VT95 902, <a href="https://brekina.de" target="_blank">Brekina</a> #64404, DC=, Schnittstellenstecker nach NEM 652<br>
+           &nbsp;&nbsp;&nbsp;&nbsp;Fahrzeug: VB140 701, <a href="https://brekina.de" target="_blank">Brekina</a> #64434, DC=, Schnittstellenstecker nach NEM 652</p></li>
+           <li><p>Decoder: <a href="https://web.archive.org/web/20231111075751/https://www.kuehn-digital.de/" target="_blank">Kuehn</a> N045</p></li>
+           <li><p>Umbaubeschreibung</p>
+           <ul style="list-style-type:circle">
+             <li>Eigentlich ist der Einbau recht einfach: die Dekoder mit dem Schnittstellenstecker nach NEM 652 werden anstelle der Blindstecker eingesteckt.<br>
+               Doch ganz so einfach ist es nicht:<br>
+               <ul>
+                 <li>zum Einen m&uuml;ssen die Kabel zum Schnittstellenstecker gek&uuml;rzt werden</li>
+                 <li>zum Anderen soll es eine vorbildgerechte <a href="#licht">wechselnde Stirn/Schlu&szlig;beleuchtung</a> geben</li>
+               </ul>
+             </li>
+             <li>
+               <u>VT95 902</u>
+               Am <a href="https://web.archive.org/web/20231111075751/https://www.kuehn-digital.de/" target="_blank">Kuehn</a>-Dekoder N045 stehen insgesamt sechs Funktionsausg&auml;nge zur Verf&uuml;gung, insgesamt also gen&uuml;gend f&uuml;r die ben&ouml;tigten Funktionen (Spitzenlicht zweimal ws, zweimal rot; Innenbeleuchtung).<br>
+               Die Funktionsausg&auml;nge E und F werden auch f&uuml;r die SUSI-Schnittstelle verwendet, sind also nur Logikausg&auml;nge, die nur gering belastet werden k&ouml;nnen. Abhilfe schafft hier eine Transistorschaltung, die in SMD-Bauweise auf einer kleinen Zusatzplatine untergebracht wurde
+               <span id="to_crt">(<img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/vt95902.jpg');">Bild</a>).</span><span id="to_prn">:<br/><img src="images/modelbau/vt95902.jpg"/><br/></span><br/>
+               Die weissen LED's f&uuml;r das Spitzenlicht sind an der Brekina-Platine jeweils am Anschluss "WH" angel&ouml;tet. Die beiden blauen Dr&auml;hte werden abgel&ouml;tet und jeweils an einen der Kollektoren der beiden Transistoren angeschlossen.<br>
+               Nach dem K&uuml;rzen der Dekoderdr&auml;hte wird dieser einfach eingesetzt.<br/>
+               <u>Beseitigung m&ouml;glicher Kontaktprobleme</u><br/>
+               Hier wurde am Decoder ein St&uuml;tzkondenstor angel&ouml;tet (gem&auml;&szlig; Anleitung in der Decoderbeschreibung).
+               <br/>
+             </li>
+             <li>
+               <u>VB140 701</u><br>
+               Nach dem K&uuml;rzen der Dekoderdr&auml;hte wird dieser einfach eingesetzt. Der vorbildgerechte Lichtwechsel wird hier einfach durch richtiges Konfigurieren erreicht: jeder Ausgang (Licht vorne rot, Licht hinten rot, Innenbeleuchtung) wird &uuml;ber eine separate Funktionstaste angesteuert.
+             </li>
+           </ul>
+           </li>
+           <li><p>Vorbildinformationen</p>
+            <ul style="list-style-type:square">
+             <li>J.-U. Ebel, J. H&ouml;gemann, Dr. R. L&ouml;ttgers: Schienenomnibusse aus Uerdingen - Band 1 Technik und Geschichte bei DB, Privatbahnen und im Ausland, <a href="https://www.eisenbahn-kurier.de/" target="_blank">Eisenbahn-Kurier Verlag</a> 2001</li>
+             <li>J.-U. Ebel, J. H&ouml;gemann, Dr. R. L&ouml;ttgers: Schienenomnibusse aus Uerdingen - Band 2 Einsatzgeschichte der Baureihen VT 95, VT 97 und VT 98, <a href="https://www.eisenbahn-kurier.de/" target="_blank">Eisenbahn-Kurier Verlag</a> 2002</li>
+            </ul>
+           </li>
+<!--
+           <li><p>siehe auch:</p>
+             <ul style="list-style-type:square">
+                <li></li>
+             </ul>
+           </li>
+-->
+           </p>
+
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- VT95.9 ende -->
+
+           <!-- VT137 240 -->
+           <hr/>
+           <a name="vt137"></a>
+           <h3 style="page-break-before:always">VT137 240</h3>
+           <p>
+           <li><p>Fahrzeug: VT137 240, <a href="https://liliput.de/" target="_blank">Liliput</a> #112803, DC=, Schnittstellenstecker nach NEM 652</p></li>
+           <li><p>Decoder: <a href="https://web.archive.org/web/20231111075751/https://www.kuehn-digital.de/" target="_blank">Kuehn</a> N045</p></li>
+           <li><p>Umbaubeschreibung</p>
+           <ul style="list-style-type:circle">
+             <li>Eigentlich ist der Einbau recht einfach: die Dekoder mit dem Schnittstellenstecker nach NEM 652 werden anstelle des Blindsteckers eingesteckt.<br>
+               Aufgrund der etwas beengten Einbausituation m&uuml;ssen die Anschlu&szlig;kabel gek&uuml;rzt werden.<br>
+               Weiterhin ist die vom Hersteller vorgesehene Aussparung von Metall umgeben, daher habe ich den Decoder mit schmalen Papierstreifen (passend zurechtgeschnitten) isoliert:
+               der Decoder steckt jetzt zwischen den beiden Papierstreifen und kann das (Metall-)Geh&auml;use nicht mehr ber&uuml;hren.<br>
+             </li>
+           </ul>
+           </li>
+           <li><p>Vorbildinformationen</p>
+            <ul style="list-style-type:square">
+             <li>Heinz Kurz, Horst Troche: Gl&auml;serne Z&uuml;ge - Die Aussichtstriebwagen der Deutschen Reichsbahn, <a href="https://www.eisenbahn-kurier.de/" target="_blank">Eisenbahn-Kurier Verlag</a> 2021</li>
+            </ul>
+           </li>
+<!--
+           <li><p>siehe auch:</p>
+             <ul style="list-style-type:square">
+                <li></li>
+             </ul>
+           </li>
+-->
+           </p>
+
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- VT137 240 ende -->
+
+           <!-- Schiene-Straße-Bus -->
+           <hr/>
+           <a name="db29"></a>
+           <h3 style="page-break-before:always">Schiene-Stra&szlig;e-Bus (BR 790)</h3>
+           <p>
+           <li><p>Fahrzeug: DB29-3, <a href="https://brekina.de" target="_blank">Brekina</a> #63010, DC=, Schnittstellenstecker nach NEM 652</p></li>
+           <li><p>Decoder: <a href="https://web.archive.org/web/20231111075751/https://www.kuehn-digital.de/" target="_blank">Kuehn</a> N025</p></li>
+           <li><p>Umbaubeschreibung</p>
+             <ul style="list-style-type:circle">
+             <li>Um den freien Durchblick nicht zu verbauen - es sollen sp&auml;ter ja auch noch Fahrg&auml;ste im Fahrzeug sitzen - wird der Decoder so flach wie m&ouml;glich unter den herausnehmbaren Sitzen platziert.<br/>
+             Die vier ben&ouml;tigten Dr&auml;hte (rot, schwarz, orange, grau) werden auf die notwendige L&auml;nge gek&uuml;rzt und direkt an den Schnittstellenstecker angel&ouml;tet, die nicht ben&ouml;tigten Dr&auml;hte (wei&szlig;, gelb) direkt am Decoder abgel&ouml;tet/entfernt.</li>
+             </ul>
+           </li>
+           </p>
+
+           <li><p>Vorbildinformationen</p>
+            <ul style="list-style-type:square">
+              <li><a href="https://eisenbahnmagazin.de/" target="_blank">Eisenbahn-Magazin</a> 2/21, S36..45: <font color="#FF0000">Ein Pionier in der Sackgasse</font></li>
+            </ul>
+           </li>
+
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- Schiene-Straße-Bus ende -->
+
+           <!-- VS147 002 Wt -->
+           <hr/>
+           <a name="vb147"></a>
+           <h3 style="page-break-before:always">Triebwagen-Beiwagen VB147.0</h3>
+           <p>
+           <li><p>Fahrzeug: VB147 002 Wt, <a href="https://brawa.de/" target="_blank">Brawa</a> #45248, DC=, ohne Schnittstellenstecker</p></li>
+           <li><p>Decoder: BFD-01</p></li>
+           <li><p>Umbaubeschreibung</p>
+            <ul style="list-style-type:square">
+              <li>DasFahrzeug ist ohne Decoder nur f&uuml;r Gleichstrombetrieb zugelassen.<br>
+              F&uuml;r dein Einsatz unter DCC schreibt BRAWA als Decoder die Verwendung des BFD-01 vor (BRAWA Best.Nr. 0014766.01, Hersteller m&ouml;glicherweise D&H), da der integrierte Lichtbaustein auf 5V-Basis arbeitet.
+              Die Verwendung eines anderen Decoders erfordert weitere Umbaumassnahmen, z.B. Austauch von &uuml;ber 20 SMD-Widerst&auml;nden.
+              <br><br>
+              Auf Grund der (auch unten in den Links) beschriebenen Schwierigkeiten (nicht Unm&ouml;glichkeiten!) habe ich mich entschlossen, das Fahrzeug direkt durch BRAWA digitalisieren zu lassen.<br>
+              Fazit hierzu: preisg&uuml;nstig und schnell.</li>
+            </ul>
+           </li>
+           <li><p>Vorbildinformationen</p>
+            <ul style="list-style-type:square">
+             <li>Heinz Kurz: Triebwagen der Deutschen Reichsbahn - Die Baureihen VT 133 bis VT 137, <a href="https://www.eisenbahn-kurier.de/" target="_blank">Eisenbahn-Kurier Verlag</a> 2013</li>
+            </ul>
+           </li>
+           <li><p>siehe auch:</p>
+             <ul style="list-style-type:square">
+                <li><a href="https://www.modellbahn.net/index.php/startseite/modellberichte/wagenmodelle/reisezugwagen/sitzwagen/361-vb-147-der-unbemerkt-gebliebene-brawa-befehlswagen" target="_blank">https://www.modellbahn.net/index.php/startseite/modellberichte/wagenmodelle/reisezugwagen/sitzwagen/361-vb-147-der-unbemerkt-gebliebene-brawa-befehlswagen</a></li>
+                <li><a href="https://www.modellbahn.net/index.php/startseite/modellberichte/lokomotiven/vb-147-brawa-dekodereinbau" target="_blank">https://www.modellbahn.net/index.php/startseite/modellberichte/lokomotiven/vb-147-brawa-dekodereinbau</a></li>
+                <li><a href="https://www.stummiforum.de/t134502f2-Fragen-zu-Brawa.html" target="_blank">https://www.stummiforum.de/t134502f2-Fragen-zu-Brawa.html</a></li>
+                <li><a href="https://www.stummiforum.de/t128163f5-Digitalisieren-von-Brawa-VB.html" target="_blank">https://www.stummiforum.de/t128163f5-Digitalisieren-von-Brawa-VB.html</a></li>
+                <li><a href="https://www.h0-modellbahnforum.de/t337843f19606-Decoder-fuer-BRAWA-VB-und-Baugleiche.html" target="_blank">https://www.h0-modellbahnforum.de/t337843f19606-Decoder-fuer-BRAWA-VB-und-Baugleiche.html</a></li>
+             </ul>
+           </li>
+           </p>
+
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- VS147 002 Wt ende -->
+
+           <!-- VS145 141 -->
+           <hr/>
+           <a name="vs145"></a>
+           <h3 style="page-break-before:always">Triebwagen-Steuerwagen VS145.1</h3>
+           <p>
+           <li><p>Fahrzeug: VS145 141, <a href="https://liliput.de/" target="_blank">Liliput</a> #322501, DC=, Schnittstellenstecker nach NEM 652</p></li>
+           <li><p>Decoder: <a href="https://web.archive.org/web/20231111075751/https://www.kuehn-digital.de/" target="_blank">Kuehn</a> N045</p></li>
+           <li><p>Umbaubeschreibung</p>
+             <ul style="list-style-type:circle">
+             <li>Obwohl der Steuerwagen einen Schnittstellenstecker besitzt, wurde doch die Ansteuerung so ge&auml;ndert, das an beiden Wagenenden alle Signalbilder (Zg1 bzw. Zg2) vorbildgerecht einzeln geschaltet werden k&ouml;nnen, dazu werden insgesamt vier Funktionsausg&auml;nge ben&ouml;tigt.<br/>
+             Der nicht verwendbare Schnittstellenstecker wurde ausgel&ouml;tet und die Stirnlampen gegen LED's mit Vorwiderstand ausgetauscht:<br/>
+             - Led weiss = <a href="https://www.reichelt.de/" target="_blank">Reichelt</a> LED 3-2000WS, Vorwiderstand 2,7kOhm<br/>
+             - Led rot = <a href="https://www.reichelt.de/" target="_blank">Reichelt</a> LED 3-3500RT, Vorwiderstand 2,7kOhm<br/>
+             Zur Ansteuerung der Innenbeleuchtung mit einem f&uuml;nften Ausgang des Decoders ist ein zus&auml;tzlicher Transistor (BC337 mit Basisiwiderstand 4,7kOhm) erforderlich
+             <span id="to_crt">(<img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/vs145_141_innen.png');">Bild</a>).</span><span id="to_prn">:<br/><img src="images/modelbau/vs145_141_innen.png"/><br/></span><br/>
+             Nach dem Umbau sieht die Platine </html><span id="to_crt"> <img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/vs145_dec.jpg');">so</a> aus</span><span id="to_prn">so aus:<br/><img src="images/modelbau/vs145_dec.jpg"/><br/></span></li>
+             <li><u>Wichtig:</u><br/>
+             Damit der Decoder auch von einer Zentrale ausgelesen werden kann, wird als Motorersatz ein Widerstand von 100Ohm an die Anschl&uuml;sse grau und rot angel&ouml;tet.<br/>
+             Um diesen jedoch nicht zu belasten, werden alle Geschwindigkeitsparameter inklusive der benutzerdefinierbaren Geschwindigkeitstabelle auf 0 gesetzt und die benutzerdefinierte Geschwindigkeitstabele &uuml;ber CV29 Bit4 aktiviert
+             (siehe hierzu auch den Link am rechten Rand: <i>Decodereinbau in Steuerwagen</i>).</li>
+             </ul>
+           </li>
+           <li><p>Vorbildinformationen</p>
+            <ul style="list-style-type:square">
+             <li>Heinz Kurz: Triebwagen der Deutschen Reichsbahn - Die Baureihen VT 133 bis VT 137, <a href="https://www.eisenbahn-kurier.de/" target="_blank">Eisenbahn-Kurier Verlag</a> 2013</li>
+            </ul>
+           </li>
+           </p>
+
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- VS145 141 ende -->
+
+           <!-- GP38-2 -->
+           <hr/>
+           <a name="gp38-2"></a>
+           <h3 style="page-break-before:always">BN 2267 (GP38-2)</h3>
+           <p>
+           <li><p>Fahrzeug: GP38-2, <a href="https://www.athearn.com" target="_blank">Athearn</a> #4613, DC=, ohne Schnittstellenstecker</p></li>
+           <li><p>Decoder: <a href="https://web.archive.org/web/20231111075751/https://www.kuehn-digital.de/" target="_blank">Kuehn</a> N045</p></li>
+           <li><p>Umbaubeschreibung</p>
+           <ul style="list-style-type:circle">
+             <li>Eine grundlegende Beschreibung zur Optimierung des Fahrzeuges findet sich im Internet:
+             <ul style="list-style-type:square">
+               <li><a href="https://www.mcor-nmra.org/Publications/Articles/Athearn_TuneUp.php" target="_blank">The Athearn Maintenance and Upgrade</a></li>
+             </ul>
+             Anmerkung hierzu: der im Text erw&auml;hnte "slip on tab connector" ist nichts anderes als eine "Kfz-Flachsteckerh&uuml;lse" (passt prima...)</li>
+             <li>Bei meinem Umbau habe ich die "Kabinenbeleuchtung" komplett entfernt, sp&auml;ter sollen &uuml;ber LED's hier:
+             <ul>
+               <li>ein Spitzenlicht (Marslight)</li>
+               <li>eine Kabinenbeleuchtung und </li>
+               <li>die "Nummernschildbeleuchtung"</li>
+             </ul>
+             ebenso eingebaut werden, wie ein rotes Schlusslicht (nat&uuml;rlich am Heck der Lokomotive).<br/>
+             Aktuell ist an den Decoder also nur der Motor angeschlossen.
+             Nachdem das Ballastgewicht unter der mittleren L&uuml;fterhaube entfernt wurde, findet der Decoder hier mehr als genug Platz.</li>
+             </li>
+           </ul>
+           </li>
+           </p>
+
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- GP38-2 ende -->
+
+           <!-- 4-achsige Umbauwagen -->
+           <hr/>
+           <a name="4yg"></a>
+           <h3 style="page-break-before:always">4-achsige Umbauwagen</h3>
+           <p>
+           <li><p>Fahrzeuge: <a href="https://www.roco.cc/" target="_blank">Roco</a> #45242 (B4yg), #45243 (AB4yg), #45244 (BPw4yg), DC=, ohne Schnittstellenstecker</p></li>
+           <li><p>Decoder: <a href="https://web.archive.org/web/20231111075751/https://www.kuehn-digital.de/" target="_blank">Kuehn</a> LH10</p></li>
+           <li>
+           <p>Umbaubeschreibung</p>
+           <ul style="list-style-type:circle">
+
+           <li>F&uuml;r den Einbau der Beleuchtung in die 4-achsigen Umbauwagen von Roco werden neben der Lichtleiste (mit integriertem Decoder) noch ben&ouml;tigt:
+             <ul>
+               <li>Stromabnehmer (z.B. <i>Schleif H0</i> von <a href="https://www.malutronik.de/epages/83087492.sf/de_DE/?ObjectPath=/Shops/83087492/Products/1040" target="_blank">Malutronik</a>) an den Drehgestellen </li>
+               <li>sowie rote LED's (z.B. <i>LED 1,8MM RT</i> von <a href="https://www.reichelt.de/" target="_blank">Reichelt</a>) f&uuml;r das Zugschlusssignal Zg2 </li>
+             </ul>
+           </li>
+
+           <li><u>Anpassungen der Stromabnehmer von Malutronik und Montage in den Drehgestellen:</u><br/>
+           Die beiden kurzen Kupferlaschen werden jeweils um ca. 5mm gek&uuml;rzt, an einer Lasche wird der Draht zur Leichtleiste angel&ouml;tet. Die beiden kleinen L&ouml;cher werden nach aussen (zum gef&auml;cherten Ende hin) jeweils um ca. 0,5mm aufgerieben.
+           Im jedem Drehgestell wird mittig in der Drehachse ein Loch (&Oslash; 0,8mm) f&uuml;r die Drahtdurchf&uuml;hrung gebohrt <span id="to_crt">(<img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/4yg_dreh.jpg');">Drehgestell</a> von unten).</span><span id="to_prn"><br/><img src="images/modelbau/4yg_dreh.jpg"/><br/>Drehgestell von unten</span><br/>
+           Insgesamt wird der Strom von beiden Drehgestellen jeweils von beiden Achsen abgenommen, ein Drehgestell nimmt dabei den Strom von der linken, das andere Drehgestell von der rechten Schiene ab (somit ist auf den richtigen Einsatz der 4 Achsen zu achten!)<br/>
+           Vor dem Einbau der Drehgestelle ist in jeder "Sitzgruppe" am Drehpunkt ein Loch (ca. &Oslash; 2mm) f&uuml;r die Kabeldurchf&uuml;hrung zu bohren.</li>
+
+           <li><u>Einbau einer Zugschlussbeleuchtung:</u><br/>
+           Die Lichtleiste LH10 hat zwei zus&auml;tzliche Funktionsausg&auml;nge, die f&uuml;r ein Zugschlusslicht Zg2 genutzt werden k&ouml;nnen.<br/>
+           <i>Meine erste Version mit den SMD-Led's gef&auml;llt mir nicht: ich hatte die SMD-LEDs auf den Fenstereinsatz an der Stelle der Lichtaustritts&ouml;ffnungen geklebt. Das rote Licht kommt dann zwar an der richtigen Stelle raus - aber auch an anderen Stellen, so leuchtete z.B. auch das Fenster der T&uuml;ren rot.</i><br/>
+           <i>Zweiter Versuch:</i><br>
+           Beim Elektronikversender <a href="https://www.reichelt.de/" target="_blank">Reichelt</a> habe ich diese <span id="to_crt"><img alt="Foto &ouml;ffnen" src="images/foto.gif" /><a href="javascript:openWindow('images/modelbau/led1_8mm.jpg');">LEDs</a></span><span id="to_prn">LEDs<br/><img src="images/modelbau/led1_8mm.jpg"/><br/></span>&nbsp;gefunden.<br>
+           Die LEDs haben eine Kuppellinse mit &Oslash;1,8mm, das Loch f&uuml;r das Zugschlussignal hat &Oslash;2mm - das sollte also passen.<br>
+           <ul>
+             <li>die LEDs werde in Reihe geschaltet und verl&ouml;tet</li>
+             <li>beide LEDs sind jeweils an der Aussenseite schmaler zu feilen (ca 0,1mm)</li>
+             <li>beide LEDs werden an den vier Seiten und hinten schwarz lackieren - die Linse vorne nat&uuml;rlich nicht: hier soll es ja rot leuchten</li>
+             <li>die Fenstereins&auml;tze m&uuml;ssen an der schmalen Seite befeilt werden: der kurze Ansatz wird bis zum Fensterrahmen entfernt</li>
+             <li>die beiden roten Zugschlussscheiben sind vom Fenstereinsatz zu entfernen (die werden ja durch die LEDs ersetzt)</li>
+           </ul>
+           <span id="to_crt">(<img alt="Foto &ouml;ffnen" src="images/foto.gif" />siehe <a href="javascript:openWindow('images/modelbau/zg2_am_b4yg.jpg');">Bild</a>)</span><span id="to_prn"><br/><img src="images/modelbau/zg2_am_b4yg.jpg"/><br/></span><br>
+           Die LEDs werden an die Lichtleiste (A1 bzw. A2 und C0) angeschlossen, ein Vorwiderstand ist nicht erforderlich, da die Lichtleiste einen Konstantstrom liefert.</li>
+
+           <li><u>Einbau der Lichtleiste</u><br/>
+           Da die Lichtleiste l&auml;nger als der Umbauwagen ist, muss diese vor dem Einbau gek&uuml;rzt werden. Hierzu wird die letzte LED (LED 7) gem&auml;&szlig; Betriebsanleitung abgeschnitten, f&uuml;r die dann entfallenen L&ouml;tanschl&uuml;&szlig;e G1, G2, A1, A2 und C0 gibt es auf dem verbleibenden Rest der Platine gen&uuml;gend 'Ersatz'.<br/>
+           Der Anschlu&szlig; der Radschleifer erfolgt wie in der Anleitung beschrieben an G1 und G2, die Zugschlu&szlig;beleuchtung wird an A1 bzw. A2 und C0 angeschlossen.</li>
+
+           <li><u>Einstellung der CVs</u><br/>
+           Damit jetzt nicht f&uuml;r jeden Wagen einen Handregler ben&ouml;tigt wird, habe ich f&uuml;r mich folgende Programmierung vorgenommen:
+           <ul>
+             <li>alle Wagen reagieren auf die gleich Adresse</li>
+             <li>mit <b>F0</b> kann bei allen Wagen die Innenbeleuchtung fahrtrichtungsunabh&auml;ngig eingeschaltet werden</li>
+             <li>mit jeweils zwei Funktionstasten k&ouml;nnen die Zugschlussignale an jedem Wagen fahrtrichtungsunabh&auml;ngig geschaltet werden:</li>
+             <ul><li><b>F1</b> und <b>F2</b> am ersten Wagen</li><li><b>F3</b> und <b>F4</b> am zweiten Wagen</li><li><b>F5</b> und <b>F6</b> am dritten Wagen</li></ul>
+           </ul></li>
+
+           </ul>
+           </li>
+
+           <li><p>Vorbildinformationen</p>
+             <ul style="list-style-type:square">
+               <li><a href="https://www.eisenbahn-harzvorland.de/yg-umbauwagen/htm/4yg_umbau.htm#technik/" target="_blank">Technische Informationen</a></li>
+             </ul>
+           </li>
+
+           <li><p>siehe auch:</p>
+             <ul style="list-style-type:square">
+               <li><a href="http://www.ralf-bueker.de/weisse_LED_4yg.htm" target="_blank">4-achsige Roco Umbauwagen mit rotem LED Schlusslicht + LED Innenbeleuchtung</a></li>
+             </ul>
+           </li>
+           </p>
+
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- 4-achsige Umbauwagen ende -->
+
+           <!-- 4-achsiger Nahverkehrssteuerwagen -->
+           <hr/>
+           <a name="bdnf"></a>
+           <h3 style="page-break-before:always">4-achsiger Nahverkehrssteuerwagen BDnf<sup>738</sup></h3>
+           <p>
+           <li><p>Fahrzeuge: <a href="https://www.roco.cc/" target="_blank">Roco</a> #4264S, DC=, ohne Schnittstellenstecker</p></li>
+           <li><p>Decoder: <a href="https://www.tams-online.de" target="_blank">Tams</a> FD-R Basic.3</p></li>
+
+           <p>Umbaubeschreibung</p>
+           <ul style="list-style-type:circle">
+
+           <li>F&uuml;r den Einbau der Beleuchtung in die 4-achsigen Umbauwagen von Roco werden neben dem Funktionsdekoder noch ben&ouml;tigt:
+             <ul>
+               <li>zwei rote LED's (z.B. <i>EL103SURD/S53</i> von <a href="https://www.reichelt.de/" target="_blank">Reichelt</a>) f&uuml;r das Zugschlusssignal Zg2</li>
+             </ul>
+           </li>
+
+           <li><u>Einbau der Zugschlussbeleuchtung:</u><br/>
+           </li>
+
+           <li><u>Umbau der Zugspitzenbeleuchtung</u><br/>
+           </li>
+
+           <li><u>Umbau der Innenbeleuchtung</u><br/>
+           </li>
+
+           </ul>
+           </p>
+
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- 4-achsiger Nahverkehrssteuerwagen ende -->
+
+           <!-- 4-achsiger Nahverkehrswagen 2.Klasse -->
+           <hr/>
+           <a name="bnrzb"></a>
+           <h3 style="page-break-before:always">4-achsiger Nahverkehrssteuerwagen BDnf<sup>738</sup></h3>
+           <p>
+           <li><p>Fahrzeuge: <a href="https://www.roco.cc/" target="_blank">Roco</a> #4265S, DC=, ohne Schnittstellenstecker</p></li>
+           <li><p>Decoder: <a href="https://www.tams-online.de" target="_blank">Tams</a> FD-R Basic.3</p></li>
+
+           <p>Umbaubeschreibung</p>
+           <ul style="list-style-type:circle">
+           Der Wagen wurde mit Decoder gekauft, daher gibt es hier keine Beschreibung.
+           </ul>
+           </p>
+
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a>&nbsp;<img alt="Gehe zu Decodereinbauten" src="images/arrowup.gif"/><a href="#einbau">Decodereinbauten</a></p>
+           </div>
+           <!-- 4-achsiger Nahverkehrssteuerwagen ende -->
+
+        </div>
+      </div>
+      <!-- end: #col1 -->
+      <!-- begin: #col3 static column -->
+      <div id="col3">
+        <div id="col3_content" class="clearfix">
+        Alle Angabe ohne Gew&auml;hr, Umbauten erfolgen auf eigenes Risiko.
+        <hr>
+        <ul style="list-style-type:square">
+          <li><a href="http://www.dcc-mueller.de/decoder/decode_d.htm" target="_blank">Decodereinbauten von R.M&uuml;ller</a></li>
+          <li><a href="https://atw.huebsch.at/DCC/PI_Regler.htm" target="_blank">Beschreibung zum Thema PI-Regler (Lastregelung)</a></li>
+          <li><a href="http://www.dcc-mueller.de/decoder/cabdec_d.htm" target="_blank">Decodereinbau in Steuerwagen</a></li>
+          <li><a href="https://tams-online.de/WebRoot/Store11/Shops/642f1858-c39b-4b7d-af86-f6a1feaca0e4/MediaGallery/15_Download/Infothek/Infothek-Blaetter/Digitalumbauten_von_analogen_Loks_Infothek_2013_02.pdf" target="_blank">Digitalumbauten von analogen Loks: Vorsicht Falle(n)!</a></li>
+        </ul>
+        <hr/>
+        <a href="https://www.miba.de/" target="_blank">Artikel in MIBA:</a>
+        <ul style="list-style-type:square">
+          <li>Miba Spezial 33 (S32 und 33):<br/><font color="#FF0000">Ja, wie fahren sie denn...? - Programmieren von Lokdecodern</font></li>
+          <li>Miba Spezial 42 (S32...38):<br/><font color="#FF0000">CV-Configuration Variable - Decoder optimal einstellen</font></li>
+          <li>Miba 7/01 (S38...41):<br/><font color="#FF0000">DCC-Tempo-Tuning - Vorbildgerechte Geschwindigkeiten mit CVs</font></li>
+          <li>Miba 8/08 (S70...73):<br/><font color="#FF0000">Einiges &uuml;ber DCC-CV (Teil 1)</font></li>
+          <li>Miba 9/08 (S70...79):<br/><font color="#FF0000">Einiges &uuml;ber DCC-CV (Teil 2)</font></li>
+          <li>Miba 10/08 (S26...29):<br/><font color="#FF0000">Einiges &uuml;ber DCC-CV (Teil 3)</font></li>
+        </ul>
+        <hr/>
+
+<!--INC:"decoder.inc","07.06.2023 19:43:00"-->
+        Decoderbeschreibung direkt von der Herstellerseite laden:
+        <form>
+        <select size="1" name="View" onchange="view(View.options[options.selectedIndex].value)">
+         <option value="null" selected>Bitte w&auml;hlen ...</option>
+         <optgroup label="ESU">
+         <option value="https://www.esu.eu/download/betriebsanleitungen/fruehere-produkte/?no_cache=1&tx_esudownloads_pi1[downloadItem]=5fb8fd878f4da6541b268a52f3ebcd40">Lok Pilot 3</option>
+         <option value="https://www.esu.eu/download/betriebsanleitungen/digitaldecoder/?no_cache=1&tx_esudownloads_pi1[downloadItem]=79b741d15c208b8fd5ff0645c475569a">Lok Sound 4</option>
+         </optgroup>
+         <optgroup label="Kuehn">
+         <option value="https://web.archive.org/web/20231111075751/https://www.kuehn-digital.de/files/N025_de_h.pdf">N025</option>
+         <option value="https://web.archive.org/web/20231111075751/https://www.kuehn-digital.de/files/N45_de_b.pdf">N045</option>
+         <option value="https://web.archive.org/web/20231111075751/https://www.kuehn-digital.de/files/T65_de_b.pdf">T65</option>
+         <option value="https://web.archive.org/web/20231111075751/https://www.kuehn-digital.de/files/T125_de_e.pdf">T125</option>
+         <option value="https://web.archive.org/web/20231111075751/https://www.kuehn-digital.de/files/LH10_d-e-f_a.pdf">LH10</option>
+         </optgroup>
+         <optgroup label="Lenz">
+         <option value="https://www.lenz-elektronik.de/pdf/b_10410_def.pdf">Gold mini</option>
+         <option value="https://www.lenz-elektronik.de/pdf/b_10111_de.pdf">LE0511D</option>
+         <option value="https://www.lenz-elektronik.de/pdf/b_10126_def.pdf">LE1014E</option>
+         <option value="https://www.lenz-elektronik.de/pdf/b_10332_def.pdf">LE1035A</option>
+         <option value="https://www.lenz-elektronik.de/pdf/b_10334_def.pdf">LE1835A</option>
+         </optgroup>
+         <optgroup label="Rautenhaus">
+         <option value="https://www.mdvr.de/download/slx871.pdf">SLX871</option>
+         </optgroup>
+         <optgroup label="Tams">
+         <option value="https://tams-online.de/WebRoot/Store11/Shops/642f1858-c39b-4b7d-af86-f6a1feaca0e4/MediaGallery/15_Download/Anleitungen/42/FD-R-Basic-3_Anleitung_DE.pdf">FD-R Basic.3</option>
+         </optgroup>
+         <optgroup label="Uhlenbrock">
+         <option value="https://uhlenbrock.de/de_DE/service/download/handbook/de/Bes76320.pdf">76320</option>
+         </optgroup>
+         <optgroup label="Zimo">
+         <option value="https://www.zimo.at/web2010/documents/MX-KleineDecoder.pdf">MX617</option>
+         </optgroup>
+        </select>
+        </form>
+<!--/INC:"decoder.inc"-->
+        <hr/>
+
+        </div>
+        <div id="ie_clearing">&nbsp;</div>
+        <!-- End: IE Column Clearing -->
+      </div>
+      <!-- end: #col3 -->
+    </div>
+    <!-- end: #main -->
+    <!-- begin: #footer -->
+<!--INC:"kb_footer.inc","09.08.2024 10:08:00"-->
+    <div id="printnav">
+      <script language="JavaScript">
+         PrintDate();
+      </script>
+    </div>
+    <div id="footer">
+      <script language="JavaScript">
+         Copyright();
+      </script>
+     <br/>
+     Layout based on <a href="http://www.yaml.de/" target="_blank">YAML</a>, powered by <a href="https://www.phase5.info/" target="_blank">Phase 5</a>
+    </div>
+<!--/INC:"kb_footer.inc"-->
+    <!-- end: #footer -->
+  </div>
+</div>
+</body>
+</html>

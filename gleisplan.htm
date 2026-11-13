@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<head>
+<title>Kr&uuml;melbahn - Gleispl&auml;ne</title>
+<script language="JavaScript" src="js/main.js" type="text/javascript"></script>
+<script language="JavaScript">
+  function plan(bahnhof, usepdf)
+  {
+    if(bahnhof.length < 1)
+      return;
+    bahnhof = bahnhof.toUpperCase();
+    var target = 'https://trassenfinder.de/apn/'
+                 + bahnhof;
+    if(usepdf == true)
+      target += '_2021_NBS.pdf';
+    window.location.href = target;
+  }
+</script>
+<link href="css/layout_shiny_buttons.css" rel="stylesheet" type="text/css"/>
+<!--[if lte IE 7]>
+<link href="css/patches/patch_shiny_buttons.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+</head>
+<body>
+<div id="page_margins">
+  <div id="page">
+<!--INC:"kb_head.inc","08.08.2024 14:46:16"-->
+    <div id="header">
+      <div id="topnav">
+        <!-- start: skip link navigation -->
+        <a class="skip" href="#navigation" title="skip link">Direkt zur Navigation</a><span class="hideme">.</span>
+        <a class="skip" href="#content" title="skip link">Direkt zum Inhalt</a><span class="hideme">.</span>
+        <!-- end: skip link navigation -->
+        <span><a href="index.html">Startseite</a> | <a href="suchen.htm">Suchen</a> | <a href="impressum.htm">Impressum</a></span>
+      </div>
+      <h1><img alt="Frontansicht einer Dampflok" src="images/dlok.gif" /> Kr&uuml;melbahn</h1>
+    </div>
+<!--/INC:"kb_head.inc"-->
+    <!-- begin: main navigation #nav -->
+    <div id="nav"> <a id="navigation" name="navigation"></a>
+      <!-- skiplink anchor: navigation -->
+<!--INC:"kb_menu_2.inc","14.12.2015 18:11:22"-->
+      <div id="nav_main">
+        <ul>
+          <li><a href="bahnhof.htm">Bahnen in Solingen</a></li>
+          <li id="current"><a href="#">Bahnsinniges</a></li>
+          <li><a href="bahn.htm">Modellbahn</a></li>
+          <li><a href="literat.htm">Literatur</a></li>
+          <li><a href="link_bn.htm">Links</a></li>
+        </ul>
+      </div>
+<!--/INC:"kb_menu_2.inc"-->
+      <div id="nav_main2">
+        <ul>
+          <li><a href="gueterzug.htm">G&uuml;terzugfahrpl&auml;ne</a></li>
+          <li id="current2"><a href="#">Gleispl&auml;ne</a></li>
+          <li><a href="dienst_db.htm">Dienstvorschriften</a></li>
+          <li><a href="boxtel.htm">Het Duitse Lijntje</a></li>
+          <li><a href="norderney.htm">Norderney</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="printnav">Bahnsinniges &gt; Gleispl&auml;ne</div>
+    <!-- end: main navigation -->
+    <!-- begin: main content area #main -->
+    <div id="main">
+      <!-- begin: #col1 - first float column -->
+      <div id="col1">
+        <div id="col1_content" class="clearfix">
+          <!-- skiplink anchor: content -->
+          <a id="content" name="content"></a>
+           <h2>Gleispl&auml;ne der <img alt="Logo der DB" src="images/signale/db.gif" /></h2>
+           Die Deutsche Bahn AG stellt im Internet die Gleispl&auml;ne von vielen Bahnh&ouml;fen (&wedgeq; Betriebsstellen, zumeist jedoch nicht von Haltepunkten) u.a. <a href="https://geovdbn.deutschebahn.com/isr" _target="_blank">hier</a> zur Verf&uuml;gung.<br/><br/>
+           F&uuml;r die Ansicht des Gleisplanes ben&ouml;tigt man das entsprechende<br/>
+           Bahnhofsk&uuml;rzel nach DS100 <span id="to_crt">
+           <input name="kuerzel" id="kuerzel" size="8" maxlength="8" />&nbsp;<b>&rArr;</b>&nbsp;
+           <input type="button" value="Gleisplan im PDF-Format anzeigen" onclick="plan(kuerzel.value, false)" />
+           <!-- <input type="button" value="Gleisplan im SVG-Format anzeigen" onclick="plan(kuerzel.value, false)" />--><br/>
+           </span>
+           <br/>
+           <hr/>
+              Liste einiger ausgew&auml;hlter Gleispl&auml;ne (PDF-Format):
+              <table border="1">
+                <tr>
+                  <th>Bahnhof</th>
+                  <th>K&uuml;rzel</th>
+                  <th>Bahnhof</th>
+                  <th>K&uuml;rzel</th>
+                  <th>Bahnhof</th>
+                  <th>K&uuml;rzel</th>
+                </tr>
+                <tr>
+                  <td><a href="javascript:plan('KSO', false)">Solingen Hbf.</a></td>
+                  <td>KSO</td>
+                  <td><a href="javascript:plan('KLA', false)">Langenfeld</a></td>
+                  <td>KLA</td>
+                  <td><a href="javascript:plan('HE', false)">Emden</a></td>
+                  <td>HE</td>
+                </tr>
+                <tr>
+                  <td><a href="javascript:plan('KSV', false)">Solingen-Vogelpark</a></td>
+                  <td>KSV</td>
+                  <td><a href="javascript:plan('KLEL', false)">Leichlingen</a></td>
+                  <td>KLEL</td>
+                  <td><a href="javascript:plan('HABZ', false)">Abelitz</a></td>
+                  <td>HABZ</td>
+                </tr>
+                <tr>
+                  <td><a href="javascript:plan('KSGR', false)">Solingen-Gr&uuml;newald</a></td>
+                  <td>KSGR</td>
+                  <td><a href="javascript:plan('KOPL', false)">Opladen</a></td>
+                  <td>KOPL</td>
+                  <td><a href="javascript:plan('HMAR', false)">Marienhafe</a></td>
+                  <td>HMAR</td>
+                </tr>
+                <tr>
+                  <td><a href="javascript:plan('KSM', false)">Solingen-Mitte</a></td>
+                  <td>KSM</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td><a href="javascript:plan('HNN', false)">Norden</a></td>
+                  <td>HNN</td>
+                </tr>
+                <tr>
+                  <td><a href="javascript:plan('KSS', false)">Solingen-Schaberg</a></td>
+                  <td>KSS</td>
+                  <td><a href="javascript:plan('KGO', false)">Goch</a></td>
+                  <td>KGO</td>
+                  <td><a href="javascript:plan('HND', false)">Norddeich</a></td>
+                  <td>HND</td>
+                </tr>
+              </table>
+           <hr/>
+           Sollten die Button's nicht funktionieren (weil z.B. Javascript abgeschaltet ist) - hier der direkte Link zu den Seiten:<br/>
+           <font color="#0000FF"><b>https://trassenfinder.de/apn/***</b></font><br/>
+           <br/>
+           Hierbei ist die Zeichenfolge <font color="#0000FF"><b>***</b></font> steht f&uuml;r das Betriebstellenk&uuml;rzel selbst, also z.B. f&uuml;r die Betriebsstelle <font color="#0000FF"><b>KSO</b></font> so:<br/>
+           <font color="#0000FF"><b>https://trassenfinder.de/apn/KSO</b></font><br/>
+           <hr/>
+        </div>
+      </div>
+      <!-- end: #col1 -->
+      <!-- begin: #col3 static column -->
+      <div id="col3">
+        <div id="col3_content" class="clearfix">
+        Eine &Uuml;bersetzung der Bahnhofsk&uuml;rzel gem&auml;&szlig; DS 100 in Klartext gibt es
+        <ul>
+          <li style="list-style-type:square">
+          <a href="https://www.michaeldittrich.de/abkuerzungen/liste.php" target="_blank">hier</a>
+          </li>
+        </ul>
+        </div>
+        <div id="ie_clearing">&nbsp;</div>
+        <!-- End: IE Column Clearing -->
+      </div>
+      <!-- end: #col3 -->
+    </div>
+    <!-- end: #main -->
+    <!-- begin: #footer -->
+<!--INC:"kb_footer.inc","09.08.2024 10:08:00"-->
+    <div id="printnav">
+      <script language="JavaScript">
+         PrintDate();
+      </script>
+    </div>
+    <div id="footer">
+      <script language="JavaScript">
+         Copyright();
+      </script>
+     <br/>
+     Layout based on <a href="http://www.yaml.de/" target="_blank">YAML</a>, powered by <a href="https://www.phase5.info/" target="_blank">Phase 5</a>
+    </div>
+<!--/INC:"kb_footer.inc"-->
+    <!-- end: #footer -->
+  </div>
+</div>
+</body>
+</html>

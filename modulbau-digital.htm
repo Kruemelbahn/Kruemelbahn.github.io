@@ -1,0 +1,578 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<head>
+<title>Kr&uuml;melbahn - Modulbau-Digital</title>
+<script language="JavaScript" src="js/main.js" type="text/javascript"></script>
+<link href="css/layout_shiny_buttons.css" rel="stylesheet" type="text/css"/>
+<!--[if lte IE 7]>
+<link href="css/patches/patch_shiny_buttons.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+</head>
+<body>
+<div id="page_margins">
+  <div id="page">
+<!--INC:"kb_head.inc","08.08.2024 14:46:16"-->
+    <div id="header">
+      <div id="topnav">
+        <!-- start: skip link navigation -->
+        <a class="skip" href="#navigation" title="skip link">Direkt zur Navigation</a><span class="hideme">.</span>
+        <a class="skip" href="#content" title="skip link">Direkt zum Inhalt</a><span class="hideme">.</span>
+        <!-- end: skip link navigation -->
+        <span><a href="index.html">Startseite</a> | <a href="suchen.htm">Suchen</a> | <a href="impressum.htm">Impressum</a></span>
+      </div>
+      <h1><img alt="Frontansicht einer Dampflok" src="images/dlok.gif" /> Kr&uuml;melbahn</h1>
+    </div>
+<!--/INC:"kb_head.inc"-->
+    <!-- begin: main navigation #nav -->
+    <div id="nav"> <a id="navigation" name="navigation"></a>
+      <!-- skiplink anchor: navigation -->
+<!--INC:"kb_menu_4.inc","14.12.2015 18:11:22"-->
+      <div id="nav_main">
+        <ul>
+          <li><a href="bahnhof.htm">Bahnen in Solingen</a></li>
+          <li><a href="gueterzug.htm">Bahnsinniges</a></li>
+          <li id="current"><a href="#">Modellbahn</a></li>
+          <li><a href="literat.htm">Literatur</a></li>
+          <li><a href="link_bn.htm">Links</a></li>
+        </ul>
+      </div>
+<!--/INC:"kb_menu_4.inc"-->
+      <div id="nav_main2">
+        <ul>
+          <li><a href="bahn.htm">Aktivit&auml;ten</a></li>
+          <li><a href="ne1.htm">Anlagengestaltung</a></li>
+          <li><a href="bau_asf.htm">Fahrzeugbau</a></li>
+          <li><a href="signalz.htm">Elektronik</a></li>
+          <li id="current2"><a href="#">Digitalbetrieb (DCC)</a></li>
+          <li><a href="modulbau.htm">Modulbau</a></li>
+          <li><a href="modelle.htm">Modellfahrzeuge aus Solingen</a></li>
+          <li><a href="jahreswg.htm">Mercedes-Benz Jahresmodell</a></li>
+        </ul>
+      </div>
+      <div id="nav_main3">
+        <ul>
+          <li id="current3"><a href="#">Modulbau Digital</a></li>
+          <li><a href="decoder.htm">Decodereinbauten</a></li>
+          <li><a href="cvadr.htm">Adressierung mit CV 1 / 17,18</a></li>
+          <li><a href="cv8.htm">Herstellercode in CV8</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="printnav">Modellbahn &gt; Digitalbetrieb (DCC) &gt; Modulbau Digital</div>
+    <!-- end: main navigation -->
+    <!-- begin: main content area #main -->
+    <div id="main">
+      <!-- begin: #col1 - first float column -->
+      <div id="col1">
+        <div id="col1_content" class="clearfix">
+          <!-- skiplink anchor: content -->
+          <a id="content" name="content"></a>
+           <h2>Modulbau - Digital</h2>
+            <a name="s6"></a>
+            <h3>Modulbau unter <img alt="DCC" src="images/dcclogo.gif" /></h3>
+            <p>
+              <ul style="list-style-type:square">
+                <li>
+                  <a href="https://www.der-moba.de/index.php/Thema_Digitalbetrieb" target="_blank">Fragen (und Antworten?) zu DCC</a>
+                </li>
+                <li>
+                  <a href="http://www.dcc-mueller.de/wire4dcc/wire4dcc.htm" target="_blank">Grundlagen der Verdrahtung bei DCC</a>
+                </li>
+                <li>
+                  <a href="http://www.dcc-mueller.de/wire4dcc/weichen.htm" target="_blank">Vorsicht beim Weicheneinbau!?</a>
+                </li>
+              </ul>
+              <img alt="Gehe zu welche Ger&auml;te sind auch f&uuml;r das Roco-System geeignet?" src="images/arrowdwn.gif"/><a href="#roco">Welche Ger&auml;te sind auch f&uuml;r das Roco-System geeignet?</a><br/>
+            </p>
+
+            <p>
+            &Uuml;bersicht der ben&ouml;tigten/verwendeten Komponenten:<br/>
+            <figure id="verdrahtung">
+              <svg viewBox="0 0 693 445">
+                <defs>
+                  <style>
+                    rect:hover
+                    {
+                      fill: SaddleBrown;
+                      opacity: 0.5;
+                    }
+                  </style>
+                </defs>
+                <image width="693" height="445" href="images/modulbau/verdrahtung.gif">
+                  <title>Verdrahtungs&uuml;bersicht</title>
+                </image>
+                <a href="#zentrale">
+                  <rect x="89" y="15" width="121" height="63" opacity="0">
+                    <title>Zentrale</title>
+                  </rect>
+                </a>
+                <a href="#laptop">
+                  <rect x="269" y="14" width="139" height="65" opacity="0">
+                    <title>Laptop / PC</title>
+                  </rect>
+                </a>
+                <a href="#loconet">
+                  <rect x="15" y="93" width="142" height="26" opacity="0">
+                    <title>LocoNET<sup>&reg;</sup></title>
+                  </rect>
+                </a>
+                <a href="http://www.dcc-mueller.de/wire4dcc/wire4dcc.htm" target="_blank">
+                  <rect x="60" y="121" width="97" height="29" opacity="0">
+                    <title>DCC</title>
+                  </rect>
+                </a>
+                <a href="decoder.htm">
+                  <rect x="342" y="295" width="176" height="130" opacity="0">
+                    <title>Decodereinbauten</title>
+                  </rect>
+                </a>
+                <a href="#fred">
+                  <rect x="203" y="102" width="85" height="90" opacity="0">
+                    <title>Fred / Fredi / wiFred</title>
+                  </rect>
+                </a>
+                <a href="#franz">
+                  <rect x="299" y="81" width="61" height="110" opacity="0">
+                    <title>Dispa (fka Franz)</title>
+                  </rect>
+                </a>
+                <a href="#uhr">
+                  <rect x="401" y="105" width="98" height="86" opacity="0">
+                    <title>Uhrenzentrale und Nebenuhr</title>
+                  </rect>
+                </a>
+                <a href="#booster">
+                  <rect x="203" y="234" width="101" height="76" opacity="0">
+                    <title>Booster</title>
+                  </rect>
+                </a>
+                <a href="#bremsgen">
+                  <rect x="519" y="293" width="106" height="51" opacity="0">
+                    <title>Bremsgenerator</title>
+                  </rect>
+                </a>
+                <a href="#locoio">
+                  <rect x="119" y="235" width="68" height="47" opacity="0">
+                    <title>LocoIO</title>
+                  </rect>
+                </a>
+              </svg>
+              <span id="to_crt"><figcaption>(Im Bild auf ein Thema klicken.)</figcaption></span>
+            </figure>
+            <br>
+            <ul>
+              <li>
+              <a name="loconet"></a>
+              <a href="https://fremodcc.sourceforge.net/dcc_d.html" target="_blank"><u>LocoNET<sup>&reg;</sup></u></a><br/>
+              Am LocoNET<sup>&reg;</sup> werden <a href="#fred">Handregler</a> und <a href="#booster">Booster</a> angeschlossen. Damit diese einwandfrei funktionieren, ist neben den Datensignalen der Handregler auch das (DCC-)Digitalsignal der Schienen im LocoNET<sup>&reg;</sup> vorhanden. Das Digitalsignal ist aber so schwach, das daran auf <u>KEINEN</u> Fall das Gleis angeschlossen werden darf.<br/>
+              DCC-Gleissignal und LocoNET<sup>&reg;</sup> sind somit zwei verschiedenen Leitungen, die auch unbedingt getrennt gehalten werden m&uuml;ssen (siehe auch Skizze oben: DCC=blau, LocoNET<sup>&reg;</sup>=rot)!<br/>
+              <b><i>Und: eine <a href="https://www.roco.cc/" target="_blank">Roco</a>-Lokmaus kann und darf auf keinen Fall an das LocoNET<sup>&reg;</sup> angeschlossen werden!</i></b><br/>
+              <br/>
+              </li>
+
+              <a name="zentrale"></a>
+              <li><u>Zentrale</u><br/>
+              <a name="laptop"></a>
+              Bisher habe ich die <font color="#FF00FF">Frankenzentrale</font> (Hardwareschnittstelle) mit einem Laptop (bzw. einfachem PC, Vorraussetzung: je eine freie serielle und parallele Schnittstelle) und einem Steuerungsprogramm verwendet.<br/>
+
+              <table border = "2">
+               <tr>
+                <td>
+                  Dieses "Zentralen-Konzept" scheitert zunehmend an zwei Dingen:
+                  <ul style="list-style-type:square">
+                    <li>das aktuell verwendete Steuerungsprogramm ben&ouml;tigt zwingend den direkten Zugriff auf eine serielle und eine parallele Schnittstelle, der Einsatz mit einem aktuellen windows-basierten Betriebssystem ist dabei nicht m&ouml;glich</li>
+                    <li>es wird zunehmend schwieriger, Laptops mit serieller und paralleler Schnittstelle zu bekommen, hier hei&szlig;t die Zukunft USB</li>
+                  </ul>
+                  Die Anforderungen an ein neues DCC-System:
+                  <ul style="list-style-type:square">
+                    <li>volle LocoNET<sup>&reg;</sup>-F&auml;higkeit (...ich will nicht auch noch in neue Handregler, Booster usw. investieren...)</li>
+                    <li>Lesen und Schreiben von Decodern</li>
+                    <li>Verwaltung der Triebfahrzeuge mit ihren CV-Einstellungen in einer Datenbank</li>
+                    <li>zukunftsf&auml;hig, gerne auch als Open-Source-Komponente</li>
+                  </ul>
+                  Nach der Suche nach neuen Komponenten sieht meine aktuelle Konfiguration so aus:
+                  <ul style="list-style-type:square">
+                    <li><a href="https://wiki.rocrail.net/" target="_blank">RocRail</a> als Ersatz f&uuml;r die bisherige Steuerungssoftware</li>
+                    <ul style="list-style-type:square">
+                      Hierdurch bedingt:
+                      <li><a href="https://www.opendcc.de/" target="_blank">OpenDCC</a> als Ersatz f&uuml;r die <font color="#FF00FF">Frankenzentrale</font>, zusammen mit dem</li>
+                      <li><a href="https://locohdl.synology.me/pageDE9.html" target="_blank">LocoBuffer</a> von <a href="https://locohdl.synology.me/" target="_blank">Hans Deloof</a>. Da mein "alter" LocoBuffer nur eine RS232-Schnittstelle hat, kommt noch ein RS232-USB-Wandler dazu.</li>
+                      <li>Um auch weiterhin die Komponenten auf Ausstellungen verwenden zu k&ouml;nnen, kommt in die USB-Leitung jeweils ein USB-Isolator.</li>
+                    </ul>
+                  </ul>
+                 F&uuml;r den Zusammenbau der <a href="https://www.opendcc.de/" target="_blank">OpenDCC</a>-Zentrale gibt es zahlreiche Anleitungen in den Weiten des WWW.<br>
+                 Meine eigenen Erfahrungen und &Auml;nderungen beim Aufbau habe ich in einem
+                 <script language="JavaScript">
+                   eMailAndGithub("OpenDCC-Zusammenbau", "Dokument", "OpenDCC");
+                 </script>
+                 zusammengefasst, Interessenten sende ich dieses gerne zu.
+                </td>
+               </tr>
+              </table>
+
+              </li>
+
+              <a name="booster"></a>
+              <li><a href="https://fremodcc.sourceforge.net/booster/spaxbooster/spax3_d.html" target="_blank"><u>Booster</u></a><br/>
+              Da eine DCC-Zentrale nicht unendlich belastet werden kann, werden in regelm&auml;&szlig;igen Abst&auml;nden Booster (=Verst&auml;rker) eingesetzt, um das DCC-Signal auf die Anlage (= Gleis) zu bringen.<br/>
+              Interessante Artikel zum Thema Booster sind auf der Seite der Firma <a href="https://tams-online.de" target="_blank">Tams</a> zu finden:
+              <ul>
+                <li><a href="https://tams-online.de/WebRoot/Store11/Shops/642f1858-c39b-4b7d-af86-f6a1feaca0e4/MediaGallery/15_Download/Infothek/Infothek-Blaetter/Booster_Technische_Grundlagen_Infothek_2014_03.pdf" target="_blank">Grundlagen</a></li>
+                <li><a href="https://tams-online.de/WebRoot/Store11/Shops/642f1858-c39b-4b7d-af86-f6a1feaca0e4/MediaGallery/15_Download/Infothek/Infothek-Blaetter/Booster_Auswahl_Anschluss_Einsatz_Infothek_2014_03.pdf" target="_blank">Auswahl</a></li>
+              </ul>
+              Unterlagen f&uuml;r einen redesignten Nachbau gibt es in diesem
+               <script language="JavaScript">
+                 eMailAndGithub("Spaxbooster", "Dokument", "Spaxbooster");
+               </script>
+               .<br><br>
+              </li>
+
+              <a name="fred"></a>
+              <li><a href="https://fremodcc.sourceforge.net/diy/fred/fred_d.html" target="_blank"><u>FRED</u></a>, <a href="https://fremodcc.sourceforge.net/diy/fred2/fredi_d.html" target="_blank"><u>FREDI</u></a> und <a href="https://newheiko.github.io/wiFred/documentation/docu_de.html" target="_blank"><u>wiFRED</u></a></a>
+              <br/>
+              Zum Steuern meiner Fahrzeuge verwenden ich den<br><br>
+              FRED (<b>FR</b>emos <b>E</b>infacher <b>D</b>rehregler) ...<br/>
+              <ul style="list-style-type:square">
+                <li><a href="https://fremodcc.sourceforge.net/diy/fred/manual.de.html" target="_blank">Bedienungsanleitung</a></li>
+              </ul>
+              ... bzw. den FREDI (<b>FR</b>emos <b>E</b>infacher <b>D</b>rehregler <b>I</b>nkremental)<br/>
+              <ul style="list-style-type:square">
+                <li><a href="https://fremodcc.sourceforge.net/diy/fred2/mini_anl_fredi_d.html" target="_blank">Bedienungsanleitung</a></li>
+              </ul>
+              ... oder den wiFRED (<b>wi</b>Throttle <b>FRED</b>)<br/>
+              <ul style="list-style-type:square">
+                <li><a href="https://newheiko.github.io/wiFred/documentation/docu_de.html" target="_blank">Bedienungsanleitung</a></li>
+              </ul>
+              ... und eine passende Ablage gibt es <a href="modulbau.htm#ablage">hier</a> ...
+              <br/><br/>
+              <u>Versionen:</u> ich verwende zwei FREDI mit Inkrementalgeber und vier FREDI (davon ein SWD-FREDI) mit Potentiometer (jeweils Software-Version 2.3).<br>
+              Beim SWD-FREDI und durch die Nachr&uuml;stung einer zweiten Shift-Taste bei den anderen FREDIs sind jetzt &uuml;berall die Funktionen F0...F16 m&ouml;glich.<br>
+              Die Funktionen F9 und h&ouml;her wurden in der <a href="https://www.digitrax.com/static/apps/cms/media/documents/loconet/loconetpersonaledition.pdf" target="_blank">LocoNET<sup>&reg;</sup>-Spezifikation</a> durch Digitrax nicht festgelegt.<br>
+              Drei Hersteller haben jetzt jeweils unterschiedliche Implementierungen realisiert.<br>
+              Bis F12 verwenden alle FREDIs das Roco-Format, f&uuml;r die Funktionen F13...F16 wird je nach Einstellung im FREDI entweder das Uhlenbrock- oder das Digitrax-Format gesendet.<br>
+              <br>
+              <ul> <i><b>Hersteller und ihre Erweiterungen:</b></i>
+                 <li>Roco: <b>OPC_LOCO_F912</b> (A3, nur f&uuml;r die Funktionen F9...F12)</li>
+                 <li>Uhlenbrock: <b>OPC_UHLI_FUN</b> (D4)</li>
+                 <li>Digitrax: <b>OPC_IMM_PACKET</b> (ED)</li>
+              </ul>
+              Details zu den Telegrammen kann man <a href="https://wiki.rocrail.net/doku.php?id=loconet:ln-pe-de" target="_blank">hier</a> bzw. <a href="https://wiki.rocrail.net/doku.php?id=loconet:lnpe-parms-de" target="_blank">hier</a> nachlesen.
+              <br>
+              Dazu kommen insgesamt vier wiFREDs, die mit einem wiThrottle-Server an das LocoNET<sup>&reg;</sup> angebunden werden:<br><br>
+              <script language="JavaScript">
+                githubinfo("Krümelbahn Info 3 - RaspBerry als wiThrottle-Server", "/blob/main/Modellbahn/Handregler/Krümelbahn%20Info%203%20-%20RaspBerry%20als%20wiThrottle-Server.pdf");
+              </script>
+              <br>
+              <script language="JavaScript">
+                githubinfo("Krümelbahn Info 18 - PiLocoBuffer", "/blob/main/Modellbahn/Handregler/Krümelbahn Info 18 - PiLocoBuffer.pdf");
+              </script>
+              <br><br>
+              Inzwischen gibt es auch eine kleine
+              <script language="JavaScript">
+                eMailAndGithub("FREDI Umbauanleitung Inkremental nach Analog", "Umbauanleitung", "FREDi");
+              </script>
+              , um einen FREDI mit Inkrementalgeber auf ein Potentiometer als Geschwindigkeitsgeber umzubauen.
+              <br><br>
+              Und da ein FREDI auch mal defekt sein kann, gibt es f&uuml;r diesen Fall
+              <script language="JavaScript">
+                githubinfo("Krümelbahn Info 17 - FREDi - Gedanken zu seiner Reparatur", "/blob/main/Modellbahn/Handregler/Krümelbahn%20Info%2017%20-%20FREDi%20-%20Gedanken%20zu%20seiner%20Reparatur.pdf");
+              </script>
+              .
+              </li>
+              <p></p>
+
+              <a name="franz"></a>
+              <li><u>DISPA (fka Franz) </u> oder <u>Wie bekomme ich eine Lok auf den FRED?</u><br/>
+              Fahrzeuge m&uuml;ssen einem FRED zugewiesen werden, damit dieser sie steuern kann. Im Fremo gab es dazu fr&uuml;her <font color="#FF00FF">FRANZ</font> (<b>FR</b>emos <b>AN</b>ehmliche <b>Z</b>uordnungsbox).<br/>
+              Im Fremo wurde lange Zeit die Zuordnung &uuml;ber das FREMO-Telefon gemacht. Eine Telefonanlage ist mir zu aufw&auml;ndig...<br/>
+              Eine weitere M&ouml;glichkeit besteht darin, jeder Lok einen FRED zuzuweisen. F&uuml;r jedes Fahrzeug ein Fred ist mir zu teuer...<br/>
+              Nach wie vor kann eine Zuordnung selbstverst&auml;ndlich mit der Zenrale get&auml;tigt werden, wenn aber die Wege l&auml;nger werden, weil die Anlage gr&ouml;&szlig;er ist, bot sich <font color="#FF00FF">FRANZ</font> an.<br/>
+              Die aktuelle Version des <font color="#FF00FF">FRANZ</font> hei&szlig;t jetzt
+              <script language="JavaScript">
+                eMailAndGithub("DISPA", "DISPA", "DISPA");
+              </script>
+              und ist einem Bauvorschlag vom <a href="https://www.fremo-net.eu/" target="_blank">Fremo</a> nachempfunden.<br>
+              In Abweichnung zum FREMO-Bauvorschlag ist meine L&ouml;sung mit einem OLED an die Arduino-Plattform angelehnt, kann auch zur FREDI-Diagnose verwendet werden und unterst&uuml;tzt einen QR-Code-Leser.<br>
+              So k&ouml;nnen mit einem entsprechenden QR-Code die darin enthaltenen Fahrzeuginformationen direkt an einen FREDI &uuml;bertragen werden:
+              die Zuweisung als Bedienhandlung am FREDI ist dann nicht mehr erforderlich.<br>
+              <br/>
+              </li>
+
+              <a name="locoio"></a>
+              <li><a href="https://locohdl.synology.me/pageDE8.html" target="_blank"><u>LocoIO</u></a> von <a href="https://locohdl.synology.me/" target="_blank">Hans Deloof</a><br/>
+              Zur Ansteuerung von Signalen, Servos, Leuchten usw. auf meinen Modulen verwende ich LocoIO-Platinen. Hierdurch ist es m&ouml;glich Stellvorg&auml;nge ohne weitl&auml;ufige Kabelverbindungen auszuf&uuml;hren.<br/>
+              Meine Erfahrungen zur Inbetriebnahme und zum Betrieb habe ich in einer kleinen
+              <script language="JavaScript">
+                eMailAndGithub("LocoIO-Zusammenfassung", "Zusammenfassung", "LocoIO/blob/main/Documentation/LocoIO%20(Zusammenfassung).pdf");
+              </script>
+              beschrieben.<br/>
+              Da die LocoIO keine Verbindung zur Zentrale ben&ouml;tigen und somit ein eigenes kleines LocoNET<sup>&reg;</sup> bilden k&ouml;nnen, liefert ein <a href="https://www.floodland.nl/aim/info_locohubsupply_1.htm" target="_blank">LocoNET<sup>&reg;</sup>-Hub</a> die Grundversorgung hierf&uuml;r.
+              Meine
+              <script language="JavaScript">
+                eMailAndCloud("LocoNET-HubSupply", "Beschreibung", "ln_hub");
+              </script>
+              des Ger&auml;tes sende ich Interessenten gerne zu.
+              <br/>
+              Durch diese Vorgehensweise gibt es auf meinen Modulen eine klare Trennung zwischen "Fahren" und "Steuern".
+              </li>
+              <p></p>
+
+              <li><u>weiteres Zubeh&ouml;r</u><br/>
+              Zum Testen und zur Inbetriebnahme der Gleisanlagen hat sich bestens bew&auml;hrt:
+              <ul style="list-style-type:square">
+              <li><a href="https://fremodcc.sourceforge.net/diy/PolEi/index.de.html" target="_blank">Polungspr&uuml;fer</a>
+              <script language="JavaScript">
+                eMailAndGithub("PolEi", "PolEi", "PolEi");
+              </script>
+              und ein</li>
+              <li><a href="https://atw.huebsch.at/Elektronik/DCC_VM.htm" target="_blank">DCC-Voltmeter</a></li>
+              </ul>
+              Zum Testen und zur Inbetriebnahme des LocoNET<sup>&reg;</sup> beim Modulaufbau sind Testger&auml;te hilfreich:<br/>
+              <ul style="list-style-type:square">
+              <li><a href="http://www.fremo.wisotzki.org/projekte/ln_kabel_tester/index.php" target="_blank">LocoNET<sup>&reg;</sup>-Kabeltester</a></li>
+              <li><a href="http://www.dcc-mueller.de/loconet/ln_tst_d.htm" target="_blank">LocoNET<sup>&reg;</sup>-Pegeltester</a>.<br>
+              Hiervon habe ich eine f&uuml;r mich praktikable Variante gebaut:
+              <script language="JavaScript">
+                eMailAndGithub("LocoNet-Pegeltester", "LocoNet-Pegeltester", "LocoNet-Pegeltester");
+              </script></li>
+              <li><a href="https://www.floodland.nl/aim/info_locotest_1.htm" target="_blank">LocoNET<sup>&reg;</sup>-Spannungs- und Strommessger&auml;t</a>. Hiervon habe ich eine f&uuml;r mich praktikable Variante gebaut,
+              eine
+              <script language="JavaScript">
+                eMailAndCloud("LocoNET-Tester", "Beschreibung", "ln_test");
+              </script>
+              meines Ger&auml;tes sende ich Interessenten gerne zu.
+              </li>
+              </ul>
+              Sollte dann das LocoNET<sup>&reg;</sup> immer noch nicht laufen, verwende ich zum Testen
+              <ul style="list-style-type:square">
+              <li>den <a href="https://locohdl.synology.me/pageDE9.html" target="_blank">LocoBuffer</a> von <a href="https://locohdl.synology.me" target="_blank">Hans Deloof</a><br>
+               zusammen mit der Software <a href="https://loconetovertcp.sourceforge.net/" target="_blank">LocoNET<sup>&reg;</sup> over TCP</a><br>
+               bzw. mit dem <a href="https://www.jmri.org/help/en/manual/DecoderPro3/Main_Monitor_Window.shtml" target="_blank">LocoNET<sup>&reg;</sup>-Monitor</a> in DecoderPro<sup>&reg;</sup> von <a href="https://www.jmri.org/" target="_blank">JMRI</a></li>
+              </ul>
+              Was es noch gibt, aber nicht immer ben&ouml;tigt wird:
+              <ul style="list-style-type:square">
+                <li>
+                <script language="JavaScript">
+                  eMailAndGithub("LocoNet-Pullup", "LocoNet-Pullup", "LocoNet-Pullup");
+                </script>
+                :<br/>
+                Sie dient der Verbesserung der LocoNET<sup>&reg;</sup>-Signale und wird nur bei sehr gro&szlig;en Arrangements verwendet.</li>
+                <li>
+                <script language="JavaScript">
+                  eMailAndGithub("RSCLD", "RSCLD", "RSCLD");
+                </script>
+                :<br/>
+                an (m)eine Zentrale k&ouml;nnen nicht beliebig viele FRED's und Booster angeschlossen werden. Um allen angeschlossenen Ger&auml;ten gen&uuml;gend 'Saft' zur Verf&uuml;gung stellen zu k&ouml;nnen, wird bei gr&ouml;&szlig;eren Arrangements ein Verst&auml;rker (RSCLD) zwischen geschaltet.<br/>
+                </li>
+<!--
+                <li><a href="http://www.dcc-mueller.de/switch/loconetd.htm" target="_blank" >LocoNET<sup>®</sup>-Gateway</a>:<br/>
+                eine Verbindung zwischen zwei Zentralen an einer Modulanlage. So groß ist unsere Modulanlage dann doch noch nicht, das zwei oder mehr Zentralen benötigt werden...</li>
+-->
+              </ul>
+              </li>
+
+              <a name="uhr"></a>
+              <li><u>Modellbahnzeit</u><br/>
+              Wenn ich nach Fahrplan fahre, ben&ouml;tige ich eine Uhr. Da diese aber f&uuml;r die Modellbahn zu langsam geht, wird eine schnellere Uhr ben&ouml;tigt.<br>
+              <u>Vergangenheit (uralt):</u><br>
+              F&uuml;r die oftmals verwendeten analogen Nebenuhren ist ein Taktgeber erforderlich. Nach Umstellung auf DCC werden auch die Nebenuhren &uuml;ber das LocoNET<sup>&reg;</sup> von der Zentrale angesteuert (LocoNET<sup>&reg;</sup>-Uhr).<br/>
+              Bei der Ansteuerung &uuml;ber die <font color="#FF00FF">Frankenzentrale</font> kam ein spezieller <font color="#FF00FF">Uhrendecoder</font> zum Einsatz.<br/>
+              <u>Vergangenheit (alt):</u><br>
+              Meine neue Zentrale (siehe oben) unterst&uuml;tzt FastClock, und so kann die Nebenuhr jetzt auch &uuml;ber einen kleinen FastClock-Decoder angesteuert werden.<br>
+              Der FastClock-Decoder mit der verwendeten Hardware wird nicht weiterentwickelt, dessen Aufgaben wird jetzt von der (universellen)<br>
+              <u>Aktuell:</u><br>
+              <script language="JavaScript">
+                eMailAndGithub("LocoNET-Nebenuhr", "Nebenuhr", "Nebenuhr");
+              </script>
+              mit digitaler Anzeige &uuml;bernommen.<br/>
+              Dazu auch verf&uuml;gbar:<br>
+              <script language="JavaScript">
+                eMailAndGithub("LocoNET-Nebenuhr-Statusanzeige", "Nebenuhr-Statusanzeige", "Nebenuhr-Statusanzeige");
+              </script>
+              <br/>
+              Als Ersatz f&uuml;r die <font color="#FF00FF">Frankenzentrale</font> und die speziellen <font color="#FF00FF">Uhrendecoder</font> wurde eine neue selbst&auml;ndig arbeitende
+              <script language="JavaScript">
+                eMailAndGithub("Uhrenzentrale", "Uhrenzentrale", "Uhrenzentrale");
+              </script>
+              entwickelt. An diese einfach zu bedienende Kompakteinheit k&ouml;nnen die Nebenuhren direkt angeschlossen werden, <font color="#FF00FF">Frankenzentrale</font> und <font color="#FF00FF">Uhrendecoder</font> werden &uuml;berfl&uuml;ssig.
+
+              <p></p>
+              <u>Nebenbei:</u> Fahrpl&auml;ne werden (aktuell) mit dem Programm <a href="https://fahrplan.manuelhu.de/" target="_blank">FPLEdit von Manuel Huber</a> erstellt.<br>
+              F&uuml;r das Fahren nach Fahrplan wird neben dem eigentlichen Fahrplan an jedem Bahnhof auch eine Bahnhofsfahrordnung ben&ouml;tigt.<br>
+              Mein Programm
+              <script language="JavaScript">
+                eMailAndGithub("Fpl2Bfo", "Fpl2Bfo", "Fpl2Bfo");
+              </script>
+              ist in der Lage, eine Fahrplandatei im FPL-Format in eine Bahnhofsfahrordung zu konvertieren, diese dann zu bearbeiten und letztlich auch zu drucken.<br>
+              <br/>
+              </li>
+
+              <a name="bremsgen"></a>
+              <li><u>Bremsgenerator/Pendelautomatik f&uuml;r DCC</u><br/>
+              Die Problemstellung ist eigentlich ganz einfach: Ein Signal zeigt Hp0 und der anrollende Zug soll anhalten. Zugegeben: das Problem ist f&uuml;r FREMO uninteressant, weil hier jeder Zugf&uuml;hrer f&uuml;r das Beachten der Signale selbst zust&auml;ndig ist.
+              Anlagenbetreiber, die jedoch nicht st&auml;ndig nach den FREMO-Regeln fahren, interessiert das Thema schon.
+              <br/>
+              Vor einem Hp0 zeigenden Signal kann nicht, wie das unter analoger Steuerung m&ouml;glich ist, einfach der Fahrstrom mittels Kontakt abgeschaltet werden - dann bleibt der Zug abrupt stehen, Beleuchtung usw. wird abgeschaltet.
+              <br/>
+              F&uuml;r Digitalsysteme gibt es hierf&uuml;r spezielle Bremsgeneratoren. Das Prinzip ist simpel: vor einem Hp0 zeigenden Signal wird anstelle des normalen DCC-Signales ein modifiziertes DCC-Signal eingespeist, welches den Zug zum Halten bringt.
+              Da aber in der Regel unbekannt ist, welches Triebfahrzeug auf das Signal zuf&auml;hrt, wird anstelle der bekannten Lokadresse die Adresse Null verwendet (Broadcast-Meldung f&uuml;r alle DCC-Decoder in diesem Abschnitt). Da sich normalerweise nur ein Fahrzeug in diesem Abschnitt befindet, reagiert auch nur dieses eine Fahrzeug.<br/>
+              Der Signalabschnitt ist so festzulegen, dass der l&auml;ngste Zug inklusive Bremsweg hinein passt; der Bremsweg f&uuml;r das sich im Signalabschnitt befindliche Fahrzeug richtet sich einzig und allein nach der Einstellung im CV#4 des Fahrzeuges.
+              <br/><br/>
+              Da mir kommerzielle L&ouml;sungen zu teuer sind, wurde ein solcher Bremsgenerator selbst entwickelt.<br/><br/>
+              Einen Artikel zum Thema "Blocksteuerung f&uuml;r den Digitalbetrieb" - hier wird auch der Einsatz eines Bremsgenerators beschrieben - erschien im <a href="https://eisenbahnmagazin.de/" target="_blank">Eisenbahn-Magazin</a> 1/10, S.67..69.
+              <br/><br/>Auf der Hardwarebasis des Bremsgenerators wurde auch eine Pendelautomatik entwickelt.<br/>
+              </li>
+
+            </ul>
+
+           Von vielen (DCC-/LocoNET<sup>&reg;</sup>-)Ger&auml;ten existieren mittlerweile Schaltplanzeichnungen und Platinenlayouts im <a href="https://www.ibfriedrich.com/" target="_blank">Target</a>-Format.<br/>
+           Wer ein Ger&auml;t nachbauen m&ouml;chte, kann gerne die zugeh&ouml;rigen Unterlagen bei mir anfordern - eMail mit Angabe des gew&uuml;nschten Ger&auml;tes gen&uuml;gt.<br/><br/>
+           <script language="JavaScript">
+             Offer();
+           </script>
+           </p>
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a></p>
+           </div>
+
+           <hr/>
+           <a name="roco"></a>
+           <h3>Welche Ger&auml;te sind auch f&uuml;r das <a href="https://www.roco.cc/" target="_blank">Roco</a>-System geeignet?</h3>
+           In der nachfolgenden Tabelle sind die Ger&auml;te aufgef&uuml;hrt, die auch bereits in einem <a href="https://www.roco.cc/" target="_blank">Roco</a>-System ihre Bew&auml;hrungsprobe bestanden haben.
+           Dies sind zumeist die Ger&auml;te, die direkt mit dem DCC-Signal arbeiten.<br/>
+           <u>Zur Erinnerung:</u> Die Lokmaus von <a href="https://www.roco.cc/" target="_blank">Roco</a> arbeitet mit XPressNet-Protokoll und -spezifikation. Dies ist <b>nicht</b> mit dem LocoNET<sup>&reg;</sup> identisch, auch wenn die Steckverbinder (RJ12, 6polig) identisch sind.<br/>
+           <p>
+           <table border="1">
+           <tr>
+            <th>&nbsp;</th>
+            <th><a href="https://www.reichelt.de/" target="_blank">Reichelt</a></th>
+            <th>ersetzt:</th>
+           </tr>
+           <tr>
+            <td>Anschlu&szlig;kabel</td>
+            <td>WSK 6-6 3m<br/>WK 6-6 ..m</td>
+            <td><a href="https://www.roco.cc/" target="_blank">Roco</a> 10754<br/><a href="https://www.roco.cc/" target="_blank">Roco</a> 10756</td>
+           </tr>
+           <tr>
+            <td>Bremsgenerator</td>
+            <td>&nbsp;</td>
+            <td><a href="https://www.roco.cc/" target="_blank">Roco</a> 10779</td>
+           </tr>
+           <tr>
+            <td>Kehrschleifenmodul</td>
+            <td>&nbsp;</td>
+            <td><a href="https://www.roco.cc/" target="_blank">Roco</a> 10769<br/>(<a href="https://www.lenz-elektronik.de/" target="_blank">Lenz</a> LK100)</td>
+           </tr>
+           <tr>
+            <td>Spaxbooster</td>
+            <td>&nbsp;</td>
+            <td><a href="https://www.roco.cc/" target="_blank">Roco</a> 10762</td>
+           </tr>
+           <tr>
+            <td>Verteilerboxen</td>
+            <td>WB 3x6-6</td>
+            <td><a href="https://www.roco.cc/" target="_blank">Roco</a> 10758</td>
+           </tr>
+           </table>
+           </p>
+
+           <div id="subnav">
+           <p><img alt="zur&uuml;ck auf Seitenanfang" src="images/wn2d.gif"/><a href="#content"> Seitenanfang</a></p>
+           </div>
+
+        </div>
+      </div>
+      <!-- end: #col1 -->
+      <!-- begin: #col3 static column -->
+      <div id="col3">
+        <div id="col3_content" class="clearfix">
+        Informationen zur Roco-Lokmaus2 und dem Fehler E7 gibt es in hier:
+        <br/>DE: <script language="JavaScript">
+          cloud("e7_de");
+        </script>
+        <br/>EN: <script language="JavaScript">
+          cloud("e7_en");
+        </script>
+        <br/>
+        <hr/>
+        <script language="JavaScript">
+          Offer();
+        </script>
+        Wer ein Ger&auml;t nachbauen m&ouml;chte, kann gerne die zugeh&ouml;rigen Unterlagen bei mir anfordern:<br/>
+        <script language="JavaScript">
+          eMail("Modulbau Info gewünscht", "eMail");
+        </script>
+        mit Angabe des gew&uuml;nschten Ger&auml;tes gen&uuml;gt.
+        <hr/>
+        <script language="JavaScript">
+          eMailAndGithub("OpenDCC-Zusammenbau", "Zusammenfassung zum Bau der OpenDCC-Zentrale", "OpenDCC");
+        </script>
+        <hr/>
+        <img alt="Platinenansicht LocoIO" src="images/electronik/img_4092.png" alt="LocoIO"><br/>
+        <script language="JavaScript">
+          eMailAndGithub("LocoIO-Beschreibung", "Zusammenfassung zu Inbetriebnahme und Betrieb der LocoIO-Module", "LocoIO");
+        </script>
+        <hr/>
+        <script language="JavaScript">
+          eMailAndCloud("Bremsgenerator", "Bremsgenerator", "brems_gen");
+        </script>
+        <hr/>
+        <script language="JavaScript">
+          eMailAndCloud("Pendelautomatik", "Pendelautomatik", "pendel");
+        </script>
+        <hr/>
+        <script language="JavaScript">
+          eMailAndGithub("DISPA", "DISPA", "DISPA");
+        </script>
+        <hr/>
+        <script language="JavaScript">
+          eMailAndGithub("Uhrenzentrale", "Uhrenzentrale", "Uhrenzentrale");
+        </script>
+        <hr/>
+        <script language="JavaScript">
+          eMailAndGithub("LocoNET-Nebenuhr", "Nebenuhr", "Nebenuhr");
+        </script><br>
+        <script language="JavaScript">
+          eMailAndGithub("LocoNET-Nebenuhr-Statusanzeige", "Nebenuhr-Statusanzeige", "Nebenuhr-Statusanzeige");
+        </script>
+        <hr/>
+        <script language="JavaScript">
+          eMailAndGithub("Spaxbooster", "Spaxbooster", "Spaxbooster");
+        </script>
+        <hr/>
+        <script language="JavaScript">
+          Commercial();
+        </script>
+        <hr/>
+        <ul style="list-style-type:disc">
+          <li><a href="decoder.htm">DCC-Decodereinbauten</a></li>
+          <li><a href="link_dcc.htm">weiterf&uuml;hrende Links zum Thema DCC</a></li>
+        </ul>
+        <hr/>
+        </div>
+        <div id="ie_clearing">&nbsp;</div>
+        <!-- End: IE Column Clearing -->
+      </div>
+      <!-- end: #col3 -->
+    </div>
+    <!-- end: #main -->
+    <!-- begin: #footer -->
+<!--INC:"kb_footer.inc","09.08.2024 10:08:00"-->
+    <div id="printnav">
+      <script language="JavaScript">
+         PrintDate();
+      </script>
+    </div>
+    <div id="footer">
+      <script language="JavaScript">
+         Copyright();
+      </script>
+     <br/>
+     Layout based on <a href="http://www.yaml.de/" target="_blank">YAML</a>, powered by <a href="https://www.phase5.info/" target="_blank">Phase 5</a>
+    </div>
+<!--/INC:"kb_footer.inc"-->
+    <!-- end: #footer -->
+  </div>
+</div>
+</body>
+</html>

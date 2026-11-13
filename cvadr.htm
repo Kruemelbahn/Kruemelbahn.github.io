@@ -1,0 +1,383 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<head>
+<title>Kr&uuml;melbahn - Adressen in CV 1 / 17,18</title>
+<script language="JavaScript" src="js/main.js" type="text/javascript"></script>
+<link href="css/layout_shiny_buttons.css" rel="stylesheet" type="text/css"/>
+<!--[if lte IE 7]>
+<link href="css/patches/patch_shiny_buttons.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<script language="JavaScript">
+<!--
+    function calc1718()
+    {
+      for (var i = 0; i < document.CVs.adresse.value.length; ++i)
+        if (document.CVs.adresse.value.charAt(i) < "0" || document.CVs.adresse.value.charAt(i) > "9")
+        {
+          alert("Adresse ist keine Zahl!");
+          document.CVs.adresse.focus();
+          return;
+        }
+
+      var i = eval(document.CVs.adresse.value) / 256 + 192;
+      document.CVs.cv17.value = Math.floor(i);
+      var j = eval(document.CVs.adresse.value) % 256;
+      document.CVs.cv18.value = Math.floor(j);
+    }
+
+    function calcadr()
+    {
+      for (var i = 0; i < document.CVs.cv17.value.length; ++i)
+        if (document.CVs.cv17.value.charAt(i) < "0" || document.CVs.cv17.value.charAt(i) > "9")
+        {
+          alert("CV#17 ist keine Zahl!");
+          document.CVs.cv17.focus();
+          return;
+        }
+      for (var i = 0; i < document.CVs.cv18.value.length; ++i)
+        if (document.CVs.cv18.value.charAt(i) < "0" || document.CVs.cv18.value.charAt(i) > "9")
+        {
+          alert("CV#18 ist keine Zahl!");
+          document.CVs.cv18.focus();
+          return;
+        }
+
+      var iLongAdr = (eval(document.CVs.cv17.value) - 192 ) * 256 + eval(document.CVs.cv18.value);
+      document.CVs.adresse.value = iLongAdr;
+    }
+
+    function calcdecadr()
+    {
+      for (var i = 0; i < document.CVs.cv19.value.length; ++i)
+        if (document.CVs.cv19.value.charAt(i) < "0" || document.CVs.cv19.value.charAt(i) > "9")
+        {
+          alert("CV#19 ist keine Zahl!");
+          document.CVs.cv19.focus();
+          return;
+        }
+
+      // Adresse aus CV19?
+      var iCV19 = eval(document.CVs.cv19.value);
+      if(iCV19 > 0)
+      {
+         if(iCV19 > 127)
+         {
+           alert("CV#19 außerhalb Gültigkeitsbereich!");
+           document.CVs.cv19.focus();
+         }
+         else
+         {
+           document.CVs.used_adress.value = iCV19;
+         }
+         return;
+      }
+
+      for (var i = 0; i < document.CVs.cv29.value.length; ++i)
+        if (document.CVs.cv29.value.charAt(i) < "0" || document.CVs.cv29.value.charAt(i) > "9")
+        {
+          alert("CV#29 ist keine Zahl!");
+          document.CVs.cv29.focus();
+          return;
+        }
+      // Adresse aus CV1?
+      var iCV29 = eval(document.CVs.cv29.value);
+      if((iCV29 & 32) == 0)
+      {
+        for (var i = 0; i < document.CVs.cv1.value.length; ++i)
+          if (document.CVs.cv1.value.charAt(i) < "0" || document.CVs.cv1.value.charAt(i) > "9")
+          {
+            alert("CV#1 ist keine Zahl!");
+            document.CVs.cv1.focus();
+            return;
+          }
+        var iCV1 = eval(document.CVs.cv1.value);
+        if(iCV1 > 0 && iCV1 < 127)
+        {
+          document.CVs.used_adress.value = iCV1;
+        }
+        else
+        {
+          alert("CV#1 außerhalb Gültigkeitsbereich!");
+          document.CVs.cv1.focus();
+        }
+        return;
+      }
+
+      for (var i = 0; i < document.CVs.cv17.value.length; ++i)
+        if (document.CVs.cv17.value.charAt(i) < "0" || document.CVs.cv17.value.charAt(i) > "9")
+        {
+          alert("CV#17 ist keine Zahl!");
+          document.CVs.cv17.focus();
+          return;
+        }
+      for (var i = 0; i < document.CVs.cv18.value.length; ++i)
+        if (document.CVs.cv18.value.charAt(i) < "0" || document.CVs.cv18.value.charAt(i) > "9")
+        {
+          alert("CV#18 ist keine Zahl!");
+          document.CVs.cv18.focus();
+          return;
+        }
+      // Adresse aus CV17,18
+      var iLongAdr = (eval(document.CVs.cv17.value) - 192 ) * 256 + eval(document.CVs.cv18.value);
+      if(iLongAdr == -49152)
+      { // CV17 = 0, CV18 = 0
+        calc1718();
+        iLongAdr = (eval(document.CVs.cv17.value) - 192 ) * 256 + eval(document.CVs.cv18.value);
+      }
+      document.CVs.adresse.value = iLongAdr;
+      if(iLongAdr > 0 && iLongAdr < 10240)
+      {
+        document.CVs.used_adress.value = iLongAdr;
+      }
+      else
+      {
+        alert("CV#17,CV#18 außerhalb Gültigkeitsbereich!");
+        document.CVs.cv17.focus();
+      }
+    }
+
+    function calcbits()
+    {
+      // einzelne Bits in Dezimalwert umrechnen
+      var i = 0;
+      for(var index = 7; index >= 0; index--)
+      {
+        var state = document.CVs.bit[index].checked;
+        if(state)
+        {
+          i += Math.pow(2, 7-index);
+          UpdateInfotexte(index, state);
+        }
+      }
+      document.CVs.cv29.value = i;
+      Updatepicture();
+    }
+
+    function calc()
+    {
+      // Dezimalwert in einzelne Bits umrechnen
+      for (var i = 0; i < document.CVs.cv29.value.length; ++i)
+        if (document.CVs.cv29.value.charAt(i) < "0" || document.CVs.cv29.value.charAt(i) > "9")
+        {
+          alert("CV#29 ist keine Zahl!");
+          document.CVs.cv29.focus();
+          return;
+        }
+
+      var iCV29 = document.CVs.cv29.value;
+      if(iCV29 < 0 || iCV29 > 255)
+      {
+         alert("CV#29 außerhalb Gültigkeitsbereich!");
+         document.CVs.cv29.focus();
+         return;
+      }
+
+      for(var index = 7; index >= 0 ; index--)
+      {
+        document.CVs.bit[index].checked = (iCV29 % 2?true:false);
+        iCV29 >>= 1;
+        UpdateInfotexte(index, document.CVs.bit[index].checked);
+      }
+      Updatepicture();
+    } // calc()
+
+    function Updatepicture()
+    {
+      var iCV19 = eval(document.CVs.cv19.value);
+      if(iCV19 == undefined)
+        iCV19 = 0;
+      var iCV29 = eval(document.CVs.cv29.value);
+      if((iCV29 & 32) == 0)
+      {
+        if(iCV19 == 0)
+          document.getElementById('adr_pic').src="daten/dec_adr.gif";
+        else
+          document.getElementById('adr_pic').src="daten/dec_adr_2.gif";
+      }
+      else
+      {
+        if(iCV19 == 0)
+          document.getElementById('adr_pic').src="daten/dec_adr_1.gif";
+        else
+          document.getElementById('adr_pic').src="daten/dec_adr_3.gif";
+      }
+    } // Updatepicture()
+
+    function UpdateInfotexte(index, state)
+    {
+      var id="";
+      switch (index)
+      {
+        case 0 : id = "29_0"; break;
+        case 1 : id = "29_1"; break;
+        case 2 : id = "29_2"; break;
+        case 3 : id = "29_3"; break;
+        case 4 : id = "29_4"; break;
+        case 5 : id = "29_5"; break;
+      }
+
+      if(state)
+      {
+//        if(id != "")
+//          document.getElementById(id).style.font-weight = 'bold';
+      }
+      else
+      {
+//        if(id != "")
+//          document.getElementById(id).style.font-weight = 'inherit';
+      }
+    } // UpdateInfotexte()
+
+
+//-->
+</script>
+</head>
+<body>
+<div id="page_margins">
+  <div id="page">
+<!--INC:"kb_head.inc","08.08.2024 14:46:16"-->
+    <div id="header">
+      <div id="topnav">
+        <!-- start: skip link navigation -->
+        <a class="skip" href="#navigation" title="skip link">Direkt zur Navigation</a><span class="hideme">.</span>
+        <a class="skip" href="#content" title="skip link">Direkt zum Inhalt</a><span class="hideme">.</span>
+        <!-- end: skip link navigation -->
+        <span><a href="index.html">Startseite</a> | <a href="suchen.htm">Suchen</a> | <a href="impressum.htm">Impressum</a></span>
+      </div>
+      <h1><img alt="Frontansicht einer Dampflok" src="images/dlok.gif" /> Kr&uuml;melbahn</h1>
+    </div>
+<!--/INC:"kb_head.inc"-->
+    <!-- begin: main navigation #nav -->
+    <div id="nav"> <a id="navigation" name="navigation"></a>
+      <!-- skiplink anchor: navigation -->
+<!--INC:"kb_menu_4.inc","14.12.2015 18:11:22"-->
+      <div id="nav_main">
+        <ul>
+          <li><a href="bahnhof.htm">Bahnen in Solingen</a></li>
+          <li><a href="gueterzug.htm">Bahnsinniges</a></li>
+          <li id="current"><a href="#">Modellbahn</a></li>
+          <li><a href="literat.htm">Literatur</a></li>
+          <li><a href="link_bn.htm">Links</a></li>
+        </ul>
+      </div>
+<!--/INC:"kb_menu_4.inc"-->
+      <div id="nav_main2">
+        <ul>
+          <li><a href="bahn.htm">Aktivit&auml;ten</a></li>
+          <li><a href="ne1.htm">Anlagengestaltung</a></li>
+          <li><a href="bau_asf.htm">Fahrzeugbau</a></li>
+          <li><a href="signalz.htm">Elektronik</a></li>
+          <li id="current2"><a href="#">Digitalbetrieb (DCC)</a></li>
+          <li><a href="modulbau.htm">Modulbau</a></li>
+          <li><a href="modelle.htm">Modellfahrzeuge aus Solingen</a></li>
+          <li><a href="jahreswg.htm">Mercedes-Benz Jahresmodell</a></li>
+        </ul>
+      </div>
+      <div id="nav_main3">
+        <ul>
+          <li><a href="modulbau-digital.htm">Modulbau Digital</a></li>
+          <li><a href="decoder.htm">Decodereinbauten</a></li>
+          <li id="current3"><a href="#">Adressierung mit CV 1 / 17,18</a></li>
+          <li><a href="cv8.htm">Herstellercode in CV8</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="printnav"><p>Modellbahn &gt; Digitalbetrieb (DCC) &gt; Adressierung mit CV 1 / 17,18</p></div>
+    <!-- end: main navigation -->
+    <!-- begin: main content area #main -->
+    <div id="main">
+      <!-- begin: #col1 - first float column -->
+      <div id="col1">
+        <div id="col1_content" class="clearfix">
+          <!-- skiplink anchor: content -->
+          <a id="content" name="content"></a>
+           <h2>Adressierung mit CV 1 / 17,18</h2>
+           <img alt="Adressierung mit CV 1 / 17,18" src="daten/dec_adr.gif" id="adr_pic" />
+        </div>
+      </div>
+      <!-- end: #col1 -->
+      <!-- begin: #col3 static column -->
+      <div id="col3">
+        <div id="col3_content" class="clearfix">
+          <!--------------------------------------------->
+          <form action="javascript:void(0)" name="CVs">
+            CV#1:
+            <input name="cv1" id="cv1" size="5" maxlength="3" value="3" />
+            <hr/>
+            Adresse aus CV#17,#18:
+            <input name="adresse" id="adresse" size="5" maxlength="5" />
+            <br/>
+            <input type="button" value="berechne CV#17,#18" onclick="calc1718()" />
+            <br/>
+            CV#17:
+            <input name="cv17" id="cv17" size="5" maxlength="3" value="0" />
+            <br/>
+            CV#18:
+            <input name="cv18" id="cv18" size="5" maxlength="3" value="0" />
+            <br/>
+            <input type="button" value="berechne Adresse" onclick="calcadr()" />
+            <hr/>
+            CV#19:
+            <input name="cv19" id="cv19" size="5" maxlength="3" value="0" onkeyup="Updatepicture()" />
+            <hr/>
+            <!--------------------------------------------->
+            <div style="text-align:justify">
+              Bitberechnung, z.B. f&uuml;r CV#29:<br/>
+              &nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;0<br/>
+            </div>
+            <input type="checkbox" name="bit" onclick="calcbits()" />
+            <input type="checkbox" name="bit" onclick="calcbits()" />
+            <input type="checkbox" name="bit" onclick="calcbits()" />
+            <input type="checkbox" name="bit" onclick="calcbits()" />
+            <input type="checkbox" name="bit" onclick="calcbits()" />
+            <input type="checkbox" name="bit" onclick="calcbits()" />
+            <input type="checkbox" name="bit" onclick="calcbits()" />
+            <input type="checkbox" name="bit" onclick="calcbits()" />
+            <br/>
+            CV#29: <input name="cv29" id="cv29" size="5" maxlength="3" value="0" />
+            <input type="button" value="berechne Bits" onclick="calc()" /><br>
+            <i>
+            <div id="29_0">0 : Fahrtrichtung umkehren</div>
+            <div id="29_1">1 : Fahrstufen (0=14/27; 1=128)</div>
+            <div id="29_2">2 : Analogbetrieb (0=nein; 1=ja)</div>
+            <div id="29_3">3 : RailCOM (0=nein; 1=ja)</div>
+            <div id="29_4">4 : Geschw.Tabelle (0=nein; 1=ja)</div>
+            <div id="29_5">5 : Adressl&auml;nge (0=kurz; 1=lang)</div>
+            </i>
+            <hr/>
+            vom Decoder verwendet:
+            <input name="used_adress" id="used_adress" size="5" maxlength="5" readonly/>
+            <input type="button" value="Adresse ermitteln" onclick="calcdecadr()" />
+            <hr/>
+            <input type="reset" value="L&ouml;schen" />
+          </form>
+        </div>
+        <!--------------------------------------------->
+
+        </div>
+        <div id="ie_clearing">&nbsp;</div>
+        <!-- End: IE Column Clearing -->
+      </div>
+      <!-- end: #col3 -->
+    </div>
+    <!-- end: #main -->
+    <!-- begin: #footer -->
+<!--INC:"kb_footer.inc","09.08.2024 10:08:00"-->
+    <div id="printnav">
+      <script language="JavaScript">
+         PrintDate();
+      </script>
+    </div>
+    <div id="footer">
+      <script language="JavaScript">
+         Copyright();
+      </script>
+     <br/>
+     Layout based on <a href="http://www.yaml.de/" target="_blank">YAML</a>, powered by <a href="https://www.phase5.info/" target="_blank">Phase 5</a>
+    </div>
+<!--/INC:"kb_footer.inc"-->
+    <!-- end: #footer -->
+  </div>
+</div>
+</body>
+</html>
