@@ -2846,7 +2846,7 @@ function kopf(eingabe, optionstext) {
       '<div id="topnav">' +
         '<a class="skip" href="#navigation" title="skip link">Direkt zur Navigation</a><span class="hideme">.</span>' +
         '<a class="skip" href="#content" title="skip link">Direkt zum Inhalt</a><span class="hideme">.</span>' +
-        '<span><a href="index.htm">Startseite</a> | <a href="impressum.htm">Impressum</a></span>' +
+        '<span><a href="index.html">Startseite</a> | <a href="impressum.htm">Impressum</a></span>' +
       '</div>' +
       '<h1><img alt="Frontansicht einer Dampflok" src="images/dlok.gif"/> Kr&uuml;melbahn</h1>' +
     '</div>' +
