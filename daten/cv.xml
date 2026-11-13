@@ -1,0 +1,1002 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="cv.xsl" ?>
+<!DOCTYPE CV SYSTEM "cv.dtd">
+
+<CV date="081106" ddb="Allgemein">
+  <text nr="1">
+    <nummer href="javascript:openWindow('daten/dec_adr.gif')">  1</nummer>
+    <kurztext nr="1">Primäre Decoderadresse</kurztext>
+    <minwert>1</minwert>
+    <maxwert>127</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>Die Bits 0-6 der CV#1 enthalten die
+Decoderadresse im Bereich von 1 bis
+127. Bit 7 muss den Wert '0' haben.<BR/>
+Vorsicht: Ältere Decoder der Fa.
+Lenz lassen nur Werte von 1-99 zu. Mit
+den neuen XF-Decodern gibt es diese
+Einschränkung nicht mehr. Bei manchen
+Decodern können Sie die Primäradresse
+auf 0 setzen, damit ist der
+Decoder nicht mehr mit den digitalen
+NMRA-Befehlen steuerbar. Gleichzeitig
+wird in CV#<link>12</link> die gewünschte Steuerungsmethode
+angegeben. Die meisten
+Decoder kennen allerdings als Alternative
+nur den analogen Betrieb
+(Gleichspannung), oder verfügen über
+einen Autodetectmode und erkennen
+ein anderes Datenformat selbsttätig.<BR/>
+Beachte: Neue Decoder sind auf die Adresse 3 voreingestellt.</beschreibung>
+  </text>
+  <text nr="2">
+    <nummer href="javascript:openWindow('daten/cv2_5_6.gif')">  2</nummer>
+    <kurztext nr="2">Anfahrspannung</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>Der Wert in CV#2 muß so angepaßt
+        werden, daß die Lok bei Fahrstufe 1
+        gerade anfährt. Der Wertebereich geht
+        von 0-255, wird jedoch von den meisten
+        Herstellern eingeschänkt.
+        Wenn Sie eigene Geschwindigkeitstabellen
+        benutzen, wird
+        je nach Hersteller der CV#2-Wert mit
+        einbezogen, bitte nachlesen!
+    </beschreibung>
+  </text>
+  <text nr="3">
+    <nummer>  3</nummer>
+    <kurztext nr="3">Beschleunigungswert</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>Der numerische Wert in CV#3 legt fest,
+      wie schnell der Decoder intern von
+      einer Fahrstufe zur nächsten weiterschaltet.
+      Der Wertebereich geht meist
+      von 0 bis 31, wobei höhere Werte für
+      einen langsameren Beschleunigungsvorgang
+      stehen. Wenn Sie Null angeben,
+      wird die Fahrstufenveränderung
+      sofort wirksam, und der Motor reagiert
+      ruckartig.
+      Die Weiterschaltung zur nächsten
+      Stufe soll mit einer Rate von ca.
+      0,9 x CV#3 / Fahrstufenanzahl geschehen.
+      Beispiel: Bei CV#3 = 6 wird im 28-
+      Fahrstufenmodus alle 0,2 Sekunden
+      auf die nächste Stufe umgeschaltet. Die
+      Lok erreicht nach ca. fünf Sekunden
+      ihre Höchstgeschwindigkeit.
+     </beschreibung>
+  </text>
+  <text nr="4">
+    <nummer>  4</nummer>
+    <kurztext nr="4">Bremsverzögerung</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>Der numerische Wert in CV#4 legt fest,
+      wie schnell der Decoder beim Bremsvorgang
+      von einer Fahrstufe zur nächsten
+      zurückschaltet. Wertebereich und
+      Funktionsweise wie bei CV#<link>3</link>.
+    </beschreibung>
+  </text>
+  <text nr="5">
+    <nummer href="javascript:openWindow('daten/cv2_5_6.gif')">  5</nummer>
+    <kurztext nr="5">Maximale Motorspannung</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>Mit CV#5 können Sie die Maximalgeschwindigkeit
+      bei der höchsten Fahrstufe
+      herabsetzen. Der Wert wird in
+      Schritten von 1/255 angegeben. Ein
+      dezimaler Wert von 255 legt bei der
+      höchsten Fahrstufe die volle Spannung
+      an den Motor, ein Wert von 192
+      begrenzt die Spannung auf 3/4, die
+      übrigen Fahrstufen werden vom Decoder
+      angepaßt. Die Funktion wird mit
+      Werten von 0 oder 1 abgeschaltet.
+    </beschreibung>
+  </text>
+  <text nr="6">
+    <nummer href="javascript:openWindow('daten/cv2_5_6.gif')">  6</nummer>
+    <kurztext nr="6">Motorspannung für mittlere Fahrstufe</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>Mit CV#6 können Sie die Motorspannung
+        für die mittlere Fahrstufe festlegen.
+        Wie bei CV#<link>5</link> geben Sie die Spannung
+        in Schritten von 1/255 an.
+        Zusammen mit CV#<link>2</link> und CV#<link>5</link> können Sie
+        die vom Hersteller festgelegte Geschwindigkeitskennlinie
+        zurechtbiegen.
+        Eine individuelle Anpassung können
+        Sie mit einer eigenen Tabelle vornehmen
+        (siehe CV#<link>67</link> bis CV#<link>94</link>), die CV#<link>5</link> und CV#6
+        sind in diesem Fall unwirksam.
+        In dem folgenden Beispiel wurde die
+        Anfahrspannung mit CV#<link>2</link> auf 20%
+        gesetzt. CV#<link>5</link> enthält den Wert 255 für
+        die maximale Fahrspannung. Die CV#6
+        enthält zur Demonstration den Wert
+        204. Dadurch wird die Geschwindigkeitskennlinie
+        bis zur mittleren Fahrstufe
+        14 steiler. In der Praxis werden
+        Sie für die CV#6 einen Wert kleiner 128
+        wählen, damit erzielen Sie eine feinere
+        Abstufung bei den niedrigen Fahrstufen.
+    </beschreibung>
+  </text>
+  <text nr="7">
+    <nummer>  7</nummer>
+    <kurztext nr="7">Versionsnummer des Decoders</kurztext>
+    <format>nur lesbar</format>
+    <beschreibung>CV#7 enthält die Decoder-Versionsnummer des Herstellers.</beschreibung>
+  </text>
+  <text nr="8">
+    <nummer href="cv8.htm">  8</nummer>
+    <kurztext nr="8">Herstelleridentifikation</kurztext>
+    <format>nur lesbar</format>
+    <beschreibung>CV#8 enthält die Herstelleridentifikation.
+    </beschreibung>
+  </text>
+  <text nr="9">
+    <nummer>  9</nummer>
+    <kurztext nr="9">Dauer der PWM-Periode</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>Mit CV#9 läßt sich die Dauer der Periode
+        für die Pulsweiten-Modulation
+        (PWM) einstellen. Die Drehzahl der
+        Lokmotoren wird geregelt, indem man
+        in festgelegten Abständen den Motor
+        kürzer oder länger an die volle Versorgungsspannung
+        schaltet.
+        Bei kurzen Einschaltimpulsen dreht
+        der Motor langsam; wenn die Impulsdauer
+        gleich der Periodenlänge ist,
+        läuft der Motor mit Maximalgeschwindigkeit.
+        Auf diese Art der Drehzahlregelung
+        reagieren jedoch die verschiedenen
+        Motorentypen unterschiedlich. Die
+        meisten drei- und fünfpoligen Ausführungen sind mit Wiederholraten
+        der Impulse von ca. 70 Hertz zufrieden.
+        Für den optimalen Lauf von Glockenankermotoren
+        sind jedoch höhere Frequenzen
+        (ab ca. 300 Hz) notwendig.
+        Aus diesem Grund läßt sich bei einigen
+        Decoderfabrikaten (<B>Wangrow benutzt
+        CV#<link>95</link> statt CV#9!!</B>) die Periodendauer
+        (der reziproke Wert der Frequenz) mit
+        der CV#9 einstellen.
+    </beschreibung>
+  </text>
+  <text nr="10">
+    <nummer> 10</nummer>
+    <kurztext nr="10">Abschaltung der Lastregelung</kurztext>
+    <minwert>0</minwert>
+    <maxwert>127</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>Mit einem Wert von 1-128 kann bei
+Decodern mit automatischer Lastregelung
+(EMF) spezifiziert werden, ab welcher
+Fahrstufe die Lastregelung abgeschaltet
+werden soll.</beschreibung>
+  </text>
+  <text nr="11">
+    <nummer> 11</nummer>
+    <kurztext nr="11">Paket Time-Out</kurztext>
+    <format>Dezimalzahl</format>
+    <beschreibung>Normalerweise werden Pakete für Lokdecoder
+vom Steuergerät so oft wie
+möglich wiederholt, auch wenn bei
+gleichbleibender Fahrstufe nur identische
+Pakete geschickt werden. Mit dem
+Wert in CV#11 kann festgelegt werden,
+wann der Decoder abschalten soll,
+wenn er aufgrund einer Fehlerbedingung
+(im Steuergerät) keine an ihn
+gerichteten Pakete mehr empfängt.</beschreibung>
+  </text>
+  <text nr="12">
+    <nummer> 12</nummer>
+    <kurztext nr="12">Alternative Decoderansteuerung</kurztext>
+    <format>Dezimalzahl</format>
+    <beschreibung>CV#12 wird in Verbindung mit CV#<link>1</link>
+benutzt. Wenn Sie die Adresse des
+Decoders auf 0 setzen, ist er mit
+NMRA-Befehlen nicht mehr steuerbar.
+In der CV#12 können Sie jedoch alternative
+Protokolle angeben. Im einfachsten
+Fall können Sie den Analogmodus
+spezifizieren, dann fährt die Lok mit
+Gleichstrom. Daneben gibt es andere
+Werte, mit denen z.B. das Selectrix-
+Protokoll aktiviert werden kann.
+CV#12 hat nur noch historische
+Bedeutung, die meisten Decoder schalten
+heute automatisch auf Analogbetrieb
+um (CV#<link>29</link> Bit 2). Einige Decoder
+(Arnold, ESU) passen sich selbständig
+an das gelieferte Protokoll an, die
+CV#12 ist hier überflüssig.</beschreibung>
+  </text>
+  <text nr="13">
+    <nummer> 13</nummer>
+    <kurztext nr="13">Funktionsstatus im Analogmodus</kurztext>
+    <format>Dezimalzahl</format>
+    <beschreibung>CV#13 steuert die Funktionen F1-F8,
+wenn der Decoder mit Gleichstrom
+betrieben wird (Analogmodus). Bit 0
+der CV#13 steht für Funktion 1, Bit 7
+für Funktion 8. Der Bitwert 0 schaltet
+die entsprechende Funktion aus, eine
+1 schaltet die Funktion ein.</beschreibung>
+  </text>
+  <text nr="14">
+    <nummer> 14</nummer>
+    <kurztext nr="14">Funktionsstatus 2 im Analogmodus</kurztext>
+    <format>Dezimalzahl</format>
+    <beschreibung>CV#14 steuert die Funktionen F9-F12 und FL,
+wenn der Decoder mit Gleichstrom
+betrieben wird (Analogmodus). Bit 0
+der CV#14 steht für Funktion FL bei Vorwärtsrichtung, Bit1 für die Funktion FL bei Rückwärtsrichtung,
+Bit 2 bis 5 für Funktion 9 bis 12. Der Bitwert 0 schaltet
+die entsprechende Funktion aus, eine
+1 schaltet die Funktion ein.</beschreibung>
+  </text>
+  <text nr="17">
+    <nummer href="cvadr.htm"> 17</nummer>
+    <kurztext nr="17">Erweitere Adressierung</kurztext>
+    <minwert>192</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl, zusammen mit CV#<link>18</link></format>
+    <beschreibung>Mit dem Wert in CV#<link>1</link> kann ein Decoder
+nur im Bereich von 1-127 adressiert
+werden. Die zwei Byte lange
+Adresse in CV#17 und CV#<link>18</link> erweitert den
+Bereich bis auf 10239. Die Bits 0 bis 5
+in CV#17 enthalten den höherwertigen
+Teil der Adresse, die Bits 6 und 7 müssen
+auf den Wert 1 gesetzt sein (Erweitertes
+Adressierungschema für Fahrzeugdecoder).
+CV#<link>18</link> enthält den niederwertigen
+Teil der Adresse. Vergessen
+Sie nicht, Bit 5 in CV#<link>29</link> auf 1
+zu setzen, sonst wird die erweiterte
+Adresse ignoriert!</beschreibung>
+  </text>
+  <text nr="18">
+    <nummer href="cvadr.htm"> 18</nummer>
+    <kurztext nr="18">Erweitere Adressierung</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl, zusammen mit CV#<link>17</link></format>
+    <beschreibung>siehe CV#<link>17</link></beschreibung>
+  </text>
+  <text nr="19">
+    <nummer href="javascript:openWindow('daten/dec_adr.gif')"> 19</nummer>
+    <kurztext nr="19">Consistadresse für Mehrfachtraktion</kurztext>
+    <minwert>0</minwert>
+    <maxwert>127</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>Neueren Decodern kann für Mehrfachtraktionen
+eine zusätzliche Steueradresse
+verpaßt werden. Die Kopplung
+von mehreren Basis- oder erweiterten
+Adressen im Steuergerät (per Software)
+sowie die damit verbundene
+Beschränkung auf 4 bis 8 Fahrzeuge entfällt.
+Beim Zusammenstellen der Mehrfachtraktion werden den betroffenen
+Decodern eine 7 Bit lange Consist-
+Adresse und die relative Fahrtrichtung
+zugewiesen. Danach wird der Lokverband
+nur noch mit dieser Adresse
+gefahren. Die Consist-Adresse wird in
+den Bits 0 bis 6 der CV#19 abgespeichert,
+Bit 7 enthält die Fahrtrichtung. Aus
+diesem Grund können Sie nur Consist-
+Adressen im Bereich 1-127 verwenden.
+Wenn der Decoder auf seine
+ursprüngliche Adreßeinstellung (primäre
+oder erweiterte Adresse) reagieren
+soll, muß die CV#19 den Wert 0
+enthalten.
+Mit brandneuen Steuergeräten können
+Sie Mehrfachtraktionen während
+des Betriebs bilden, der Ausflug auf das
+"Programmiergleis" entfällt!</beschreibung>
+  </text>
+  <text nr="21">
+    <nummer> 21</nummer>
+    <kurztext nr="21">Funktionssteuerung bei Mehrfachtraktion</kurztext>
+    <format>zusammen mit CV#<link>22</link></format>
+    <beschreibung>Wenn Sie eine Mehrfachtraktion mit
+der Consist-Adresse betreiben, können
+Sie die Funktionen der Decoder weiterhin
+über die Basisadressen bedienen.
+Falls jedoch die Funktionen ebenfalls
+von der Consist Adresse gesteuert
+werden sollen, müssen Sie das in
+CV#21 und CV#<link>22</link> angeben. Das kann
+sinnvoll sein, wenn Sie z.B. mit einem
+Befehl den Schornstein der ziehenden
+und der schiebenden Lok rauchen lassen
+möchten. Sollen die Funktion 1-8
+von der Consist-Adresse bedient werden,
+müssen Sie in der CV#21 die Bits
+0 bis 7 auf 1 setzen. Bits mit dem Wert
+Null bedeuten, daß die korrespondierende
+Funktion nur über die Basisadresse
+gesteuert wird.
+Die Reaktion von Funktion Null wird
+mit den Bits 0 und 1 in CV#<link>22</link> festgelegt.
+Wenn Bit 0 auf 1 steht, dann kann
+Funktion Null geschaltet werden, wenn
+die Lok vorwärts fährt, Bit 1 ist für die
+Rückwärtsfahrt zuständig. Der automatische
+Lichtwechsel bei Richtungsumschaltung
+ist davon nicht betroffen!</beschreibung>
+  </text>
+  <text nr="22">
+    <nummer> 22</nummer>
+    <kurztext nr="22">Funktionssteuerung bei Mehrfachtraktion</kurztext>
+    <format>zusammen mit CV#<link>21</link></format>
+    <beschreibung>Wenn Sie eine Mehrfachtraktion mit
+der Consist-Adresse betreiben, können
+Sie die Funktionen der Decoder weiterhin
+über die Basisadressen bedienen.
+Falls jedoch die Funktionen ebenfalls
+von der Consist Adresse gesteuert
+werden sollen, müssen Sie das in
+CV#<link>21</link> und CV#22 angeben. Das kann
+sinnvoll sein, wenn Sie z.B. mit einem
+Befehl den Schornstein der ziehenden
+und der schiebenden Lok rauchen lassen
+möchten. Sollen die Funktion 1-8
+von der Consist-Adresse bedient werden,
+müssen Sie in der CV#<link>21</link> die Bits
+0 bis 7 auf 1 setzen. Bits mit dem Wert
+Null bedeuten, daß die korrespondierende
+Funktion nur über die Basisadresse
+gesteuert wird.
+Die Reaktion von Funktion Null wird
+mit den Bits 0 und 1 in CV#22 festgelegt.
+Wenn Bit 0 auf 1 steht, dann kann
+Funktion Null geschaltet werden, wenn
+die Lok vorwärts fährt, Bit 1 ist für die
+Rückwärtsfahrt zuständig. Der automatische
+Lichtwechsel bei Richtungsumschaltung
+ist davon nicht betroffen!</beschreibung>
+  </text>
+  <text nr="23">
+    <nummer> 23</nummer>
+    <kurztext nr="23">Beschleunigungsanpassung</kurztext>
+    <format>Dezimalzahl</format>
+    <beschreibung>Den Beschleunigungswert für eine Lok
+haben Sie individuell in der CV#<link>3</link> festgelegt.
+Wenn Sie ausnahmsweise an
+diese Lok einen gewaltigen Zug anhängen
+oder eine Mehrfachtraktion fahren,
+wird die eingestellte Beschleunigung
+mit der Realität nichts mehr zu
+tun haben. Mit der CV#23 können Sie
+jedoch solche Situationen in den Griff
+bekommen, in dem Sie einen Wert zwischen
+0 und 255 spezifizieren.
+Der Decoder rechnet sich aus den
+Bits 0 bis 6 eine Korrekturgröße aus, die
+je nach dem Vorzeichen in Bit 7 den
+Beschleunigungswert aus CV#<link>3</link> verändert.
+Werte größer 128 erhöhen die
+Beschleunigung, Werte kleiner 128
+sorgen für eine gemächlichere
+Beschleunigung. CV#23 = 0 oder
+CV#23 = 128 lassen die Beschleunigung
+in CV#<link>3</link> unverändert.
+Bei Lenz FX-Decodern müssen Sie
+zusätzlich Bit 1 in der CV#<link>50</link> einschalten,
+damit CV#23 (und CV#<link>24</link>) wirksam
+werden!</beschreibung>
+  </text>
+  <text nr="24">
+    <nummer> 24</nummer>
+    <kurztext nr="24">Anpassung der Bremsverzögerung</kurztext>
+    <format>Dezimalzahl</format>
+    <beschreibung>CV#24 dient zur Korrektur des CV#<link>4</link>-
+Wertes. Die Funktion und der Wertebereich
+entsprechen den Angaben unter CV#<link>23</link>.</beschreibung>
+  </text>
+  <text nr="25">
+    <nummer> 25</nummer>
+    <kurztext nr="25">Auswahl der Geschwindigkeitstabelle</kurztext>
+    <format>Dezimalzahl</format>
+    <beschreibung>Die CV#25 dient der Auswahl von
+Geschwindigkeitstabellen bzw. der
+Zuordnung der mittleren Motorspannung
+zu einer bestimmten Fahrstufe
+(ähnlich CV#<link>6</link>). Werte zwischen 2 und
+126 wählen eine aus 125 vom Hersteller
+vordefinierten Geschwindigkeitstabellen
+aus. Werte von 128 bis 154 legen
+fest, bei welcher Fahrstufe der Motor
+mit halber Kraft laufen soll. Derzeit ist
+kein Decoder bekannt, der diese CV
+unterstützt.</beschreibung>
+  </text>
+  <text nr="29">
+    <nummer> 29</nummer>
+    <kurztext nr="29">Decoder Konfiguration</kurztext>
+    <format>Bitweise</format>
+    <beschreibung>
+Mit den Bits der CV#29 werden grundlegende
+Verhaltensweisen des Decoders
+spezifiziert.<BR/>
+<BR/>
+<B>* Bit 0</B> kehrt die normale Fahrtrichtung
+einer Lok um. Auch die richtungsabhängige
+Beleuchtung wird mit
+umgeschaltet. Sie können dieses Bit auf
+1 setzen, wenn Sie z.B. die Motoranschlüsse
+vertauscht haben.<BR/>
+<BR/>
+<B>* Bit 1</B> gibt an, wo die Information für
+die Steuerung von Funktion 0 zu finden
+ist. Wenn Bit 1 auf 0 steht, wird die
+Funktion 0 mit Bit 4 des Fahrbefehls
+geschaltet, das ist die richtige Einstellung
+für Decoder mit 14 oder 27 Fahrstufen.
+Bei 28 Fahrstufen und mehr
+müssen Sie dieses Bit auf 1 setzen,
+dann wird die Funktion 0 mit Befehlen
+aus der Funktionsgruppe 0 bedient.<BR/>
+<BR/>
+<B>* Bit 2</B> legt fest, ob der Decoder außer
+dem digitalen NMRA-Format auch
+andere Signale akzeptiert. Das können
+andere Protokolle (einstellbar mit
+CV#<link>12</link>) oder schlichter Gleichstrom
+sein. Normalerweise ist diese Konvertierungsfunktion
+eingeschaltet. Wenn
+Sie Bremsgleisabschnitte mit Gleichstrombetrieb
+benutzen, müssen Sie
+das Bit auf 0 setzen, sonst fährt die Lok
+gemütlich weiter! Bei Lenz XF-Decodern
+auch CV#<link>50</link> Bit 2 beachten!<BR/>
+<BR/>
+<B>* Bit 3</B> definiert, auf welche Weise ein
+Decoder Befehle quittieren soll. Zur
+Zeit ist nur das "basic acknowledgement"
+beschrieben (Bit 3 = 0). Im Fahrbetrieb
+gibt es seitens des Decoders
+keine Bestätigung von Befehlen.
+Anders sieht es bei der Decoderprogrammierung
+aus. Speziell beim Auslesen
+von Speicherinhalten ist eine
+Reaktion des Decoders gefragt. Der
+Begriff "Auslesen" ist etwas übertrieben.
+Bei dieser Aufgabe wirft das Steuergerät dem Decoder Befehle mit
+wechselnden CV-Werten vor, die dieser
+mit seinem Speicherinhalt vergleicht.
+Ein positives Vergleichsresultat quittiert
+der Decoder mit erhöhter Stromaufnahme.
+Ein Stromsensor im Steuergerät
+registriert den Stromanstieg
+und bricht die Aussendung weiterer
+Befehle ab, denn jetzt ist klar, daß das
+Datenbyte des letzten Befehls den
+gesuchten CV-Wert enthält. Zukünftig
+soll es ein "advanced acknowledgement"
+geben, das universell auch bei
+der Programmierung auf dem normalen
+Schienennetz funktioniert. Dann
+dürfen Sie das Bit 3 auf 1 setzen.<BR/>
+<BR/>
+<B>* Bit 4</B> Wenn Bit 4 den Wert "0" hat,
+wird für die Zuordnung der Motorspannung
+zu den Fahrstufen die vom
+Hersteller vorbereitete Geschwindigkeitstabelle
+benutzt. In vielen Decodern
+können Sie eine eigene Tabelle
+(mit CV#<link>67</link> bis CV#<link>94</link>) definieren. Für ihre
+Aktivierung muß Bit 4 den Wert 1 enthalten.<BR/>
+<BR/>
+<B>* Bit 5</B> spezifiert den Adressierungmodus.
+Wenn Bit 5 auf "0" steht, zieht
+der Decoder für den Adressenvergleich
+den Wert in CV#<link>1</link> heran, im anderen
+Fall wird die erweiterte Adresse in
+CV#<link>17</link> und CV#<link>18</link> benutzt<BR/>
+<BR/>
+<B>* Bit 6</B> Die Bedeutung von Bit 6 ist zur
+Zeit nicht festgelegt.<BR/>
+<BR/>
+<B>* Bit 7</B> identifiziert den Decodertyp.
+Der Bitwert "0" ist für Lok-, der Wert
+"1" für Schaltdecoder vergeben.
+    </beschreibung>
+  </text>
+  <text nr="30">
+    <nummer> 30</nummer>
+    <kurztext nr="30">Fehlerinformation</kurztext>
+    <format>nur lesbar</format>
+    <beschreibung>
+In der CV#30 kann der Decoder Informationen
+über Fehler ablegen, die er
+z.B. beim Selbsttest festgestellt hat. Die
+Bedeutung der Fehlercodes ist herstellerspezifisch.
+Fa. Lenz benutzt die
+CV#30, um Verdrahtungsfehler beim
+Decodereinbau zu signalisieren.
+    </beschreibung>
+  </text>
+  <text nr="33">
+    <nummer> 33</nummer>
+    <kurztext nr="33">Zuordnung von Decoderausgängen zu Funktionen</kurztext>
+    <beschreibung>
+Mit CV#33 bis CV#<link>46</link> kann nach Einbau des
+Decoders die Zuordnung der Funktionsausgänge
+zu den Funktionen 0-8
+variiert werden. Auch die Steuerung
+mehrerer Ausgänge mit einer Funktion
+ist möglich. Details entnehmen Sie
+bitte der Decoderbeschreibung.
+    </beschreibung>
+  </text>
+  <text nr="34">
+    <nummer> 34</nummer>
+    <kurztext nr="34">Zuordnung von Decoderausgängen zu Funktionen</kurztext>
+    <beschreibung>siehe CV#<link>33</link></beschreibung>
+  </text>
+  <text nr="35">
+    <nummer> 35</nummer>
+    <kurztext nr="35">Zuordnung von Decoderausgängen zu Funktionen</kurztext>
+    <beschreibung>siehe CV#<link>33</link></beschreibung>
+  </text>
+  <text nr="36">
+    <nummer> 36</nummer>
+    <kurztext nr="36">Zuordnung von Decoderausgängen zu Funktionen</kurztext>
+    <beschreibung>siehe CV#<link>33</link></beschreibung>
+  </text>
+  <text nr="37">
+    <nummer> 37</nummer>
+    <kurztext nr="37">Zuordnung von Decoderausgängen zu Funktionen</kurztext>
+    <beschreibung>siehe CV#<link>33</link></beschreibung>
+  </text>
+  <text nr="38">
+    <nummer> 38</nummer>
+    <kurztext nr="38">Zuordnung von Decoderausgängen zu Funktionen</kurztext>
+    <beschreibung>siehe CV#<link>33</link></beschreibung>
+  </text>
+  <text nr="39">
+    <nummer> 39</nummer>
+    <kurztext nr="39">Zuordnung von Decoderausgängen zu Funktionen</kurztext>
+    <beschreibung>siehe CV#<link>33</link></beschreibung>
+  </text>
+  <text nr="40">
+    <nummer> 40</nummer>
+    <kurztext nr="40">Zuordnung von Decoderausgängen zu Funktionen</kurztext>
+    <beschreibung>siehe CV#<link>33</link></beschreibung>
+  </text>
+  <text nr="41">
+    <nummer> 41</nummer>
+    <kurztext nr="41">Zuordnung von Decoderausgängen zu Funktionen</kurztext>
+    <beschreibung>siehe CV#<link>33</link></beschreibung>
+  </text>
+  <text nr="42">
+    <nummer> 42</nummer>
+    <kurztext nr="42">Zuordnung von Decoderausgängen zu Funktionen</kurztext>
+    <beschreibung>siehe CV#<link>33</link></beschreibung>
+  </text>
+  <text nr="43">
+    <nummer> 43</nummer>
+    <kurztext nr="43">Zuordnung von Decoderausgängen zu Funktionen</kurztext>
+    <beschreibung>siehe CV#<link>33</link></beschreibung>
+  </text>
+  <text nr="44">
+    <nummer> 44</nummer>
+    <kurztext nr="44">Zuordnung von Decoderausgängen zu Funktionen</kurztext>
+    <beschreibung>siehe CV#<link>33</link></beschreibung>
+  </text>
+  <text nr="45">
+    <nummer> 45</nummer>
+    <kurztext nr="45">Zuordnung von Decoderausgängen zu Funktionen</kurztext>
+    <beschreibung>siehe CV#<link>33</link></beschreibung>
+  </text>
+  <text nr="46">
+    <nummer> 46</nummer>
+    <kurztext nr="46">Zuordnung von Decoderausgängen zu Funktionen</kurztext>
+    <beschreibung>siehe CV#<link>33</link></beschreibung>
+  </text>
+  <text nr="50">
+    <nummer> 50</nummer>
+    <kurztext nr="50">Herstellerspezifische Konfigurationsinformationen</kurztext>
+    <beschreibung>unbedingt im Handbuch des Decoderherstellers nachlesen!</beschreibung>
+  </text>
+  <text nr="51">
+    <nummer> 51</nummer>
+    <kurztext nr="51">Herstellerspezifische Konfigurationsinformationen</kurztext>
+    <beschreibung>unbedingt im Handbuch des Decoderherstellers nachlesen!</beschreibung>
+  </text>
+  <text nr="52">
+    <nummer> 52</nummer>
+    <kurztext nr="52">Herstellerspezifische Konfigurationsinformationen</kurztext>
+    <beschreibung>unbedingt im Handbuch des Decoderherstellers nachlesen!</beschreibung>
+  </text>
+  <text nr="53">
+    <nummer> 53</nummer>
+    <kurztext nr="53">Herstellerspezifische Konfigurationsinformationen</kurztext>
+    <beschreibung>unbedingt im Handbuch des Decoderherstellers nachlesen!</beschreibung>
+  </text>
+  <text nr="54">
+    <nummer> 54</nummer>
+    <kurztext nr="54">Herstellerspezifische Konfigurationsinformationen</kurztext>
+    <beschreibung>unbedingt im Handbuch des Decoderherstellers nachlesen!</beschreibung>
+  </text>
+  <text nr="55">
+    <nummer> 55</nummer>
+    <kurztext nr="55">Herstellerspezifische Konfigurationsinformationen</kurztext>
+    <beschreibung>unbedingt im Handbuch des Decoderherstellers nachlesen!</beschreibung>
+  </text>
+  <text nr="56">
+    <nummer> 56</nummer>
+    <kurztext nr="56">Herstellerspezifische Konfigurationsinformationen</kurztext>
+    <beschreibung>unbedingt im Handbuch des Decoderherstellers nachlesen!</beschreibung>
+  </text>
+  <text nr="57">
+    <nummer> 57</nummer>
+    <kurztext nr="57">Herstellerspezifische Konfigurationsinformationen</kurztext>
+    <beschreibung>unbedingt im Handbuch des Decoderherstellers nachlesen!</beschreibung>
+  </text>
+  <text nr="58">
+    <nummer> 58</nummer>
+    <kurztext nr="58">Herstellerspezifische Konfigurationsinformationen</kurztext>
+    <beschreibung>unbedingt im Handbuch des Decoderherstellers nachlesen!</beschreibung>
+  </text>
+  <text nr="59">
+    <nummer> 59</nummer>
+    <kurztext nr="59">Herstellerspezifische Konfigurationsinformationen</kurztext>
+    <beschreibung>unbedingt im Handbuch des Decoderherstellers nachlesen!</beschreibung>
+  </text>
+  <text nr="65">
+    <nummer> 65</nummer>
+    <kurztext nr="65">Zusätzliche Anfahrspannung</kurztext>
+    <beschreibung>
+Mit dem Wert in der CV#65 kann die
+Anfahrspannung beim Wechsel von
+Fahrstufe 0 nach 1 erhöht werden.
+CV#65 wird in Verbindung mit selbstdefinierten
+Geschwindigkeitstabellen
+benutzt. Die Anwendung ist allerdings
+nicht klar geregelt, einige Decoderversionen
+ziehen für diesen Zweck die
+bekannte CV#<link>2</link> heran, andere nehmen
+die CV#65, deshalb bitte die Beschreibung
+durchlesen!
+    </beschreibung>
+  </text>
+  <text nr="66">
+    <nummer> 66</nummer>
+    <kurztext nr="66">Geschwindigkeitsanpassung Fahrtrichtung vorwärts</kurztext>
+    <beschreibung>
+Die CV#66 wird verwendet, um benutzerdefinierte
+Geschwindigkeitskennlinien
+zu verbiegen, wenn der Decoder
+keinen automatischen Lastausgleich
+vorsieht. Wenn Sie eine Lok stark belasten,
+wird sie nicht die Geschwindigkeit
+erreichen, die Sie einer Fahrstufe
+zugeordnet haben. Mit der CV#66 können
+Sie eine lastabhängige Korrektur
+einführen, indem Sie einen Wert zwischen
+1 und 255 definieren. Diesen
+Wert dividiert der Decoder durch 128,
+das Resultat wird mit dem entsprechenden
+Eintrag der Geschwindigkeitstabelle
+multipliziert und für die Motoransteuerung
+verwendet.
+Wenn Sie in der CV#66 einen Wert
+von 128 angeben, entspricht das einem
+Korrekturfaktor von 1, die Einträge aus
+der Tabelle werden demnach unverändert
+übernommen. Bei CV#66 = 255
+werden alle Tabelleneinträge mit 2
+multipliziert, die Geschwindigkeitskurve
+wird steiler, und der Motor erhält
+bei jeder Fahrstufe doppelt soviel Saft.
+Voraussetzung ist natürlich, daß die
+ursprüngliche Geschwindigkeitstabelle
+nicht bereits 100% Motorspannung
+vorsah. Die CV#66 ist nur für die
+Anpassung bei Vorwärtsfahrt zuständig,
+die Rückwärtsfahrt wird mit der
+CV#<link>95</link> getrimmt.
+Anmerkung: Bei Digitrax-Decodern
+DH140 Version x"6A" ergibt ein Wert
+von 128 einen Korrekturfaktor von
+1/2!
+    </beschreibung>
+  </text>
+  <text nr="67">
+    <nummer> 67</nummer>
+    <kurztext nr="67">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>
+Jeder Decoder enthält für die Geschwindigkeitssteuerung
+eine Standardtabelle,
+die meist eine lineare
+Zuordnung von Motorspannung zu
+Fahrstufe enthält. Mit CV#<link>2</link> wird die
+Anfahrspannung definiert, das führt zu
+einer Anhebung der Spannung bei
+niedrigen Fahrstufen. Bei manchen
+Decodern haben Sie die Möglichkeit,
+auch die Höchstgeschwindigkeit mit
+der CV#<link>5</link> und die Geschwindigkeit bei
+der mittleren Fahrstufe mit CV#<link>6</link> zu
+beeinflussen. Wenn nach diesen Maßnahmen
+das Fahrverhalten immer
+noch zu wünschen übrigläßt, müssen
+Sie sich wohl eine eigene Tabelle
+"schnitzen", die individuell an das entsprechende
+Fahrzeug angepaßt wird.
+Der erste Versuch ist meist etwas mühsam,
+aber die Mühe lohnt!
+Aus den Erläuterungen zu CV#<link>9</link> wissen
+Sie, daß die Drehzahlregelung des
+Motors mit einer Pulsweitenmodulation
+vorgenommen wird. Je kürzer der
+Einschaltimpuls pro Periode ist, desto
+langsamer dreht der Motor und umgekehrt.
+Die Geschwindigkeit wird also
+durch das Verhältnis von Impuls- zu
+Periodendauer bestimmt. Die Periodendauer
+selbst spielt dabei keine
+Rolle. Wenn Sie eine eigene Geschwindigkeitstabelle
+definieren wollen, besteht
+Ihre Aufgabe darin, jeder Fahrstufe
+das gewünschte Impuls-/Periodendauer-Verhältnis zuzuordnen.
+Nun müssen Sie nicht mit unhandlichen
+Brüchen umgehen, die PWMTechnik
+kommt Ihnen da zu Hilfe.
+Zunächst wird hier eine Periode in eine
+feste Anzahl von Zeitabschnitten aufgeteilt,
+dieser Wert wird auch als
+(interne) Auflösung der PWM-Steuerung
+bezeichnet. Für die Erzeugung
+der variablen Impulslängen brauchen
+Sie dann nur noch die Anzahl der Zeitabschnitte
+anzugeben, während der
+der Motor eingeschaltet sein soll. Bei
+den meisten Decodern beträgt die
+Anzahl der Zeitabschnitte 255, bei älteren
+Decodern ist sie teilweise auf 63
+begrenzt. Der Maximalwert ergibt sich
+aus dem zugelassenen Wertebereich
+für die Variablen CV#67 bis CV#<link>94</link>.<BR/>
+<BR/>
+<B>* Beispiel:</B> Wenn der Wertebereich
+von 0 bis 255 zugelassen ist, ergibt ein
+Wert von 128 das Impuls-/Periodenverhältnis
+von 1:2. Die Impulsdauer ist
+also gleich der Pausendauer, und der
+Motor wird mit 50% der Versorgungsspannung
+betrieben. Beim Wert 255
+sind Impuls- und Periodendauer
+gleich, es gibt keine Pausen mehr, der
+Motor läuft mit Maximalgeschwindigkeit.
+Soweit die Theorie, die Geschwindigkeitskennlinie
+und die zugehörigen
+Definitionen in der Tabelle sollen Sie
+bei Ihren praktischen Versuchen unterstützen.
+Die Geschwindigkeitskurve
+wurde für eine Rangierlokomotive
+(BR 160/DR) entworfen, besonderer
+Wert wurde auf eine feinfühlige Steuerung
+bei niedrigen Fahrstufen gelegt.
+Wenn Sie für die Berechnung der CV-Werte
+lieber die prozentuale Motorspannung
+heranziehen möchten, brauchen
+Sie nur die Prozentzahl mit 2,55
+zu multiplizieren und das gerundete
+Resultat in die entsprechende Variable
+eintragen.
+Benutzerdefinierte Tabellen sind
+natürlich auch beim Betrieb der Decoder
+mit 14 oder 128 Fahrstufen verwendbar.
+Der Decoder interpoliert aus
+den 28 Tabelleneinträgen die entsprechenden
+Zwischenwerte.
+Wem die gegebenenfalls wiederholte
+Programmierung von 28 Tabellenwerten
+mit dem Handregler zu langweilig
+ist, sollte sich die Anschaffung eines
+Programmiergeräts mit PC-Unterstützung
+überlegen. Entsprechende Programme
+und Utilities (siehe CD-ROM)
+erlauben eine komfortable Einstellung
+der CVs und auch eine übersichtlichere
+Einstellung der Geschwindigkeitskennlinie.
+Software mit benutzerfreundlicher
+Oberfläche bieten z.B.
+Busch, Viessmann, Digitrax, ESU etc.
+an.
+ESU bietet für seine Loksound-Decoder
+ebenfalls eine komfortable Software
+und einen Programmieradapter
+an. In der derzeitigen Version ist
+jedoch die Geschwindigkeitstabelle leider
+auf 14 Einträge begrenzt.
+    </beschreibung>
+  </text>
+  <text nr="68">
+    <nummer> 68</nummer>
+    <kurztext nr="68">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="69">
+    <nummer> 69</nummer>
+    <kurztext nr="69">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="70">
+    <nummer> 70</nummer>
+    <kurztext nr="70">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="71">
+    <nummer> 71</nummer>
+    <kurztext nr="71">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="72">
+    <nummer> 72</nummer>
+    <kurztext nr="72">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="73">
+    <nummer> 73</nummer>
+    <kurztext nr="73">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="74">
+    <nummer> 74</nummer>
+    <kurztext nr="74">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="75">
+    <nummer> 75</nummer>
+    <kurztext nr="75">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="76">
+    <nummer> 76</nummer>
+    <kurztext nr="76">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="77">
+    <nummer> 77</nummer>
+    <kurztext nr="77">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="78">
+    <nummer> 78</nummer>
+    <kurztext nr="78">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="79">
+    <nummer> 79</nummer>
+    <kurztext nr="79">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="80">
+    <nummer> 80</nummer>
+    <kurztext nr="80">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="81">
+    <nummer> 81</nummer>
+    <kurztext nr="81">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="82">
+    <nummer> 82</nummer>
+    <kurztext nr="82">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="83">
+    <nummer> 83</nummer>
+    <kurztext nr="83">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="84">
+    <nummer> 84</nummer>
+    <kurztext nr="84">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="85">
+    <nummer> 85</nummer>
+    <kurztext nr="85">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="86">
+    <nummer> 86</nummer>
+    <kurztext nr="86">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="87">
+    <nummer> 87</nummer>
+    <kurztext nr="87">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="88">
+    <nummer> 88</nummer>
+    <kurztext nr="88">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="89">
+    <nummer> 89</nummer>
+    <kurztext nr="89">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="90">
+    <nummer> 90</nummer>
+    <kurztext nr="90">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="91">
+    <nummer> 91</nummer>
+    <kurztext nr="91">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="92">
+    <nummer> 92</nummer>
+    <kurztext nr="92">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="93">
+    <nummer> 93</nummer>
+    <kurztext nr="93">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="94">
+    <nummer> 94</nummer>
+    <kurztext nr="94">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="95">
+    <nummer> 95</nummer>
+    <kurztext nr="95">Geschwindigkeitsanpassung Fahrtrichtung rückwärts</kurztext>
+    <beschreibung>
+Mit CV#95 kann die Geschwindigkeitstabelle
+für die Rückwärtsfahrt angepaßt
+werden. Die Funktionsweise ist
+bei CV#<link>66</link> beschrieben. Bei Fa. Wangrow
+wird mit CV#95 die Wiederholfrequenz
+der PRM-Perioden spezifiziert
+(entspricht CV#<link>9</link>).
+    </beschreibung>
+  </text>
+  <text nr="105">
+    <nummer>105</nummer>
+    <kurztext nr="105">Benutzerfelder</kurztext>
+    <beschreibung>
+Die CV#105 und CV#<link>106</link> sind für den
+Benutzer vorgesehen, Sie können diese
+CVs für eigene Zwecke (z.B. Dokumentation
+etc.) verwenden.
+    </beschreibung>
+  </text>
+  <text nr="106">
+    <nummer>106</nummer>
+    <kurztext nr="106">Benutzerfelder</kurztext>
+    <beschreibung>siehe CV#<link>105</link></beschreibung>
+  </text>
+</CV>

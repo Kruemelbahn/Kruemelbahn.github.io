@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="cv.xsl" ?>
+<!DOCTYPE CV SYSTEM "cv.dtd">
+
+<CV date="081106" ddb="LE1835.DDB">
+  <text nr="1">
+    <nummer href="javascript:openWindow('daten/dec_adr.gif')">  1</nummer>
+    <kurztext nr="1">Primäre Decoderadresse</kurztext>
+    <minwert>1</minwert>
+    <maxwert>127</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>Die Bits 0-6 der CV#1 enthalten die
+Decoderadresse im Bereich von 1 bis
+127. Bit 7 muss den Wert '0' haben.<BR/>
+Beachte: Neue Decoder sind auf die Adresse 3 voreingestellt.<BR/>Beim Schreiben dieser CV wird CV#<link>19</link> und CV#<link>29</link> Bit5 gelöscht.<BR/>
+Für die Verwendung mit 'Digital plus by Lenz' Geräten ist nur der Bereich 1..99 zugelassen.</beschreibung>
+  </text>
+  <text nr="2">
+    <nummer href="javascript:openWindow('daten/cv2_5_6.gif')">  2</nummer>
+    <kurztext nr="2">Mindestanfahrspannung</kurztext>
+    <minwert>0</minwert>
+    <maxwert>31</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>Die Spannung, die bei Fahrstufe 1 an den Motor ausgegeben wird.
+    Ein Wert von '0' entspricht 0 Volt, ein Wert von '31' der maximalen Spannung.
+    </beschreibung>
+  </text>
+  <text nr="3">
+    <nummer>  3</nummer>
+    <kurztext nr="3">Anfahrverzögerung</kurztext>
+    <minwert>1</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>Länge der Wartezeit, die beim Beschleunigen der Lok jeweils vor dem Hochschalten zur nächst höheren Fahstufe vergeht.
+    </beschreibung>
+  </text>
+  <text nr="4">
+    <nummer>  4</nummer>
+    <kurztext nr="4">Bremsverzögerung</kurztext>
+    <minwert>1</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>Länge der Wartezeit, die beim Abbremsen der Lok jeweils vor dem Herunterschalten zur nächst niedrigeren Fahrstufe vergeht<BR/>
+    </beschreibung>
+  </text>
+  <text nr="5">
+    <nummer href="javascript:openWindow('daten/cv2_5_6.gif')">  5</nummer>
+    <kurztext nr="5">Maximale Motorspannung</kurztext>
+    <minwert>2</minwert>
+    <maxwert>10</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>Spannung, die bei der höchsten Fahrstufe an den Motorausgegeben wird.<BR/>Die tatsächlich erreichte Geschwindigkeit ist abhängig von der Motorcharakteristik.
+    </beschreibung>
+  </text>
+  <text nr="7">
+    <nummer>  7</nummer>
+    <kurztext nr="7">Versionsnummer des Decoders</kurztext>
+    <format>nur lesbar</format>
+    <beschreibung>CV#7 enthält die Decoder-Versionsnummer des Herstellers.</beschreibung>
+  </text>
+  <text nr="8">
+    <nummer href="cv8.htm">  8</nummer>
+    <kurztext nr="8">Herstelleridentifikation / Reset</kurztext>
+    <beschreibung>CV#8 enthält die Herstelleridentifikation.<BR/>
+    Bei Eingabe von 33 werden die Einstellungen im Auslieferungszustand wieder hergestellt.
+    </beschreibung>
+  </text>
+  <text nr="17">
+    <nummer href="cvadr.htm"> 17</nummer>
+    <kurztext nr="17">Erweitere Adressierung</kurztext>
+    <minwert>192</minwert>
+    <maxwert>231</maxwert>
+    <format>Dezimalzahl, zusammen mit CV#<link>18</link></format>
+    <beschreibung>Mit dem Wert in CV#<link>1</link> kann ein Decoder
+nur im Bereich von 1-127 adressiert
+werden. Die zwei Byte lange
+Adresse in CV#17 und CV#<link>18</link> erweitert den
+Bereich bis auf 10239. Die Bits 0 bis 5
+in CV#17 enthalten den höherwertigen
+Teil der Adresse, die Bits 6 und 7 müssen
+auf den Wert 1 gesetzt sein (Erweitertes
+Adressierungschema für Fahrzeugdecoder).
+CV#<link>18</link> enthält den niederwertigen
+Teil der Adresse. Vergessen
+Sie nicht, Bit 5 in CV#<link>29</link> auf 1
+zu setzen, sonst wird die erweiterte
+Adresse ignoriert!</beschreibung>
+  </text>
+  <text nr="18">
+    <nummer href="cvadr.htm"> 18</nummer>
+    <kurztext nr="18">Erweitere Adressierung</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl, zusammen mit CV#<link>17</link></format>
+    <beschreibung>siehe CV#<link>17</link></beschreibung>
+  </text>
+  <text nr="19">
+    <nummer href="javascript:openWindow('daten/dec_adr.gif')"> 19</nummer>
+    <kurztext nr="19">Consistadresse für Mehrfachtraktion</kurztext>
+    <minwert>0</minwert>
+    <maxwert>99</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>Die Consist-Adresse wird in
+den Bits 0 bis 6 der CV#19 abgespeichert,
+Bit 7 enthält die Fahrtrichtung. Aus
+diesem Grund können Sie nur Consist-
+Adressen im Bereich 1-99 verwenden.
+Wenn der Decoder auf seine
+ursprüngliche Adreßeinstellung (primäre
+oder erweiterte Adresse) reagieren
+soll, muß die CV#19 den Wert 0
+enthalten.</beschreibung>
+  </text>
+  <text nr="29">
+    <nummer> 29</nummer>
+    <kurztext nr="29">Decoder Konfiguration</kurztext>
+    <format>Bitweise</format>
+    <beschreibung>
+Mit den Bits der CV#29 werden grundlegende
+Verhaltensweisen des Decoders
+spezifiziert.<BR/>
+<BR/>
+<B>* Bit 0</B> kehrt die normale Fahrtrichtung
+einer Lok um. Auch die richtungsabhängige
+Beleuchtung wird mit
+umgeschaltet. Sie können dieses Bit auf
+1 setzen, wenn Sie z.B. die Motoranschlüsse
+vertauscht haben.<BR/>
+<BR/>
+<B>* Bit 1</B> gibt an, wo die Information für
+die Steuerung von Funktion 0 zu finden
+ist. Wenn Bit 1 auf 0 steht, wird die
+Funktion 0 mit Bit 4 des Fahrbefehls
+geschaltet, das ist die richtige Einstellung
+für Decoder mit 14 oder 27 Fahrstufen.
+Bei 28 Fahrstufen und mehr
+müssen Sie dieses Bit auf 1 setzen,
+dann wird die Funktion 0 mit Befehlen
+aus der Funktionsgruppe 0 bedient.<BR/>
+<BR/>
+<B>* Bit 2</B> 0 = nur Digitalbetrieb, 1 = Betrieb im Digital- oder Analogmodus, ein fliegender Wechsel ist möglich<BR/>
+<BR/>
+<B>* Bit 5</B> spezifiert den Adressierungmodus.
+Wenn Bit 5 auf "0" steht, zieht
+der Decoder für den Adressenvergleich
+den Wert in CV#<link>1</link> heran, im anderen
+Fall wird die erweiterte Adresse in
+CV#<link>17</link> und CV#<link>18</link> benutzt<BR/>
+    </beschreibung>
+  </text>
+  <text nr="50">
+    <nummer> 50</nummer>
+    <kurztext nr="50">Konfigurationsdaten 2</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Bitweise</format>
+    <beschreibung>
+<B>* Bit 1</B> geschwindigkeitsunabhängige Bremsverzögerung<BR/>
+<B>* Bit 2</B> bremsen mit Gleichspannung, wenn CV#<link>29</link> Bit 2 = 0<BR/>
+<B>* Bit 3</B> EMK-Teiler aktiv
+    </beschreibung>
+  </text>
+  <text nr="51">
+    <nummer> 51</nummer>
+    <kurztext nr="51">Einstellungen Funktionsausgang A und B</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Bitweise</format>
+    <beschreibung>
+<B>* Bit 0</B> 0 = Funktionsausgang A und B sind richtungsabhängig<BR/> 1 = Ausgang A wird durch F0, B durch F1 angesprochen <BR/>
+<B>* Bit 1</B> Dimmen Funktionsausgang A (nur wirksam, wenn Bit 2 gesetzt)<BR/>0 = Funktionsausgang A immer gedimmt, wenn Bit 2 gesetzt<BR/>1 = Bit0=0: Dimmen mit F1 ein/aus<BR/>1 = Bit0=1: Dimmen mit F4 ein/aus<BR/>
+<B>* Bit 2</B> Funktionsausgang A kann gedimmt werden<BR/>
+<B>* Bit 3</B> Funktionsausgang B kann gedimmt werden
+    </beschreibung>
+  </text>
+  <text nr="52">
+    <nummer> 52</nummer>
+    <kurztext nr="52">Dimmwert für Funktionsausgänge A und B</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>0 ist aus, 255 ist maximale Helligkeit</beschreibung>
+  </text>
+  <text nr="53">
+    <nummer> 53</nummer>
+    <kurztext nr="53">Lastregelparameter</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>Parameter der Lastregelung</beschreibung>
+  </text>
+  <text nr="54">
+    <nummer> 54</nummer>
+    <kurztext nr="54">Mapping Funktionsausgang C</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Bitweise</format>
+    <beschreibung>Bit 0 bis 7 korrespondieren mit den Funktionen F1..F8</beschreibung>
+  </text>
+  <text nr="55">
+    <nummer> 55</nummer>
+    <kurztext nr="55">Mapping Funktionsausgang D</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Bitweise</format>
+    <beschreibung>Bit 0 bis 7 korrespondieren mit den Funktionen F1..F8</beschreibung>
+  </text>
+  <text nr="59">
+    <nummer> 59</nummer>
+    <kurztext nr="59">Mapping Rangiergang</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Bitweise</format>
+    <beschreibung>Bestimmt, mit welcher Funktion der Rangiergang eingeschaltet wird.<BR/>
+Ist der Rangiergang eingeschaltet, wird automatisch auf geschwindigkeitsabhängige Verzögerung geschaltet.</beschreibung>
+  </text>
+  <text nr="60">
+    <nummer> 60</nummer>
+    <kurztext nr="60">Mapping Abschalten der Verzögerung</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Bitweise</format>
+    <beschreibung>Bestimmt, mit welcher Funktion die Verzögerung abgeschaltet wird.</beschreibung>
+  </text>
+  <text nr="61">
+    <nummer> 61</nummer>
+    <kurztext nr="61">Bremsweg</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalwert</format>
+    <beschreibung>Wenn Wert 0, ist geschwindigkeitsunabhängiger Bremsweg ausgeschaltet.</beschreibung>
+  </text>
+  <text nr="62">
+    <nummer> 62</nummer>
+    <kurztext nr="62">Zeiger-CV für Zehner und Einerstelle</kurztext>
+    <minwert>0</minwert>
+    <maxwert>99</maxwert>
+    <format>Dezimalwert</format>
+    <beschreibung>siehe CV#<link>64</link></beschreibung>
+  </text>
+  <text nr="63">
+    <nummer> 63</nummer>
+    <kurztext nr="63">Zeiger-CV für Hunderterstelle</kurztext>
+    <minwert>0</minwert>
+    <maxwert>9</maxwert>
+    <format>Dezimalwert</format>
+    <beschreibung>siehe CV#<link>64</link></beschreibung>
+  </text>
+  <text nr="64">
+    <nummer> 64</nummer>
+    <kurztext nr="64">Transport-CV für Werte</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalwert</format>
+    <beschreibung>CV#<link>62</link>, CV#<link>63</link> und CV#<link>64</link> werden zur Programmierung des angeschlossenen S.U.S.I.-Modules verwendet</beschreibung>
+  </text>
+</CV>

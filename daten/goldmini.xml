@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="cv.xsl" ?>
+<!DOCTYPE CV SYSTEM "cv.dtd">
+
+<CV date="081115" ddb="goldmini.DDB">
+  <text nr="1">
+    <nummer href="javascript:openWindow('daten/dec_adr.gif')">  1</nummer>
+    <kurztext nr="1">Primäre Decoderadresse</kurztext>
+    <minwert>1</minwert>
+    <maxwert>127</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>Die Bits 0-6 der CV#1 enthalten die
+Decoderadresse im Bereich von 1 bis
+127. Bit 7 muss den Wert '0' haben.<BR/>
+Beachte: Neue Decoder sind auf die Adresse 3 voreingestellt.<BR/>Beim Schreiben dieser CV wird CV#<link>19</link> und CV#<link>29</link> Bit5 gelöscht.<BR/>
+Für die Verwendung mit 'Digital plus by Lenz' Geräten ist nur der Bereich 1..99 zugelassen.</beschreibung>
+  </text>
+  <text nr="2">
+    <nummer href="javascript:openWindow('daten/cv2_5_6.gif')">  2</nummer>
+    <kurztext nr="2">Minimale Geschwindigkeit</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>Die Spannung, die bei Fahrstufe 1 an den Motor ausgegeben wird.
+    Ein Wert von '0' entspricht 0 Volt, ein Wert von '31' der maximalen Spannung.
+    </beschreibung>
+  </text>
+  <text nr="3">
+    <nummer>  3</nummer>
+    <kurztext nr="3">Anfahrverzögerung</kurztext>
+    <minwert>1</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>Länge der Wartezeit, die beim Beschleunigen der Lok jeweils vor dem Hochschalten zur nächst höheren Fahstufe vergeht.
+    </beschreibung>
+  </text>
+  <text nr="4">
+    <nummer>  4</nummer>
+    <kurztext nr="4">Bremsverzögerung</kurztext>
+    <minwert>1</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>Länge der Wartezeit, die beim Abbremsen der Lok jeweils vor dem Herunterschalten zur nächst niedrigeren Fahrstufe vergeht<BR/>
+    </beschreibung>
+  </text>
+  <text nr="5">
+    <nummer href="javascript:openWindow('daten/cv2_5_6.gif')">  5</nummer>
+    <kurztext nr="5">Maximale Geschwindigkeit</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>Spannung, die bei der höchsten Fahrstufe an den Motorausgegeben wird.<BR/>Die tatsächlich erreichte Geschwindigkeit ist abhängig von der Motorcharakteristik.
+    </beschreibung>
+  </text>
+  <text nr="6">
+    <nummer href="javascript:openWindow('daten/cv2_5_6.gif')">  6</nummer>
+    <kurztext nr="6">mittlere Geschwindigkeit</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>Spannung, die bei der mittleren Fahrstufe an den Motorausgegeben wird.<BR/>Die tatsächlich erreichte Geschwindigkeit ist abhängig von der Motorcharakteristik.
+    </beschreibung>
+  </text>
+  <text nr="7">
+    <nummer>  7</nummer>
+    <kurztext nr="7">Versionsnummer des Decoders</kurztext>
+    <format>nur lesbar</format>
+    <beschreibung>CV#7 enthält die Decoder-Versionsnummer des Herstellers.</beschreibung>
+  </text>
+  <text nr="8">
+    <nummer href="cv8.htm">  8</nummer>
+    <kurztext nr="8">Herstelleridentifikation / Reset</kurztext>
+    <beschreibung>CV#8 enthält die Herstelleridentifikation.<BR/>
+    </beschreibung>
+  </text>
+  <text nr="9">
+    <nummer>  9</nummer>
+    <kurztext nr="9">Wiederholrate</kurztext>
+    <minwert>0</minwert>
+    <maxwert>63</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung></beschreibung>
+  </text>
+  <text nr="17">
+    <nummer href="cvadr.htm"> 17</nummer>
+    <kurztext nr="17">Erweitere Adressierung</kurztext>
+    <minwert>192</minwert>
+    <maxwert>231</maxwert>
+    <format>Dezimalzahl, zusammen mit CV#<link>18</link></format>
+    <beschreibung>Mit dem Wert in CV#<link>1</link> kann ein Decoder
+nur im Bereich von 1-127 adressiert
+werden. Die zwei Byte lange
+Adresse in CV#17 und CV#<link>18</link> erweitert den
+Bereich bis auf 10239. Die Bits 0 bis 5
+in CV#17 enthalten den höherwertigen
+Teil der Adresse, die Bits 6 und 7 müssen
+auf den Wert 1 gesetzt sein (Erweitertes
+Adressierungschema für Fahrzeugdecoder).
+CV#<link>18</link> enthält den niederwertigen
+Teil der Adresse. Vergessen
+Sie nicht, Bit 5 in CV#<link>29</link> auf 1
+zu setzen, sonst wird die erweiterte
+Adresse ignoriert!</beschreibung>
+  </text>
+  <text nr="18">
+    <nummer href="cvadr.htm"> 18</nummer>
+    <kurztext nr="18">Erweitere Adressierung</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl, zusammen mit CV#<link>17</link></format>
+    <beschreibung>siehe CV#<link>17</link></beschreibung>
+  </text>
+  <text nr="19">
+    <nummer href="javascript:openWindow('daten/dec_adr.gif')"> 19</nummer>
+    <kurztext nr="19">Consistadresse für Mehrfachtraktion</kurztext>
+    <minwert>0</minwert>
+    <maxwert>99</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>Die Consist-Adresse wird in
+den Bits 0 bis 6 der CV#19 abgespeichert,
+Bit 7 enthält die Fahrtrichtung. Aus
+diesem Grund können Sie nur Consist-
+Adressen im Bereich 1-99 verwenden.
+Wenn der Decoder auf seine
+ursprüngliche Adreßeinstellung (primäre
+oder erweiterte Adresse) reagieren
+soll, muß die CV#19 den Wert 0
+enthalten.</beschreibung>
+  </text>
+  <text nr="28">
+    <nummer> 28</nummer>
+    <kurztext nr="28">RailCom Konfiguration</kurztext>
+    <format>Bitweise</format>
+    <beschreibung>
+<B>* Bit 0</B>1 = Kanal 1 freigeben für Adress-Broadcast<BR/>
+<B>* Bit 1</B>1 = Kanal 2 freigeben für daten<BR/>
+<B>* Bit 2</B>1 = Kanal 1 freigeben für Befehls-Acknowledge
+    </beschreibung>
+  </text>
+  <text nr="29">
+    <nummer> 29</nummer>
+    <kurztext nr="29">Decoder Konfiguration</kurztext>
+    <format>Bitweise</format>
+    <beschreibung>
+Mit den Bits der CV#29 werden grundlegende
+Verhaltensweisen des Decoders
+spezifiziert.<BR/>
+<BR/>
+<B>* Bit 0</B> kehrt die normale Fahrtrichtung
+einer Lok um. Auch die richtungsabhängige
+Beleuchtung wird mit
+umgeschaltet. Sie können dieses Bit auf
+1 setzen, wenn Sie z.B. die Motoranschlüsse
+vertauscht haben.<BR/>
+<BR/>
+<B>* Bit 1</B> gibt an, wo die Information für
+die Steuerung von Funktion 0 zu finden
+ist. Wenn Bit 1 auf 0 steht, wird die
+Funktion 0 mit Bit 4 des Fahrbefehls
+geschaltet, das ist die richtige Einstellung
+für Decoder mit 14 oder 27 Fahrstufen.
+Bei 28 Fahrstufen und mehr
+müssen Sie dieses Bit auf 1 setzen,
+dann wird die Funktion 0 mit Befehlen
+aus der Funktionsgruppe 0 bedient.<BR/>
+<BR/>
+<B>* Bit 2</B> 0 = nur Digitalbetrieb, 1 = Betrieb im Digital- oder Analogmodus, ein fliegender Wechsel ist möglich<BR/>
+<BR/>
+<B>* Bit 3</B> 0 = RailCom Senden ausgeschaltet, 1 = RailCom Senden eingeschaltet<BR/>
+<B>* Bit 4</B> 0 = Decoder verwendet Werkskennlinie, 1 = Decoder verwendet selbstprogrammierte Kennlinie<BR/>
+<B>* Bit 5</B> spezifiert den Adressierungmodus.
+Wenn Bit 5 auf "0" steht, zieht
+der Decoder für den Adressenvergleich
+den Wert in CV#<link>1</link> heran, im anderen
+Fall wird die erweiterte Adresse in
+CV#<link>17</link> und CV#<link>18</link> benutzt<BR/>
+    </beschreibung>
+  </text>
+  <text nr="33">
+    <nummer> 33</nummer>
+    <kurztext nr="33">Funktionszuordnung für Funktionsausgänge</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Bitweise</format>
+    <beschreibung>
+Um eine Funktion des Digitalsystems einem Funktionsausgang zuzuordnen, sucht man den Schnittpunkt der Zeile der gewünschten Funktion mit der Spalte des gewünschten Funktionsausgangs.
+Die gefundene Zahl wird in die entsprechende CV eingetragen. Zur Anschauung sind die werkseitig eingestellten Werte fett gedruckt.
+<BR/>
+F0 vorwärts A=<B>8</B> B=16
+    </beschreibung>
+  </text>
+  <text nr="34">
+    <nummer> 34</nummer>
+    <kurztext nr="34">Funktionszuordnung für Funktionsausgänge</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Bitweise</format>
+    <beschreibung>
+(siehe CV#<link>33</link>)<BR/>
+F0 rückwärts A=8 B=<B>16</B>
+    </beschreibung>
+  </text>
+  <text nr="35">
+    <nummer> 35</nummer>
+    <kurztext nr="35">Funktionszuordnung für Funktionsausgänge</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Bitweise</format>
+    <beschreibung>
+(siehe CV#<link>33</link>)<BR/>
+Funktion 1 A=8 B=16 (nicht für Gold 10410 und 10411)
+    </beschreibung>
+  </text>
+  <text nr="36">
+    <nummer> 36</nummer>
+    <kurztext nr="36">Funktionszuordnung für Funktionsausgänge</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Bitweise</format>
+    <beschreibung>
+(siehe CV#<link>33</link>)<BR/>
+Funktion 2 A=8 B=16 (nicht für Gold 10410 und 10411)
+    </beschreibung>
+  </text>
+  <text nr="37">
+    <nummer> 37</nummer>
+    <kurztext nr="37">Funktionszuordnung für Funktionsausgänge</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Bitweise</format>
+    <beschreibung>
+(siehe CV#<link>33</link>)<BR/>
+Funktion 3 A=8 B=16 (nicht für Gold 10410 und 10411)
+    </beschreibung>
+  </text>
+  <text nr="38">
+    <nummer> 38</nummer>
+    <kurztext nr="38">Funktionszuordnung für Funktionsausgänge</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Bitweise</format>
+    <beschreibung>
+(siehe CV#<link>33</link>)<BR/>
+Funktion 4 A=8 B=16 (nicht für Gold 10410 und 10411)
+    </beschreibung>
+  </text>
+  <text nr="39">
+    <nummer> 39</nummer>
+    <kurztext nr="39">Funktionszuordnung für Funktionsausgänge</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Bitweise</format>
+    <beschreibung>
+(siehe CV#<link>33</link>)<BR/>
+Funktion 5 A=8 B=16 (nicht für Gold 10410 und 10411)
+    </beschreibung>
+  </text>
+  <text nr="40">
+    <nummer> 40</nummer>
+    <kurztext nr="40">Funktionszuordnung für Funktionsausgänge</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Bitweise</format>
+    <beschreibung>
+(siehe CV#<link>33</link>)<BR/>
+Funktion 6 A=8 B=16 (nicht für Gold 10410 und 10411)
+    </beschreibung>
+  </text>
+  <text nr="41">
+    <nummer> 41</nummer>
+    <kurztext nr="41">Funktionszuordnung für Funktionsausgänge</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Bitweise</format>
+    <beschreibung>
+(siehe CV#<link>33</link>)<BR/>
+Funktion 7 A=8 B=16 (nicht für Gold 10410 und 10411)
+    </beschreibung>
+  </text>
+  <text nr="42">
+    <nummer> 42</nummer>
+    <kurztext nr="42">Funktionszuordnung für Funktionsausgänge</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Bitweise</format>
+    <beschreibung>
+(siehe CV#<link>33</link>)<BR/>
+Funktion 8 A=8 B=16 (nicht für Gold 10410 und 10411)
+    </beschreibung>
+  </text>
+  <text nr="50">
+    <nummer> 50</nummer>
+    <kurztext nr="50">Konfigurationsdaten 2</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Bitweise</format>
+    <beschreibung>
+<B>* Bit 0..3</B>Auswahl des Motortyps 0-5, Eingabe als Dezimalzahl<BR/>
+<B>* Bit 5</B> EMK-Teiler aktiv<BR/>
+<B>* Bit 6</B> 0 = Regelung <B>ein</B>geschaltet, 1 = Regelung ausgeschaltet<BR/>
+<B>* Bit 7</B> 0 = Motoransteuerung hochfrequent (ca.23kHz), 1 = Motoransteuerung niederfrequent (ca.19Hz)
+    </beschreibung>
+  </text>
+  <text nr="51">
+    <nummer> 51</nummer>
+    <kurztext nr="51">Brems-Konfiguration</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Bitweise</format>
+    <beschreibung>
+<B>* Bit 0</B> 1 = konstanter Bremsweg aktiviert<BR/>
+<B>* Bit 1</B> 1 = ABC aktiviert<BR/>
+<B>* Bit 2</B> 1 = Richtungsabhängigkeit von ABC ist <B>aus</B>geschaltet<BR/>
+<B>* Bit 3</B> 1 = Pendelbetrieb ohne Zwischenhalt aktivieren<BR/>
+<B>* Bit 4</B> 1 = Pendelbetrieb mit Zwischenhalt aktivieren<BR/>
+<B>* Bit 5</B> 1 = bremsen mit Gleichspannung, wenn CV#<link>29</link> Bit 2 = 0
+    </beschreibung>
+  </text>
+  <text nr="52">
+    <nummer> 52</nummer>
+    <kurztext nr="52">Bremsweg bei aktiviertem konstanten Bremsweg</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung></beschreibung>
+  </text>
+  <text nr="53">
+    <nummer> 53</nummer>
+    <kurztext nr="53">Langsamfahrt bei ABC</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung></beschreibung>
+  </text>
+  <text nr="54">
+    <nummer> 54</nummer>
+    <kurztext nr="54">Aufenthaltsdauer bei Pendelbetrieb</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>1 bis 256 Sekunden</beschreibung>
+  </text>
+  <text nr="55">
+    <nummer> 55</nummer>
+    <kurztext nr="55">Dimmwert für Funktionsausgang A</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>0 ist aus, 255 ist maximale Helligkeit</beschreibung>
+  </text>
+  <text nr="56">
+    <nummer> 56</nummer>
+    <kurztext nr="56">Dimmwert für Funktionsausgang B</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>0 ist aus, 255 ist maximale Helligkeit</beschreibung>
+  </text>
+  <text nr="57">
+    <nummer> 57</nummer>
+    <kurztext nr="57">Funktionszuordnung (Mapping): Dimmen</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Bitweise</format>
+    <beschreibung>Bit 0 bis 7 korrespondieren mit den Funktionen F1..F8.
+Wenn Sie ein Funktion mit Dimmen zuordnen wollen, so muss das betreffende Bit gesetzt werden.</beschreibung>
+  </text>
+  <text nr="58">
+    <nummer> 58</nummer>
+    <kurztext nr="58">Funktionszuordnung (Mapping): Rangiergang</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Bitweise</format>
+    <beschreibung>Bit 0 bis 7 korrespondieren mit den Funktionen F1..F8.</beschreibung>
+  </text>
+  <text nr="59">
+    <nummer> 59</nummer>
+    <kurztext nr="59">Funktionszuordnung (Mapping): Abschalten der Verzögerung</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Bitweise</format>
+    <beschreibung>Bit 0 bis 7 korrespondieren mit den Funktionen F1..F8.</beschreibung>
+  </text>
+  <text nr="60">
+    <nummer> 60</nummer>
+    <kurztext nr="60">Effekte an den Funktionsausgängen A und B</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>
+Einerstelle steht für den Funktionsausgang A, Zehnerstelle für den Funktionsausgang B<BR/>
+0 = kein Effekt
+1 = Marslight
+2 = Gyrolight
+3 = Strobe (Blitz)
+4 = double Strobe (Doppelblitz)
+    </beschreibung>
+  </text>
+  <text nr="61">
+    <nummer> 61</nummer>
+    <kurztext nr="61">Funktionszuordnung Lichteffekte an F-Ausgang A und B</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Bitweise</format>
+    <beschreibung></beschreibung>
+  </text>
+  <text nr="67">
+    <nummer> 67</nummer>
+    <kurztext nr="67">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>
+Jeder Decoder enthält für die Geschwindigkeitssteuerung
+eine Standardtabelle,
+die meist eine lineare
+Zuordnung von Motorspannung zu
+Fahrstufe enthält. Mit CV#<link>2</link> wird die
+Anfahrspannung definiert, das führt zu
+einer Anhebung der Spannung bei
+niedrigen Fahrstufen. Bei manchen
+Decodern haben Sie die Möglichkeit,
+auch die Höchstgeschwindigkeit mit
+der CV#<link>5</link> und die Geschwindigkeit bei
+der mittleren Fahrstufe mit CV#<link>6</link> zu
+beeinflussen. Wenn nach diesen Maßnahmen
+das Fahrverhalten immer
+noch zu wünschen übrigläßt, müssen
+Sie sich wohl eine eigene Tabelle
+"schnitzen", die individuell an das entsprechende
+Fahrzeug angepaßt wird.
+Der erste Versuch ist meist etwas mühsam,
+aber die Mühe lohnt!
+Aus den Erläuterungen zu CV#<link>9</link> wissen
+Sie, daß die Drehzahlregelung des
+Motors mit einer Pulsweitenmodulation
+vorgenommen wird. Je kürzer der
+Einschaltimpuls pro Periode ist, desto
+langsamer dreht der Motor und umgekehrt.
+Die Geschwindigkeit wird also
+durch das Verhältnis von Impuls- zu
+Periodendauer bestimmt. Die Periodendauer
+selbst spielt dabei keine
+Rolle. Wenn Sie eine eigene Geschwindigkeitstabelle
+definieren wollen, besteht
+Ihre Aufgabe darin, jeder Fahrstufe
+das gewünschte Impuls-/Periodendauer-Verhältnis zuzuordnen.
+Nun müssen Sie nicht mit unhandlichen
+Brüchen umgehen, die PWMTechnik
+kommt Ihnen da zu Hilfe.
+Zunächst wird hier eine Periode in eine
+feste Anzahl von Zeitabschnitten aufgeteilt,
+dieser Wert wird auch als
+(interne) Auflösung der PWM-Steuerung
+bezeichnet. Für die Erzeugung
+der variablen Impulslängen brauchen
+Sie dann nur noch die Anzahl der Zeitabschnitte
+anzugeben, während der
+der Motor eingeschaltet sein soll. Bei
+den meisten Decodern beträgt die
+Anzahl der Zeitabschnitte 255, bei älteren
+Decodern ist sie teilweise auf 63
+begrenzt. Der Maximalwert ergibt sich
+aus dem zugelassenen Wertebereich
+für die Variablen CV#67 bis CV#<link>94</link>.<BR/>
+<BR/>
+<B>* Beispiel:</B> Wenn der Wertebereich
+von 0 bis 255 zugelassen ist, ergibt ein
+Wert von 128 das Impuls-/Periodenverhältnis
+von 1:2. Die Impulsdauer ist
+also gleich der Pausendauer, und der
+Motor wird mit 50% der Versorgungsspannung
+betrieben. Beim Wert 255
+sind Impuls- und Periodendauer
+gleich, es gibt keine Pausen mehr, der
+Motor läuft mit Maximalgeschwindigkeit.
+Soweit die Theorie, die Geschwindigkeitskennlinie
+und die zugehörigen
+Definitionen in der Tabelle sollen Sie
+bei Ihren praktischen Versuchen unterstützen.
+Die Geschwindigkeitskurve
+wurde für eine Rangierlokomotive
+(BR 160/DR) entworfen, besonderer
+Wert wurde auf eine feinfühlige Steuerung
+bei niedrigen Fahrstufen gelegt.
+Wenn Sie für die Berechnung der CV-Werte
+lieber die prozentuale Motorspannung
+heranziehen möchten, brauchen
+Sie nur die Prozentzahl mit 2,55
+zu multiplizieren und das gerundete
+Resultat in die entsprechende Variable
+eintragen.
+Benutzerdefinierte Tabellen sind
+natürlich auch beim Betrieb der Decoder
+mit 14 oder 128 Fahrstufen verwendbar.
+Der Decoder interpoliert aus
+den 28 Tabelleneinträgen die entsprechenden
+Zwischenwerte.
+Wem die gegebenenfalls wiederholte
+Programmierung von 28 Tabellenwerten
+mit dem Handregler zu langweilig
+ist, sollte sich die Anschaffung eines
+Programmiergeräts mit PC-Unterstützung
+überlegen. Entsprechende Programme
+und Utilities (siehe CD-ROM)
+erlauben eine komfortable Einstellung
+der CVs und auch eine übersichtlichere
+Einstellung der Geschwindigkeitskennlinie.
+Software mit benutzerfreundlicher
+Oberfläche bieten z.B.
+Busch, Viessmann, Digitrax, ESU etc.
+an.
+ESU bietet für seine Loksound-Decoder
+ebenfalls eine komfortable Software
+und einen Programmieradapter
+an. In der derzeitigen Version ist
+jedoch die Geschwindigkeitstabelle leider
+auf 14 Einträge begrenzt.
+    </beschreibung>
+  </text>
+  <text nr="68">
+    <nummer> 68</nummer>
+    <kurztext nr="68">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="69">
+    <nummer> 69</nummer>
+    <kurztext nr="69">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="70">
+    <nummer> 70</nummer>
+    <kurztext nr="70">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="71">
+    <nummer> 71</nummer>
+    <kurztext nr="71">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="72">
+    <nummer> 72</nummer>
+    <kurztext nr="72">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="73">
+    <nummer> 73</nummer>
+    <kurztext nr="73">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="74">
+    <nummer> 74</nummer>
+    <kurztext nr="74">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="75">
+    <nummer> 75</nummer>
+    <kurztext nr="75">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="76">
+    <nummer> 76</nummer>
+    <kurztext nr="76">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="77">
+    <nummer> 77</nummer>
+    <kurztext nr="77">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="78">
+    <nummer> 78</nummer>
+    <kurztext nr="78">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="79">
+    <nummer> 79</nummer>
+    <kurztext nr="79">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="80">
+    <nummer> 80</nummer>
+    <kurztext nr="80">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="81">
+    <nummer> 81</nummer>
+    <kurztext nr="81">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="82">
+    <nummer> 82</nummer>
+    <kurztext nr="82">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="83">
+    <nummer> 83</nummer>
+    <kurztext nr="83">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="84">
+    <nummer> 84</nummer>
+    <kurztext nr="84">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="85">
+    <nummer> 85</nummer>
+    <kurztext nr="85">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="86">
+    <nummer> 86</nummer>
+    <kurztext nr="86">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="87">
+    <nummer> 87</nummer>
+    <kurztext nr="87">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="88">
+    <nummer> 88</nummer>
+    <kurztext nr="88">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="89">
+    <nummer> 89</nummer>
+    <kurztext nr="89">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="90">
+    <nummer> 90</nummer>
+    <kurztext nr="90">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="91">
+    <nummer> 91</nummer>
+    <kurztext nr="91">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="92">
+    <nummer> 92</nummer>
+    <kurztext nr="92">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="93">
+    <nummer> 93</nummer>
+    <kurztext nr="93">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="94">
+    <nummer> 94</nummer>
+    <kurztext nr="94">Benutzerdefinierte Geschwindigkeitstabelle</kurztext>
+    <beschreibung>siehe CV#<link>67</link></beschreibung>
+  </text>
+  <text nr="112">
+    <nummer>112</nummer>
+    <kurztext nr="112">Zeitdauer für Motornachlauf</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalwert</format>
+    <beschreibung>Zeitdauer für Motornachlauf wenn kein Gleissignal mehr vorhanden.<BR/>
+t = CV112 * 0.016sec.
+</beschreibung>
+  </text>
+  <text nr="113">
+    <nummer>113</nummer>
+    <kurztext nr="113">Minimaler PWM-Wert</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalwert</format>
+    <beschreibung>Minimaler PWM-Wert bei Regelung für Motortypen 4 oder 5</beschreibung>
+  </text>
+  <text nr="114">
+    <nummer>114</nummer>
+    <kurztext nr="114">Änderung Duty-Cyle</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalwert</format>
+    <beschreibung>Änderung Duty-Cyle für Motorentyp 4 oder 5</beschreibung>
+  </text>
+  <text nr="128">
+    <nummer>128</nummer>
+    <kurztext nr="128">Servicenummer</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>nur lesbar</format>
+    <beschreibung></beschreibung>
+  </text>
+</CV>

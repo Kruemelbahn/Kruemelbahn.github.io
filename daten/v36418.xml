@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="cv.xsl" ?>
+<!DOCTYPE CV SYSTEM "cv.dtd">
+
+<CV date="081106" ddb="LE_V364.DDB">
+  <text nr="1">
+    <nummer href="javascript:openWindow('daten/dec_adr.gif')">  1</nummer>
+    <kurztext nr="1">Primäre Decoderadresse</kurztext>
+    <minwert>1</minwert>
+    <maxwert>99</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>Die Bits 0-6 der CV#1 enthalten die
+Decoderadresse im Bereich von 1 bis
+99. Bit 7 muss den Wert '0' haben.<BR/>
+</beschreibung>
+  </text>
+  <text nr="2">
+    <nummer href="javascript:openWindow('daten/cv2_5_6.gif')">  2</nummer>
+    <kurztext nr="2">Anfahrspannung</kurztext>
+    <minwert>0</minwert>
+    <maxwert>31</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>Der Wert in CV#2 muß so angepaßt
+        werden, daß die Lok bei Fahrstufe 1
+        gerade anfährt. Der Wertebereich geht
+        von 0-31.<BR/><BR/>
+        Im Digitalbetrieb kann mit CV#2 der Weg, den die Lok beim An- oder Abkuppeln zurücklegt verändert werden.
+        Ist der Weg zu kurz, erhöhen Sie einfach den Wert in CV#2. Bei höheren Werten wird dann auch die Minimalgeschwindigkeit erhöht.
+    </beschreibung>
+  </text>
+  <text nr="3">
+    <nummer>  3</nummer>
+    <kurztext nr="3">Beschleunigungswert</kurztext>
+    <minwert>1</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>Der numerische Wert in CV#3 legt fest,
+      wie schnell der Decoder intern von
+      einer Fahrstufe zur nächsten weiterschaltet.
+     </beschreibung>
+  </text>
+  <text nr="4">
+    <nummer>  4</nummer>
+    <kurztext nr="4">Bremsverzögerung</kurztext>
+    <minwert>1</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>Der numerische Wert in CV#4 legt fest,
+      wie schnell der Decoder beim Bremsvorgang
+      von einer Fahrstufe zur nächsten
+      zurückschaltet.
+    </beschreibung>
+  </text>
+  <text nr="7">
+    <nummer>  7</nummer>
+    <kurztext nr="7">Versionsnummer des Decoders</kurztext>
+    <format>nur lesbar</format>
+    <beschreibung>CV#7 enthält die Decoder-Versionsnummer des Herstellers.</beschreibung>
+  </text>
+  <text nr="8">
+    <nummer href="cv8.htm">  8</nummer>
+    <kurztext nr="8">Herstelleridentifikation</kurztext>
+    <format>nur lesbar</format>
+    <beschreibung>CV#8 enthält die Herstelleridentifikation.
+    </beschreibung>
+  </text>
+  <text nr="17">
+    <nummer href="cvadr.htm"> 17</nummer>
+    <kurztext nr="17">Erweitere Adressierung</kurztext>
+    <minwert>192</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl, zusammen mit CV#<link>18</link></format>
+    <beschreibung>Mit dem Wert in CV#<link>1</link> kann ein Decoder
+nur im Bereich von 1-127 adressiert
+werden. Die zwei Byte lange
+Adresse in CV#17 und CV#<link>18</link> erweitert den
+Bereich bis auf 10239. Die Bits 0 bis 5
+in CV#17 enthalten den höherwertigen
+Teil der Adresse, die Bits 6 und 7 müssen
+auf den Wert 1 gesetzt sein (Erweitertes
+Adressierungschema für Fahrzeugdecoder).
+CV#<link>18</link> enthält den niederwertigen
+Teil der Adresse. Vergessen
+Sie nicht, Bit 5 in CV#<link>29</link> auf 1
+zu setzen, sonst wird die erweiterte
+Adresse ignoriert!</beschreibung>
+  </text>
+  <text nr="18">
+    <nummer href="cvadr.htm"> 18</nummer>
+    <kurztext nr="18">Erweitere Adressierung</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl, zusammen mit CV#<link>17</link></format>
+    <beschreibung>siehe CV#<link>17</link></beschreibung>
+  </text>
+  <text nr="19">
+    <nummer href="javascript:openWindow('daten/dec_adr.gif')"> 19</nummer>
+    <kurztext nr="19">Consistadresse für Mehrfachtraktion</kurztext>
+    <minwert>0</minwert>
+    <maxwert>127</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>Die Consist-Adresse wird in
+den Bits 0 bis 6 der CV#19 abgespeichert,
+Bit 7 enthält die Fahrtrichtung. Aus
+diesem Grund können Sie nur Consist-
+Adressen im Bereich 1-127 verwenden.
+Wenn der Decoder auf seine
+ursprüngliche Adreßeinstellung (primäre
+oder erweiterte Adresse) reagieren
+soll, muß die CV#19 den Wert 0
+enthalten.</beschreibung>
+  </text>
+  <text nr="29">
+    <nummer> 29</nummer>
+    <kurztext nr="29">Decoder Konfiguration</kurztext>
+    <format>Bitweise</format>
+    <beschreibung>
+Mit den Bits der CV#29 werden grundlegende
+Verhaltensweisen des Decoders
+spezifiziert.<BR/>
+<BR/>
+<B>* Bit 0</B> kehrt die normale Fahrtrichtung
+einer Lok um. Auch die richtungsabhängige
+Beleuchtung wird mit
+umgeschaltet. Sie können dieses Bit auf
+1 setzen, wenn Sie z.B. die Motoranschlüsse
+vertauscht haben.<BR/>
+<BR/>
+<B>* Bit 1</B> gibt an, wo die Information für
+die Steuerung von Funktion 0 zu finden
+ist. Wenn Bit 1 auf 0 steht, wird die
+Funktion 0 mit Bit 4 des Fahrbefehls
+geschaltet, das ist die richtige Einstellung
+für Decoder mit 14 oder 27 Fahrstufen.
+Bei 28 Fahrstufen und mehr
+müssen Sie dieses Bit auf 1 setzen,
+dann wird die Funktion 0 mit Befehlen
+aus der Funktionsgruppe 0 bedient.<BR/>
+<BR/>
+<B>* Bit 2</B> 0 = Digitalbetrieb, 1 = Betrieb im Analogmodus<BR/>
+<BR/>
+<B>* Bit 5</B> spezifiert den Adressierungmodus.
+Wenn Bit 5 auf "0" steht, zieht
+der Decoder für den Adressenvergleich
+den Wert in CV#<link>1</link> heran, im anderen
+Fall wird die erweiterte Adresse in
+CV#<link>17</link> und CV#<link>18</link> benutzt.
+    </beschreibung>
+  </text>
+  <text nr="50">
+    <nummer> 50</nummer>
+    <kurztext nr="50">Herstellerspezifische Konfigurationsinformationen</kurztext>
+    <format>Bitweise</format>
+    <beschreibung>
+<B>* Bit 1</B> 0 = Bremsen in Analogbetrieb ausgeschaltet, 1 = Bremsen im Analogbetrieb eingeschaltet
+    </beschreibung>
+  </text>
+  <text nr="54">
+    <nummer> 54</nummer>
+    <kurztext nr="54">Funktionszuordnung Rangierlicht</kurztext>
+    <format>Bitweise</format>
+    <beschreibung>
+<B>* Bit 0</B> Rangierlicht mit F1<BR/>
+<B>* Bit 1</B> Rangierlicht mit F2<BR/>
+<B>* Bit 2</B> Rangierlicht mit F3<BR/>
+<B>* Bit 3</B> Rangierlicht mit F4<BR/>
+<B>* Bit 4</B> Rangierlicht mit F5<BR/>
+<B>* Bit 5</B> Rangierlicht mit F6<BR/>
+<B>* Bit 6</B> Rangierlicht mit F7<BR/>
+<B>* Bit 7</B> Rangierlicht mit F8<BR/>
+    </beschreibung>
+  </text>
+</CV>

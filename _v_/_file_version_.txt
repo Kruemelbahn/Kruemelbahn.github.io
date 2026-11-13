@@ -1,0 +1,877 @@
+[Antrieb.exe]
+Version=V 6.0 1421151
+Antrieb=1
+
+[AroundCV.EXE]
+Version=V 1.51 1904052
+AroundCV=1
+
+[Artikel.DLL]
+Version=V 3.0 1421151
+Artikel=2
+CADArtikel=20
+CADEditor=30
+
+[Artikel.EXE]
+Version=V 5.0 1421151
+Artikel=1
+
+[AutoConnect.dll]
+Version=V 3.0 1421151
+CADEditor=300
+
+[BahnWissen.exe]
+Version=V 6.0 1421151
+BahnWissen=1
+
+[BahnWissenDLL.dll]
+Version=V 3.6 1620170
+Fpl2BFo=30
+
+[Bauteile.dll]
+Version=V 3.0 1421151
+CADEditor=300
+
+[BauteilView.DLL]
+Version=V 11.0 1421151
+CADEditor=3
+Elektro32=2
+ELVView=2
+
+[BFoToHTML.DLL]
+Version=V 3.6 1620170
+Fpl2BFo=3
+
+[BFoToXLS.DLL]
+Version=V 3.6 1620170
+Fpl2BFo=3
+
+[BibView.DLL]
+Version=V 3.0 1421151
+BibViewer=2
+CADEditor=3
+
+[BibViewer.EXE]
+Version=V 3.0 1421151
+BibViewer=1
+
+[BinaerFC.dll]
+Version=V 11.0 1421151
+BinaerFC=2
+CADEditor=30
+Elektro32=30
+FTool32=30
+Kss80=30
+
+[BinaerFC.EXE]
+Version=V 5.0 1421151
+BinaerFC=1
+
+[BWView.DLL]
+Version=V 6.0 1421151
+BahnWissen=300
+BWView=2
+Foto32=300
+
+[BWView.exe]
+Version=V 6.0 1421151
+BWView=1
+
+[CADArtikel.exe]
+Version=V 3.0 1421151
+CADArtikel=1
+
+[CADE5.DLL]
+Version=V 3.0 1421151
+CADEditor=3
+FTool32=3
+
+[CADEditor.DLL]
+Version=V 3.0 1421151
+CADEditor=2
+CADX=2
+FileAnalyze=2
+
+[CADEditor.EXE]
+Version=V 3.0 1421151
+CADEditor=1
+
+[CadLock.dll]
+Version=V 3.0 1421151
+CADEditor=300
+
+[CADThumb.DLL]
+Version=V 3.0 1421151
+CadEditor=3
+
+[CadToC.DLL]
+Version=V 3.0 1421151
+CADEditor=3
+
+[CadToDxf.DLL]
+Version=V 3.0 1421151
+CADEditor=3
+
+[CadToExf.dll]
+Version=V 3.0 1421151
+CADEditor=3
+
+[CadToSVG.dll]
+Version=V 3.0 1421151
+CADEditor=3
+
+[CadToXLS.dll]
+Version=V 3.0 1421151
+CADEditor=3
+
+[CadToXML.dll]
+Version=V 3.0 1421151
+CADEditor=3
+
+[CADView.exe]
+Version=V 3.0 1421151
+CADView=1
+
+[CADX.ocx]
+Version=V 3.0 1421151
+CADX=1
+
+[CADXControl.cpl]
+Version=V 3.0 1421151
+CADXControl=1
+
+[CenTest.exe]
+Version=V 3.0 1421151
+CenTest=1
+
+[CheckFplFile.DLL]
+Version=V 3.6 1620170
+Fpl2BFo=30
+
+[CheckFplFile.EXE]
+Version=V 5.0 1421151
+CheckFplFile=1
+
+[CNCTool.dll]
+Version=V 10.0 1421151
+CNCTool=2
+FTool32=30
+
+[CNCTool.EXE]
+Version=V 5.0 1421151
+CNCTool=1
+
+[CSVforASTROH.EXE]
+Version=V 3.0 1421151
+CSVforASTROH=1
+
+[DatenSicherung.dll]
+Version=V 3.2 1625071
+CADEditor=30
+Datensicherung=2
+Foto32=30
+V2000++=30
+Fpl2BFo=30
+
+[Datensicherung.EXE]
+Version=V 5.0 1421151
+Datensicherung=1
+
+[Dokumentationen.dll]
+Version=V 3.1 1625071
+Dokumentationen=2
+Elektro32=30
+Foto32=30
+FTool32=30
+Projektmanager=30
+V2000++=30
+Fpl2BFo=30
+
+[DCCFiles.DLL]
+Version=V 1.51 1904052
+AroundCV=2
+
+[DirReOrg.exe]
+Version=V 6.0 1421151
+DirReOrg=1
+
+[Dokumentationen.dll]
+Version=V 1.0 1711020
+Dokumentationen=2
+Elektro32=30
+V2000++=30
+
+[Dokumentationen.EXE]
+Version=V 5.0 1421151
+Dokumentationen=1
+
+[DS100.dll]
+Version=V 6.0 1421151
+BahnWissen=300
+DS100=2
+
+[DS100.exe]
+Version=V 6.0 1421151
+DS100=1
+BahnWissen=3
+
+[EasyLayer.dll]
+Version=V 3.0 1421151
+CADEditor=300
+
+[Edaten32.dll]
+Version=V 11.0 1421151
+CADEditor=3
+Elektro32=2
+ELVView=2
+
+[Elektro32.exe]
+Version=V 11.0 1421151
+Elektro32=1
+
+[ELVDaten.exe]
+Version=V 11.0 1421151
+ELVDaten=1
+
+[ELVView.dll]
+Version=V 11.0 1421151
+CADEditor=3
+ELVView=2
+Elektro32=3
+
+[ELVView.EXE]
+Version=V 5.0 1421151
+ELVView=1
+
+[Ersatz.DLL]
+Version=V 3.0 1421151
+CADArtikel=30
+Ersatz=2
+
+[Ersatz.EXE]
+Version=V 5.0 1421151
+Ersatz=1
+
+[ETechnik.dll]
+Version=V 3.0 1421151
+CADEditor=300
+
+[FDaten32.dll]
+Version=V 10.0 1421151
+FTool32=2
+
+[FEditCheck.dll]
+Version=V 10.0 1421151
+FEditCheck=2
+FTool32=30
+
+[FEditCheck.EXE]
+Version=V 5.0 1421151
+FEditCheck=1
+
+[FileAnalyze.dll]
+Version=V 3.0 1421151
+CADEditor=30
+FileAnalyze=2
+
+[FileAnalyze.EXE]
+Version=V 5.0 1421151
+FileAnalyze=1
+
+[Foto32.exe]
+Version=V 4.0 1421151
+Foto32=1
+
+[Foto32Dat.dll]
+Version=V 4.0 1421151
+Foto32=2
+BahnWissen=300
+BWView=2
+Fpl2BFo=3
+BahnWissenDLL=3
+
+[Foto32FilenameGenerator.dll]
+Version=V 4.0 1421151
+Foto32=300
+
+[Foto32IconBahn.dll]
+Version=V 4.0 1421151
+Foto32=300
+BahnWissen=300
+BWView=2
+
+[Foto32IconGlobal.dll]
+Version=V 4.0 1421151
+Foto32=300
+
+[Foto32Iptc.dll]
+Version=V 4.0 1421151
+Foto32=300
+
+[Foto32Links.dll]
+Version=V 4.0 1421151
+Foto32=300
+
+[Foto32Marker.dll]
+Version=V 4.0 1421151
+Foto32=300
+
+[Foto32RenameFiles.dll]
+Version=V 4.0 1421151
+Foto32=300
+
+[Foto32Repair.dll]
+Version=V 4.0 1421151
+Foto32=300
+
+[Foto32Themen.dll]
+Version=V 4.0 1421151
+Foto32=300
+
+[Fpl2BFo.exe]
+Version=V 3.6 1620170
+Update=GitHub
+Fpl2BFo=1
+
+[Fpl2BFoDat.dll]
+Version=V 3.6 1620170
+Fpl2BFo=2
+
+[Fpl2BFoEditSysFile.DLL]
+Version=V 3.6 1620170
+Fpl2BFo=300
+
+[Fpl2BFoFz.dll]
+Version=V 3.6 1620170
+Fpl2BFo=3
+KsQRCode=3
+
+[Fpl2BFoFz.EXE]
+Version=V 5.0 1421151
+Fpl2BFoFz=1
+KsQRCode=3
+
+[Fpl2BFoRoster.dll]
+Version=V 3.6 1620170
+Fpl2BFo=3
+
+[Fpl2BFoRoster.EXE]
+Version=V 5.0 1421151
+Fpl2BFoRoster=1
+
+[Fpl2BFoServer.dll]
+Version=V 3.6 1620170
+Fpl2BFo=3
+
+[Fpl2BFoStartGrid.dll]
+Version=V 3.6 1620170
+Fpl2BFo=3
+
+[Fpl2BFoStartGrid.EXE]
+Version=V 5.0 1421151
+Fpl2BFoStartGrid=1
+
+[Fpl2BFoSuR.dll]
+Version=V 3.6 1620170
+Fpl2BFo=3
+
+[Fpl2BFoTuS.dll]
+Version=V 3.6 1620170
+Fpl2BFo=3
+
+[FToExcel.dll]
+Version=V 7.1 1624061
+BahnWissen=3
+CADEditor=3
+CSVforASTROH=2
+Elektro32=3
+Foto32=3
+FTool32=3
+Marken32=3
+V2000++=3
+Fpl2BFo=3
+Fpl2BFoFz=3
+Fpl2BFoStartGrid=3
+SplitBuchfahrplan=3
+
+[FTool_EN.dll]
+Version=V 10.0 1421151
+FTool32=3
+
+[FTool32.exe]
+Version=V 10.0 1421151
+FTool32=1
+
+[FTool32Car.dll]
+Version=V 10.0 1421151
+FTool32=3
+FTool32Car=2
+FDaten32=2
+
+[FTool32Car.EXE]
+Version=V 5.0 1421151
+FTool32Car=1
+
+[FTool32Sys.dll]
+Version=V 10.0 1421151
+FTool32=3
+
+[FToXML.exe]
+Version=V 10.0 1421151
+FTool32=3
+FToXML=1
+
+[FView32.exe]
+Version=V 4.0 1421151
+FTool32=3
+FView32=1
+
+[FzSQL2Ini.DLL]
+Version=V 3.6 1620170
+FzSQL2Ini=2
+
+[FzSQL2Ini.EXE]
+Version=V 5.0 1421151
+FzSQL2Ini=1
+
+[Generieren.dll]
+Version=V 3.0 1421151
+CADEditor=300
+
+[HexEditor.dll]
+Version=V 11.0 1421151
+Elektro32=30
+FTool32=30
+HexEditor=2
+Kss80=30
+
+[HexEditor.EXE]
+Version=V 5.0 1421151
+HexEditor=1
+
+[INItoDB.dll]
+Version=V 11.0 1421151
+Elektro32=3
+
+[InsertMakro.dll]
+Version=V 3.0 1421151
+CADEditor=300
+
+[KSBahn.dll]
+Version=V 5.1 1625071
+BahnWissen=2
+Foto32=2
+Fpl2BFo=3
+BahnWissenDLL=3
+
+[KSCad.dll]
+Version=V 5.0x 1421151
+BahnWissen=3
+CADEditor=2
+CADX=2
+Elektro32=3
+Foto32=3
+FTool32=3
+V2000++=3
+ELVView=2
+Fpl2BFo=2
+
+[KsCSStd.DLL]
+Version=V 1.5 1904070
+AroundCV=2
+
+[KsODBC.dll]
+Version=V 5.0 1421151
+BahnWissen=2
+CADArtikel=2
+CADEditor=2
+Elektro32=2
+Foto32=2
+FTool32=2
+CNCTool=2
+Kss80=2
+Marken32=2
+PlugIn=2
+Artikel=2
+BinaerFC=2
+CNCTool=2
+Datensicherung=2
+Dokumentationen=2
+ELVWiew=2
+Ersatz=2
+FEditCheck=2
+FileAnalyze=2
+FTool32Car=2
+HexEditor=2
+Lexikon=2
+Logger=2
+Mechanik=2
+Merker=2
+RMWDCC=2
+SkriptEditor=2
+StSpeich=2
+TConver=2
+WalzProg=2
+V2000++=2
+
+[KsQRCode.dll]
+Version=V 1.0 1620170
+Fpl2BFo=3
+Fpl2BFoFz=3
+Fpl2BFoStartGrid=3
+
+[KsReport.dll]
+Version=V 5.0 1421151
+CADEditor=3
+KsReport=2
+V2000++=3
+
+[KsReport.exe]
+Version=V 5.0 1421151
+KsReport=1
+
+[Kss80.exe]
+Version=V 10.0 1421151
+Kss80=1
+
+[KssComm.dll]
+Version=V 10.0 1421151
+Kss80=2
+
+[KsSetup.exe]
+Version=V 3.2 1626081
+KsSetup=1
+
+[ksstddlg.dll]
+Version=V 5.7 1620170
+BahnWissen=2
+CADArtikel=2
+CADEditor=2
+CADX=2
+CenTest=2
+DirReOrg=2
+Elektro32=2
+Foto32=2
+FTool32=2
+CNCTool=2
+KsReport=2
+Kss80=2
+Marken32=2
+PlugIn=2
+V2000++=2
+Artikel=2
+BinaerFC=2
+CNCTool=2
+CSVforASTROH=2
+Datensicherung=2
+Dokumentationen=2
+ELVWiew=2
+Ersatz=2
+FEditCheck=2
+FileAnalyze=2
+FTool32Car=2
+HexEditor=2
+Lexikon=2
+Logger=2
+Mechanik=2
+Merker=2
+RMWDCC=2
+SkriptEditor=2
+StSpeich=2
+TConver=2
+WalzProg=2
+Fpl2BFo=2
+Fpl2BFoFz=2
+Fpl2BFoStartGrid=2
+SplitBuchfahrplan=2
+
+[KSToGrafik.dll]
+Version=V 5.0 1421151
+CADEditor=3
+Foto32=3
+Fpl2BFoRoster=3
+Fpl2BFo=3
+
+[ksupdate.dll]
+Version=V 5.4 1623041
+BahnWissen=3
+CADArtikel=3
+CADEditor=3
+CSVforASTROH=3
+CenTest=3
+DirReOrg=3
+Elektro32=3
+Foto32=3
+FTool32=3
+CNCTool=3
+KsReport=3
+Kss80=3
+Marken32=3
+PlugIn=3
+V2000++=3
+Artikel=3
+BinaerFC=3
+CNCTool=3
+Datensicherung=3
+ELVWiew=3
+Ersatz=3
+FEditCheck=3
+FileAnalyze=3
+FTool32Car=3
+HexEditor=3
+Lexikon=3
+Logger=3
+Mechanik=3
+Merker=3
+RMWDCC=3
+SkriptEditor=3
+StSpeich=3
+TConver=3
+WalzProg=3
+Fpl2BFo=3
+
+[KsUpdateMDB.dll]
+Version=V 5.0 1421151
+BahnWissen=3
+CADEditor=3
+
+[KSUtil.dll]
+Version=V 5.6 1620170
+BahnWissen=2
+CADArtikel=2
+CADEditor=2
+CADX=2
+CenTest=2
+DirReOrg=2
+Elektro32=2
+Foto32=2
+FTool32=2
+CNCTool=2
+FToXML=2
+KsReport=2
+Kss80=2
+Marken32=2
+PlugIn=2
+V2000++=2
+Artikel=2
+BinaerFC=2
+CNCTool=2
+CSVforASTROH=2
+Datensicherung=2
+Dokumentationen=2
+ELVWiew=2
+Ersatz=2
+FEditCheck=2
+FileAnalyze=2
+FTool32Car=2
+HexEditor=2
+Lexikon=2
+Logger=2
+Mechanik=2
+Merker=2
+RMWDCC=2
+SkriptEditor=2
+StSpeich=2
+TConver=2
+WalzProg=2
+Fpl2BFo=2
+Fpl2BFoFz=2
+Fpl2BFoStartGrid=2
+SplitBuchfahrplan=2
+
+[Lexikon.dll]
+Version=V 10.0 1421151
+CADEditor=30
+Elektro32=30
+FTool32=30
+Lexikon=2
+
+[Lexikon.EXE]
+Version=V 5.0 1421151
+Lexikon=1
+
+[Lizenz.exe]
+Version=V 2.0 1421151
+Lizenz=1
+
+[LoconetIris.EXE]
+Version=V 2.0 1421151
+LoconetIris=1
+
+[Logger.dll]
+Version=V 10.0 1421151
+FTool32=30
+Logger=2
+
+[Logger.EXE]
+Version=V 5.0 1421151
+Logger=1
+
+[MakeCADMakro.dll]
+Version=V 11.0 1421151
+Elektro32=300
+
+[Marken32.exe]
+Version=V 3.0 1421151
+Marken32=1
+
+[Marken32Dat.dll]
+Version=V 3.0 1421151
+Marken32=2
+
+[Mechanik.dll]
+Version=V 10.0 1421151
+FTool32=30
+Mechanik=2
+
+[Mechanik.EXE]
+Version=V 5.0 1421151
+Mechanik=1
+
+[Merker.dll]
+Version=V 10.0 1421151
+FTool32=30
+Merker=2
+
+[Merker.EXE]
+Version=V 5.0 1421151
+Merker=1
+
+[Modulgruppe.DLL]
+Version=1.0.0.0
+AroundCV=30
+
+[NachBearbeiten.dll]
+Version=V 3.0 1421151
+CADEditor=300
+
+[NMRAInfo.DLL]
+Version=1.0.0.0
+AroundCV=30
+
+[OnlineQVW.dll]
+Version=V 3.0 1421151
+CADEditor=300
+
+[PinEditor.dll]
+Version=V 11.0 1421151
+Elektro32=30
+
+[PlugIn.exe]
+Version=V 5.1 1623032
+PlugIn=1
+
+[PicEdit.DLL]
+Version=V 3.0 1421151
+ProjektManager=3
+
+[ProjektManager.EXE]
+Version=V 3.0 1421151
+ProjektManager=1
+
+[RelaisBlock.EXE]
+Version=V 1.1 1020181
+RelaisBlock=1
+
+[RMWDCC.dll]
+Version=V 3.0 1421151
+CADEditor=300
+RMWDCC=2
+
+[RMWDCC.EXE]
+Version=V 10.15.1 1232003
+RMWDCC=1
+
+[Servoansteuerung.EXE]
+Version=V 4.2 1522110
+Servoansteuerung=1
+
+[SetLizenz.EXE]
+Version=V 2.0 1421151
+SetLizenz=1
+
+[Signal.dll]
+Version=V 6.0 1421151
+BahnWissen=300
+Foto32=300
+Fpl2BFo=300
+BahnWissenDLL=30
+
+[SkriptEditor.dll]
+Version=V 10.0 1421151
+FTool32=30
+SkriptEditor=2
+
+[SkriptEditor.EXE]
+Version=V 5.0 1421151
+SkriptEditor=1
+
+[Speedometer.EXE]
+Version=V 1.2 1226022
+Speedometer=1
+
+[SplitBuchfahrplan.dll]
+Version=V 3.6 1620170
+Fpl2BFo=30
+
+[SplitBuchfahrplan.EXE]
+Version=V 5.0 1421151
+SplitBuchfahrplan=1
+
+[Stellwerke.dll]
+Version=V 6.0 1421151
+BahnWissen=300
+Foto32=300
+
+[StSpeich.dll]
+Version=V 10.0 1421151
+FTool32=30
+StSpeich=2
+FDaten32=2
+
+[StSpeich.EXE]
+Version=V 5.0 1421151
+StSpeich=1
+
+[SymbolManager.dll]
+Version=V 3.0 1421151
+CADEditor=300
+
+[TConver.dll]
+Version=V 10.0 1421151
+Elektro32=30
+FTool32=30
+Kss80=30
+TConver=2
+
+[TConver.EXE]
+Version=V 5.0 1421151
+TConver=1
+
+[Translate.dll]
+Version=V 3.0 1421151
+CADEditor=300
+
+[V2000++.exe]
+Version=V 5.9 1020181
+V2000++=1
+
+[V2000DAT.dll]
+Version=V 5.9 1020181
+V2000++=2
+
+[VBA.dll]
+Version=V 3.0 1421151
+CADEditor=300
+
+[WalzProg.dll]
+Version=V 10.0 1421151
+FTool32=30
+WalzProg=2
+FDaten32=2
+
+[WalzProg.EXE]
+Version=V 5.0 1421151
+WalzProg=1
+
+--ende--

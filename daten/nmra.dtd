@@ -1,0 +1,14 @@
+<!ELEMENT NMRA (RP | S)*>
+  <!ATTLIST NMRA date CDATA #REQUIRED>
+
+  <!ELEMENT RP (nummer, status, beschreibung)>
+  <!ELEMENT S (nummer, status, beschreibung)>
+
+    <!ELEMENT nummer (#PCDATA)>
+      <!ATTLIST nummer href CDATA #IMPLIED>
+
+    <!ELEMENT status (#PCDATA)>
+    <!ELEMENT beschreibung (#PCDATA | B | BR | link)*>
+    <!ELEMENT B (#PCDATA | BR | link)*>
+    <!ELEMENT BR (#PCDATA)>
+    <!ELEMENT link (#PCDATA)>

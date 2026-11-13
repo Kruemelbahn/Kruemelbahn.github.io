@@ -1,0 +1,50 @@
+; DDB fuer Lenz V36 
+; 14.10.2005 / Michael Zimmermann
+;  Aufbau DDB
+;--------------------------------------------------------------------------
+;  <x> <cv> <min> <max> <txt>
+;   
+;  <x>  Art des Eintrags: 
+;	;   Kommentar ( Rest der Zeile wird ignoriert ) 
+;       D   Dezimalzahl
+;       H   Hexzahl
+;       B   Binaerzahl ( Bitweise )
+;       S   Switch  Beschreibung der Bits in "B" CVs
+;           Aufbau: S CVnum BITnum 0 Text$
+;       T   Speed-Table
+;           Aufbau: T CVfirst CVlast min max Text$
+;	R   Read Only (dezimal) z.B. fuer Version
+;	L   Lange Adresse  ( Aufbau immer "L 17  1 10239  Adresse (lang)$")
+;           die lange Adresse wird in <cv> und <cv+1> abgelegt
+;	C   Config in CV29 ( Aufbau immer "C 29  0   255  Config$")
+;	I   Decoderinformation -  nur String mit max. 60 Char
+;	M   Hersteller Info (RP9.2.2) - Read Only
+; 	
+; <min> Minimalwert
+; <max> Maximalwert
+; <txt> Beschreibung des CVs ( max.30 Zeichen mit $ am Ende ) 
+;--------------------------------------------------------------------------
+;
+i V36 418 / LENZ / mz 26.04.2009
+D  1  1    99  Adresse (kurz)$
+D  2  0    31  V-Start$
+D  3  1   255  Anfahrverzoegerung$
+D  4  1   255  Bremsverzoegerung$
+R  7  0     0  Version$
+M  8  0     0  Hersteller$
+L 17  1 10239  Adresse (lang)$
+D 19  0   255  Consist Adresse$
+C 29  0   255  Config$
+B 50  0   255  Config #2$
+S 50  2     0  Bremsen bei DC-Betrieb$
+B 54  0   255  Rangierlicht $
+S 54  0     0  Rangierlicht mit F1$
+S 54  1     0  Rangierlicht mit F2$
+S 54  2     0  Rangierlicht mit F3$
+S 54  3     0  Rangierlicht mit F4$
+S 54  4     0  Rangierlicht mit F5$
+S 54  5     0  Rangierlicht mit F6$
+S 54  6     0  Rangierlicht mit F7$
+S 54  7     0  Rangierlicht mit F8$
+D 128  0   255  interne Versionskennung$
+;--- end ---

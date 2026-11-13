@@ -1,0 +1,51 @@
+; File: LH10.DDB
+i KÅhn LH10 MZ 2014-12-10
+D   1   1 127 kurze Adresse$
+R   7   0   0 Version$
+M   8   0   0 Hersteller [157]$
+D  13   0 255 Analog-Funkstat. F1-F8$
+D  14   0 255 Analog-Funkstat. F9-F12$
+L  17 128 10239 lange Adresse$
+D  19   0 255 FÅhrungsadresse$
+C  29   0  63 Konfiguration$
+D  33   0 255 Ausgangszuordn. F0 vorw.$
+D  34   0 255 Ausgangszuordn. F0 rÅckw.$
+D  35   0 255 Ausgangszuordn. F1$
+D  36   0 255 Ausgangszuordn. F2$
+D  37   0 255 Ausgangszuordn. F3$
+D  38   0 255 Ausgangszuordn. F4$
+D  39   0 255 Ausgangszuordn. F5$
+D  40   0 255 Ausgangszuordn. F6$
+D  41   0 255 Ausgangszuordn. F7$
+D  42   0 255 Ausgangszuordn. F8$
+D  43   0 255 Ausgangszuordn. F9$
+D  44   0 255 Ausgangszuordn. F10$
+D  45   0 255 Ausgangszuordn. F11$
+D  46   0 255 Ausgangszuordn. F12$
+B  47   0 255 Effekte Ausgang E (3,6)$
+B  48   0 255 Effekte Ausgang F (4,7)$
+B  49   0 255 Effekte Ausgang A (Aux1)$
+B  50   0 255 Effekte Ausgang B (Aux2)$
+B  51   0 255 Effekte Ausgang C (1)$
+B  52   0 255 Effekte Ausgang D (2,5)$
+D  55   0   9 Zykluszeit Effekte / Dimmrate$
+B  56   0   1 Benutzerkonfiguration 1$
+S  56   0   0 Helligkeit ¸ber CV$
+D  57   0   9 Dimmwerte alle LEDs$
+D  59   0  15 Funktionsauswahl Abblendlicht$
+D  60   0   9 Dimmwert Ausgang B/A$  
+D  61   0   9 Dimmwert Ausgang D/C$  
+D  62   0   9 Dimmwert Ausgang F/E$  
+D  63   0   9 Kupplungsparameter$
+D 105   0 255 Benutzer 1$
+B 106   0 255 Benutzer 2$
+S 106   0   0 unused$
+S 106   0   1 unused$
+S 106   0   2 unused$
+S 106   0   3 unused$
+S 106   0   4 unused$
+S 106   0   5 Kurzzeitspeicher inaktiv$
+D 112   0  31 Benutzerkonfiguration 2$
+D 113   0   9 Zufallsgenerator$
+R 127   0 255 Unterversion Software$
+;--- end ---

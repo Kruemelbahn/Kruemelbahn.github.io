@@ -1,0 +1,20 @@
+<!ELEMENT CV (text*)>
+  <!ATTLIST CV date CDATA #REQUIRED>
+  <!ATTLIST CV ddb CDATA #REQUIRED>
+
+  <!ELEMENT text (nummer, kurztext, minwert?, maxwert?, format?, beschreibung, gruppe?)>
+    <!ATTLIST text nr CDATA #REQUIRED>
+
+    <!ELEMENT nummer (#PCDATA)>
+      <!ATTLIST nummer href CDATA #IMPLIED>
+    <!ELEMENT kurztext (#PCDATA)>
+      <!ATTLIST kurztext nr CDATA #REQUIRED>
+
+    <!ELEMENT minwert (#PCDATA)>
+    <!ELEMENT maxwert (#PCDATA)>
+    <!ELEMENT format (#PCDATA | link)*>
+    <!ELEMENT beschreibung (#PCDATA | B | BR | link)*>
+    <!ELEMENT gruppe (#PCDATA)>
+    <!ELEMENT B (#PCDATA | BR | link)*>
+    <!ELEMENT BR (#PCDATA)>
+    <!ELEMENT link (#PCDATA)>

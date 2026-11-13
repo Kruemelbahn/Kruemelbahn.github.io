@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="cv8.xsl" ?>
+<!DOCTYPE CV SYSTEM "cv8.dtd">
+
+<CV date="110308" ddb="cv8" note="NMRA from 17-1-11">
+  <text>
+    <nummer>  1</nummer>
+    <hex>01</hex>
+    <bin>00000001</bin>
+    <name href="http://www.cmlelectronics.co.uk">CML Electronics Limited</name>
+  </text>
+  <text>
+    <nummer>  2</nummer>
+    <hex>02</hex>
+    <bin>00000010</bin>
+    <name href="http://www.traintechnology.com/">Train Technology</name>
+  </text>
+  <text>
+    <nummer> 11</nummer>
+    <hex>0B</hex>
+    <bin>00001011</bin>
+    <name href="https://www.ncedcc.com/">NCE Corporation (formerly North Coast Engineering)</name>
+  </text>
+  <text>
+    <nummer> 12</nummer>
+    <hex>0C</hex>
+    <bin>00001100</bin>
+    <name href="http://www.wangrow.com">Wangrow Electronics</name>
+  </text>
+  <text>
+    <nummer> 13</nummer>
+    <hex>0D</hex>
+    <bin>00001101</bin>
+    <name>Public Domain and Do-lt-Yourself Decoders</name>
+  </text>
+  <text>
+    <nummer> 14</nummer>
+    <hex>0E</hex>
+    <bin>00001110</bin>
+    <name>PSI -Dynatrol</name>
+  </text>
+  <text>
+    <nummer> 15</nummer>
+    <hex>0F</hex>
+    <bin>00001111</bin>
+    <name>Ramfixx Technologies (Wangrow)</name>
+  </text>
+  <text>
+    <nummer> 17</nummer>
+    <hex>11</hex>
+    <bin>00010001</bin>
+    <name>Advance IC Engineering</name>
+  </text>
+  <text>
+    <nummer> 18</nummer>
+    <hex>12</hex>
+    <bin>00010010</bin>
+    <name href="https://www.jmri.org/">JMRI</name>
+  </text>
+  <text>
+    <nummer> 19</nummer>
+    <hex>13</hex>
+    <bin>00010011</bin>
+    <name href="http://atw.huebsch.at/">AMW</name>
+  </text>
+  <text>
+    <nummer> 20</nummer>
+    <hex>14</hex>
+    <bin>00010100</bin>
+    <name href="http://www.tec4trains.de/">T4T - Technology for Trains GmbH</name>
+  </text>
+  <text>
+    <nummer> 21</nummer>
+    <hex>15</hex>
+    <bin>00010101</bin>
+    <name href="http://www.datentechnik-kreischer.de/">Kreischer Datentechnik</name>
+  </text>
+  <text>
+    <nummer> 22</nummer>
+    <hex>16</hex>
+    <bin>00010110</bin>
+    <name href="https://www.kamind.com/">KAM Industries</name>
+  </text>
+  <text>
+    <nummer> 23</nummer>
+    <hex>17</hex>
+    <bin>00010111</bin>
+    <name href="https://www.mthtrains.com/">S Helper Service</name>
+  </text>
+  <text>
+    <nummer> 24</nummer>
+    <hex>18</hex>
+    <bin>00011000</bin>
+    <name href="http://www.mobatron.de/">MoBaTron</name>
+  </text>
+  <text>
+    <nummer> 25</nummer>
+    <hex>19</hex>
+    <bin>0011001</bin>
+    <name href="http://www.teamdigital1.com/">Team Digital LLC</name>
+  </text>
+  <text>
+    <nummer> 26</nummer>
+    <hex>1A</hex>
+    <bin>00011010</bin>
+    <name href="http://www.mbtronik.de/">MBTronik -PiN GITmbH</name>
+  </text>
+  <text>
+    <nummer> 27</nummer>
+    <hex>1B</hex>
+    <bin>00011011</bin>
+    <name href="https://www.mthtrains.com/">MTH Electric Trains Inc.</name>
+  </text>
+  <text>
+    <nummer> 28</nummer>
+    <hex>1C</hex>
+    <bin>00011100</bin>
+    <name href="http://www.heljan.dk/shop/frontpage.html">Heljan A/S</name>
+  </text>
+  <text>
+    <nummer> 29</nummer>
+    <hex>1D</hex>
+    <bin>00011101</bin>
+    <name href="http://www.mistraltrainmodels.be/">Mistral Train Models</name>
+  </text>
+  <text>
+    <nummer> 30</nummer>
+    <hex>1E</hex>
+    <bin>00011110</bin>
+    <name href="http://www.digsight.com">Digsight</name>
+  </text>
+  <text>
+    <nummer> 31</nummer>
+    <hex>1F</hex>
+    <bin>0001FFFF</bin>
+    <name href="http://www.brelec.eu/">Brelec</name>
+  </text>
+  <text>
+    <nummer> 32</nummer>
+    <hex>20</hex>
+    <bin>00100000</bin>
+    <name href="http://www.regalway.com/">Regal Way Co. Ltd.</name>
+  </text>
+  <text>
+    <nummer> 33</nummer>
+    <hex>21</hex>
+    <bin>00100001</bin>
+    <name>Praecipuus</name>
+  </text>
+  <text>
+    <nummer> 34</nummer>
+    <hex>22</hex>
+    <bin>00100010</bin>
+    <name>Aristo-Crafts Trains</name>
+  </text>
+  <text>
+    <nummer> 35</nummer>
+    <hex>23</hex>
+    <bin>00100011</bin>
+    <name>Electronik &amp; Model Production</name>
+  </text>
+  <text>
+    <nummer> 36</nummer>
+    <hex>24</hex>
+    <bin>00100100</bin>
+    <name href="https://www.dccconcepts.com/">DCCconcepts</name>
+  </text>
+  <text>
+    <nummer> 37</nummer>
+    <hex>25</hex>
+    <bin>00100101</bin>
+    <name>NAC Services Inc.</name>
+  </text>
+  <text>
+    <nummer> 38</nummer>
+    <hex>26</hex>
+    <bin>00100110</bin>
+    <name href="https://www.broadway-limited.com/">Broadway Limited Imports, LLC</name>
+  </text>
+  <text>
+    <nummer> 39</nummer>
+    <hex>27</hex>
+    <bin>00100111</bin>
+    <name>Educational Computer Inc.</name>
+  </text>
+  <text>
+    <nummer> 40</nummer>
+    <hex>28</hex>
+    <bin>00101000</bin>
+    <name href="http://www.katomodels.com/">KATO Precision Models</name>
+  </text>
+  <text>
+    <nummer> 41</nummer>
+    <hex>29</hex>
+    <bin>00101001</bin>
+    <name href="http://www.passmann.com/">Passmann</name>
+  </text>
+  <text>
+    <nummer> 42</nummer>
+    <hex>2A</hex>
+    <bin>00101010</bin>
+    <name href="https://www.digikeijs.com/en/">Digirails</name>
+  </text>
+  <text>
+    <nummer> 43</nummer>
+    <hex>2B</hex>
+    <bin>00101011</bin>
+    <name href="https://www.ngineering.com/">Ngineering</name>
+  </text>
+  <text>
+    <nummer> 44</nummer>
+    <hex>2C</hex>
+    <bin>00101100</bin>
+    <name href="https://www.sprog-dcc.co.uk/">SPROG DCC</name>
+  </text>
+  <text>
+    <nummer> 45</nummer>
+    <hex>2D</hex>
+    <bin>00101101</bin>
+    <name href="https://www.anemodel.com/">ANE Model Co. Ltd</name>
+  </text>
+  <text>
+    <nummer> 46</nummer>
+    <hex>2E</hex>
+    <bin>00101110</bin>
+    <name>GFB Design</name>
+  </text>
+  <text>
+    <nummer> 47</nummer>
+    <hex>2F</hex>
+    <bin>001011111</bin>
+    <name>Capecom</name>
+  </text>
+  <text>
+    <nummer> 48</nummer>
+    <hex>30</hex>
+    <bin>00110000</bin>
+    <name href="http://www.hornby-deutschland.de">Hornby Hobbies Ltd.</name>
+  </text>
+  <text>
+    <nummer> 49</nummer>
+    <hex>31</hex>
+    <bin>00110001</bin>
+    <name href="https://jokaelec.de/">Joka Electronic</name>
+  </text>
+  <text>
+    <nummer> 50</nummer>
+    <hex>32</hex>
+    <bin>00110010</bin>
+    <name>N&amp;Q Electronics</name>
+  </text>
+  <text>
+    <nummer> 51</nummer>
+    <hex>33</hex>
+    <bin>00110011</bin>
+    <name href="http://www.dccsupplies.com/">DCC Supplies Ltd.</name>
+  </text>
+  <text>
+    <nummer> 52</nummer>
+    <hex>34</hex>
+    <bin>00110100</bin>
+    <name href="http://www.krois-modell.at/">Krois-Modell</name>
+  </text>
+  <text>
+    <nummer> 53</nummer>
+    <hex>35</hex>
+    <bin>00110101</bin>
+    <name href="https://www.rautenhaus-digital.de/">Rautenhaus Digital Vertrieb</name>
+  </text>
+  <text>
+    <nummer> 54</nummer>
+    <hex>36</hex>
+    <bin>00110110</bin>
+    <name>TCH Technology</name>
+  </text>
+  <text>
+    <nummer> 55</nummer>
+    <hex>37</hex>
+    <bin>00110111</bin>
+    <name href="http://www.qdecoder.com/">QElectronics GmbH</name>
+  </text>
+  <text>
+    <nummer> 56</nummer>
+    <hex>38</hex>
+    <bin>00111000</bin>
+    <name>LDH</name>
+  </text>
+  <text>
+    <nummer> 57</nummer>
+    <hex>39</hex>
+    <bin>00111001</bin>
+    <name href="http://www.rampino.de/">Rampino Elektronik</name>
+  </text>
+  <text>
+    <nummer> 58</nummer>
+    <hex>3A</hex>
+    <bin>00111010</bin>
+    <name href="http://www.kres.de/">KRES GmbH</name>
+  </text>
+  <text>
+    <nummer> 59</nummer>
+    <hex>3B</hex>
+    <bin>00111011</bin>
+    <name href="http://www.tamvalleydepot.com/">Tam Valley Depot</name>
+  </text>
+  <text>
+    <nummer> 60</nummer>
+    <hex>3C</hex>
+    <bin>00111100</bin>
+    <name href="https://www.bluecher-elektronik.de/">Bluecher-Electronic</name>
+  </text>
+  <text>
+    <nummer> 61</nummer>
+    <hex>3D</hex>
+    <bin>00111101</bin>
+    <name href="http://www.trainmodules.com/">TrainModules</name>
+  </text>
+  <text>
+    <nummer> 62</nummer>
+    <hex>3E</hex>
+    <bin>00111110</bin>
+    <name href="https://www.tams-online.de">Tams</name>
+  </text>
+  <text>
+    <nummer> 63</nummer>
+    <hex>3F</hex>
+    <bin>00111111</bin>
+    <name href="http://www.noarail.com/">Noarail</name>
+  </text>
+  <text>
+    <nummer> 64</nummer>
+    <hex>40</hex>
+    <bin>01000000</bin>
+    <name href="https://www.digital-bahn.de/">Digital Bahn</name>
+  </text>
+  <text>
+    <nummer> 65</nummer>
+    <hex>41</hex>
+    <bin>01000001</bin>
+    <name href="https://www.gaugemasterretail.com/">Gaugemaster</name>
+  </text>
+  <text>
+    <nummer> 66</nummer>
+    <hex>42</hex>
+    <bin>01000010</bin>
+    <name>Railnet Solutions, LLC</name>
+  </text>
+  <text>
+    <nummer> 68</nummer>
+    <hex>44</hex>
+    <bin>01000100</bin>
+    <name>MAWE Elektronik</name>
+  </text>
+  <text>
+    <nummer> 69</nummer>
+    <hex>45</hex>
+    <bin>01000101</bin>
+    <name href="http://www.e-modell.de/">E-Modell</name>
+  </text>
+  <text>
+    <nummer> 71</nummer>
+    <hex>47</hex>
+    <bin>01000111</bin>
+    <name>New Youk Byano Limited</name>
+  </text>
+  <text>
+    <nummer> 72</nummer>
+    <hex>48</hex>
+    <bin>01001000</bin>
+    <name>MTB Model</name>
+  </text>
+  <text>
+    <nummer> 73</nummer>
+    <hex>49</hex>
+    <bin>01001001</bin>
+    <name href="http://www.3rdrail.com/err-3rdrail/index.html">The Electric Railroad Company</name>
+  </text>
+  <text>
+    <nummer> 74</nummer>
+    <hex>4A</hex>
+    <bin>01001010</bin>
+    <name href="http://www.ppp-digital.es/">PpP Digital</name>
+  </text>
+  <text>
+    <nummer> 75</nummer>
+    <hex>4B</hex>
+    <bin>01001011</bin>
+    <name>Digitools Elektronika, Kft</name>
+  </text>
+  <text>
+    <nummer> 78</nummer>
+    <hex>4E</hex>
+    <bin>01001110</bin>
+    <name href="https://train-o-matic.com">Tehnologistic (train-O-matic)</name>
+  </text>
+  <text>
+    <nummer> 85</nummer>
+    <hex>55</hex>
+    <bin>01010101</bin>
+    <name href="http://www.uhlenbrock.de/de_DE/index.htm">Uhlenbrock GmbH</name>
+  </text>
+  <text>
+    <nummer> 87</nummer>
+    <hex>57</hex>
+    <bin>01010111</bin>
+    <name href="http://www.rr-cirkits.com/">RR-Cirkits</name>
+  </text>
+  <text>
+    <nummer> 95</nummer>
+    <hex>5F</hex>
+    <bin>01011111</bin>
+    <name>Sanda Kan Industrial Ltd.</name>
+  </text>
+  <text>
+    <nummer> 97</nummer>
+    <hex>61</hex>
+    <bin>01100001</bin>
+    <name>Döhler und Haas</name>
+  </text>
+  <text>
+    <nummer> 99</nummer>
+    <hex>63</hex>
+    <bin>01100011</bin>
+    <name href="https://www.lenz-elektronik.de/">Lenz Elektronik GmbH</name>
+  </text>
+  <text>
+    <nummer>101</nummer>
+    <hex>65</hex>
+    <bin>01100101</bin>
+    <name href="https://www.bachmanntrains.com/home-usa/">Bachmann Industries</name>
+  </text>
+  <text>
+    <nummer>103</nummer>
+    <hex>67</hex>
+    <bin>01100111</bin>
+    <name href="http://www.snjpn.com/ngdcc/indexj.htm">Nagasue System Design Office</name>
+  </text>
+  <text>
+    <nummer>105</nummer>
+    <hex>69</hex>
+    <bin>01101001</bin>
+    <name href="http://www.cdfinformatique.com">Computer Dialysis France</name>
+  </text>
+  <text>
+    <nummer>109</nummer>
+    <hex>6D</hex>
+    <bin>01101101</bin>
+    <name href="http://www.viessmann-modell.de">Viessmann Modellspielwaren GmbH</name>
+  </text>
+  <text>
+    <nummer>111</nummer>
+    <hex>6F</hex>
+    <bin>01101111</bin>
+    <name>Haber und König Electronics GmbH (HKE)</name>
+  </text>
+  <text>
+    <nummer>113</nummer>
+    <hex>71</hex>
+    <bin>01110001</bin>
+    <name href="http://www.qsindustries.com">QS Industries (QSI)</name>
+  </text>
+  <text>
+    <nummer>115</nummer>
+    <hex>73</hex>
+    <bin>01110011</bin>
+    <name href="http://www.modellbau-dietz.de">Dietz Modellbahntechnik</name>
+  </text>
+  <text>
+    <nummer>117</nummer>
+    <hex>75</hex>
+    <bin>01110101</bin>
+    <name href="http://www.tran.at">cT Elektronik</name>
+  </text>
+  <text>
+    <nummer>119</nummer>
+    <hex>77</hex>
+    <bin>01110111</bin>
+    <name>W. S. Ataras Engineering</name>
+  </text>
+  <text>
+    <nummer>121</nummer>
+    <hex>79</hex>
+    <bin>01111001</bin>
+    <name>ECCO GmbH (Tentative)</name>
+  </text>
+  <text>
+    <nummer>123</nummer>
+    <hex>7B</hex>
+    <bin>01111011</bin>
+    <name href="https://www.massoth.de/">Massoth Elektronik GmbH</name>
+  </text>
+  <text>
+    <nummer>125</nummer>
+    <hex>7D</hex>
+    <bin>01111101</bin>
+    <name>ProfiLok Modellbahntechnik GmbH</name>
+  </text>
+  <text>
+    <nummer>127</nummer>
+    <hex>7F</hex>
+    <bin>01111111</bin>
+    <name href="https://shop.atlasrr.com/">Atlas Model Railroad Products</name>
+  </text>
+  <text>
+    <nummer>129</nummer>
+    <hex>81</hex>
+    <bin>10000001</bin>
+    <name href="https://www.digitrax.com/">Digitrax</name>
+  </text>
+  <text>
+    <nummer>131</nummer>
+    <hex>83</hex>
+    <bin>10000011</bin>
+    <name href="https://www.trix.de/">Trix Modelleisenbahn</name>
+  </text>
+  <text>
+    <nummer>132</nummer>
+    <hex>84</hex>
+    <bin>10000100</bin>
+    <name href="http://www.ztccontrols.com">ZTC</name>
+  </text>
+  <text>
+    <nummer>133</nummer>
+    <hex>85</hex>
+    <bin>10000101</bin>
+    <name>Intelligent Command Control</name>
+  </text>
+  <text>
+    <nummer>135</nummer>
+    <hex>87</hex>
+    <bin>10000111</bin>
+    <name href="http://www.cvpusa.com">CVP Products</name>
+  </text>
+  <text>
+    <nummer>137</nummer>
+    <hex>89</hex>
+    <bin>10001001</bin>
+    <name>A-Train Electronics</name>
+  </text>
+  <text>
+    <nummer>139</nummer>
+    <hex>8B</hex>
+    <bin>10001011</bin>
+    <name>RealRail Effects</name>
+  </text>
+  <text>
+    <nummer>141</nummer>
+    <hex>8D</hex>
+    <bin>10001101</bin>
+    <name href="https://soundtraxx.com/">Throttle-Up (Soundtraxx)</name>
+  </text>
+  <text>
+    <nummer>143</nummer>
+    <hex>8F</hex>
+    <bin>10001111</bin>
+    <name href="https://www.modelrectifier.com/">Model Rectifier Corp.</name>
+  </text>
+  <text>
+    <nummer>145</nummer>
+    <hex>91</hex>
+    <bin>10010001</bin>
+    <name href="http://www.zimo.at">Zimo Elektronik</name>
+  </text>
+  <text>
+    <nummer>147</nummer>
+    <hex>93</hex>
+    <bin>10010011</bin>
+    <name href="https://www.umelec.ch/">Umelec Ing. Büro</name>
+  </text>
+  <text>
+    <nummer>149</nummer>
+    <hex>95</hex>
+    <bin>10010101</bin>
+    <name>Rock Junction Controls</name>
+  </text>
+  <text>
+    <nummer>151</nummer>
+    <hex>97</hex>
+    <bin>10010111</bin>
+    <name href="http://www.esu.eu/">Electronic Solutions Ulm GmbH</name>
+  </text>
+  <text>
+    <nummer>153</nummer>
+    <hex>99</hex>
+    <bin>10011001</bin>
+    <name href="https://tcsdcc.com/">Train Control Systems</name>
+  </text>
+  <text>
+    <nummer>155</nummer>
+    <hex>9B</hex>
+    <bin>10011011</bin>
+    <name href="https://www.fleischmann.de/">Gebr. Fleischmann GmbH und Co.</name>
+  </text>
+  <text>
+    <nummer>157</nummer>
+    <hex>9D</hex>
+    <bin>10011101</bin>
+    <name href="https://www.kuehn-digital.de">Kuehn Ing.</name>
+  </text>
+  <text>
+    <nummer>159</nummer>
+    <hex>9F</hex>
+    <bin>10011111</bin>
+    <name href="https://www.lgb.de/">LGB (Ernst Paul Lehmann Patentwerk)</name>
+  </text>
+  <text>
+    <nummer>161</nummer>
+    <hex>A1</hex>
+    <bin>10100001</bin>
+    <name href="https://www.roco.cc/">Roco Modellspielwaren</name>
+  </text>
+  <text>
+    <nummer>162</nummer>
+    <hex>A2</hex>
+    <bin>10100010</bin>
+    <name href="https://www.piko.de/">PIKO Spielwaren GmbH</name>
+  </text>
+  <text>
+    <nummer>163</nummer>
+    <hex>A3</hex>
+    <bin>10100011</bin>
+    <name>WP Railshops</name>
+  </text>
+  <text>
+    <nummer>165</nummer>
+    <hex>A5</hex>
+    <bin>10100101</bin>
+    <name href="https://www.merg.org.uk/">Model Electronic Railway Group</name>
+  </text>
+  <text>
+    <nummer>170</nummer>
+    <hex>AA</hex>
+    <bin>10101010</bin>
+    <name href="http://www.aurotrains.com/aurotrains2.html">AuroTrains</name>
+  </text>
+  <text>
+    <nummer>173</nummer>
+    <hex>AD</hex>
+    <bin>10101101</bin>
+    <name href="https://uk.hornby.com">Arnold - Rivarossi</name>
+  </text>
+  <text>
+    <nummer>186</nummer>
+    <hex>BA</hex>
+    <bin>10111010</bin>
+    <name href="https://www.brawa.de/">Brawa Modellspielwaren GmbH</name>
+  </text>
+  <text>
+    <nummer>204</nummer>
+    <hex>CC</hex>
+    <bin>11001100</bin>
+    <name>Con-com</name>
+  </text>
+  <text>
+    <nummer>225</nummer>
+    <hex>E1</hex>
+    <bin>11100001</bin>
+    <name>Elproma Electronics Poland</name>
+  </text>
+  <text>
+    <nummer>238</nummer>
+    <hex>EE</hex>
+    <bin>11101110</bin>
+    <name href="https://www.nmra.org/">NMRA Reserved</name>
+  </text>
+</CV>

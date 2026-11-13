@@ -1,0 +1,66 @@
+; DDB fuer LD-G-8
+; 29.11.2008 / Michael Zimmermann
+;  Aufbau DDB
+;--------------------------------------------------------------------------
+;  <x> <cv> <min> <max> <txt>
+;
+;  <x>  Art des Eintrags:
+;  ;   Kommentar ( Rest der Zeile wird ignoriert )
+;       D   Dezimalzahl
+;       H   Hexzahl
+;       B   Binaerzahl ( Bitweise )
+;       S   Switch  Beschreibung der Bits in "B" CVs
+;           Aufbau: S CVnum BITnum 0 Text$
+;       T   Speed-Table
+;           Aufbau: T CVfirst CVlast min max Text$
+;  R   Read Only (dezimal) z.B. fuer Version
+;  L   Lange Adresse  ( Aufbau immer "L 17  1 10239  Adresse (lang)$")
+;           die lange Adresse wird in <cv> und <cv+1> abgelegt
+;  C   Config in CV29 ( Aufbau immer "C 29  0   255  Config$")
+;  I   Decoderinformation -  nur String mit max. 60 Char
+;  M   Hersteller Info (RP9.2.2) - Read Only
+;
+; <min> Minimalwert
+; <max> Maximalwert
+; <txt> Beschreibung des CVs ( max.30 Zeichen mit $ am Ende )
+;--------------------------------------------------------------------------
+;
+i LD-G-8 / TAMS / mz 29.11.2008
+D  1  1   127  Adresse (kurz)$
+D  2  0   255  V-Start$
+D  3  0   255  Beschleunigungsrate$
+D  4  0   255  Bremsverzoegerung$
+D  5  0   255  Maximalspannung$
+R  7  0     0  Version$
+D  8  0   255  Reset$
+L 17  1 10239  Adresse (lang)$
+C 29  0   255  Config$
+B 39  0    15  Funktionsmapping an X4$
+B 40  0    15  Funktionsmapping an X3$
+B 41  0    15  Funktionsmapping an X1$
+B 42  0    15  Funktionsmapping an X2$
+B 49  0   127  Konfigurationsdaten 2$
+S 49  0     0  Lastregelung ein$
+S 49  1     0  Nothalt bei Richtungswechsel$
+S 49  2     0  Nothalt bei F1$
+S 49  3     0  Rangiergang mit F1$
+S 49  4     0  Rangiergang mit F2$
+S 49  5     0  Rangiergang mit F3$
+S 49  6     0  Rangiergang mit F4$
+D 50  0    63  Dimmen Ausgang an X4$
+D 51  0    63  Dimmen Ausgang an X3$
+D 52  0    63  Dimmen Ausgang an X1$
+D 53  0    63  Dimmen Ausgang an X2$
+D 54  0   255  Lastregelparameter KP$
+B 55  0    31  Funktionsmapping an X4$
+B 56  0    31  Funktionsmapping an X3$
+B 57  0    31  Funktionsmapping an X1$
+B 58  0    31  Funktionsmapping an X2$
+D 59  0   255  Lastregelparameter KI$
+B 60  0   255  Effekte an X4$
+B 61  0   255  Effekte an X3$
+B 62  0   255  Effekte an X1$
+B 63  0   255  Effekte an X2$
+D 64  0   255  Lastregelparameter KD$
+T 67 94   0  255 Speed-Table$
+;--- end ---

@@ -1,0 +1,128 @@
+; File: Lopi3.DDB
+i ESU Lokpilot 3.0 MZ 2023-08-17
+D   1   1 127 kurze Adresse$
+D   2   1  75 Anfahrspannung$
+D   3   0  64 Beschleunigungszeit$
+D   4   0  64 Bremszeit$
+D   5   0  64 H”chstgeschwindigkeit$
+D   6   0  64 Mittelgeschwindigkeit$
+R   7   0   0 Version$
+M   8   0   0 Hersteller [151]$
+D  13   0 255 Analog-Funkstat. F1-F8$
+D  14   0  63 Analog-Funkstat. FL,F9-F15$
+D  15   0 255 Dekoderlock$
+D  16   0 255 Dekoderlock$
+L  17 128 9999 lange Adresse$
+D  19   0 255 Fhrungsadresse$
+D  21   0 255 Fhrungsmodus F1-F8$
+D  22   0 255 Fhrungsmodus FL,F9-F15$
+B  27   0 255 Brems-Konfiguration$
+B  28   0 255 RailCom-Einstellungen$
+C  29   0  63 Konfiguration$
+D  31   0 255 Indexregister H$
+D  32   0 255 Indexregister L$
+B  47   0 255 Protokollauswahl$
+D  48   0  15 Sprachwahl$
+B  49   0 255 Erweiterte Konfiguration 1$
+B  50   0   3 Analogmodus$
+B  51   0  15 Bremsmodus$
+D  53   0  80 Regelungsreferenz$
+D  54   0  80 K-Parameter Lastregelung$
+D  55   0  80 I-Parameter Lastregelung$
+D  56   1  64 Regelungseinfluss$
+D  66   0 255 Vorw„rtstrimm$
+T  67  94   0 255 Geschwindigkeitkennlinie$
+D  95   0 255 Rckw„rtstrimm$
+D 112   4  64 Blinkfrequenz$
+D 113   0 255 Ausgangskonfig. Licht vorn$
+D 114   0 255 Ausgangskonfig. Licht hinten$
+D 115   0 255 Ausgangskonfig. AUX1$
+D 116   0 255 Ausgangskonfig, AUX2$
+D 117   0 255 Ausgangskonfig, AUX3$
+D 118   0 255 Ausgangskonfig, AUX4$
+D 119   0 255 Ausgangskonfig, AUX5$
+D 120   0 255 Ausgangskonfig, AUX6$
+B 124   0 255 AUX-Einstellungen$
+D 125   0 127 Anfahrspannung Analog DC$
+D 126   0 127 H”chstgeschwindigkeit Analog DC$
+D 127   0 127 Anfahrspannung Analog AC$
+D 128   0 127 H”chstgeschwindigkeit Analog AC$
+D 129   0 255 Stand Vorw„rts A$
+D 130   0 255 Stand Vorw„rts B$
+D 132   0 255 Stand Rckw„rts A$
+D 133   0 255 Stand Rckw„rts B$
+D 135   0 255 Fahrt Vorw„rts A$
+D 136   0 255 Fahrt Vorw„rts B$
+D 138   0 255 Fahrt Rckw„rts A$
+D 139   0 255 Fahrt Rckw„rts B$
+D 141   0 255 Licht Vorw„rts A$
+D 142   0 255 Licht Vorw„rts B$
+D 144   0 255 Licht Rckw„rts A$
+D 145   0 255 Licht Rckw„rts B$
+D 147   0 255 F1 Vorw„rts A$
+D 148   0 255 F1 Vorw„rts B$
+D 150   0 255 F1 Rckw„rts A$
+D 151   0 255 F1 Rckw„rts B$
+D 153   0 255 F2 Vorw„rts A$
+D 154   0 255 F2 Vorw„rts B$
+D 156   0 255 F2 Rckw„rts A$
+D 157   0 255 F2 Rckw„rts B$
+D 159   0 255 F3 Vorw„rts A$
+D 160   0 255 F3 Vorw„rts B$
+D 162   0 255 F3 Rckw„rts A$
+D 163   0 255 F3 Rckw„rts B$
+D 165   0 255 F4 Vorw„rts A$
+D 166   0 255 F4 Vorw„rts B$
+D 168   0 255 F4 Rckw„rts A$
+D 169   0 255 F4 Rckw„rts B$
+D 171   0 255 F5 Vorw„rts A$
+D 172   0 255 F5 Vorw„rts B$
+D 174   0 255 F5 Rckw„rts A$
+D 175   0 255 F5 Rckw„rts B$
+D 177   0 255 F6 Vorw„rts A$
+D 178   0 255 F6 Vorw„rts B$
+D 180   0 255 F6 Rckw„rts A$
+D 181   0 255 F6 Rckw„rts B$
+D 183   0 255 F7 Vorw„rts A$
+D 184   0 255 F7 Vorw„rts B$
+D 186   0 255 F7 Rckw„rts A$
+D 187   0 255 F7 Rckw„rts B$
+D 189   0 255 F8 Vorw„rts A$
+D 190   0 255 F8 Vorw„rts B$
+D 192   0 255 F8 Rckw„rts A$
+D 193   0 255 F8 Rckw„rts B$
+D 195   0 255 F9 Vorw„rts A$
+D 196   0 255 F9 Vorw„rts B$
+D 198   0 255 F9 Rckw„rts A$
+D 199   0 255 F9 Rckw„rts B$
+D 201   0 255 F10 Vorw„rts A$
+D 202   0 255 F10 Vorw„rts B$
+D 204   0 255 F10 Rckw„rts A$
+D 205   0 255 F10 Rckw„rts B$
+D 207   0 255 F11 Vorw„rts A$
+D 208   0 255 F11 Vorw„rts B$
+D 210   0 255 F11 Rckw„rts A$
+D 211   0 255 F11 Rckw„rts B$
+D 213   0 255 F12 Vorw„rts A$
+D 214   0 255 F12 Vorw„rts B$
+D 216   0 255 F12 Rckw„rts A$
+D 217   0 255 F12 Rckw„rts B$
+D 219   0 255 F13 Vorw„rts A$
+D 220   0 255 F13 Vorw„rts B$
+D 222   0 255 F13 Rckw„rts A$
+D 223   0 255 F13 Rckw„rts B$
+D 225   0 255 F14 Vorw„rts A$
+D 226   0 255 F14 Vorw„rts B$
+D 228   0 255 F14 Rckw„rts A$
+D 229   0 255 F14 Rckw„rts B$
+D 231   0 255 F15 Vorw„rts A$
+D 232   0 255 F15 Vorw„rts B$
+D 234   0 255 F15 Rckw„rts A$
+D 235   0 255 F15 Rckw„rts B$
+D 245   0   1 Konstanter Bremsmodus$
+D 246   0 255 Autom.Entkupp.Fahrtgeschw.$
+D 247   0 255 Entkuppeln Abrckzeit$
+D 248   0 255 Entkuppeln Andrckzeit$
+D 253   0 255 Startverz”gerung$
+D 254   0  64 konstanter Bremsweg$
+;--- end ---

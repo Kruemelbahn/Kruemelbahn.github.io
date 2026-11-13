@@ -1,0 +1,71 @@
+; File: LOSND4.DDB
+i ESU Loksound 4.0 MZ 2023-08-17
+D   1   1 127 kurze Adresse$
+D   2   1 255 Anfahrspannung$
+D   3   0 255 Beschleunigungszeit$
+D   4   0 255 Bremszeit$
+D   5   0 255 Hîchstgeschwindigkeit$
+D   6   0 255 Mittelgeschwindigkeit$
+R   7   0   0 Version$
+M   8   0   0 Hersteller [151]$
+D  13   0 255 Analog-Funkstat. F1-F8$
+D  14   0  63 Analog-Funkstat. FL,F9-F15$
+D  15   0 255 Dekoderlock$
+D  16   0 255 Dekoderlock$
+L  17 128 9999 lange Adresse$
+D  19   0 255 FÅhrungsadresse$
+D  21   0 255 FÅhrungsmodus F1-F8$
+D  22   0  63 FÅhrungsmodus FL,F9-F15$
+B  27   0 255 Brems-Konfiguration$
+B  28   0 255 RailCom-Einstellungen$
+C  29   0  63 Konfiguration$
+D  31   0 255 Indexregister H$
+D  32   0 255 Indexregister L$
+B  47   0 255 Protokollauswahl$
+D  48   0  15 Sprachwahl$
+B  49   0 255 Erweiterte Konfiguration 1$
+B  50   0   3 Analogmodus$
+D  51   0 255 I-Parameter Lastregelung slow$
+D  52   0 255 K-Parameter Lastregelung slow$
+D  53   0 255 Regelungsreferenz$
+D  54   0 255 K-Parameter Lastregelung$
+D  55   0 255 I-Parameter Lastregelung$
+D  56   1 255 Regelungseinfluss$
+D  57   1 255 Dampfsto·synchronistation 1$
+D  58   1 255 Dampfsto·synchronistation 2$
+D  59   1 255 FahrgerÑusch min$
+D  60   1 255 FahrgerÑusch max$
+D  61   0 255 ZufallsgerÑusch min$
+D  62   0 255 ZufallsgerÑusch max$
+D  63   0 192 GerÑuschlautstÑrke Master$
+D  64   0 255 BremsgerÑuschschwelle Brake on$
+D  65   0 255 BremsgerÑuschschwelle Brake off$
+D  66   0 255 VorwÑrtstrimm$
+T  67  94   0 255 Geschwindigkeitkennlinie$
+D  95   0 255 RÅckwÑrtstrimm$
+B 105   0 255 Benutzer-CV 1$
+B 106   0 255 Benutzer-CV 2$
+D 112   4  64 Zeitdauer Blinkeffekte$
+D 113   0 255 Power Fail Bypass$
+D 122   0   3 Zustandsspeicherung$
+D 123   0 255 ABC-Mod.Langsamfahrt$
+B 124   0 255 Erweiterte Konfiguration 2$
+D 125   0 255 Anfahrspannung Analog DC$
+D 126   0 255 Hîchstgeschwindigkeit Analog DC$
+D 127   0 255 Anfahrspannung Analog AC$
+D 128   0 255 Hîchstgeschwindigkeit Analog AC$
+D 129   0 255 Analogfunkt. Hysterese$
+D 130   0 255 Analogmotor Hysterese$
+D 132   0 255 Grade Crossing Hold time$
+D 133   0 255 Sound Fader$
+D 134   4  32 ABC-Mod.Empfindlichkeit$
+D 179   0 255 Dynamische Bremszeit$
+D 246   0 255 Autom.Entkupp.Fahrtgeschw.$
+D 247   0 255 Entkuppeln AbrÅckzeit$
+D 248   0 255 Entkuppeln AndrÅckzeit$
+D 249   0 255 minimaer Dampsto·abstand$
+D 250   0 255 sek. Dampfsto·trigger$
+D 253   0 255 konstanter Bremsmodus$
+D 254   0 255 konstanter Bremsweg vorw.$
+D 255   0 255 konstanter Bremsweg rÅckw.$
+;--- end ---

@@ -1,0 +1,12 @@
+<!ELEMENT CV (text*)>
+  <!ATTLIST CV date CDATA #REQUIRED>
+  <!ATTLIST CV ddb CDATA #REQUIRED>
+  <!ATTLIST CV note CDATA #REQUIRED>
+
+  <!ELEMENT text (nummer, hex, bin, name)>
+
+    <!ELEMENT nummer (#PCDATA)>
+    <!ELEMENT hex (#PCDATA)>
+    <!ELEMENT bin (#PCDATA)>
+    <!ELEMENT name (#PCDATA)>
+      <!ATTLIST name href CDATA #IMPLIED>

@@ -1,0 +1,14 @@
+[1.22]
+Michael Zimmermann=2515.1415.2257;@130958# activated:  30.12.2024 10:50:36
+Detlev Ernen=2110.1415.2064;@42799#
+Matthias Müller=2362.1415.2253;@40235#
+Reiner Karschöldgen=2861.1415.2065;@42651#
+Thorsten Bressler=2309.1415.2214;@91266#
+Wolfgang Hückel=2390.1415.2279;@42791#
+
+[31.22]
+Michael Zimmermann=6685.5585.6427;@130958# activated:   3. 1.2025 09:12:07
+Reiner Karschöldgen=7031.5585.6235;@42651#
+Wolfgang Hückel=6560.5585.6449;@42781#
+
+--ende--

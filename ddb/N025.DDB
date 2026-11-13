@@ -1,0 +1,92 @@
+; File: N025.DDB
+i Khn N025 MZ 2014-12-10
+D   1   1 127 kurze Adresse$
+D   2   0 255 Startspannung$
+D   3   0  63 Beschleunigungsrate$
+D   4   0  63 Verz”gerungsrate$
+D   5   0 255 Maximalspannung$
+D   6   0 255 Mittelspannung$
+R   7   0   0 Version$
+M   8   0   0 Hersteller [157]$
+D   9   0   1 Motorsteuerfrequenz$
+L  17 128 10239 lange Adresse$
+D  19   0 255 Fhrungsadresse$
+C  29   0  63 Konfiguration$
+B  49   0 255 Effekte Ausgang A (weiá)$
+S  49   0   0 Pulsierendes Licht$
+S  49   1   0 Blitzlicht$
+S  49   2   0 Blinken Phase B$
+S  49   3   0 Blinken Phase A$
+S  49   4   0 Dimmen$
+S  49   5   0 Aus bei Rckw„rts$
+S  49   6   0 Aus bei Vorw„rts$
+S  49   7   0 Dimmen mit F3$
+B  50   0 255 Effekte Ausgang B (gelb)$
+S  50   0   0 Pulsierendes Licht$
+S  50   1   0 Blitzlicht$
+S  50   2   0 Blinken Phase B$
+S  50   3   0 Blinken Phase A$
+S  50   4   0 Dimmen$
+S  50   5   0 Aus bei Rckw„rts$
+S  50   6   0 Aus bei Vorw„rts$
+S  50   7   0 Dimmen mit F3$
+B  51   0 255 Effekte Ausgang C (grn)$
+S  51   0   0 Pulsierendes Licht$
+S  51   1   0 Blitzlicht$
+S  51   2   0 Blinken Phase B$
+S  51   3   0 Blinken Phase A$
+S  51   4   0 Dimmen$
+S  51   5   0 Aus bei Rckw„rts$
+S  51   6   0 Aus bei Vorw„rts$
+S  51   7   0 Dimmen mit F3$
+B  52   0 255 Effekte Ausgang D (violett)$
+S  52   0   0 Pulsierendes Licht$
+S  52   1   0 Blitzlicht$
+S  52   2   0 Blinken Phase B$
+S  52   3   0 Blinken Phase A$
+S  52   4   0 Dimmen$
+S  52   5   0 Aus bei Rckw„rts$
+S  52   6   0 Aus bei Vorw„rts$
+S  52   7   0 Dimmen mit F3$
+D  53   0 255 I-Parameter Lastregelung$
+D  54   0 255 P-Parameter Lastregelung$
+D  55   0 255 Zykluszeit Effekte / Dimmrate$
+B  56   0 255 Benutzerkonfiguration 1$
+S  56   0   0 richtungsunabh„ngiges Licht$
+S  56   1   0 Lastregelung ein$
+S  56   2   0 Rangiergang mit F4$
+S  56   3   0 reserviert$
+B  57   0 255 Ausg„nge Rangierlicht$
+B  58   0 255 Mapping Ausgang B (gelb)$
+S  58   0   0 Ausgang B mit F1$
+S  58   1   0 Ausgang B mit F2$
+S  58   2   0 Ausgang B mit F3$
+S  58   3   0 Ausgang B mit F4$
+S  58   4   0 Ausgang B mit F5$
+S  58   5   0 Ausgang B mit F6$
+S  58   6   0 Ausgang B mit F7$
+S  58   7   0 Ausgang B mit F8$
+B  59   0 255 Mapping Ausgang C (grn)$
+S  59   0   0 Ausgang B mit F1$
+S  59   1   0 Ausgang B mit F2$
+S  59   2   0 Ausgang B mit F3$
+S  59   3   0 Ausgang B mit F4$
+S  59   4   0 Ausgang B mit F5$
+S  59   5   0 Ausgang B mit F6$
+S  59   6   0 Ausgang B mit F7$
+S  59   7   0 Ausgang B mit F8$
+B  60   0 255 Mapping Ausgang D (violett)$
+S  60   0   0 Ausgang B mit F1$
+S  60   1   0 Ausgang B mit F2$
+S  60   2   0 Ausgang B mit F3$
+S  60   3   0 Ausgang B mit F4$
+S  60   4   0 Ausgang B mit F5$
+S  60   5   0 Ausgang B mit F6$
+S  60   6   0 Ausgang B mit F7$
+S  60   7   0 Ausgang B mit F8$
+D  63   0 255 Kupplungsparameter$
+T  67  94   0 255 Geschwindigkeitkennlinie$
+D  95   0 255 Trimmen Rckw„rts$
+D 105   0 255 Benutzer 1$
+D 106   0 255 Benutzer 2$
+;--- end ---

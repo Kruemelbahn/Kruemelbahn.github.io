@@ -1,0 +1,92 @@
+; File: MX617.DDB
+I Zimo MX617 MZ-2022-10-12
+;                       1         2         3
+;              123456789012345678901234567890$
+D   1   1  127 Fahrzeugadresse$
+D   2   1  252 Anfahrspannung$
+D   3   0  255 Beschleunigungszeit$
+D   4   0  255 Bremszeit$
+D   5   0  252 Maximalgeschwindigkeit$
+D   6   1  252 Mittengeschwindigkeit$
+R   7   0    0 Versionsnummer$
+M   8   0    0 Hersteller / Reset(8)    [145]$
+D   9   0  255 Motoransteuerungsperiode$
+D  10   0  252 Regelungs-Cutoff$
+D  13   0  255 F1...F8 im Analogbetrieb$
+D  14   0  255 F0, F9... im Analogbetrieb$
+L  17   0 9999 Erweiterte Adresse$
+D  19   1  255 Verbundadresse$
+D  20   1  102 erweiterte Verbundadresse$
+D  21   0  255 F1-8 im Verbundbetrieb$
+D  22   0    3 F0 im Verbundbetrieb$
+D  23   0  255 Beschleunigungsvariantion$
+D  24   0  255 Bremszeitvariantion$
+D  27   0    3 ABC$
+D  28   0    3 RailCom Konfiguration$
+C  29   0   63 Grundeinstellungen$
+D  33   0  255 F0-Zuordnung$
+D  34   0  255 F0-Zuordnung$
+D  35   0  255 F-Zuordnung$
+D  36   0  255 F-Zuordnung$
+D  37   0  255 F-Zuordnung$
+D  38   0  255 F-Zuordnung$
+D  39   0  255 F-Zuordnung$
+D  40   0  255 F-Zuordnung$
+D  41   0  255 F-Zuordnung$
+D  42   0  255 F-Zuordnung$
+D  43   0  255 F-Zuordnung$
+D  44   0  255 F-Zuordnung$
+D  45   0  255 F-Zuordnung$
+D  46   0  255 F-Zuordnung$
+D  49   0  255 HLU Beschleunigung$
+D  50   0  255 HLU Bremsen$
+D  51   0  252 HLU Geschwindigkeit Z1$
+D  52   0  252 HLU Geschwindigkeit U$
+D  53   0  252 HLU Geschwindigkeit Z2$
+D  54   0  252 HLU Geschwindigkeit L$
+D  55   0  252 HLU Geschwindigkeit Z3$
+D  56   0  255 Motorregelung PI-Anteil$
+D  57   0  255 Regelungsreferenz$
+D  58   0  255 Regelungseinfluss$
+D  59   0  255 HLU/ABC Zeit$
+D  60   0  255 F-Dimmen$
+D  61   0   97 ZIMO erweit. Mapping$
+D  62   0    9 Lichteffekte 1$
+D  63   0   99 Lichteffekte 2$
+D  64   0    9 Lichteffekte 3$
+D  65   0  255 SW-Subversionsnumm$
+D  66   0  255 Geschwindigk.Trimm vorwÑrts$
+T  67 94 0 255 Geschwindigkeitskennlinie$
+D  95   0  255 Geschwindigk.Trimm rÅckwÑrts$
+D  97   0   28 Verbund-Taste$
+D 105   0  255 Benutzerdaten 1$
+D 106   0  255 Benutzerdaten 2$
+D 107   0  255 Einseitige LichtunterdrÅ.$
+D 108   0  255 Einseitige LichtunterdrÅ.$
+D 109   0    6 Erweit. CV107$
+D 110   0    6 Erweit. CV108.$
+D 112   0  255 Dekoderkonfiguration$
+D 113   0  255 Regelungs-Cutoff$
+D 114   0  255 Dimm-Maske$
+D 115   0   99 Digital-Kupplung Zeit / Dimmen$
+D 116   0  199 Digital-Kupplung AbrÅcken$
+D 117   0   99 Blinken$
+D 118   0    7 Blink-Maske$
+D 119   0    7 Ablend-Maske F6$
+D 120   0    7 Ablend-Maske F7$
+D 121   0   99 exponentielle Beschleun.kurve$
+D 122   0   99 exponentielle Bremskurve$
+D 123   0   99 adaptives Beschleun./Bremsen$
+D 124   0  255 Rangiergang / SUSI$
+D 125   0  255 Effekte F0 vorwÑrts und andere$
+D 126   0  255 Effekte F0 rÅckwÑrts$
+D 127   0  255 Effekte FA1$
+D 128   0  255 Effekte FA2$
+D 129   0  255 Effekte FA3$
+D 130   0  255 Effekte FA4$
+D 131   0  255 Effekte FA5$
+D 132   0  255 Effekte FA6$
+D 133   0  255 Achs-Detektor-Simulation$
+D 134   0  214 ABC Schwelle$
+D 144   0  255 Prog./Update-Sperre$
+;--- end ---

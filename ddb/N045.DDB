@@ -1,0 +1,66 @@
+; File: N045.DDB
+i KÅhn N045 MZ 2014-12-10
+D   1   1 127 kurze Adresse$
+D   2   0 255 Startspannung$
+D   3   0  63 Beschleunigungsrate$
+D   4   0  63 Verzîgerungsrate$
+D   5   0 255 Maximalspannung$
+D   6   0 255 Mittelspannung$
+R   7   0   0 Version$
+M   8   0   0 Hersteller [157]$
+D   9   0   2 Motorsteuerfrequenz$
+D  13   0 255 Analog-Funkstat. F1-F8$
+D  14   0 255 Analog-Funkstat. F9-F12$
+L  17 128 10239 lange Adresse$
+D  19   0 255 FÅhrungsadresse$
+D  27   0  63 Brems-Konfiguration$
+D  28   0   7 RailCom-Eisnstellungen$
+C  29   0  63 Konfiguration$
+D  33   0 255 Ausgangszuordn. F0 vorw.$
+D  34   0 255 Ausgangszuordn. F0 rÅckw.$
+D  35   0 255 Ausgangszuordn. F1$
+D  36   0 255 Ausgangszuordn. F2$
+D  37   0 255 Ausgangszuordn. F3$
+D  38   0 255 Ausgangszuordn. F4$
+D  39   0 255 Ausgangszuordn. F5$
+D  40   0 255 Ausgangszuordn. F6$
+D  41   0 255 Ausgangszuordn. F7$
+D  42   0 255 Ausgangszuordn. F8$
+D  43   0 255 Ausgangszuordn. F9$
+D  44   0 255 Ausgangszuordn. F10$
+D  45   0 255 Ausgangszuordn. F11$
+D  46   0 255 Ausgangszuordn. F12$
+B  47   0 255 Effekte Ausgang E$
+B  48   0 255 Effekte Ausgang F$
+B  49   0 255 Effekte Ausgang A (wei·)$
+B  50   0 255 Effekte Ausgang B (gelb)$
+B  51   0 255 Effekte Ausgang C (grÅn)$
+B  52   0 255 Effekte Ausgang D (violett)$
+D  53   1  63 I-Parameter Lastregelung$
+D  54   2  63 P-Parameter Lastregelung$
+D  55   0 255 Zykluszeit Effekte / Dimmrate$
+B  56   0 255 Benutzerkonfiguration 1$
+S  56   0   0 EMK-Teiler aktiv$
+S  56   1   0 Lastregelung ein$
+S  56   2   0 E & F Logik (SuSi aus)$
+S  56   3   0 reserviert$
+D  57   0 127 AusgÑnge Rangierlicht$
+D  58   0 255 Funktionsauswahl Rangiergang$
+D  59   0 255 Funktionsauswahl Abblendlicht$
+D  60   0 255 Dimmwert Ausgang B/A$  
+D  61   0 255 Dimmwert Ausgang D/C$  
+D  62   0 255 Dimmwert Ausgang F/E$  
+D  63   0 255 Kupplungsparameter$
+D  64   0 255 ?$
+T  67  94   0 255 Geschwindigkeitkennlinie$
+D  95   0 255 Trimmen RÅckwÑrts$
+D 105   0 255 Benutzer 1$
+D 106   0 255 Benutzer 2$
+D 112   0  31 Benutzerkonfiguration 2$
+D 113   0   9 Zufallsgenerator$
+D 115   0   9 Asymmetrie-Erkennungspegel$
+D 123   0   9 AbrÅckzeit$
+D 124   0 255 AbrÅckgeschwindigkeit$
+D 126   0 255 Hîchstgeschw. Analogmode$
+R 127   0 255 Unterversion Software$
+;--- end ---

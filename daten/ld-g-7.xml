@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="cv.xsl" ?>
+<!DOCTYPE CV SYSTEM "cv.dtd">
+
+<CV date="081117" ddb="LD-G-7.DDB">
+  <text nr="1">
+    <nummer href="javascript:openWindow('daten/dec_adr.gif')">  1</nummer>
+    <kurztext nr="1">Primäre Decoderadresse</kurztext>
+    <minwert>1</minwert>
+    <maxwert>127</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>Die Bits 0-6 der CV#1 enthalten die
+Decoderadresse im Bereich von 1 bis
+127. Bit 7 muss den Wert '0' haben.<BR/>
+Beachte: Neue Decoder sind auf die Adresse 3 voreingestellt.</beschreibung>
+  </text>
+  <text nr="2">
+    <nummer href="javascript:openWindow('daten/cv2_5_6.gif')">  2</nummer>
+    <kurztext nr="2">Anfahrspannung</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>Die Spannung, die bei Fahrstufe 1 an den Motor ausgegeben wird.
+    Ein Wert von '0' entspricht 0 Volt, ein Wert von '255' der maximalen Spannung.
+    </beschreibung>
+  </text>
+  <text nr="3">
+    <nummer>  3</nummer>
+    <kurztext nr="3">Beschleunigungswert</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>Länge der Wartezeit, die beim Beschleunigen der Lok jeweils vor dem Hochschalten zur nächst höheren Fahstufe vergeht.
+    Die Wartezeit berechnet sich wie folgt:<BR/>
+    CV#3 * 0,9 sec. / Anzahl der Fahrtstufen.
+    </beschreibung>
+  </text>
+  <text nr="4">
+    <nummer>  4</nummer>
+    <kurztext nr="4">Bremsverzögerung</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>Länge der Wartezeit, die beim Abbremsen der Lok jeweils vor dem Herunterschalten zur nächst niedrigeren Fahrstufe vergeht<BR/>
+    Die Wartezeit berechnet sich wie folgt:<BR/>
+    CV#4 * 0,9 sec. / Anzahl der Fahrtstufen.
+    </beschreibung>
+  </text>
+  <text nr="5">
+    <nummer href="javascript:openWindow('daten/cv2_5_6.gif')">  5</nummer>
+    <kurztext nr="5">Maximale Motorspannung</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>Spannung, die bei der höchsten Fahrstufe an den Motorausgegeben wird.<BR/>
+    Ein Wert von '2' entspricht 0,8%, ein Wert von '255' 100% der maximalen Spannung.
+    </beschreibung>
+  </text>
+  <text nr="8">
+    <nummer href="cv8.htm">  8</nummer>
+    <kurztext nr="8">Herstelleridentifikation</kurztext>
+    <format>nur lesbar</format>
+    <beschreibung>CV#8 enthält die Herstelleridentifikation.
+    </beschreibung>
+  </text>
+  <text nr="9">
+    <nummer>  9</nummer>
+    <kurztext nr="9">Dauer der PWM-Periode</kurztext>
+    <minwert>160</minwert>
+    <maxwert>167</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>Mit CV#9 läßt sich die Dauer der Periode
+        für die Pulsweiten-Modulation
+        (PWM) einstellen. Die Drehzahl der
+        Lokmotoren wird geregelt, indem man
+        in festgelegten Abständen den Motor
+        kürzer oder länger an die volle Versorgungsspannung
+        schaltet.
+        Bei kurzen Einschaltimpulsen dreht
+        der Motor langsam; wenn die Impulsdauer
+        gleich der Periodenlänge ist,
+        läuft der Motor mit Maximalgeschwindigkeit.
+        Auf diese Art der Drehzahlregelung
+        reagieren jedoch die verschiedenen
+        Motorentypen unterschiedlich. Die
+        meisten drei- und fünfpoligen Ausführungen sind mit Wiederholraten
+        der Impulse von ca. 70 Hertz zufrieden.
+        Für den optimalen Lauf von Glockenankermotoren
+        sind jedoch höhere Frequenzen
+        (ab ca. 300 Hz) notwendig.
+        <BR/>
+        160 = 2 kHz<BR/>
+        161 = 1 kHz<BR/>
+        162 = 500 Hz<BR/>
+        163 = 250 Hz<BR/>
+        164 = 125 Hz<BR/>
+        165 = 62 Hz<BR/>
+        166 = 31 Hz<BR/>
+        167 = 15 Hz<BR/>
+    </beschreibung>
+  </text>
+  <text nr="17">
+    <nummer href="cvadr.htm"> 17</nummer>
+    <kurztext nr="17">Erweitere Adressierung</kurztext>
+    <minwert>192</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl, zusammen mit CV#<link>18</link></format>
+    <beschreibung>Mit dem Wert in CV#<link>1</link> kann ein Decoder
+nur im Bereich von 1-127 adressiert
+werden. Die zwei Byte lange
+Adresse in CV#17 und CV#<link>18</link> erweitert den
+Bereich bis auf 10239. Die Bits 0 bis 5
+in CV#17 enthalten den höherwertigen
+Teil der Adresse, die Bits 6 und 7 müssen
+auf den Wert 1 gesetzt sein (Erweitertes
+Adressierungschema für Fahrzeugdecoder).
+CV#<link>18</link> enthält den niederwertigen
+Teil der Adresse. Vergessen
+Sie nicht, Bit 5 in CV#<link>29</link> auf 1
+zu setzen, sonst wird die erweiterte
+Adresse ignoriert!</beschreibung>
+  </text>
+  <text nr="18">
+    <nummer href="cvadr.htm"> 18</nummer>
+    <kurztext nr="18">Erweitere Adressierung</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl, zusammen mit CV#<link>17</link></format>
+    <beschreibung>siehe CV#<link>17</link></beschreibung>
+  </text>
+  <text nr="19">
+    <nummer href="javascript:openWindow('daten/dec_adr.gif')"> 19</nummer>
+    <kurztext nr="19">Consistadresse für Mehrfachtraktion</kurztext>
+    <minwert>0</minwert>
+    <maxwert>127</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung>Die Consist-Adresse wird in
+den Bits 0 bis 6 der CV#19 abgespeichert,
+Bit 7 enthält die Fahrtrichtung. Aus
+diesem Grund können Sie nur Consist-
+Adressen im Bereich 1-127 verwenden.
+Wenn der Decoder auf seine
+ursprüngliche Adreßeinstellung (primäre
+oder erweiterte Adresse) reagieren
+soll, muß die CV#19 den Wert 0
+enthalten.</beschreibung>
+  </text>
+  <text nr="29">
+    <nummer> 29</nummer>
+    <kurztext nr="29">Decoder Konfiguration</kurztext>
+    <format>Bitweise</format>
+    <beschreibung>
+Mit den Bits der CV#29 werden grundlegende
+Verhaltensweisen des Decoders
+spezifiziert.<BR/>
+<BR/>
+<B>* Bit 0</B> kehrt die normale Fahrtrichtung
+einer Lok um. Auch die richtungsabhängige
+Beleuchtung wird mit
+umgeschaltet. Sie können dieses Bit auf
+1 setzen, wenn Sie z.B. die Motoranschlüsse
+vertauscht haben.<BR/>
+<BR/>
+<B>* Bit 1</B> gibt an, wo die Information für
+die Steuerung von Funktion 0 zu finden
+ist. Wenn Bit 1 auf 0 steht, wird die
+Funktion 0 mit Bit 4 des Fahrbefehls
+geschaltet, das ist die richtige Einstellung
+für Decoder mit 14 oder 27 Fahrstufen.
+Bei 28 Fahrstufen und mehr
+müssen Sie dieses Bit auf 1 setzen,
+dann wird die Funktion 0 mit Befehlen
+aus der Funktionsgruppe 0 bedient.<BR/>
+<BR/>
+<B>* Bit 5</B> spezifiert den Adressierungmodus.
+Wenn Bit 5 auf "0" steht, zieht
+der Decoder für den Adressenvergleich
+den Wert in CV#<link>1</link> heran, im anderen
+Fall wird die erweiterte Adresse in
+CV#<link>17</link> und CV#<link>18</link> benutzt<BR/>
+    </beschreibung>
+  </text>
+  <text nr="56">
+    <nummer> 56</nummer>
+    <kurztext nr="56">Nutzung und Belegung Ausgang X4 und X5</kurztext>
+    <format>Bitweise</format>
+    <beschreibung>
+<B>* Bit 0</B> richtungsabhängige Beleuchtung<BR/>
+<B>* Bit 1</B> Beleuchtung für Rückwärtsfahrt
+    </beschreibung>
+  </text>
+</CV>

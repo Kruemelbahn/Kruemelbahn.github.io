@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="nmra.xsl"?>
+<!DOCTYPE NMRA SYSTEM "nmra.dtd">
+
+<NMRA date="091116">
+
+  <S>
+    <nummer href="https://www.nmra.org/standards/sandrp/pdf/s-9.pdf">S 9</nummer>
+    <status>Release</status>
+    <beschreibung>Electrical</beschreibung>
+  </S>
+  <S>
+    <nummer href="https://www.nmra.org/standards/DCC/standards_rps/S-91-2004-07.pdf">S 9.1</nummer>
+    <status>Release</status>
+    <beschreibung>Electrical Standards for Digital Command Control</beschreibung>
+  </S>
+  <S>
+    <nummer href="https://www.nmra.org/standards/DCC/standards_rps/S-92-2004-07.pdf">S 9.2</nummer>
+    <status>Release</status>
+    <beschreibung>Communications Standards for Digital Command Control</beschreibung>
+  </S>
+
+  <RP>
+    <nummer href="https://www.nmra.org/standards/sandrp/pdf/rp_index.pdf">Index</nummer>
+    <status>Release</status>
+    <beschreibung>OFFICIAL NMRA RECOMMENDED PRACTICES</beschreibung>
+  </RP>
+  <RP>
+    <nummer href="https://www.nmra.org/standards/sandrp/pdf/rp-9.pdf">RP 9</nummer>
+    <status>Release</status>
+    <beschreibung>Electrical</beschreibung>
+  </RP>
+  <RP>
+    <nummer href="https://www.nmra.org/standards/DCC/standards_rps/RP-9.1.1%20200801.pdf">RP 9.1.1</nummer>
+    <status>Release</status>
+    <beschreibung>Electrical Interface &amp; Wire Color Code for Digital Command Control</beschreibung>
+  </RP>
+  <RP>
+    <nummer href="https://www.nmra.org/standards/DCC/standards_rps/RP-912.pdf">RP 9.1.2</nummer>
+    <status>Release</status>
+    <beschreibung>Power Station Interface for Digital Command Control</beschreibung>
+  </RP>
+  <RP>
+    <nummer href="https://www.nmra.org/standards/DCC/standards_rps/RP-921%202006%20Aug%2021.pdf">RP 9.2.1</nummer>
+    <status>Release</status>
+    <beschreibung>Extended Packet Formats for Digital Command Control</beschreibung>
+  </RP>
+  <RP>
+    <nummer href="https://www.nmra.org/standards/DCC/standards_rps/RP-9.2.2%202007%20July.pdf">RP 9.2.2</nummer>
+    <status>Release</status>
+    <beschreibung>Configuration Variables for Digital Command Control</beschreibung>
+  </RP>
+  <RP>
+    <nummer href="https://www.nmra.org/standards/DCC/standards_rps/Appendix%20A,%20RP%209.2.2%202009.07.31.pdf">RP 9.2.2 Appendix A</nummer>
+    <status>Release</status>
+    <beschreibung>Manufacturer ID codes as assigned by the NMRA</beschreibung>
+  </RP>
+  <RP>
+    <nummer href="https://www.nmra.org/standards/DCC/standards_rps/RP-923.pdf">RP 9.2.3</nummer>
+    <status>Release</status>
+    <beschreibung>Service Mode for Digital Command Control</beschreibung>
+  </RP>
+  <RP>
+    <nummer href="https://www.nmra.org/standards/DCC/standards_rps/RP-924.pdf">RP 9.2.4</nummer>
+    <status>Release</status>
+    <beschreibung>Fail-Safe Operating Characteristics For Digital Command Control</beschreibung>
+  </RP>
+  <RP>
+    <nummer href="https://www.nmra.org/standards/DCC/standards_rps/RP-931%202007%20Jan.pdf">RP 9.3.1</nummer>
+    <status>Release</status>
+    <beschreibung>Electrical Specifications for Digital Command Control Decoder Transmission</beschreibung>
+  </RP>
+  <RP>
+    <nummer href="https://www.nmra.org/standards/DCC/standards_rps/RP-932.pdf">RP 9.3.2</nummer>
+    <status>Obsolete</status>
+    <beschreibung>Communications Standard for Digital Command Control, Basic Decoder Transmission</beschreibung>
+  </RP>
+  <RP>
+    <nummer href="https://www.nmra.org/standards/DCC/standards_rps/RP-9.3.2%20draft%202005-04-14.pdf">RP 9.3.2</nummer>
+    <status>Draft</status>
+    <beschreibung>Communications Standard for Digital Command Control, Basic Decoder Transmission</beschreibung>
+  </RP>
+
+</NMRA>

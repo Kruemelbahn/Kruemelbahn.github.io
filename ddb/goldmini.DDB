@@ -1,0 +1,99 @@
+; DDB fuer Lenz Gold Mini
+; 17.11.2008 / Michael Zimmermann
+;  Aufbau DDB
+;--------------------------------------------------------------------------
+;  <x> <cv> <min> <max> <txt>
+;   
+;  <x>  Art des Eintrags: 
+;       ;   Kommentar ( Rest der Zeile wird ignoriert ) 
+;       D   Dezimalzahl
+;       H   Hexzahl
+;       B   Binaerzahl ( Bitweise )
+;       S   Switch  Beschreibung der Bits in "B" CVs
+;           Aufbau: S CVnum BITnum 0 Text$
+;       T   Speed-Table
+;           Aufbau: T CVfirst CVlast min max Text$
+;       R   Read Only (dezimal) z.B. fuer Version
+;       L   Lange Adresse  ( Aufbau immer "L 17  1 10239  Adresse (lang)$")
+;           die lange Adresse wird in <cv> und <cv+1> abgelegt
+;       C   Config in CV29 ( Aufbau immer "C 29  0   255  Config$")
+;       I   Decoderinformation -  nur String mit max. 60 Char
+;       M   Hersteller Info (RP9.2.2) - Read Only
+;       
+; <min> Minimalwert
+; <max> Maximalwert
+; <txt> Beschreibung des CVs ( max.30 Zeichen mit $ am Ende ) 
+;--------------------------------------------------------------------------
+;
+;
+i Gold mini / LENZ / mz 17.11.2008 $
+D  1  1   127  Adresse (kurz)$
+D  2  1    31  Mindestanfahrspannung$
+D  3  1   255  Anfahrverzoegerung$
+D  4  1   255  Bremsverzoegerung$
+D  5  0   255  Maximalgeschwindigkeit$
+D  6  0   255  mittlere Geschwindigkeit$
+R  7  0     0  Version$
+M  8  0     0  Hersteller$
+D  9  0    63  Wiederholrate$
+L 17  1 10239  Adresse (lang)$
+D 19  0   127  Consist Adresse$
+B 28  0   255  RailCom Konfiguration$
+S 28  0     0  Kanal 1 frg Adress-Broadcast$
+S 28  1     0  Kanal 2 frg Daten$
+S 28  2     0  Kanal 1 frg Befehls-Acknow.$
+C 29  0   255  Config$
+B 30  0   255  Fehleranzeige$
+S 30  0     0  Lampen-Kurzschluss$
+S 30  1     0  Uebertemperatur$
+S 30  2     0  Motor-Kurzschluss$
+B 33  0   255  F-Ausg: F0 vorwaerts$
+B 34  0   255  F-Ausg: F0 rueckwaerts$
+B 35  0   255  F-Ausg: F1$
+B 36  0   255  F-Ausg: F2$
+B 37  0   255  F-Ausg: F3$
+B 38  0   255  F-Ausg: F4$
+B 39  0   255  F-Ausg: F5$
+B 40  0   255  F-Ausg: F6$
+B 41  0   255  F-Ausg: F7$
+B 42  0   255  F-Ausg: F8$
+B 50  0   255  Motorkonfiguration$
+S 50  0     0  Motortype$
+S 50  1     0  Motortype$
+S 50  2     0  Motortype$
+S 50  3     0  Motortype$
+S 50  5     0  EMK-Teiler aktiv$
+S 50  6     0  Regelung ausgeschaltet$
+S 50  7     0  Motoransteuerung niederfreq.$
+B 51  0   255  Bremskonfiguration$
+S 51  0     0  konstanter Bremsweg$
+S 51  1     0  ABC aktiviert$
+S 51  2     0  ABC richtungsunabhaengig$
+S 51  3     0  Pendelbetrieb ohne Zwischenhlt$
+S 51  4     0  Pendelbetrieb mit Zwischenhalt$
+S 51  5     0  polaritätsunabhaengig halten$
+S 51  6     0  unused$
+S 51  7     0  unused$
+D 52  0   255  konstanter Bremsweg$
+D 53  0   255  Langsamfahrt bei ABC$
+D 54  0   255  Aufenthaltsdauer (Pendel)$
+D 55  0   255  Dimm-Wert A (255 = hell)$
+D 56  0   255  Dimm-Wert B (255 = hell)$
+B 57  0    31  Funktionsmapping Dimmen$
+B 58  0    31  Funktionsmapping Rangiergang$
+B 59  0    31  Fktmapp. Absch. Verzoegerung$
+B 60  0   255  Effekte an A,B$
+S 60  0     0  kein Effekt$ 
+S 60  1     0  Marslight$ 
+S 60  2     0  Gyralight$ 
+S 60  3     0  Strobe$ 
+S 60  4     0  Doublestrobe$ 
+D 61  0   255  Fkt.Zuordnung Effekte an A,B$
+T 67 94   0  255 Speed-Table$
+D 112  0   255  Zeitdauer Motornachlauf$
+D 113  0   255  minimaler PWM-Wert$
+D 114  0   255  Aenderung Dutycyle$
+D 126  0    99  Zeiger CV fuer SUSI$
+D 127  0     9  Transport CV fuer SUSI$
+R 128  0   255  Servicenummer$
+;--- end ---

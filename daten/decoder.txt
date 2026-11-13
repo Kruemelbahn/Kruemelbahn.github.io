@@ -1,0 +1,19 @@
+[Tams]
+LD-G-7=https://www.tams-online.de/htmls/produkte/ldgldw7/LD-G-7_LD-W-7_D.PDF
+LD-G-8=https://www.tams-online.de/htmls/produkte/ldg8/LD-G_8_D.PDF
+
+[Lenz]
+Gold mini=https://www.lenz-elektronik.de/pdf/b_10410_def.pdf
+LE0511D=https://www.lenz-elektronik.de/pdf/b_10111_de.pdf
+LE1014E=https://www.lenz-elektronik.de/pdf/b_10126_def.pdf
+LE1035A=https://www.lenz-elektronik.de/pdf/b_10332_def.pdf
+LE1835A=https://www.lenz-elektronik.de/pdf/b_10334_def.pdf
+
+[Brekina]
+Klv12=https://www.brekina.de/fileadmin/DATEIEN/LISTEN/Draisine_Klv12_Manual_DC_1_2_2_05_13_WEB.pdf
+
+[Kuehn]
+N025=https://kuehn-digital.de/files/N025_de_h.pdf
+N045=https://kuehn-digital.de/files/N45_de_b.pdf
+T65=https://kuehn-digital.de/files/T65_de_b.pdf
+LH10=https://kuehn-digital.de/files/LH10_d-e-f_a.pdf

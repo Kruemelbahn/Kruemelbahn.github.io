@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="cv.xsl"?>
+<!DOCTYPE CV SYSTEM "cv.dtd">
+<CV date="161022" ddb="MX617.DDB">
+  <text nr="1">
+    <nummer href="javascript:openWindow('daten/dec_adr.gif')">  1</nummer>
+    <kurztext nr="1">Fahrzeugadresse</kurztext>
+    <minwert>1</minwert>
+    <maxwert>127</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="2">
+    <nummer href="javascript:openWindow('daten/cv2_5_6.gif')">  2</nummer>
+    <kurztext nr="2">Anfahrspannung</kurztext>
+    <minwert>1</minwert>
+    <maxwert>252</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="3">
+    <nummer>  3</nummer>
+    <kurztext nr="3">Beschleunigungszeit</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="4">
+    <nummer>  4</nummer>
+    <kurztext nr="4">Bremszeit</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="5">
+    <nummer href="javascript:openWindow('daten/cv2_5_6.gif')">  5</nummer>
+    <kurztext nr="5">Maximalgeschwindigkeit</kurztext>
+    <minwert>0</minwert>
+    <maxwert>252</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="6">
+    <nummer href="javascript:openWindow('daten/cv2_5_6.gif')">  6</nummer>
+    <kurztext nr="6">Mittengeschwindigkeit</kurztext>
+    <minwert>1</minwert>
+    <maxwert>252</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="7">
+    <nummer>  7</nummer>
+    <kurztext nr="7">Versionsnummer</kurztext>
+    <minwert>0</minwert>
+    <maxwert>0</maxwert>
+    <format>nur lesbar</format>
+    <beschreibung />
+  </text>
+  <text nr="8">
+    <nummer href="cv8.htm">  8</nummer>
+    <kurztext nr="8">Hersteller / Reset(8)    [145]</kurztext>
+    <minwert>0</minwert>
+    <maxwert>0</maxwert>
+    <format>nur lesbar</format>
+    <beschreibung />
+  </text>
+  <text nr="9">
+    <nummer>  9</nummer>
+    <kurztext nr="9">Motoransteuerungsperiode</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="10">
+    <nummer> 10</nummer>
+    <kurztext nr="10">Regelungs-Cutoff</kurztext>
+    <minwert>0</minwert>
+    <maxwert>252</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="13">
+    <nummer> 13</nummer>
+    <kurztext nr="13">F1...F8 im Analogbetrieb</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="14">
+    <nummer> 14</nummer>
+    <kurztext nr="14">F0, F9... im Analogbetrieb</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="17">
+    <nummer href="cvadr.htm"> 17</nummer>
+    <kurztext nr="17">Erweiterte Adresse</kurztext>
+    <minwert>192</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl, zusammen mit CV#&lt;link&gt;18&lt;/link&gt;</format>
+    <beschreibung />
+  </text>
+  <text nr="18">
+    <nummer href="cvadr.htm"> 18</nummer>
+    <kurztext nr="18">Erweiterte Adresse</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl, zusammen mit CV#&lt;link&gt;18&lt;/link&gt;</format>
+    <beschreibung />
+  </text>
+  <text nr="19">
+    <nummer href="javascript:openWindow('daten/dec_adr.gif')"> 19</nummer>
+    <kurztext nr="19">Verbundadresse</kurztext>
+    <minwert>1</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="20">
+    <nummer> 20</nummer>
+    <kurztext nr="20">erweiterte Verbundadresse</kurztext>
+    <minwert>1</minwert>
+    <maxwert>102</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="21">
+    <nummer> 21</nummer>
+    <kurztext nr="21">F1-8 im Verbundbetrieb</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="22">
+    <nummer> 22</nummer>
+    <kurztext nr="22">F0 im Verbundbetrieb</kurztext>
+    <minwert>0</minwert>
+    <maxwert>3</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="23">
+    <nummer> 23</nummer>
+    <kurztext nr="23">Beschleunigungsvariantion</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="24">
+    <nummer> 24</nummer>
+    <kurztext nr="24">Bremszeitvariantion</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="27">
+    <nummer> 27</nummer>
+    <kurztext nr="27">ABC</kurztext>
+    <minwert>0</minwert>
+    <maxwert>3</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="28">
+    <nummer> 28</nummer>
+    <kurztext nr="28">RailCom Konfiguration</kurztext>
+    <minwert>0</minwert>
+    <maxwert>3</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="29">
+    <nummer> 29</nummer>
+    <kurztext nr="29">Grundeinstellungen</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Bitweise</format>
+    <beschreibung />
+  </text>
+  <text nr="33">
+    <nummer> 33</nummer>
+    <kurztext nr="33">F0-Zuordnung</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="34">
+    <nummer> 34</nummer>
+    <kurztext nr="34">F0-Zuordnung</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="35">
+    <nummer> 35</nummer>
+    <kurztext nr="35">F-Zuordnung</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="36">
+    <nummer> 36</nummer>
+    <kurztext nr="36">F-Zuordnung</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="37">
+    <nummer> 37</nummer>
+    <kurztext nr="37">F-Zuordnung</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="38">
+    <nummer> 38</nummer>
+    <kurztext nr="38">F-Zuordnung</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="39">
+    <nummer> 39</nummer>
+    <kurztext nr="39">F-Zuordnung</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="40">
+    <nummer> 40</nummer>
+    <kurztext nr="40">F-Zuordnung</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="41">
+    <nummer> 41</nummer>
+    <kurztext nr="41">F-Zuordnung</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="42">
+    <nummer> 42</nummer>
+    <kurztext nr="42">F-Zuordnung</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="43">
+    <nummer> 43</nummer>
+    <kurztext nr="43">F-Zuordnung</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="44">
+    <nummer> 44</nummer>
+    <kurztext nr="44">F-Zuordnung</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="45">
+    <nummer> 45</nummer>
+    <kurztext nr="45">F-Zuordnung</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="46">
+    <nummer> 46</nummer>
+    <kurztext nr="46">F-Zuordnung</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="49">
+    <nummer> 49</nummer>
+    <kurztext nr="49">HLU Beschleunigung</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="50">
+    <nummer> 50</nummer>
+    <kurztext nr="50">HLU Bremsen</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="51">
+    <nummer> 51</nummer>
+    <kurztext nr="51">HLU Geschwindigkeit Z1</kurztext>
+    <minwert>0</minwert>
+    <maxwert>252</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="52">
+    <nummer> 52</nummer>
+    <kurztext nr="52">HLU Geschwindigkeit U</kurztext>
+    <minwert>0</minwert>
+    <maxwert>252</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="53">
+    <nummer> 53</nummer>
+    <kurztext nr="53">HLU Geschwindigkeit Z2</kurztext>
+    <minwert>0</minwert>
+    <maxwert>252</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="54">
+    <nummer> 54</nummer>
+    <kurztext nr="54">HLU Geschwindigkeit L</kurztext>
+    <minwert>0</minwert>
+    <maxwert>252</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="55">
+    <nummer> 55</nummer>
+    <kurztext nr="55">HLU Geschwindigkeit Z3</kurztext>
+    <minwert>0</minwert>
+    <maxwert>252</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="56">
+    <nummer> 56</nummer>
+    <kurztext nr="56">Motorregelung PI-Anteil</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="57">
+    <nummer> 57</nummer>
+    <kurztext nr="57">Regelungsreferenz</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="58">
+    <nummer> 58</nummer>
+    <kurztext nr="58">Regelungseinfluss</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="59">
+    <nummer> 59</nummer>
+    <kurztext nr="59">HLU/ABC Zeit</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="60">
+    <nummer> 60</nummer>
+    <kurztext nr="60">F-Dimmen</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="61">
+    <nummer> 61</nummer>
+    <kurztext nr="61">ZIMO erweit. Mapping</kurztext>
+    <minwert>0</minwert>
+    <maxwert>97</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="62">
+    <nummer> 62</nummer>
+    <kurztext nr="62">Lichteffekte 1</kurztext>
+    <minwert>0</minwert>
+    <maxwert>9</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="63">
+    <nummer> 63</nummer>
+    <kurztext nr="63">Lichteffekte 2</kurztext>
+    <minwert>0</minwert>
+    <maxwert>99</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="64">
+    <nummer> 64</nummer>
+    <kurztext nr="64">Lichteffekte 3</kurztext>
+    <minwert>0</minwert>
+    <maxwert>9</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="65">
+    <nummer> 65</nummer>
+    <kurztext nr="65">SW-Subversionsnumm</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="66">
+    <nummer> 66</nummer>
+    <kurztext nr="66">Geschwindigk.Trimm vorwärts</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="67">
+    <nummer> 67</nummer>
+    <kurztext nr="67">Geschwindigkeitskennlinie</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="95">
+    <nummer> 95</nummer>
+    <kurztext nr="95">Geschwindigk.Trimm rückwärts</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="97">
+    <nummer> 97</nummer>
+    <kurztext nr="97">Verbund-Taste</kurztext>
+    <minwert>0</minwert>
+    <maxwert>28</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="105">
+    <nummer>105</nummer>
+    <kurztext nr="105">Benutzerdaten 1</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="106">
+    <nummer>106</nummer>
+    <kurztext nr="106">Benutzerdaten 2</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="107">
+    <nummer>107</nummer>
+    <kurztext nr="107">Einseitige Lichtunterdrü.</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="108">
+    <nummer>108</nummer>
+    <kurztext nr="108">Einseitige Lichtunterdrü.</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="109">
+    <nummer>109</nummer>
+    <kurztext nr="109">Erweit. CV107</kurztext>
+    <minwert>0</minwert>
+    <maxwert>6</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="110">
+    <nummer>110</nummer>
+    <kurztext nr="110">Erweit. CV108.</kurztext>
+    <minwert>0</minwert>
+    <maxwert>6</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="112">
+    <nummer>112</nummer>
+    <kurztext nr="112">Dekoderkonfiguration</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="113">
+    <nummer>113</nummer>
+    <kurztext nr="113">Regelungs-Cutoff</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="114">
+    <nummer>114</nummer>
+    <kurztext nr="114">Dimm-Maske</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="115">
+    <nummer>115</nummer>
+    <kurztext nr="115">Digital-Kupplung Zeit / Dimmen</kurztext>
+    <minwert>0</minwert>
+    <maxwert>99</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="116">
+    <nummer>116</nummer>
+    <kurztext nr="116">Digital-Kupplung Abrücken</kurztext>
+    <minwert>0</minwert>
+    <maxwert>199</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="117">
+    <nummer>117</nummer>
+    <kurztext nr="117">Blinken</kurztext>
+    <minwert>0</minwert>
+    <maxwert>99</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="118">
+    <nummer>118</nummer>
+    <kurztext nr="118">Blink-Maske</kurztext>
+    <minwert>0</minwert>
+    <maxwert>7</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="119">
+    <nummer>119</nummer>
+    <kurztext nr="119">Ablend-Maske F6</kurztext>
+    <minwert>0</minwert>
+    <maxwert>7</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="120">
+    <nummer>120</nummer>
+    <kurztext nr="120">Ablend-Maske F7</kurztext>
+    <minwert>0</minwert>
+    <maxwert>7</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="121">
+    <nummer>121</nummer>
+    <kurztext nr="121">exponentielle Beschleun.kurve</kurztext>
+    <minwert>0</minwert>
+    <maxwert>99</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="122">
+    <nummer>122</nummer>
+    <kurztext nr="122">exponentielle Bremskurve</kurztext>
+    <minwert>0</minwert>
+    <maxwert>99</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="123">
+    <nummer>123</nummer>
+    <kurztext nr="123">adaptives Beschleun./Bremsen</kurztext>
+    <minwert>0</minwert>
+    <maxwert>99</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="124">
+    <nummer>124</nummer>
+    <kurztext nr="124">Rangiergang / SUSI</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="125">
+    <nummer>125</nummer>
+    <kurztext nr="125">Effekte F0 vorwärts und andere</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="126">
+    <nummer>126</nummer>
+    <kurztext nr="126">Effekte F0 rückwärts</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="127">
+    <nummer>127</nummer>
+    <kurztext nr="127">Effekte FA1</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="128">
+    <nummer>128</nummer>
+    <kurztext nr="128">Effekte FA2</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="129">
+    <nummer>129</nummer>
+    <kurztext nr="129">Effekte FA3</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="130">
+    <nummer>130</nummer>
+    <kurztext nr="130">Effekte FA4</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="131">
+    <nummer>131</nummer>
+    <kurztext nr="131">Effekte FA5</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="132">
+    <nummer>132</nummer>
+    <kurztext nr="132">Effekte FA6</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="133">
+    <nummer>133</nummer>
+    <kurztext nr="133">Achs-Detektor-Simulation</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="134">
+    <nummer>134</nummer>
+    <kurztext nr="134">ABC Schwelle</kurztext>
+    <minwert>0</minwert>
+    <maxwert>214</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+  <text nr="144">
+    <nummer>144</nummer>
+    <kurztext nr="144">Prog./Update-Sperre</kurztext>
+    <minwert>0</minwert>
+    <maxwert>255</maxwert>
+    <format>Dezimalzahl</format>
+    <beschreibung />
+  </text>
+</CV>

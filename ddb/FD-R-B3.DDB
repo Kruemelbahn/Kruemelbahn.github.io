@@ -1,0 +1,89 @@
+; DDB fuer FD-R-Basic-3
+; 24.05.2024 / Michael Zimmermann
+;  Aufbau DDB
+;--------------------------------------------------------------------------
+;  <x> <cv> <min> <max> <txt>
+;
+;  <x>  Art des Eintrags:
+;  ;   Kommentar ( Rest der Zeile wird ignoriert )
+;       D   Dezimalzahl
+;       H   Hexzahl
+;       B   Binaerzahl ( Bitweise )
+;       S   Switch  Beschreibung der Bits in "B" CVs
+;           Aufbau: S CVnum BITnum 0 Text$
+;       T   Speed-Table
+;           Aufbau: T CVfirst CVlast min max Text$
+;  R   Read Only (dezimal) z.B. fuer Version
+;  L   Lange Adresse  ( Aufbau immer "L 17  1 10239  Adresse (lang)$")
+;           die lange Adresse wird in <cv> und <cv+1> abgelegt
+;  C   Config in CV29 ( Aufbau immer "C 29  0   255  Config$")
+;  I   Decoderinformation -  nur String mit max. 60 Char
+;  M   Hersteller Info (RP9.2.2) - Read Only
+;
+; <min> Minimalwert
+; <max> Maximalwert
+; <txt> Beschreibung des CVs ( max.30 Zeichen mit $ am Ende )
+;--------------------------------------------------------------------------
+;
+i FD-R-Basic-3 / TAMS / mz 24.05.2024
+D   1   1   127 Adresse (kurz)$
+R   7   0     0 Version$
+D   8   0   255 Reset$
+D  10   0     1 dyn. RailCom-Informationen$
+D  11   2   255 TimeOut Digitalbetrieb$
+D  12   1    37 BA Decoder (4=nur DCC)$
+B  13   0   255 Analog-Funkstat. F1-F8$
+B  14   0    31 Analog-Funkstat. FL,F9-F12$
+D  15   0   255 Dekoderlock$
+D  16   0   255 Dekoderlock$
+L  17   1 10239 Adresse (lang)$
+D  19   0   255 Fuehrungsadresse$
+B  21   0   255 Fuehrungsmodus F1-F8$
+B  22   0    31 Fuehrungsmodus FL,F9-F12$
+B  28   0   255 RailCom-Kanaele$
+C  29   0   255 Config$
+D  31   0   255 Indexregister H$
+D  32   0   255 Indexregister L$
+D  47   0    64 Dimmen an F0f$
+D  48   0    64 Dimmen an F0r$
+D  49   0    64 Dimmen an AUX1$
+D  50   0    64 Dimmen an AUX2$
+B  57   0   255 Effekte an F0f$
+B  58   0   255 Effekte an F0r$
+B  59   0   255 Effekte an AUX1$
+B  60   0   255 Effekte an AUX2$
+B  62   0   255 Schalteing. Fkt.Zuordnung$
+D  63   0     1 Richtungswechsel$
+D  65   0     1 Analogmodus$
+D  96   2     2 Methode der Fkt-Zuordnung$
+D  97   0   255 min.Dauer Schalteingang$
+D  99   0   255 Kickzeit$
+D 101   0   255 Blinkfrequenz an F0f$
+D 102   0   255 Blinkfrequenz an F0r$
+D 103   0   255 Blinkfrequenz an AUX1$
+D 104   0   255 Blinkfrequenz an AUX2$
+B 257   0    31 Ausgang F0f$
+D 258   0     0 unused$
+D 259   0     4 Sonderfkt ein F0f$
+D 260   0   255 ein/aus F0f$
+B 261   0    31 Ausgang F0r$
+D 262   0     0 unused$
+D 263   0     4 Sonderfkt ein F0r$
+D 264   0   255 ein/aus F0r$
+B 265   0    31 Ausgang AUX1f$
+D 266   0     0 unused$
+D 267   0     4 Sonderfkt ein AUX1f$
+D 268   0   255 ein/aus AUX1f$
+B 269   0    31 Ausgang AUX1r$
+D 270   0     0 unused$
+D 271   0     4 Sonderfkt ein AUX1r$
+D 272   0   255 ein/aus AUX1r$
+B 273   0    31 Ausgang AUX2f$
+D 274   0     0 unused$
+D 275   0     4 Sonderfkt ein AUX2f$
+D 276   0   255 ein/aus AUX2f$
+B 277   0    31 Ausgang AUX2r$
+D 278   0     0 unused$
+D 279   0     4 Sonderfkt ein AUX2r$
+D 280   0   255 ein/aus AUX2r$
+;--- end ---

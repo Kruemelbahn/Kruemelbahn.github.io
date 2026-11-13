@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+@media all
+{
+  .termin_1 {background: #ffd; padding: 0.5em; border-left: 1px #dbb solid; border-bottom: 1px #dbb solid;}
+  .termin_2 {background: #ffa; padding: 0.5em; border-left: 1px #dbb solid; border-bottom: 1px #dbb solid;}
+}
+
+@media print
+{
+  /* (de) weitere für den Druck nicht benötigte Container des Layouts abschalten */
+  #subnav, #nav_main2, #nav_main3, #nav_main4, #to_crt { display: none; }
+
+  body * { font-family: Tahoma, Helvetica, Arial, sans-serif; }
+  body { font-size: 10pt; }
+
+  /* (de) Sichtbare Auszeichnung der URLs von Links beim Drucken unterdrücken */
+  a[href]:after {
+    content:"";
+    color:#444;
+    background:inherit;
+    font-style:italic;
+  }
+}
+
+@media screen, projection
+{
+  #printnav, #to_prn { display: none; }
+}

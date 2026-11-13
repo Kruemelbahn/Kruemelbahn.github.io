@@ -1,0 +1,98 @@
+; DDB fuer Lenz LE1035x
+; 08.04.2006 / Michael Zimmermann
+;  Aufbau DDB
+;--------------------------------------------------------------------------
+;  <x> <cv> <min> <max> <txt>
+;   
+;  <x>  Art des Eintrags: 
+;	;   Kommentar ( Rest der Zeile wird ignoriert ) 
+;       D   Dezimalzahl
+;       H   Hexzahl
+;       B   Binaerzahl ( Bitweise )
+;       S   Switch  Beschreibung der Bits in "B" CVs
+;           Aufbau: S CVnum BITnum 0 Text$
+;       T   Speed-Table
+;           Aufbau: T CVfirst CVlast min max Text$
+;	R   Read Only (dezimal) z.B. fuer Version
+;	L   Lange Adresse  ( Aufbau immer "L 17  1 10239  Adresse (lang)$")
+;           die lange Adresse wird in <cv> und <cv+1> abgelegt
+;	C   Config in CV29 ( Aufbau immer "C 29  0   255  Config$")
+;	I   Decoderinformation -  nur String mit max. 60 Char
+;	M   Hersteller Info (RP9.2.2) - Read Only
+; 	
+; <min> Minimalwert
+; <max> Maximalwert
+; <txt> Beschreibung des CVs ( max.30 Zeichen mit $ am Ende ) 
+;--------------------------------------------------------------------------
+;
+;
+i LE1035 / LENZ / mz 26.04.2009$
+D  1  1   127  Adresse (kurz)$
+D  2  1    31  Mindestanfahrspannung$
+D  3  1    255  Anfahrverzoegerung$
+D  4  1    255  Bremsverzoegerung$
+D  5  2    10  Maximalgeschwindigkeit$
+R  7  0     0  Version$
+M  8  0     0  Hersteller$
+L 17  1 10239  Adresse (lang)$
+D 19  0   127  Consist Adresse$
+C 29  0   255  Config$
+
+B 50  0   255  Config #2$
+S 50  1     0  gesch.UNabhaeng. Bremsverzoeg.$
+S 50  2     0  Bremsen bei DC-Betrieb$
+S 50  3     0  EMK-teiler aktiv$
+
+B 51  0   255  Licht Effekte A und B$
+S 51  0     0  FA/FB richtungUNabhaengig$
+S 51  1     0  Bit 0=0,1 => Dimmen mit F1,F4$
+S 51  2     0  Dimmen FA moeglich$
+S 51  3     0  Dimmen FB moeglich$
+
+D 52  0   255  Dimm-Wert A,B (255 = hell)$
+
+D 53  0   255  Regelparameter$
+
+B 54  0   255  Zuordnung Ausg. C$
+S 54  0     0  F1 steuert Ausg. C$ 
+S 54  1     0  F2 steuert Ausg. C$ 
+S 54  2     0  F3 steuert Ausg. C$ 
+S 54  3     0  F4 steuert Ausg. C$ 
+S 54  4     0  F5 steuert Ausg. C$ 
+S 54  5     0  F6 steuert Ausg. C$ 
+S 54  6     0  F7 steuert Ausg. C$ 
+S 54  7     0  F8 steuert Ausg. C$ 
+
+B 55  0   255  Zuordnung Ausg. D$
+S 55  0     0  F1 steuert Ausg. D$ 
+S 55  1     0  F2 steuert Ausg. D$ 
+S 55  2     0  F3 steuert Ausg. D$ 
+S 55  3     0  F4 steuert Ausg. D$ 
+S 55  4     0  F5 steuert Ausg. D$ 
+S 55  5     0  F6 steuert Ausg. D$ 
+S 55  6     0  F7 steuert Ausg. D$ 
+S 55  7     0  F8 steuert Ausg. D$ 
+
+B 59  0   255  Zuordnung Rangiergang$
+S 59  0     0  F1 steuert Rangierg.$ 
+S 59  1     0  F2 steuert Rangierg.$ 
+S 59  2     0  F3 steuert Rangierg.$ 
+S 59  3     0  F4 steuert Rangierg.$ 
+S 59  4     0  F5 steuert Rangierg.$ 
+S 59  5     0  F6 steuert Rangierg.$ 
+S 59  6     0  F7 steuert Rangierg.$ 
+S 59  7     0  F8 steuert Rangierg.$ 
+
+B 60  0   255  Zuordnung Absch.Verzoegerung$
+S 60  0     0  F1 steuert absch.Verzoeg.$ 
+S 60  1     0  F2 steuert absch.Verzoeg.$ 
+S 60  2     0  F3 steuert absch.Verzoeg.$ 
+S 60  3     0  F4 steuert absch.Verzoeg.$ 
+S 60  4     0  F5 steuert absch.Verzoeg.$ 
+S 60  5     0  F6 steuert absch.Verzoeg.$ 
+S 60  6     0  F7 steuert absch.Verzoeg.$ 
+S 60  7     0  F8 steuert absch.Verzoeg.$ 
+
+D 61  1   255  Bremsweg (0 = aus)$
+D 128  0   255  interne Versionskennung$
+;--- end ---
