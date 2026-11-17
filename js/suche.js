@@ -2841,6 +2841,17 @@ beschreibung[62] = "Kr&uuml;melbahn - Umgehungsbahn";
 beschreibung[63] = "Kr&uuml;melbahn - eigene Publikationen";
 }
 
+function replaceUmlauts(begriff)
+{
+  begriff.replaceAll("ä", "&auml;");
+  begriff.replaceAll("ö", "&ouml;");
+  begriff.replaceAll("ü", "&uuml;");
+  begriff.replaceAll("Ä", "&Auml;");
+  begriff.replaceAll("Ö", "&Ouml;");
+  begriff.replaceAll("Ü", "&Uuml");
+  return begriff;
+}
+
 function sort(gefunden) {
   var i = 2;
   var ende = 1;
@@ -3071,19 +3082,19 @@ function suchen(eingabe, wortanfaenge, grossklein) {
       if(wortanfaenge == true) {
         if ((komma_vor == (pos - 1)) || (pos == 0)) {
           gefunden++;
-          gefunden_beschreibung[gefunden]   = beschreibung[i];
+          gefunden_beschreibung[gefunden]   = replaceUmlauts(beschreibung[i]);
           gefunden_seite[gefunden]          = seite[i];
           gefunden_prozent[gefunden]        = prozent;
-          gefunden_begriff_einzel[gefunden] = begriff_einzel;
+          gefunden_begriff_einzel[gefunden] = replaceUmlauts(begriff_einzel);
           gefunden_i[gefunden]              = i;
         }
       }
       else {
         gefunden++;
-          gefunden_beschreibung[gefunden]   = beschreibung[i];
+          gefunden_beschreibung[gefunden]   = replaceUmlauts(beschreibung[i]);
           gefunden_seite[gefunden]          = seite[i];
           gefunden_prozent[gefunden]        = prozent;
-          gefunden_begriff_einzel[gefunden] = begriff_einzel;
+          gefunden_begriff_einzel[gefunden] = replaceUmlauts(begriff_einzel);
           gefunden_i[gefunden]              = i;
       }
     }; // elseif
