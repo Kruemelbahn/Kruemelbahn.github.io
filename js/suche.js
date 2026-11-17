@@ -7,7 +7,7 @@
 //
 // Pfeffer: Konstanten
   var index_max = 63;
-  var stand = "15.11.2026, 15:12:03";  // Erzeugt durch S@lz&Pfeffer 1.0
+  var stand = "17.11.2026, 13:21:56";  // Erzeugt durch S@lz&Pfeffer 1.0
 //
 // Index-Definition
   var begriff = new Array(index_max);      // Suchbegriffe
@@ -23,26 +23,26 @@
 
 function init() {
 // Pfeffer: Array
-     begriff[ 0] = "Aktivitäten,Aktuell,Allgemeines,Anlagendigitalisierung," +
+     begriff[ 0] = "Aktivit&auml;ten,Aktuell,Allgemeines,Anlagendigitalisierung," +
                    "Anlagengestaltung,anschließe,Ansteuerung,Anzeige," +
                    "Arduino,Arduino-Board,Arduino-Plattform,Assembler," +
-                   "Atmega328,ATMEL,Aufgaben,Auflistung,Ausgabe,Ausgängen," +
+                   "Atmega328,ATMEL,Aufgaben,Auflistung,Ausgabe,Ausg&auml;ngen," +
                    "autarken,AVR,AVR-Sound,Bahnen,Bahnsinniges,Basis," +
-                   "Begünstigt,Belebtes_Haus_mit_TV_Attiny,benötigt," +
+                   "Beg&uuml;nstigt,Belebtes_Haus_mit_TV_Attiny,ben&ouml;tigt," +
                    "Beschreibung,beschrieben,betrieben,Blinken," +
                    "Blinken_5fach,Blitz_Blinker," +
                    "Bremsgenerator/Pendelautomatik,C/C,DCC,Deloof," +
-                   "Digitalbetrieb,digitalen,Direkt,DISPA,Eigenständige," +
+                   "Digitalbetrieb,digitalen,Direkt,DISPA,Eigenst&auml;ndige," +
                    "eingesetzt,Einsatz,Einsatzfahrzeuge,Elektronik," +
                    "eMailAndCloud,eMailAndGithub,entwickelt,Entwicklungen," +
                    "ESP8266,Fahrzeugbau,Fahrzeugen,FRANZ,Hans,Hardware," +
                    "Impressum,Inhalt,Jahresmodell,kleinen,kombinierbar," +
-                   "kommen,Konstantstromquelle,Krümelbahn,lang," +
+                   "kommen,Konstantstromquelle,Kr&uuml;melbahn,lang," +
                    "LaufLicht_ATiny13,Lernkurve,Lichtcomputer,Lichtleiste," +
                    "Lichtsteuerung,LightControl,Links,Literatur,LocoHDL," +
                    "LocoIO-Editor,LocoIO-Module,LocoNET,LocoNET-Nebenuhr," +
                    "LocoNET-NotAus,LocoNET-Schnittstelle," +
-                   "LocoNET-Universal-Platine,Lösung,Mercedes-Benz," +
+                   "LocoNET-Universal-Platine,L&ouml;sung,Mercedes-Benz," +
                    "Microchip,Mikrocontroller,Mikroprozessoren,Modellbahn," +
                    "Modellbahnanlagen,Modellbahnzeit,Modellfahrzeuge," +
                    "Modulbau,modulen,Navigation,Nebenuhr,Nebenuhren,NotAus," +
@@ -50,260 +50,236 @@ function init() {
                    "programmiert,Prozessoren,Schaltung,Schaltungen," +
                    "Seitenanfang,Servoansteuerung,Signal-Z,Software," +
                    "Solingen,Sound,Startseite,suboptimale,Suchen,Trend," +
-                   "Uhrenzentrale,umständlich,universelle,unterschiedlich," +
-                   "Unterwegs,verbunden,verfügbare,verwendet,zahlreiche," +
-                   "Zentrale,Zuge,zunächst";
+                   "Uhrenzentrale,umst&auml;ndlich,universelle,unterschiedlich," +
+                   "Unterwegs,verbunden,verf&uuml;gbare,verwendet,zahlreiche," +
+                   "Zentrale,Zuge,zun&auml;chst";
        seite[ 0] = "arduino.htm";
 beschreibung[ 0] = "Kr&uuml;melbahn - Elektronik - Arduino - Allgemeines";
-     begriff[ 1] = "Aktivitäten,Allgemeines,anfordern,Anlagengestaltung," +
+     begriff[ 1] = "Aktivit&auml;ten,Allgemeines,anfordern,Anlagengestaltung," +
                    "Arduino,Arduino-UNO,Arduino-Welt,AVR-Sound,Bahnen," +
-                   "Bahnsinniges,Baufortschritte,Benötigt," +
+                   "Bahnsinniges,Baufortschritte,Ben&ouml;tigt," +
                    "Bremsgenerator/Pendelautomatik,Commercial,DCC," +
                    "Digitalbetrieb,Direkt,DISPA,Elektronik,eMailAndCloud," +
                    "entsprechenden,esp_shield,ESP8266,ESP8266-Shield," +
                    "Fahrzeugbau,FRANZ,gegebener,Impressum,Informationen," +
-                   "Inhalt,Jahresmodell,Krümelbahn,Lichtsteuerung,Links," +
+                   "Inhalt,Jahresmodell,Kr&uuml;melbahn,Lichtsteuerung,Links," +
                    "Literatur,LocoNET-Shield,Mercedes-Benz,Modellbahn," +
                    "Modellfahrzeuge,Modulbau,Navigation,Planungs,Platine," +
                    "Seitenanfang,Servoansteuerung,Shield,Signal-Z,Software," +
-                   "Solingen,Startseite,Suchen,Über,Verwendung,weiteren," +
+                   "Solingen,Startseite,Suchen,&uuml;ber,Verwendung,weiteren," +
                    "WLAN-Moduls,Zeit";
        seite[ 1] = "arduinoesp.htm";
 beschreibung[ 1] = "Kr&uuml;melbahn - Elektronik - Arduino - ESP8266";
-     begriff[ 2] = "Aktivitäten,Allgemeines,anfordern,Anlagengestaltung," +
+     begriff[ 2] = "Aktivit&auml;ten,Allgemeines,anfordern,Anlagengestaltung," +
                    "Ansteuerung,Arduino,Arduino-UNO,Arten,AVR-Sound,Bahnen," +
-                   "Bahnsinniges,Baufortschritte,Benötigt," +
+                   "Bahnsinniges,Baufortschritte,Ben&ouml;tigt," +
                    "Bremsgenerator/Pendelautomatik,Commercial,DCC," +
                    "Digitalbetrieb,Direkt,DISPA,Dom,Elektronik," +
                    "eMailAndCloud,entsprechenden,erfolgen,ESP8266," +
                    "Fahrzeugbau,FastClock-Telegrammen,festen,FRANZ,Gahtow," +
                    "gegebener,gesteuert,Grenzen,halten,Hard,Huebsch," +
                    "Impressum,Informationen,Inhalt,Jahresmodell,Kosten," +
-                   "Krümelbahn,licht_shield,Lichtsteuerung," +
+                   "Kr&uuml;melbahn,licht_shield,Lichtsteuerung," +
                    "Lichtsteuerung-Shield,Links,Literatur,LocoNET," +
                    "Mercedes-Benz,Miniatur-Wunderland,MoBa,Modellbahn," +
-                   "Modellfahrzeuge,Modulbau,mögliche,Navigation,Planungs," +
+                   "Modellfahrzeuge,Modulbau,m&ouml;gliche,Navigation,Planungs," +
                    "Platine,Raumlichtsteuerung,RGB-LED-Streifen," +
                    "Seitenanfang,Servoansteuerung,Shield,Signal-Z,Software," +
                    "Solingen,Startseite,Suchen,Tag-Nacht-Simulation," +
                    "Verwendung,weiteren,Zeit,Zeitablauf,Zeitraster";
        seite[ 2] = "arduinolc.htm";
 beschreibung[ 2] = "Kr&uuml;melbahn - Elektronik - Arduino - Lichtsteuerung";
-     begriff[ 3] = "ACS,Aktivitäten,Allgemeines,anfordern," +
+     begriff[ 3] = "ACS,Aktivit&auml;ten,Allgemeines,anfordern," +
                    "Anlagengestaltung,Arduino,Arduino-LocoNet-Shield," +
                    "Arduino-UNO,AVR-Sound,Bahnen,Bahnsinniges," +
-                   "Bauvorschläge,Bibliothek,Blockstreckensteuerung," +
+                   "Bauvorschl&auml;ge,Bibliothek,Blockstreckensteuerung," +
                    "Bluetooth-Modul,Bremsgenerator/Pendelautomatik," +
                    "Commercial,DCC,DCC-Interface,Digitalbetrieb,Direkt," +
                    "direkten,DISPA,Elektronik,eMailAndGithub," +
                    "entsprechenden,entwickelt,Entwicklerboard,Entwicklung," +
-                   "ergänzt,ESP8266,Fahrzeugbau,FRANZ,freien,Gahtow,Giling," +
+                   "erg&auml;nzt,ESP8266,Fahrzeugbau,FRANZ,freien,Gahtow,Giling," +
                    "HC-05-6,Heartbeat,IC-Interface,Impressum,Informationen," +
-                   "Inhalt,insbesondere,Jahresmodell,Krümelbahn,LED," +
+                   "Inhalt,insbesondere,Jahresmodell,Kr&uuml;melbahn,LED," +
                    "letztendlich,Lichtsteuerung,Links,Literatur,LocoNET," +
                    "LocoNET-Basis,LocoNET-Bibliothek,LocoNET-Interface," +
-                   "LocoNET-Shield,LocoNET-Shields,Lötpads,Lötpunkte," +
+                   "LocoNET-Shield,LocoNET-Shields,L&ouml;tpads,L&ouml;tpunkte," +
                    "Mercedes-Benz,Modellbahn,Modellfahrzeuge,Modulbau," +
                    "MRRWA,Navigation,nehmen,Offer,passend,passende,passt," +
                    "Platine,Plocher,polige,Port,Reihen,Schaltung,SD-Card," +
                    "Seitenanfang,Serial,Servoansteuerung,Signal-Z,Software," +
                    "Softwareentwicklungen,Solingen,Startseite," +
-                   "Steckmöglichkeiten,Stiftleiste,Stromsensor," +
+                   "Steckm&ouml;glichkeiten,Stiftleiste,Stromsensor," +
                    "SUB-D9-Buchse,Suchen,Typ,Verwendung,zahlreiche";
        seite[ 3] = "arduinoln.htm";
 beschreibung[ 3] = "Kr&uuml;melbahn - Elektronik - Arduino - LocoNet";
-     begriff[ 4] = "Akkuschleppfahrzeug,Akkutriebwagen,Aktivitäten,Aktuell," +
-                   "alltägliche,anbieten,anfordern,angesagt," +
-                   "Anlagengestaltung,Anlehnung,Arbeit,ASF,Ätzplatten," +
+     begriff[ 4] = "Akkuschleppfahrzeug,Akkutriebwagen,Aktivit&auml;ten,Aktuell," +
+                   "allt&auml;gliche,anbieten,anfordern,angesagt," +
+                   "Anlagengestaltung,Anlehnung,Arbeit,ASF,&auml;tzplatten," +
                    "aufgelistet,ausgenommen,Bahndienstfahrzeuge,Bahnen," +
                    "Bahnsinniges,Basisfahrzeug,Basiswagen,Bauanleitungen," +
-                   "Bauarbeiten,Baubeschreibung,Bebra,Bekohlungs,Benötigte," +
-                   "beschäftige,Bi29,Bild,BR38/BR50,Brawa,Bromberg," +
-                   "Brückenprüfwagen,BTms,Busses,CAD-Programm,Commercial," +
+                   "Bauarbeiten,Baubeschreibung,Bebra,Bekohlungs,Ben&ouml;tigte," +
+                   "besch&auml;ftige,Bi29,Bild,BR38/BR50,Brawa,Bromberg," +
+                   "Br&uuml;ckenpr&uuml;fwagen,BTms,Busses,CAD-Programm,Commercial," +
                    "DCC,Decoder-Seite,Dienste,digital,Digitalbetrieb," +
-                   "Direkt,diverse,Duomatic,Eichfahrzeug,Eichgerätewagen," +
-                   "Eigenkonstruktion,Einbau,Einsätze,einsetzbar," +
+                   "Direkt,diverse,Duomatic,Eichfahrzeug,Eichger&auml;tewagen," +
+                   "Eigenkonstruktion,Einbau,Eins&auml;tze,einsetzbar," +
                    "Einzelteile,Eisenbahnen,Eisenbahn-Journal,EL16," +
                    "Elektronik,eMail,entwickelt,Erfahrungsberichte," +
                    "erfordern,erkennbar,erkennen,fahrbare,Fahrzeugbau," +
-                   "Fahrzeuge,Fahrzeugselbstbau,Fäkalienwagen," +
-                   "Fertigmodelle,findet,Fotos/Zeichnungen,FREMO,fürs,G10," +
-                   "GDS145,geätzt,Gebiet,gedacht,gefahren,Gehäuse," +
+                   "Fahrzeuge,Fahrzeugselbstbau,F&auml;kalienwagen," +
+                   "Fertigmodelle,findet,Fotos/Zeichnungen,FREMO,f&uuml;rs,G10," +
+                   "GDS145,ge&auml;tzt,Gebiet,gedacht,gefahren,Geh&auml;use," +
                    "geleistet,Gelenk-O-Busses,geschaffen,gezeichnet,GGths," +
                    "Ghs,github,Gleisstopfmaschine,Gms256,Großen,großes," +
-                   "Güterzugsteuerwagen,gutes,halbe,Hauptsache,Hilfe," +
+                   "G&uuml;terzugsteuerwagen,gutes,halbe,Hauptsache,Hilfe," +
                    "Hilfsmittel,Hinweis,Hinweise,Hobby,hoffentlich," +
-                   "Höhenlehre,Impressum,Informationen,Infos/sachdienliche," +
+                   "H&ouml;henlehre,Impressum,Informationen,Infos/sachdienliche," +
                    "Inhalt,interessante,interessieren,inzwischen," +
-                   "Jahresmodell,Kanal,Kanalüberführung,Karlsruhe," +
+                   "Jahresmodell,Kanal,Kanal&uuml;berf&uuml;hrung,Karlsruhe," +
                    "Kastentender,kaufen,Kesselwagen,Kla01,kleine,Kleinen," +
-                   "kleines,Klick,Kran,Krümelbahn,Krupp-Ardelt,Kupplungs," +
+                   "kleines,Klick,Kran,Kr&uuml;melbahn,Krupp-Ardelt,Kupplungs," +
                    "Kupplungslehre,Kurve,Ladestation,Lenkachse,Links," +
                    "Literatur,Mercedes-Benz,Messingteil,Michelstadt," +
-                   "Michelstädter,Modellbahn,Modellbahnaktivitäten," +
-                   "Modellbahn-Aktivitäten,Modelle,Modellfahrzeuge," +
+                   "Michelst&auml;dter,Modellbahn,Modellbahnaktivit&auml;ten," +
+                   "Modellbahn-Aktivit&auml;ten,Modelle,Modellfahrzeuge," +
                    "modularer,Modulbau,Modulen,Nachbau,Nachfrage," +
-                   "Navigation,Norm,öffnet,Ölhilfszug,Öltankzug,Oppeln," +
+                   "Navigation,Norm,&ouml;ffnet,&ouml;lhilfszug,&ouml;ltankzug,Oppeln," +
                    "Originalstromabnehmer,PDF-Datei,Pirmasens,Projekte," +
                    "Pufferlehre,Radsatztransportwagen,Res687," +
-                   "Rollenprüfstand,Rottenkraftwagen-Anhänger,Sache," +
-                   "Saemann-Ätztechnik,sagen,Schneepflüge,Seiten," +
+                   "Rollenpr&uuml;fstand,Rottenkraftwagen-Anh&auml;nger,Sache," +
+                   "Saemann-&auml;tztechnik,sagen,Schneepfl&uuml;ge,Seiten," +
                    "Seitenanfang,Selbstbau,Skizze,Solingen,Spalte," +
                    "Spurlehre,Stadtwerke,Startseite,Stationierungen," +
                    "Strassenbahnzuges,suche,Suchen,Teil,Teile,Thema," +
-                   "Um/Nach/Selbstbauten,Umbau,Umbauten,umgerüstet," +
+                   "Um/Nach/Selbstbauten,Umbau,Umbauten,umger&uuml;stet," +
                    "Umrißmeßwagen,Unbedingt,Unkrautvertilgungszug," +
-                   "unschätzbare,unschwer,Verbindung,verfügbar,versucht," +
+                   "unsch&auml;tzbare,unschwer,Verbindung,verf&uuml;gbar,versucht," +
                    "Vorbild,vorgestellten,Wannentender,Werkstattwagen," +
                    "Werkzeug,Werkzeuge,Wiking,Zeichnungen,Zimmermann," +
                    "Zusatzkomponenten";
        seite[ 4] = "bahn.htm";
 beschreibung[ 4] = "Kr&uuml;melbahn - Modellbahnaktivit&auml;ten";
-     begriff[ 5] = "abgegrenzt,ausgerüstet,Auszug,Bahnanlagen,Bahnen," +
-                   "Bahnhof,Bahnhöfe,Bahnhofskürzel,Bahnhofsteile,Bahnnetz," +
-                   "Bahnsinniges,Bahnübergänge,beginnen,Bereich,Bhf," +
-                   "bplaced,Brücke,circle,detailreiche,Dezember,Direkt," +
-                   "DS100,Duisburg,dürfen,Düsseldorf,Einschränkung," +
-                   "Einstiegsseite,enden,erhaltene,Eröffnung,ex206e,fahren," +
+     begriff[ 5] = "abgegrenzt,ausger&uuml;stet,Auszug,Bahnanlagen,Bahnen," +
+                   "Bahnhof,Bahnh&ouml;fe,Bahnhofsk&uuml;rzel,Bahnhofsteile,Bahnnetz," +
+                   "Bahnsinniges,Bahn&uuml;berg&auml;nge,beginnen,Bereich,Bhf," +
+                   "bplaced,Br&uuml;cke,circle,detailreiche,Dezember,Direkt," +
+                   "DS100,Duisburg,d&uuml;rfen,D&uuml;sseldorf,Einschr&auml;nkung," +
+                   "Einstiegsseite,enden,erhaltene,Er&ouml;ffnung,ex206e,fahren," +
                    "Fahrzeuge,Februar,ferngesteuert,fill,Foto," +
                    "gegeneinander,Gesamtgewicht,Geschwindigkeit," +
                    "Gleiswechselbetrieb,Gruiten,Hagen,halten,Haltepunkt," +
                    "Haltepunkte,Hauptbahnhof,Hilden,hover,http,Impressum," +
                    "informative,Inhalt,Januar,Juli,KBS450,KBS455,KBS458," +
-                   "KBS-Nummer,Klartext,Klicke,km/h,Köln,kreuzen," +
-                   "Krümelbahn,KSG,KSGR,KSM,KSN,KSO,KSS,KSV,KSW," +
+                   "KBS-Nummer,Klartext,Klicke,km/h,K&ouml;ln,kreuzen," +
+                   "Kr&uuml;melbahn,KSG,KSGR,KSM,KSN,KSO,KSS,KSV,KSW," +
                    "Kursbuchstrecke,Lage,Lichtraumprofil,Links,Literatur," +
-                   "Lokstation,LZB,Mai,März,maximale,Meterlast,Modellbahn," +
-                   "Müngstener,Navigation,nein,net,November,NRW," +
+                   "Lokstation,LZB,Mai,M&auml;rz,maximale,Meterlast,Modellbahn," +
+                   "M&uuml;ngstener,Navigation,nein,net,November,NRW," +
                    "nrwbahnarchiv,Oberstromgrenze,Ohligs,Ohligs-Wald," +
-                   "Oktober,opacity,Opladen,planmäßig,PZB,Radsatzlast," +
+                   "Oktober,opacity,Opladen,planm&auml;ßig,PZB,Radsatzlast," +
                    "Rangieren,RB47,RB48,RE7,rect,Remscheid,Richtlinie," +
                    "SaddleBrown,Schienennetz-Benutzungsbedingungen," +
                    "Seitenanfang,September,SGL,Signale,SNB,Solingen," +
-                   "Solingen-Gräfrath,Solingen-Grünewald," +
+                   "Solingen-Gr&auml;frath,Solingen-Gr&uuml;newald," +
                    "SolingenHauptbahnhof,Solingen-Hauptbahnhof," +
                    "Solingen-Hbf,Solingen-Landwehr,SolingenMitte," +
                    "Solingen-Mitte,Solingen-Nord,Solingen-Ohligs," +
                    "Solingen-Schaberg,Solingen-Vogelpark,Solingen-Wald," +
                    "Startseite,Stellwerke,Stellwerkszentrale,Stilllegung," +
                    "Strecke,Strecken,Streckeninformationen,Streckenklasse," +
-                   "Streckenneigung,Streckennummer,Streckenübersicht," +
-                   "Suchen,Südbahnhof,SWB,t/m,überholen,Übersetzung," +
+                   "Streckenneigung,Streckennummer,Strecken&uuml;bersicht," +
+                   "Suchen,S&uuml;dbahnhof,SWB,t/m,&uuml;berholen,&uuml;bersetzung," +
                    "Umbenennung,unterteilt,Weiche,Weichen,wenden," +
                    "Weyersberg,Wikipedia,Wirbelstrombremse,Wuppertal," +
-                   "WuppertalVohwinkel,Züge,zugelassen,zul,Zwischensignale";
+                   "WuppertalVohwinkel,Z&uuml;ge,zugelassen,zul,Zwischensignale";
        seite[ 5] = "bahnhof.htm";
-beschreibung[ 5] = "Kr&uuml;melbahn - Bahnh&ouml;fe in " +
-                   "SolingenStreckenkarte rund um " +
-                   "SolingenSolingen-VogelparkSolingen-LandwehrSolingen-SchabergSolingen-OhligsSolingen-WaldSolingen-Gr&auml;frathSolingen-HauptbahnhofSolingen-Gr&uuml;newaldSolingen-NordSolingen-MitteUmgehungsbahnKorkenzieherbahnM&uuml;ngstener " +
-                   "Br&uuml;cke";
-     begriff[ 6] = "anno,Bahnen,Bahnhöfe,Bahnsinniges,Bergisch-Märkische," +
+beschreibung[ 5] = "Kr&uuml;melbahn - Bahnh&ouml;fe in Solingen";
+     begriff[ 6] = "anno,Bahnen,Bahnh&ouml;fe,Bahnsinniges,Bergisch-M&auml;rkische," +
                    "circle,Direkt,Eisenbahngesellschaft,Eisenbahnstrecken," +
                    "entsprechende,erhaltene,Fahrzeuge,fill,herum,hover," +
                    "Impressum,Inhalt,Klick," +
-                   "Köln-Mindener-Eisenbahngesellschaft,Krümelbahn,Links," +
-                   "Literatur,Modellbahn,Navigation,öffnet,opacity,path," +
+                   "K&ouml;ln-Mindener-Eisenbahngesellschaft,Kr&uuml;melbahn,Links," +
+                   "Literatur,Modellbahn,Navigation,&ouml;ffnet,opacity,path," +
                    "rect,SaddleBrown,Seite,Solingen,Startseite,Strecken," +
                    "Streckenkarte,Suchen,Wikipedia";
        seite[ 6] = "bahnwelt.htm";
-beschreibung[ 6] = "Kr&uuml;melbahn - Bahnen im WikipediaStreckenkarte im " +
-                   "Bergischen " +
-                   "LandSolingen-OhligsSolingen-HauptbahnhofAusbesserungswerk " +
-                   "OpladenM&uuml;ngstener Br&uuml;ckeBahnstrecke " +
-                   "Solingen–Remscheid-WuppertalBahnstrecke " +
-                   "Solingen–Remscheid-WuppertalBahnstrecke " +
-                   "Solingen–Remscheid-WuppertalWippertal-BahnBalkanexpressWuppertal-BahnBurgholzbahnKorkenzieherbahnBahnstrecke " +
-                   "M&uuml;lheim-Speldorf–TroisdorfSteilrampe " +
-                   "Erkrath-HochdahlBahnstrecke " +
-                   "D&uuml;sseldorf-Derendorf–Dortmund S&uuml;dBahnstrecke " +
-                   "D&uuml;sseldorf-Derendorf–Dortmund S&uuml;dBahnstrecke " +
-                   "D&uuml;sseldorf–ElberfeldBahnstrecke " +
-                   "Wuppertal-Vohwinkel–Essen-&Uuml;berruhrBahnstrecke " +
-                   "Elberfeld–DortmundBahnstrecke " +
-                   "Haan-Gruiten–K&ouml;ln-DeutzBahnstrecke " +
-                   "Haan-Gruiten–K&ouml;ln-DeutzBahnstrecke " +
-                   "Haan-Gruiten–K&ouml;ln-DeutzBahnstrecke " +
-                   "K&ouml;ln–DuisburgBahnstrecke " +
-                   "K&ouml;ln-M&uuml;lheim–LindlarBahnstrecke " +
-                   "K&ouml;ln–DuisburgRuhrtalbahnBahnstrecke " +
-                   "D&uuml;sseldorf–SolingenAggertal-BahnLinksniederrheinische " +
-                   "Strecke";
+beschreibung[ 6] = "Kr&uuml;melbahn - Bahnen im Wikipedia";
      begriff[ 7] = "A14,abgebildet,Abgebremst,abgeklebt,abgeschalteter," +
                    "Abschleppwagen,Abschluss,Abtrocknen,Aceton,Achsabstand," +
                    "Achsanordnung,Achsen,Achslagern,Achsstand,AEG," +
                    "Ah-Bleibatterie,ahrzeug,Akkuschleppfahrzeugs," +
-                   "Aktivitäten,Allgemeine,Alternative,Anbauteile,Änderung," +
-                   "Änderungen,Andreas,Anfahr,anfordern,Anfrage,angebracht," +
-                   "angegebenen,angelötet,angeordnet,angepasst,Anlage," +
+                   "Aktivit&auml;ten,Allgemeine,Alternative,Anbauteile,&auml;nderung," +
+                   "&auml;nderungen,Andreas,Anfahr,anfordern,Anfrage,angebracht," +
+                   "angegebenen,angel&ouml;tet,angeordnet,angepasst,Anlage," +
                    "Anlagengestaltung,Anreibebuchstaben,Anschließend," +
                    "anschließenden,anstelle,Antrieb,Antwort,Anzahl," +
-                   "anzubringen,ASF,ASF109,ASF-Verschiebegeräte,aufgebaut," +
-                   "aufgelötet,aufgeschraubtem,aufmerksam,ausdauernd," +
-                   "Ausdruck,Ausführung,Ausgabeformat,Ausgabegröße," +
-                   "ausgeführt,Auskuppeln,Außenkanten,Bahnanschluss," +
+                   "anzubringen,ASF,ASF109,ASF-Verschiebeger&auml;te,aufgebaut," +
+                   "aufgel&ouml;tet,aufgeschraubtem,aufmerksam,ausdauernd," +
+                   "Ausdruck,Ausf&uuml;hrung,Ausgabeformat,Ausgabegr&ouml;ße," +
+                   "ausgef&uuml;hrt,Auskuppeln,Außenkanten,Bahnanschluss," +
                    "Bahnbetriebswerke,Bahnbetriebswerken,Bahnen," +
                    "Bahnsinniges,Batterien,Batterie-Schleppfahrzeug,Bau," +
-                   "Baubeschreibung,Bauelemente,Baugröße,Bausatz," +
+                   "Baubeschreibung,Bauelemente,Baugr&ouml;ße,Bausatz," +
                    "Bauteilliste,Bauvorhaben,Bauzeit,Bedarf,bedeuten," +
                    "Bedien,beginnen,beide,beiden,bekannt,Bekohlungs," +
-                   "Beleuchung,Bemerkungen,Benennung,benötigte,Berechnung," +
+                   "Beleuchung,Bemerkungen,Benennung,ben&ouml;tigte,Berechnung," +
                    "Bereiche,Berichte,Berichten,Beschriftung,Best,besten," +
-                   "betätigt,beträgt,Betrieb,Betriebsgeschwindigkeit," +
+                   "bet&auml;tigt,betr&auml;gt,Betrieb,Betriebsgeschwindigkeit," +
                    "bewegen,Biegekanten,biegen,bietet,Bildern,Blattfedern," +
                    "blau-weiß,bleiben,blieb,brachte,Breite," +
-                   "Brückenprüfwagen,Buch,CAD-Programm,Chemnitz,chlepp," +
-                   "chromoxidgrün,CMT-Info,Dach,Dachhaken,dass,Daten," +
+                   "Br&uuml;ckenpr&uuml;fwagen,Buch,CAD-Programm,Chemnitz,chlepp," +
+                   "chromoxidgr&uuml;n,CMT-Info,Dach,Dachhaken,dass,Daten," +
                    "Dauerfahrstufen,DCC,Decal,defektem,Deutschland,dienen," +
                    "Dienstmasse,Digitalbetrieb,Digitale,Direkt,dk4mm," +
                    "Drehschalter,Eichfahrzeuge,Eigenkonstruktion,eignet," +
-                   "eingefräst/gesägt,eingeklebt,eingelötet,eingesetzt," +
-                   "einlöten,Einsatz,Einsatzmöglichkeiten,einstellen," +
+                   "eingefr&auml;st/ges&auml;gt,eingeklebt,eingel&ouml;tet,eingesetzt," +
+                   "einl&ouml;ten,Einsatz,Einsatzm&ouml;glichkeiten,einstellen," +
                    "eisenbahndienstfahrzeuge,Eisenbahn-Kurier,EL16," +
                    "Elektronik,Elektropfeil,Elektropfeile,eMail,empfohlen," +
                    "Enden,Endgeschwindigkeit,Energie,entfernen,Entfetten," +
-                   "enthält,entsprechenden,Entwurf,Epoche,Erfolg,erfolglos," +
+                   "enth&auml;lt,entsprechenden,Entwurf,Epoche,Erfolg,erfolglos," +
                    "erfolgte,erforderlichen,erschienen,ersichtlich," +
                    "erstellt,exakte,existiert,Fahnen,Fahren,Fahrgestell," +
                    "Fahrleitung,Fahrmotoren,Fahrspannung,Fahrt," +
                    "Fahrtrichtung,Fahrwerk,Fahrwerkblock,Fahrwerke," +
                    "Fahrwerkes,Fahrzeug,Fahrzeugbau,Fahrzeuges,Fahrzeugs," +
-                   "Fäkalienwagen,Farbe,farbig,Faulhaber,Federbronze," +
+                   "F&auml;kalienwagen,Farbe,farbig,Faulhaber,Federbronze," +
                    "fehlender,Fenster,Fenstern,Fertigmodell,Film,Folge," +
-                   "Folgende,Fotos,Frontseiten,Frontteile,Führerhaus," +
-                   "Führerstandsbeleuchtung,Fußhebel,gab,geätzt,gebaute," +
-                   "gebogen,geforderten,Gegenüber,Gehäuse," +
-                   "Gehäuse-Ätzplatte,Gehäusefrontteile,Gehäusekanten," +
-                   "Gehäuses,Gehäuseseiten,Gehäuseseitenteil," +
-                   "Gehäusevorbauten,gelötet,gemacht,genommen,genutzt," +
+                   "Folgende,Fotos,Frontseiten,Frontteile,F&uuml;hrerhaus," +
+                   "F&uuml;hrerstandsbeleuchtung,Fußhebel,gab,ge&auml;tzt,gebaute," +
+                   "gebogen,geforderten,Gegen&uuml;ber,Geh&auml;use," +
+                   "Geh&auml;use-&auml;tzplatte,Geh&auml;usefrontteile,Geh&auml;usekanten," +
+                   "Geh&auml;uses,Geh&auml;useseiten,Geh&auml;useseitenteil," +
+                   "Geh&auml;usevorbauten,gel&ouml;tet,gemacht,genommen,genutzt," +
                    "geschnitten,Geschwindigkeit,Geschwindigkeiten," +
                    "gestaltete,gesucht,getestet,Getriebeberechnung," +
-                   "Getriebeblock,Getriebes,Getriebeübersetzung,gewählten," +
+                   "Getriebeblock,Getriebes,Getriebe&uuml;bersetzung,gew&auml;hlten," +
                    "gewinkelt,GI-Modell,Gleichspannung,Gleisstopfmaschine," +
-                   "Grad,grosser,grün,grundiert,Grundierung,gründlichen," +
-                   "Güterzugsteuerwagen,H0-Modell,Haltegriffe," +
-                   "Handspindelbremse,hängt,Hausprospekt,hb116,he116,he117," +
+                   "Grad,grosser,gr&uuml;n,grundiert,Grundierung,gr&uuml;ndlichen," +
+                   "G&uuml;terzugsteuerwagen,H0-Modell,Haltegriffe," +
+                   "Handspindelbremse,h&auml;ngt,Hausprospekt,hb116,he116,he117," +
                    "Henningsdorf,Henningsdorfer,Hersteller,Herstellers," +
-                   "Hilfe,hingegen,hinten,Hinweis,Höchstgeschwindigkeit," +
-                   "Höhe,höhere,Holzborn,Hupen,ICE-Farben,III,Impressum," +
-                   "Industriebetrieben,Industriemodelle/Bausätze," +
+                   "Hilfe,hingegen,hinten,Hinweis,H&ouml;chstgeschwindigkeit," +
+                   "H&ouml;he,h&ouml;here,Holzborn,Hupen,ICE-Farben,III,Impressum," +
+                   "Industriebetrieben,Industriemodelle/Baus&auml;tze," +
                    "Informationen,Inhalt,Jahresmodell,Kadee,Kastenrahmen," +
                    "Kastentender,kku,Klammern,Klarlack,Klarsichtfolie," +
                    "Kleben,kleineres,km/h,komplett,komplettes,konnte," +
-                   "konstruiert,Kontrollgeräte,kräftig,Kran,Krümelbahn," +
+                   "konstruiert,Kontrollger&auml;te,kr&auml;ftig,Kran,Kr&uuml;melbahn," +
                    "kuppeln,Kupplung,Kupplungen,Kuswa,Lackieren,lackiert," +
-                   "Lackierung,Ladestation,lang,Länge,Laserdrucker,leicht," +
-                   "liefert,linken,Links,Literatur,Literaturhinweise,lösen," +
-                   "Löten,Lötfahnen,Markierungsdreiecke,Maßangaben,Maße," +
+                   "Lackierung,Ladestation,lang,L&auml;nge,Laserdrucker,leicht," +
+                   "liefert,linken,Links,Literatur,Literaturhinweise,l&ouml;sen," +
+                   "L&ouml;ten,L&ouml;tfahnen,Markierungsdreiecke,Maßangaben,Maße," +
                    "Maßermittlung,mattem,medium,Mercedes-Benz,Messingblech," +
-                   "Messingdraht,Messingdrehteil,Messinggehäuses," +
+                   "Messingdraht,Messingdrehteil,Messinggeh&auml;uses," +
                    "Messingplatte,Messingplatten,Miba,mittig,mittleren," +
                    "Modell,Modellbahn,Modelleisenbahner,Modellfahrzeuge," +
                    "Modulbau,Motor,Motorbuch,Motorlagerung,muss,musste," +
-                   "N012G,nächstes,Navigation,ne116,ne316,Nothaft,nv016," +
-                   "Oberseite,offenen,Ölhilfszug,Öltankzug,Opladen,optisch," +
+                   "N012G,n&auml;chstes,Navigation,ne116,ne316,Nothaft,nv016," +
+                   "Oberseite,offenen,&ouml;lhilfszug,&ouml;ltankzug,Opladen,optisch," +
                    "orange,Original,Pack,passen,passend,passt,Probleme," +
-                   "Puffer,Pufferöffnungen,Pufferteller,Raddurchmesser," +
-                   "Räder,Radius,Radsätze,Radsatztransportwagen," +
+                   "Puffer,Puffer&ouml;ffnungen,Pufferteller,Raddurchmesser," +
+                   "R&auml;der,Radius,Rads&auml;tze,Radsatztransportwagen," +
                    "Rahmenwange,Rahmenwangen,RAL,Rangierarbeiten," +
                    "Rangierleuchten,Rangiertritte,realisiert,rechten," +
                    "Regenabweiser,Reihenschlussmotoren,Reserveteile,Ritzel," +
@@ -311,35 +287,35 @@ beschreibung[ 6] = "Kr&uuml;melbahn - Bahnen im WikipediaStreckenkarte im " +
                    "Rollenkette,rot,Rottenkraftwagen,RP25,Rundung,Saalfeld," +
                    "S-Bahn-Farben,Scheibenwischer,Schienenfahrzeuge," +
                    "Schienentriebfahrzeugen,Schleppfahrzeugs,schließen," +
-                   "Schlitze,schmal,Schnecken,schneiden,Schrägzahnrad," +
-                   "Schrägzahnräder,Schreiben,Schriften,Schriftzug,Schutz," +
+                   "Schlitze,schmal,Schnecken,schneiden,Schr&auml;gzahnrad," +
+                   "Schr&auml;gzahnr&auml;der,Schreiben,Schriften,Schriftzug,Schutz," +
                    "Schweißkonstruktion,schwierig,Schwungmasse,sehen," +
                    "Seiten,Seitenanfang,Seitenteil,Seitenteiles," +
-                   "Sekundenkleber/Stabilit,Selbstbau,selbsttätig,selten," +
-                   "sichtbar,Signalhörner,Solingen,Spieth," +
-                   "Spitzenmarkierungen,Spurweite,Staatsbahnverschubgeräte," +
-                   "Stabilität,Stahlwelle,Starkstrom-Nockenfahrschalter," +
-                   "Startseite,Steuerung,Stück,Stückzahl,Stundenleistung," +
-                   "Stuttgart,stützt,Suchen,symmetrisch,T21,Tag," +
+                   "Sekundenkleber/Stabilit,Selbstbau,selbstt&auml;tig,selten," +
+                   "sichtbar,Signalh&ouml;rner,Solingen,Spieth," +
+                   "Spitzenmarkierungen,Spurweite,Staatsbahnverschubger&auml;te," +
+                   "Stabilit&auml;t,Stahlwelle,Starkstrom-Nockenfahrschalter," +
+                   "Startseite,Steuerung,St&uuml;ck,St&uuml;ckzahl,Stundenleistung," +
+                   "Stuttgart,st&uuml;tzt,Suchen,symmetrisch,T21,Tag," +
                    "Tatzlagerbauart,te116,te117,Techn,Technische,treiben," +
-                   "Treibraddurchmesser,Trittstufen,Türe,Türen,Turmwagen," +
-                   "Typskizze,U/min,überhöhte,übernimmt,überstehenden," +
+                   "Treibraddurchmesser,Trittstufen,T&uuml;re,T&uuml;ren,Turmwagen," +
+                   "Typskizze,U/min,&uuml;berh&ouml;hte,&uuml;bernimmt,&uuml;berstehenden," +
                    "U-Messingprofil,umgerechnet,Umrissmesswagen,Umsetzen," +
                    "unbedingt,Unkrautvertilgungszug,Unterhalb,Unterlagen," +
                    "Unterseite,U-Profil,veranlasst,Verbeck," +
                    "Verbindungstechnik,verbunden,Verladeskizze,Verlag," +
                    "verlustlose,Verschiebe,Verschiebekupplungen,Versuch," +
-                   "verwendet,vielfältige,vier,Vorbauten,Vorbautüren," +
+                   "verwendet,vielf&auml;ltige,vier,Vorbauten,Vorbaut&uuml;ren," +
                    "Vorbild,Vorbildgeschwindigkeit,vorgenommen,vormontiert," +
                    "vorn,Warnanstrich,Warnanstriche,Warnstreifen,Weinert," +
                    "weiteres,Werkes,Werkstatt,wert,Westen,wiederum," +
                    "Winterdienst,wirkenden,W-Positionsleuchte,z10,z24,z44," +
-                   "Zähne,Zahnrad,Zeitschriften,Zubringerdienst," +
-                   "Zugeständnis,Zughaken,Zugkraft,Zunächst,zusammenfallen," +
-                   "zusammengelötet,Zwischengetriebe";
+                   "Z&auml;hne,Zahnrad,Zeitschriften,Zubringerdienst," +
+                   "Zugest&auml;ndnis,Zughaken,Zugkraft,Zun&auml;chst,zusammenfallen," +
+                   "zusammengel&ouml;tet,Zwischengetriebe";
        seite[ 7] = "bau_asf.htm";
 beschreibung[ 7] = "Kr&uuml;melbahn - ASF";
-     begriff[ 8] = "abnehmbar,Abstützung,Achsanordnung,Aktivitäten," +
+     begriff[ 8] = "abnehmbar,Abst&uuml;tzung,Achsanordnung,Aktivit&auml;ten," +
                    "Allgemeine,alten,Anbau,Andreas,anfordern," +
                    "Anlagengestaltung,Antriebsschrank,anzubringen,ASF," +
                    "Aufbau,aufgeklebt,Aufstiegsstufen,ausgelegt,Auspuff," +
@@ -347,248 +323,248 @@ beschreibung[ 7] = "Kr&uuml;melbahn - ASF";
                    "Bahndienstfahrzeuge,Bahnen,Bahnsinniges,Band," +
                    "Basiswagen,Bauart,Baubericht,Baubeschreibung,Baujahr," +
                    "Bausatz,Bauteilliste,Befestigungstellen,beiden," +
-                   "bekannte,Bekohlungs,Bemerkungen,Benennung,benötigt," +
+                   "bekannte,Bekohlungs,Bemerkungen,Benennung,ben&ouml;tigt," +
                    "Beschriftung,Beschriftungen,besitzt,Besonderheiten," +
                    "Best,Betrieb,Bezug,bleiben,blutorange,bohren,breiten," +
-                   "Bremsschläuche,Brücken,Brückenbauwerk,Brückenbogen," +
-                   "Brückenprüfungswagen,Brückenprüfwagen," +
+                   "Bremsschl&auml;uche,Br&uuml;cken,Br&uuml;ckenbauwerk,Br&uuml;ckenbogen," +
+                   "Br&uuml;ckenpr&uuml;fungswagen,Br&uuml;ckenpr&uuml;fwagen," +
                    "Brueckenpruefwagen,Conrad,container,Containers," +
                    "Containerseite,Containerskizze,Daten,DCC,dick,dicken," +
-                   "Dienstgüterwagen,Dienstmasse,Digitalbetrieb,Direkt," +
+                   "Dienstg&uuml;terwagen,Dienstmasse,Digitalbetrieb,Direkt," +
                    "Drehgestellabstand,Eichfahrzeuge,Eigenentwurf," +
                    "eigentlich,eingeklebt,eingesetzt,einzig," +
                    "eisenbahndienstfahrzeuge,Eisenbahn-Journal,Elektronik," +
-                   "Elze,eMail,entfernen,entfernt,enthält,Epoche," +
-                   "erforderlichen,ermöglicht,erschienen,erstellen," +
+                   "Elze,eMail,entfernen,entfernt,enth&auml;lt,Epoche," +
+                   "erforderlichen,erm&ouml;glicht,erschienen,erstellen," +
                    "Fabriknummer,Fahrgestell,Fahrzeug,Fahrzeugbau," +
-                   "Fahrzeugkupplung,Fahrzeugnummer,Fäkalienwagen,Farbe," +
+                   "Fahrzeugkupplung,Fahrzeugnummer,F&auml;kalienwagen,Farbe," +
                    "Federpuffer,Fenster,Fensterrahmen,Fertigmodell," +
                    "Feuerwehrset,Fleischmann,folgende,gebaute,gebogen," +
-                   "gebohrt,gefertigt,geklebt,Geländer,gelb,gelbe,gelötet," +
+                   "gebohrt,gefertigt,geklebt,Gel&auml;nder,gelb,gelbe,gel&ouml;tet," +
                    "genug,geschieht,geschnitten,getauscht,glatt," +
                    "Gleisstopfmaschine,goldgelb,Graaff,Grundierung," +
-                   "Güterwagenzurüstsatz,Güterzugsteuerwagen,Hakenkupplung," +
+                   "G&uuml;terwagenzur&uuml;stsatz,G&uuml;terzugsteuerwagen,Hakenkupplung," +
                    "herab,Herpa,Hersteller,Hilfseinrichtungen,Hinweis,hohl," +
-                   "Hubsteiger,Hülsen,Impressum,Industriemodelle/Bausätze," +
+                   "Hubsteiger,H&uuml;lsen,Impressum,Industriemodelle/Baus&auml;tze," +
                    "Informationen,Inhalt,Jahresmodell,kant,Karlsruhe," +
                    "Kastentender,Klarsichtfolie,kleine,kommt,Kran," +
-                   "Kranausleger,Krümelbahn,Kunststoff,Kunststoffplatte," +
+                   "Kranausleger,Kr&uuml;melbahn,Kunststoff,Kunststoffplatte," +
                    "Kunststoffstreifen,Lackieren,lackiert,Lackierung," +
-                   "Ladestation,Länge,langen,Last,linken,Links,Literatur," +
-                   "Literaturhinweis,Literaturhinweise,Lüftungsfenster," +
+                   "Ladestation,L&auml;nge,langen,Last,linken,Links,Literatur," +
+                   "Literaturhinweis,Literaturhinweise,L&uuml;ftungsfenster," +
                    "Maße,Mercedes-Benz,Messingdraht,Messingprofil,mittig," +
-                   "mm-Draht,mm-Löcher,Modellbahn,Modellbahn-Kurier," +
+                   "mm-Draht,mm-L&ouml;cher,Modellbahn,Modellbahn-Kurier," +
                    "Modellfahrzeuge,Modulbau,Navigation,Neonleuchte," +
-                   "Nothaft,Öffnungen,Ölhilfszug,Öltankzug,Pack,Palfinger," +
+                   "Nothaft,&ouml;ffnungen,&ouml;lhilfszug,&ouml;ltankzug,Pack,Palfinger," +
                    "passenden,Platte,Prinzip,Puffer,Pufferbohle," +
                    "Puffersockelplatten,Radsatztransportwagen,RAL," +
-                   "Rechteckpuffer,rechten,Res687,Robel,Röhre,Rollos," +
+                   "Rechteckpuffer,rechten,Res687,Robel,R&ouml;hre,Rollos," +
                    "Rottenkraftwagen,Rundstab,Rundumleuchte,schwarz,Seite," +
-                   "Seiten,Seitenanfang,Seitenwände,Seltene,Signalhorn," +
+                   "Seiten,Seitenanfang,Seitenw&auml;nde,Seltene,Signalhorn," +
                    "silbernen,Skizze,Solingen,Spezialwagen,Spurweite," +
-                   "Startseite,steht,Stirnseite,Streifen,Stückzahl,Suchen," +
+                   "Startseite,steht,Stirnseite,Streifen,St&uuml;ckzahl,Suchen," +
                    "T21,Techn,Technische,Teileskizze,Teleskoparm,tief," +
-                   "Tunnelprüfwagen,Türe,Türen,Türenausschnitte,Türöffnung," +
-                   "Türscharniere,Türseite,Umrissmesswagen," +
+                   "Tunnelpr&uuml;fwagen,T&uuml;re,T&uuml;ren,T&uuml;renausschnitte,T&uuml;r&ouml;ffnung," +
+                   "T&uuml;rscharniere,T&uuml;rseite,Umrissmesswagen," +
                    "Unkrautvertilgungszug,untergebracht,untersuchen," +
                    "verschließen,verschlossen,verwendet,Vierkant-Profilen," +
                    "vorhandenen,Wagen,Wagenboden,Wagenseite,Wand,Weinert," +
-                   "weißaluminium,wendet,Winterdienst,zerlegt,Zugangstüre," +
+                   "weißaluminium,wendet,Winterdienst,zerlegt,Zugangst&uuml;re," +
                    "Zusammenbau,Zweck";
        seite[ 8] = "bau_brue.htm";
 beschreibung[ 8] = "Kr&uuml;melbahn - Br&uuml;ckenpr&uuml;fwagen";
-     begriff[ 9] = "Action,Aktivitäten,Allgemeine,anfordern,angeboten," +
+     begriff[ 9] = "Action,Aktivit&auml;ten,Allgemeine,anfordern,angeboten," +
                    "Anlagengestaltung,Antrieb,Antriebe,ASF,B-16050,Bahnen," +
                    "Bahnsinniges,Bau,Baubeschreibung,Bausatz,Bekohlungs," +
                    "Bemerkungen,Beschreibungen,Beschriftungssatz,Best," +
-                   "Betrieb,Brückenprüfwagen,Conrad,DCC,Digitalbetrieb," +
+                   "Betrieb,Br&uuml;ckenpr&uuml;fwagen,Conrad,DCC,Digitalbetrieb," +
                    "Direkt,Duomatic,Eichfahrzeuge,Eisenbahn-Kurier," +
                    "Eisenbahn-Magazin,Elektronik,eMail,Epoche,erschienen," +
-                   "Expressgang,Fahrzeugbau,Fahrzeuges,Fäkalienwagen," +
+                   "Expressgang,Fahrzeugbau,Fahrzeuges,F&auml;kalienwagen," +
                    "Fertigmodell,Firma,Gleis,Gleis-Nivellier-Stopfmaschine," +
                    "Gleisstopfexpress,Gleisstopfmaschine," +
-                   "Gleisstopf-Maschine,Gleisstopfmaschinen,Gröditz,große," +
-                   "Güterzugsteuerwagen,H0-Bausatz,Hersteller," +
-                   "Hobby-Eisenbahner,Impressum,Industriemodelle/Bausätze," +
+                   "Gleisstopf-Maschine,Gleisstopfmaschinen,Gr&ouml;ditz,große," +
+                   "G&uuml;terzugsteuerwagen,H0-Bausatz,Hersteller," +
+                   "Hobby-Eisenbahner,Impressum,Industriemodelle/Baus&auml;tze," +
                    "Informationen,Inhalt,Interest,Jahresmodell,Kap," +
                    "Kastentender,Kibri,Kibris,Kissingen,Klunker,Kossak," +
-                   "Kran,Krümelbahn,Ladestation,Liliput,Links,Literatur," +
+                   "Kran,Kr&uuml;melbahn,Ladestation,Liliput,Links,Literatur," +
                    "Literaturhinweise,mbs,Mercedes-Benz,Miba,Modell," +
                    "Modellbahn,Modellbahnindustrie,Modelleisenbahner," +
                    "Modellfahrzeuge,Modulbau,motorisiert,Motorisierung," +
-                   "Motorisierungsbausätze,Navigation,Ölhilfszug,Öltankzug," +
+                   "Motorisierungsbaus&auml;tze,Navigation,&ouml;lhilfszug,&ouml;ltankzug," +
                    "Plasser,Praxis-Handbuch,Radsatztransportwagen," +
                    "Rottenkraftwagen,SB-Modellbau,Seite,Seitenanfang," +
-                   "Solingen,Startseite,Stopfexpress,Suchen,T21,Teil,übers," +
+                   "Solingen,Startseite,Stopfexpress,Suchen,T21,Teil,&uuml;bers," +
                    "Umfangreiche,Umrissmesswagen,unbekannt," +
                    "Unkrautvertilgungszug,unmotorisiert,Verlag,Vorbild," +
                    "Willy,Winterdienst";
        seite[ 9] = "bau_duo.htm";
 beschreibung[ 9] = "Kr&uuml;melbahn - Plasser Duomatic 07-32";
-     begriff[10] = "Abschließend,achs,Achsanordnung,Aktivitäten,ALBA," +
+     begriff[10] = "Abschließend,achs,Achsanordnung,Aktivit&auml;ten,ALBA," +
                    "Allgemeine,Anbau,anfordern,angebracht," +
                    "Anlagengestaltung,Anleitung,anschließend,Artikel,ASF," +
-                   "Ätzplatte,Aufgaben,ausführlicher,ausgebildet," +
+                   "&auml;tzplatte,Aufgaben,ausf&uuml;hrlicher,ausgebildet," +
                    "ausgefahren,BA751,BA752,BA753,BA761,BA762,BA764,Bahn," +
                    "Bahnbetriebswerk,bahneigener,Bahnen,Bahnsinniges," +
                    "Basisfahrzeuge,Baubeschreibung,Bausatz,Bauteilliste," +
-                   "Bedarf,Bekohlungs,Bemerkungen,Benennung,benötigt," +
+                   "Bedarf,Bekohlungs,Bemerkungen,Benennung,ben&ouml;tigt," +
                    "Bericht,Beschreibung,beschrieben,Beschriftung," +
-                   "Besonderheiten,Best,besteht,Betrieb,Bremsschläuche," +
-                   "Brückenprüfwagen,chromoxidgrün,Dampflokzeit,Daten,DCC," +
+                   "Besonderheiten,Best,besteht,Betrieb,Bremsschl&auml;uche," +
+                   "Br&uuml;ckenpr&uuml;fwagen,chromoxidgr&uuml;n,Dampflokzeit,Daten,DCC," +
                    "D-Druck,dienen,Dienstfahrzeuge,Dienstmasse," +
                    "Digitalbetrieb,Direkt,D-Modell,Eich,eichen," +
-                   "Eichfahrzeug,Eichfahrzeuge,Eichgerätefahrzeuge," +
-                   "Eichgerätewagen,Eichgewicht,Eichgewichte,Eichnormale," +
+                   "Eichfahrzeug,Eichfahrzeuge,Eichger&auml;tefahrzeuge," +
+                   "Eichger&auml;tewagen,Eichgewicht,Eichgewichte,Eichnormale," +
                    "Eichwagen,Eichzug,Eigenbau,Einsatzgebiet," +
                    "eisenbahndienstfahrzeuge,Eisenbahn-Kurier," +
                    "Eisenbahn-Magazin,eisengrau,Elektronik,eMail," +
-                   "eMailAndGithub,Entfetten,enthält,entsteht,Epoche," +
-                   "erfolgen,erfolgt,Erwähnt,Esn,Fahrgestell,Fahrwerk," +
+                   "eMailAndGithub,Entfetten,enth&auml;lt,entsteht,Epoche," +
+                   "erfolgen,erfolgt,Erw&auml;hnt,Esn,Fahrgestell,Fahrwerk," +
                    "Fahrwerkbefestigung,Fahrwerkblock,Fahrwerksblock," +
                    "Fahrzeug,Fahrzeugbau,Fahrzeuge,Fahrzeugkupplung," +
-                   "Fahrzeugumbau,Fäkalienwagen,Farbe,fehlen,Fertigmodell," +
-                   "Fichtenberg,finden,Fixierung,Füllstücke,gebaute," +
-                   "gedeckter,gedreht,Gehäuse,Gehäuse-Ätzplatte," +
-                   "Gerätewagen,Geschwindigkeit,Gewicht,Gewichtsrollen," +
+                   "Fahrzeugumbau,F&auml;kalienwagen,Farbe,fehlen,Fertigmodell," +
+                   "Fichtenberg,finden,Fixierung,F&uuml;llst&uuml;cke,gebaute," +
+                   "gedeckter,gedreht,Geh&auml;use,Geh&auml;use-&auml;tzplatte," +
+                   "Ger&auml;tewagen,Geschwindigkeit,Gewicht,Gewichtsrollen," +
                    "gewohnt,glatt,Gleisstopfmaschine,Gleiswaage," +
                    "Gleiswaagen,grau,Griffe,Griffstangen,grundiert," +
-                   "Grundierung,gründlichen,Gs213,Güterwagen," +
-                   "Güterzugsteuerwagen,H0-Modell,Hakenkupplung,Hersteller," +
-                   "Hinweis,hinzuzufügen,Hmb,höher,HP1,III,Impressum," +
-                   "Industriemodelle/Bausätze,Informationen,Inhalt," +
+                   "Grundierung,gr&uuml;ndlichen,Gs213,G&uuml;terwagen," +
+                   "G&uuml;terzugsteuerwagen,H0-Modell,Hakenkupplung,Hersteller," +
+                   "Hinweis,hinzuzuf&uuml;gen,Hmb,h&ouml;her,HP1,III,Impressum," +
+                   "Industriemodelle/Baus&auml;tze,Informationen,Inhalt," +
                    "Inneneinrichtung,Jahresmodell,Jungs,Kar,Kastentender," +
                    "Klarlack,km/h,Komplett-Beschriftungssatz,kompletter," +
-                   "komplettes,Kran,Kranbahn,Krefeld,Krüger-Modellbau," +
-                   "Krümelbahn,Ksl,lackiert,Lackierung,Ladestation,Länge," +
-                   "Langträgerverstärkung,leeres,leicht,Links,Literatur," +
-                   "Literaturhinweise,Märklin,Maße,massiv,mattem," +
+                   "komplettes,Kran,Kranbahn,Krefeld,Kr&uuml;ger-Modellbau," +
+                   "Kr&uuml;melbahn,Ksl,lackiert,Lackierung,Ladestation,L&auml;nge," +
+                   "Langtr&auml;gerverst&auml;rkung,leeres,leicht,Links,Literatur," +
+                   "Literaturhinweise,M&auml;rklin,Maße,massiv,mattem," +
                    "Mercedes-Benz,Messfahrt,Messing,Messingdraht," +
-                   "Messingprofil,Miba-Report,mitgeführt,Modell,Modellbahn," +
+                   "Messingprofil,Miba-Report,mitgef&uuml;hrt,Modell,Modellbahn," +
                    "Modellfahrzeuge,Modulbau,Montage,montierten,Mutter," +
-                   "Navigation,Nbg,Oberseite,öffnenden,Oldtimer-Waage," +
-                   "Ölhilfszug,Öltankzug,Pack,Prüfwagen,Puffer,Radsatz," +
+                   "Navigation,Nbg,Oberseite,&ouml;ffnenden,Oldtimer-Waage," +
+                   "&ouml;lhilfszug,&ouml;ltankzug,Pack,Pr&uuml;fwagen,Puffer,Radsatz," +
                    "Radsatztransportwagen,RAG,RAL,Roco,Rottenkraftwagen," +
-                   "RP25,Rückseite,Rundmaterial,Rundstab,Schraube," +
+                   "RP25,R&uuml;ckseite,Rundmaterial,Rundstab,Schraube," +
                    "Schriften,Schutz,schwarz,Schwere,schweren," +
-                   "Schwergewichtler,Seite,Seitenanfang,Seitenkästen," +
+                   "Schwergewichtler,Seite,Seitenanfang,Seitenk&auml;sten," +
                    "Selbstbau,Signalscheibenhalter,Skizze,Solingen," +
                    "Spurweite,Stahlrolle,Startseite,Stelle,Stg," +
-                   "stirnseitige,Stirnwand,Stirnwänden,stl,Streckenklassen," +
-                   "Stückzahl,Suchen,T21,Techn,Technische,Teil,Teile,Türen," +
-                   "Überprüfen,umgekehrt,Umrissmesswagen," +
+                   "stirnseitige,Stirnwand,Stirnw&auml;nden,stl,Streckenklassen," +
+                   "St&uuml;ckzahl,Suchen,T21,Techn,Technische,Teil,Teile,T&uuml;ren," +
+                   "&uuml;berpr&uuml;fen,umgekehrt,Umrissmesswagen," +
                    "Unkrautvertilgungszug,Unterseite,uschen,verfahren," +
-                   "verfügt,Verkehrsgeschichte,vielfältige,Vorderseite," +
-                   "Waagen,Wägehäuschen,Wagen,Weinert,Winterdienst," +
-                   "Wuppertal-Steinbeck,zugelassen,zul,zunächst," +
-                   "Zurüstteile,Zusatzlast,zusätzliche";
+                   "verf&uuml;gt,Verkehrsgeschichte,vielf&auml;ltige,Vorderseite," +
+                   "Waagen,W&auml;geh&auml;uschen,Wagen,Weinert,Winterdienst," +
+                   "Wuppertal-Steinbeck,zugelassen,zul,zun&auml;chst," +
+                   "Zur&uuml;stteile,Zusatzlast,zus&auml;tzliche";
        seite[10] = "bau_eich.htm";
 beschreibung[10] = "Kr&uuml;melbahn - Eichzug";
-     begriff[11] = "Abflussrohr,Aktivitäten,Allgemeine,Anbau,Andreas," +
+     begriff[11] = "Abflussrohr,Aktivit&auml;ten,Allgemeine,Anbau,Andreas," +
                    "anfordern,angegossenen,Anlagengestaltung,ASF," +
                    "aufmerksam,Auslassstutzen,BA117,Bahndienst,Bahnen," +
                    "Bahnsinniges,Band,Basiswagen,Baubeschreibung," +
                    "Bauteilliste,Bavaria-Modellbahnen,beiden,bekannt," +
-                   "Bekohlungs,Benennung,benötigt,Berichte,Beschriftung," +
-                   "Best,Betrieb,Betriebswerk,Bezug,blättern,BR50," +
-                   "Bremsschläuche,brennbare,Brückenprüfwagen," +
-                   "chromoxidgrün,Dach,Daten,DCC,Diener,Dienstfahrzeuge," +
-                   "Dienstgüterwagen,Digitalbetrieb,Direkt,diverse," +
-                   "Drehscheibe-Online,Dünger,Eichfahrzeuge,Eigenentwurf," +
+                   "Bekohlungs,Benennung,ben&ouml;tigt,Berichte,Beschriftung," +
+                   "Best,Betrieb,Betriebswerk,Bezug,bl&auml;ttern,BR50," +
+                   "Bremsschl&auml;uche,brennbare,Br&uuml;ckenpr&uuml;fwagen," +
+                   "chromoxidgr&uuml;n,Dach,Daten,DCC,Diener,Dienstfahrzeuge," +
+                   "Dienstg&uuml;terwagen,Digitalbetrieb,Direkt,diverse," +
+                   "Drehscheibe-Online,D&uuml;nger,Eichfahrzeuge,Eigenentwurf," +
                    "eisenbahndienstfahrzeuge,Eisenbahn-Journal," +
                    "Eisenbahn-Magazin,eisengrau,Elektronik,eMail,entfernt," +
-                   "enthält,Fahrgestell,Fahrzeug,Fahrzeugbau," +
-                   "Fahrzeugkupplung,Fahrzeugs,Fäkalienwagen,Farbe," +
-                   "Flüssigkeiten,Folgende,G10,Gehäuse,gekröpft,glatt," +
-                   "Gleisstopfmaschine,Gold,Grundierung,Güterwagen," +
-                   "Güterwagenwände,Güterwagenzurüstsatz," +
-                   "Güterzugsteuerwagen,Hakenkupplung,Hinweis,Impressum," +
-                   "Industriemodelle/Bausätze,Informationen,Inhalt," +
+                   "enth&auml;lt,Fahrgestell,Fahrzeug,Fahrzeugbau," +
+                   "Fahrzeugkupplung,Fahrzeugs,F&auml;kalienwagen,Farbe," +
+                   "Fl&uuml;ssigkeiten,Folgende,G10,Geh&auml;use,gekr&ouml;pft,glatt," +
+                   "Gleisstopfmaschine,Gold,Grundierung,G&uuml;terwagen," +
+                   "G&uuml;terwagenw&auml;nde,G&uuml;terwagenzur&uuml;stsatz," +
+                   "G&uuml;terzugsteuerwagen,Hakenkupplung,Hinweis,Impressum," +
+                   "Industriemodelle/Baus&auml;tze,Informationen,Inhalt," +
                    "Jahresmodell,Jauche,Joswood,Kastentender,Kesselwagen," +
-                   "Kran,Krümelbahn,Kunststoffplatte,Kunststoffprofil," +
-                   "Lackierung,Ladestation,Länderbahnen,Langlebige," +
+                   "Kran,Kr&uuml;melbahn,Kunststoffplatte,Kunststoffprofil," +
+                   "Lackierung,Ladestation,L&auml;nderbahnen,Langlebige," +
                    "Latrinenwagen,Links,Literatur,Literaturhinweise," +
                    "Mercedes-Benz,Messingprofil,Miba-Report,Modellbahn," +
                    "Modelleisenbahner,Modellfahrzeuge,Modulbau,Moe24001," +
-                   "Navigation,Nothaft,Notwendigkeit,Ölhilfszug,Öltankzug," +
+                   "Navigation,Nothaft,Notwendigkeit,&ouml;lhilfszug,&ouml;ltankzug," +
                    "Pack,Profile,Profilsatz,Puffer,Pufferbohlen," +
                    "Puffersockelplatten,Radsatztransportwagen,Rahmen,RAL," +
-                   "Rangiertritte,Recherchen,Rechteck-Profil,Rheinbrück," +
+                   "Rangiertritte,Recherchen,Rechteck-Profil,Rheinbr&uuml;ck," +
                    "Roco,Rohr,Rottenkraftwagen,Rund,schwarz,Seite,Seiten," +
                    "Seitenanfang,Selbstbau,selten,Signalscheibenhalter," +
-                   "Solingen,Spezialwagen,Spritzenkanüle,Startseite," +
-                   "Stinkendes,Stinker,Stückzahl,Suche,Suchen,T21,Tank," +
+                   "Solingen,Spezialwagen,Spritzenkan&uuml;le,Startseite," +
+                   "Stinkendes,Stinker,St&uuml;ckzahl,Suche,Suchen,T21,Tank," +
                    "Tankende,Techn,Teile,Tiefere,Umrissmesswagen," +
                    "Umstellhebel,Universal,Unkrautvertilgungszug,unteren," +
                    "Verfeinerungswunsch,verwendet,vorhalten," +
                    "Vorsatzschneepflug,Wagen,Wagenboden,Weinert," +
-                   "weißaluminium,Winterdienst,Wuppertal,Württembergische," +
-                   "x30,zeigten,Zeitschriften,Zettelkästen,Zweck";
+                   "weißaluminium,Winterdienst,Wuppertal,W&uuml;rttembergische," +
+                   "x30,zeigten,Zeitschriften,Zettelk&auml;sten,Zweck";
        seite[11] = "bau_jauch.htm";
 beschreibung[11] = "Kr&uuml;melbahn - F&auml;kalienwagen";
-     begriff[12] = "#501,Achsen,ähnliche,Aktivitäten,Allgemeinen,alten," +
+     begriff[12] = "#501,Achsen,&auml;hnliche,Aktivit&auml;ten,Allgemeinen,alten," +
                    "Alternativ,Anbau,anfordern,Anlagengestaltung,Artikelnr," +
-                   "ASF,aufgeführt,Ausführungen,Bahnen,Bahnsinniges,Basis," +
-                   "Basisfahrzeuge,Bekohlungs,bekommen,Benennung,benötigt," +
-                   "besseren,Best,beträgt,Bochum-Dahlhausen,Börsen,BR38," +
-                   "Bremsschläuche,Brückenprüfwagen,Dampflokomotiven,Daten," +
+                   "ASF,aufgef&uuml;hrt,Ausf&uuml;hrungen,Bahnen,Bahnsinniges,Basis," +
+                   "Basisfahrzeuge,Bekohlungs,bekommen,Benennung,ben&ouml;tigt," +
+                   "besseren,Best,betr&auml;gt,Bochum-Dahlhausen,B&ouml;rsen,BR38," +
+                   "Bremsschl&auml;uche,Br&uuml;ckenpr&uuml;fwagen,Dampflokomotiven,Daten," +
                    "DB-Einheitslaternen,DCC,Detaillierung,Dienstfahrzeuge," +
                    "dient,Digitalbetrieb,Direkt,Drehgestell," +
                    "Drehgestellblende,Eichfahrzeuge,eigentlich," +
                    "Einzeldarstellungen,Eisenbahnmuseum,Elektronik,eMail," +
-                   "enthaltenen,entsprechenden,ergänzen,Ersatzteile," +
-                   "Fahrzeugbau,Fahrzeugkupplung,Fäkalienwagen,fallen," +
-                   "falsch,falschen,Firma,Franckh,gekröpft,Gerard,glatt," +
+                   "enthaltenen,entsprechenden,erg&auml;nzen,Ersatzteile," +
+                   "Fahrzeugbau,Fahrzeugkupplung,F&auml;kalienwagen,fallen," +
+                   "falsch,falschen,Firma,Franckh,gekr&ouml;pft,Gerard,glatt," +
                    "Gleisstopfmaschine,Griffstangen,Griffstangenhalter," +
-                   "Güterwagenzurüstsatz,Güterzugsteuerwagen,Hakenkupplung," +
+                   "G&uuml;terwagenzur&uuml;stsatz,G&uuml;terzugsteuerwagen,Hakenkupplung," +
                    "hinten,Hinweis,Hinweise,Impressum,Informationen,Inhalt," +
                    "ISBN,Jahresmodell,Kadee-Drehgestell,Kastentender,kommt," +
-                   "komplett,kompletten,Kran,Krümelbahn,Ladestation," +
+                   "komplett,kompletten,Kran,Kr&uuml;melbahn,Ladestation," +
                    "Liliput,Links,Liste,Literatur,Literaturhinweise," +
-                   "Lok3098,Lok43216,Lokunbekannt,Märklin,Mercedes-Benz," +
+                   "Lok3098,Lok43216,Lokunbekannt,M&auml;rklin,Mercedes-Benz," +
                    "Messerschmidt,Messingdraht,Mitte,Modellbahn," +
-                   "Modellfahrzeuge,Modulbau,Navigation,Ölhilfszug," +
-                   "Öltankzug,Original,Originaldurchmesser,Pack,Puffer," +
-                   "Pufferbohle,Puffersockelplatten,Rad,Räder,Radsatz," +
-                   "radsätze,Radsatztransportwagen,Roco,Rottenkraftwagen," +
-                   "Rückwand,sche,Schneepflug,Seite,Seitenanfang," +
+                   "Modellfahrzeuge,Modulbau,Navigation,&ouml;lhilfszug," +
+                   "&ouml;ltankzug,Original,Originaldurchmesser,Pack,Puffer," +
+                   "Pufferbohle,Puffersockelplatten,Rad,R&auml;der,Radsatz," +
+                   "rads&auml;tze,Radsatztransportwagen,Roco,Rottenkraftwagen," +
+                   "R&uuml;ckwand,sche,Schneepflug,Seite,Seitenanfang," +
                    "Signalscheibenhalter,Solingen,Speichen,Startseite," +
-                   "Stückzahl,Stuttgart,Suchen,T21,Techn,Tender," +
-                   "Tenderrückansicht,Tenderrückwand,Tenders,Übersicht," +
+                   "St&uuml;ckzahl,Stuttgart,Suchen,T21,Techn,Tender," +
+                   "Tenderr&uuml;ckansicht,Tenderr&uuml;ckwand,Tenders,&uuml;bersicht," +
                    "Umbau,Umbauarbeiten,Umbaubeschreibung,Umbauseiten," +
                    "Umrissmesswagen,Unkrautsprengwagen," +
                    "Unkrautvertilgungszug,Verlagshandlung,verwendet," +
-                   "Weinert,Winterdienst,Wolfgang,Zurüstteile,Zurüstteilen," +
+                   "Weinert,Winterdienst,Wolfgang,Zur&uuml;stteile,Zur&uuml;stteilen," +
                    "Zusammenstellung";
        seite[12] = "bau_kate.htm";
 beschreibung[12] = "Kr&uuml;melbahn - Kastentender 2'2'T21.5";
-     begriff[13] = "abnehmbaren,Achsanordnung,Achsstand,Aktivitäten," +
+     begriff[13] = "abnehmbaren,Achsanordnung,Achsstand,Aktivit&auml;ten," +
                    "Allgemeine,alte,anfordern,angebracht,angehangen," +
-                   "Anhänger,Anlagengestaltung,Anmerkung,ASF,Atlaskran," +
+                   "Anh&auml;nger,Anlagengestaltung,Anmerkung,ASF,Atlaskran," +
                    "aufgebaut,aufzuwerten,ausgetauscht,Bahnen,Bahnsinniges," +
                    "Baubeschreibung,Baumaterial,Bausatz,Bauteilliste," +
                    "Bekohlungs,Bemerkungen,Benennung,Beschreibung,Betrieb," +
-                   "Bleiblock,Bochum-Dahlhausen,Bordwände,Brawa," +
-                   "Brückenprüfwagen,Daten,DCC,Detailzeichnung,Deutschen," +
+                   "Bleiblock,Bochum-Dahlhausen,Bordw&auml;nde,Brawa," +
+                   "Br&uuml;ckenpr&uuml;fwagen,Daten,DCC,Detailzeichnung,Deutschen," +
                    "dient,Digitalbetrieb,Direkt,Draisinen," +
                    "Draisinenfahrzeugen,Eichfahrzeuge," +
                    "eisenbahndienstfahrzeuge,Eisenbahnfreunde," +
                    "Eisenbahnmuseum,Elektronik,eMail,Ende,entfernen," +
                    "entfernt,entschloss,Epoche,erhalten,Erweiterung," +
-                   "Fahrzeugbau,Fahrzeuges,Fahrzeugseiten,Fäkalienwagen," +
-                   "Fensteröffnungen,Fertigmodell,finden,Frontscheibe," +
-                   "gelötet,Gleisanlagen,Gleisstopfmaschine," +
-                   "Güterzugsteuerwagen,halbiertem,Halterungen,Hersteller," +
-                   "I-Form,III,Impressum,Industriemodelle/Bausätze," +
+                   "Fahrzeugbau,Fahrzeuges,Fahrzeugseiten,F&auml;kalienwagen," +
+                   "Fenster&ouml;ffnungen,Fertigmodell,finden,Frontscheibe," +
+                   "gel&ouml;tet,Gleisanlagen,Gleisstopfmaschine," +
+                   "G&uuml;terzugsteuerwagen,halbiertem,Halterungen,Hersteller," +
+                   "I-Form,III,Impressum,Industriemodelle/Baus&auml;tze," +
                    "Informationen,Inhalt,interessante,Jahresmodell,John," +
-                   "Kastentender,Kla,Kla01,Klv51,komplett,Kran,Krümelbahn," +
+                   "Kastentender,Kla,Kla01,Klv51,komplett,Kran,Kr&uuml;melbahn," +
                    "Kupplung,Kupplungsdeichsel,lackiert,Lackierung," +
-                   "Ladefläche,Ladekran,Ladestation,Länge,Längsseiten," +
+                   "Ladefl&auml;che,Ladekran,Ladestation,L&auml;nge,L&auml;ngsseiten," +
                    "Leergewicht,leicht,Links,Literatur,Literaturhinweise," +
                    "Maße,Mercedes-Benz,Messingblech,Messingplatte," +
                    "Messingprofil,Messingteilen,Milchglashaube,Modell," +
-                   "Modellbahn,Modellfahrzeuge,Modulbau,montiert,mühsam," +
-                   "Museumsbahnen,Nachbau,Navigation,Ölhilfszug,Öltankzug," +
+                   "Modellbahn,Modellfahrzeuge,Modulbau,montiert,m&uuml;hsam," +
+                   "Museumsbahnen,Nachbau,Navigation,&ouml;lhilfszug,&ouml;ltankzug," +
                    "Pack,Plexiglasscheiben,Puffer,Querseite,Querseiten," +
                    "Raddurchmesser,Radsatztransportwagen,Rahmen,Rechteck," +
                    "Rechteck-Messingprofil,Rockingerkupplung," +
@@ -596,795 +572,795 @@ beschreibung[12] = "Kr&uuml;melbahn - Kastentender 2'2'T21.5";
                    "Rundstab,Sammlung,Scheibenwischer,Schienenfahrrad," +
                    "schwere,Seitenanfang,Solingen,Spurweite,Startseite," +
                    "Stefan,Steinbockkran,Suchen,T21,Techn,Technische," +
-                   "Transport,Transportkapazitäten,Trittstufe,Trittstufen," +
+                   "Transport,Transportkapazit&auml;ten,Trittstufe,Trittstufen," +
                    "Turmtriebwagen,Typ,U-Form,Umrissmesswagen," +
                    "Unkrautvertilgungszug,Unterhaltung,U-Profil," +
                    "verschlossen,Weinert,Wetterau,Winterdienst";
        seite[13] = "bau_kla.htm";
 beschreibung[13] = "Kr&uuml;melbahn - Kla01";
-     begriff[14] = "achsiger,Aktivitäten,ALBA,Allgemeine,Allround-Talent," +
+     begriff[14] = "achsiger,Aktivit&auml;ten,ALBA,Allgemeine,Allround-Talent," +
                    "Andreas,anfordern,Anlagengestaltung,Anleitungen,Ardelt," +
-                   "ASF,Aufbau,Auslegerstützw,B-16000,B-16010,B-19600," +
+                   "ASF,Aufbau,Auslegerst&uuml;tzw,B-16000,B-16010,B-19600," +
                    "Bahnbetriebswerke,Bahnen,Bahnsinniges,Bau," +
                    "Baubeschreibung,Bausatz,beiden,Bekohlungs,Bemerkungen," +
                    "Berichte,Beschreibung,Beschreibungen,Beschriftung," +
                    "Beschriftungssatz,Betrieb,Bildung,Blechausleger," +
-                   "Brocken,Brückenprüfwagen,Brüder,Dampfkran,DCC," +
+                   "Brocken,Br&uuml;ckenpr&uuml;fwagen,Br&uuml;der,Dampfkran,DCC," +
                    "Digitalbetrieb,Direkt,DRG,ehemaliger,Eichfahrzeuge," +
                    "eigentlichen,eignen,eisenbahndienstfahrzeuge," +
                    "Eisenbahnkran,Eisenbahn-Kurier,Eisenbahn-Magazin," +
                    "Elektronik,eMail,Epoche,erschienen,Fahrzeugbau," +
-                   "Fahrzeuge,Fäkalienwagen,Fertigmodell,Fleischmann,Fulda," +
+                   "Fahrzeuge,F&auml;kalienwagen,Fertigmodell,Fleischmann,Fulda," +
                    "G07,Gassner,Gegengewicht,Gegengewichtewagen," +
-                   "Gegengewichtswagen,gehören,gemeinsamen,Gepäckwagen," +
-                   "Gerätewagen,Gleisbauschienenkran,Gleisstopfmaschine," +
+                   "Gegengewichtswagen,geh&ouml;ren,gemeinsamen,Gep&auml;ckwagen," +
+                   "Ger&auml;tewagen,Gleisbauschienenkran,Gleisstopfmaschine," +
                    "Goliath,Gottwald,Gottwald-Kran,Gottwald-Teleskopkran," +
-                   "GS100,Güterzugsteuerwagen,Gützold,Hängt,Hannover," +
-                   "Hersteller,Hilfswagenset,Hilfszug,Hochausleger,höher," +
-                   "III,Impressum,Industriemodelle/Bausätze,Informationen," +
+                   "GS100,G&uuml;terzugsteuerwagen,G&uuml;tzold,H&auml;ngt,Hannover," +
+                   "Hersteller,Hilfswagenset,Hilfszug,Hochausleger,h&ouml;her," +
+                   "III,Impressum,Industriemodelle/Baus&auml;tze,Informationen," +
                    "Inhalt,Jahresmodell,Kastentender,Kibri,Kohle," +
                    "Kohle/Wasser,Kohlen,Kohlenkran,Kohlenversorgung," +
                    "Komplettbeschriftung,Komplettes,Komplettset,Kraftpaket," +
                    "Kraftprotz,Kran,Kran100,Kran57,Kran75," +
-                   "Kranausleger-Stützwagen,Kranbegleitwagen," +
+                   "Kranausleger-St&uuml;tzwagen,Kranbegleitwagen," +
                    "Kranbelastungswagen,KranGS100,Kranschutzw," +
                    "Kranschutzwagen,Kranwagen,Kranwagenzug,Kranzug," +
-                   "Kranzug-Beiwagen,Kranzuges,Krüger-Modellbau,Krümelbahn," +
+                   "Kranzug-Beiwagen,Kranzuges,Kr&uuml;ger-Modellbau,Kr&uuml;melbahn," +
                    "Krupp-Ardelt,L383811,Ladestation,Liliput,Links," +
-                   "Literatur,Literaturhinweise,Mannschaftswagen,Märklin," +
-                   "Märklins,Maßstab,Mercedes-Benz,MIBA,Miniaturbahnen," +
+                   "Literatur,Literaturhinweise,Mannschaftswagen,M&auml;rklin," +
+                   "M&auml;rklins,Maßstab,Mercedes-Benz,MIBA,Miniaturbahnen," +
                    "Modell,Modellbahn,Modellbahnpraxis,Modellfahrzeuge," +
-                   "Modulbau,Navigation,NEM-Räder,Nothaft,Ölhilfszug," +
-                   "Öltankzug,Personen,Personenwagen,R10," +
-                   "Radsatztransportwagen,Regelspurkräne,Roco,Rolle," +
-                   "Rottenkraftwagen,RP25-Räder,Schutzwagen,Schwerer,Seite," +
+                   "Modulbau,Navigation,NEM-R&auml;der,Nothaft,&ouml;lhilfszug," +
+                   "&ouml;ltankzug,Personen,Personenwagen,R10," +
+                   "Radsatztransportwagen,Regelspurkr&auml;ne,Roco,Rolle," +
+                   "Rottenkraftwagen,RP25-R&auml;der,Schutzwagen,Schwerer,Seite," +
                    "Seiten,Seitenanfang,Solingen,Solingen-Hauptbahnhof," +
-                   "solo,Spezial,Startseite,Stuttgart,Stützwagen,Suchen," +
+                   "solo,Spezial,Startseite,Stuttgart,St&uuml;tzwagen,Suchen," +
                    "T21,Tender,t-Kran,t-Krans,t-Kranwagen,Tonnen," +
                    "Tonnen-Dampfkran,Tragende,Trix,umfangreiche,umgebauter," +
                    "Umrissmesswagen,Unkrautvertilgungszug,unmotorisiert," +
                    "verpflichtet,Vorbild,Vorratstender,Wagen,Wannen,Wasser," +
                    "Wasserwagen,Wasserwagens,Weinert,Weinerts," +
-                   "Werkstattwagen,West,Winterdienst,Wohnwagen,Würzburg," +
+                   "Werkstattwagen,West,Winterdienst,Wohnwagen,W&uuml;rzburg," +
                    "X05,zugeteilt";
        seite[14] = "bau_kran.htm";
 beschreibung[14] = "Kr&uuml;melbahn - (Bekohlungs-)Kran";
      begriff[15] = "abgeschnitten,abgesichert,abgestellt,achsig,achsigem," +
                    "A-Gleichrichter,Akkublitz,Akku-Diener,Akku-Ladestation," +
-                   "Akkutriebwagen,Akkutriebwagenbetriebes,Aktivitäten," +
+                   "Akkutriebwagen,Akkutriebwagenbetriebes,Aktivit&auml;ten," +
                    "Allgemeine,alten,Andeutung,Andreas,anfordern," +
                    "angebracht,angeschlossen,Anlagengestaltung," +
-                   "anschließend,Arbeitslampen,ASF,auffälligsten,aufgebaut," +
+                   "anschließend,Arbeitslampen,ASF,auff&auml;lligsten,aufgebaut," +
                    "aufgeklebt,aufgestellt,Außenbeleuchtung,Außentreppe," +
                    "Bahndienst,Bahnen,Bahnsinniges,Band,Batterie," +
-                   "Batteriekapazität,Baubeschreibung,Bausatz,Bauteilliste," +
+                   "Batteriekapazit&auml;t,Baubeschreibung,Bausatz,Bauteilliste," +
                    "befestigt,beiden,Bekohlungs,Bemerkungen,Benennung," +
                    "Bericht,Beschriftung,Beschriftungen,besitzt,Best," +
                    "bestehen,bestehend,besten,Betrieb,beweglich,Bild," +
-                   "Bleche,bleiben,Bohrungen,Bremsschläuche," +
-                   "Brückenprüfwagen,chromoxidgrün,Conrad,Dachaufbauten," +
-                   "Daches,Daten,DB-Lampen,DB-Zeichen,DCC,Dienstgüterwagen," +
-                   "Digitalbetrieb,Direkt,Drehscheibe,dünne,Eichfahrzeuge," +
+                   "Bleche,bleiben,Bohrungen,Bremsschl&auml;uche," +
+                   "Br&uuml;ckenpr&uuml;fwagen,chromoxidgr&uuml;n,Conrad,Dachaufbauten," +
+                   "Daches,Daten,DB-Lampen,DB-Zeichen,DCC,Dienstg&uuml;terwagen," +
+                   "Digitalbetrieb,Direkt,Drehscheibe,d&uuml;nne,Eichfahrzeuge," +
                    "Eigenbau,eingeklebt,eingesetzt,Einsatz,Einzelteile," +
                    "Eisenbahn-Journal,Eisenbahn-Kurier,Eisenbahn-Magazin," +
                    "Elektronik,Elektropfeil,Elektropfeile,eMail,entfernt," +
                    "Entfetten,entspricht,Epoche,erreicht,ersetzt,ETA," +
                    "ETA-Endstationen,ETA-Ladeanlagen,ETA-Ladestation," +
                    "Fahrgestell,Fahrzeug,Fahrzeugbau,Fahrzeugkupplung," +
-                   "Fäkalienwagen,Farbe,farblich,Federpuffer,Fenster," +
-                   "Fensteröffnungen,Fertigmodell,Fleischmann,Foto,Fotos," +
+                   "F&auml;kalienwagen,Farbe,farblich,Federpuffer,Fenster," +
+                   "Fenster&ouml;ffnungen,Fertigmodell,Fleischmann,Foto,Fotos," +
                    "Furnierholz,Furnierholzbrettchen,G05,G10,gebohrt," +
-                   "Gehäuse,geklebt,glatt,gleiches,Gleichrichterwagens," +
+                   "Geh&auml;use,geklebt,glatt,gleiches,Gleichrichterwagens," +
                    "Gleisfeldbeleuchtung,Gleisfeldleuchte," +
-                   "Gleisstopfmaschine,grundiert,Grundierung,gründlichen," +
-                   "Güterwagenzurüstteile,Güterzugsteuerwagen," +
+                   "Gleisstopfmaschine,grundiert,Grundierung,gr&uuml;ndlichen," +
+                   "G&uuml;terwagenzur&uuml;stteile,G&uuml;terzugsteuerwagen," +
                    "Hakenkupplung,Haube,Hauben,Hemmschuhen,Hersteller," +
-                   "heruntergekommen,Herzstück,Heulboje," +
+                   "heruntergekommen,Herzst&uuml;ck,Heulboje," +
                    "Hochspannungsisolatoren,I/92,III,Impressum," +
-                   "Industriemodelle/Bausätze,Informationen,Inhalt," +
+                   "Industriemodelle/Baus&auml;tze,Informationen,Inhalt," +
                    "I-Profil,Jahren,Jahresmodell,jahrzehntelang," +
                    "Kastentender,Klarlack,Klarsichtfolie,kleine," +
-                   "Komplettbeschriftung,komplettes,Kran,Krümelbahn," +
+                   "Komplettbeschriftung,komplettes,Kran,Kr&uuml;melbahn," +
                    "Kunststoffplatte,Kunststoffplatten,Kupplungen," +
                    "kV-Einspeisung,Lack,Lackieren,lackiert,Lackierung," +
-                   "Ladeanlagen,Ladesäulen,Ladestation,Ladestationen," +
-                   "Länderbahngüterwagen,LC99150,Lemke,letzten,Links," +
-                   "Literatur,Literaturhinweise,Löcher,Lüftungsgitter," +
+                   "Ladeanlagen,Lades&auml;ulen,Ladestation,Ladestationen," +
+                   "L&auml;nderbahng&uuml;terwagen,LC99150,Lemke,letzten,Links," +
+                   "Literatur,Literaturhinweise,L&ouml;cher,L&uuml;ftungsgitter," +
                    "Magazin,markanten,Mast,mattem,meisten,Mercedes-Benz," +
                    "Messingdraht,Messinggestell,Miba,Microlampen,Mitte," +
                    "mittels,Modell,Modellbahn,Modellfahrzeuge,Modulbau," +
                    "montiert,nachgebildet,Nachtstunden,Navigation,N-Bahn," +
-                   "Nothaft,Oberhausen,Ölhilfszug,Öltankzug,Ösen,Pack," +
-                   "passend,Puffer,Pufferbohlen,Pufferplatten,Radsätze," +
+                   "Nothaft,Oberhausen,&ouml;lhilfszug,&ouml;ltankzug,&ouml;sen,Pack," +
+                   "passend,Puffer,Pufferbohlen,Pufferplatten,Rads&auml;tze," +
                    "Radsatztransportwagen,RAL,Rangiertritte," +
-                   "Reichsbahngüterwagen,Roco,Rottenkraftwagen,RP25," +
-                   "Schaltbild,Schiebetüren,schneiden,Schriften,Schriftzug," +
+                   "Reichsbahng&uuml;terwagen,Roco,Rottenkraftwagen,RP25," +
+                   "Schaltbild,Schiebet&uuml;ren,schneiden,Schriften,Schriftzug," +
                    "Schutz,schwarz,Schwellenkreuz,Seite,Seiten," +
-                   "Seitenanfang,Sh2-Signalen,Signalhörner," +
+                   "Seitenanfang,Sh2-Signalen,Signalh&ouml;rner," +
                    "Signalscheibenhalter,Sinne,Solingen,Sommerfeldt," +
                    "Sonderheft,Spezial,Spezialwagen,Spieth,Spur,stand," +
                    "Startseite,Stecker,Stelle,Stellen,Stirnseiten," +
-                   "Stirntüren,Streben,streifen,Strom,Stromtankstellen," +
-                   "Stromversorgung,Stückzahl,Suchen,T21,Techn,Technische," +
-                   "Teile,Triebwagen,Trittbretter,Trix,Türen,Über," +
-                   "Übergangsbleche,Umfeldgestaltung,Umformwagen,umgebaute," +
+                   "Stirnt&uuml;ren,Streben,streifen,Strom,Stromtankstellen," +
+                   "Stromversorgung,St&uuml;ckzahl,Suchen,T21,Techn,Technische," +
+                   "Teile,Triebwagen,Trittbretter,Trix,T&uuml;ren,&uuml;ber," +
+                   "&uuml;bergangsbleche,Umfeldgestaltung,Umformwagen,umgebaute," +
                    "Umrissmesswagen,Unkrautvertilgungszug,Unterbringung," +
                    "unterhalb,V/15mA,verleiteten,verschlossen,volle," +
                    "Vorbild,vorhandene,Wagen,Wagenkasten,Wagenkastenende," +
-                   "Wagenkastens,Wagenlängsseite,Wagenübergangsbleche," +
+                   "Wagenkastens,Wagenl&auml;ngsseite,Wagen&uuml;bergangsbleche," +
                    "wahrsten,Weinert,weiteren,weitestgehend,Winterdienst," +
-                   "Worms,Wortes,zerlegt,Zettelkästen,Zigarre,Zugangstüre," +
-                   "Zugangstüren,Zugbildungen,zunächst,zusammengebaut," +
+                   "Worms,Wortes,zerlegt,Zettelk&auml;sten,Zigarre,Zugangst&uuml;re," +
+                   "Zugangst&uuml;ren,Zugbildungen,zun&auml;chst,zusammengebaut," +
                    "Zweck";
        seite[15] = "bau_lad.htm";
 beschreibung[15] = "Kr&uuml;melbahn - Akku-Ladestation";
-     begriff[16] = "abgelösten,Adapter,Aktivitäten,Allgemeine,alte,alten," +
-                   "anfordern,angefügt,Anlagengestaltung,Anlässlich,Anm," +
+     begriff[16] = "abgel&ouml;sten,Adapter,Aktivit&auml;ten,Allgemeine,alte,alten," +
+                   "anfordern,angef&uuml;gt,Anlagengestaltung,Anl&auml;sslich,Anm," +
                    "ASF,Axel,Baden,Badischen,Bahnen,Bahnfeuerwehren," +
                    "Bahnhofswagen,Bahnsinniges,Band,basierend,Bauart," +
                    "Baubeschreibung,Bausatz,Bdwg64674,behielt,beiden," +
                    "Bekohlungs,Bemerkungen,Benennung,Beschreibung," +
                    "Beschreibungen,Beschriftungssatz,Best,bestand,besteht," +
                    "Betrieb,Bfwg64052,Bfwg64053,Bfwg64054,Bfwg64674," +
-                   "Bildunterschrift,blieb,BR52,Brückenprüfwagen," +
-                   "Bühnenende,Bunkeröl,Bz6a,Dach,DCC,DGEG,Dienste," +
+                   "Bildunterschrift,blieb,BR52,Br&uuml;ckenpr&uuml;fwagen," +
+                   "B&uuml;hnenende,Bunker&ouml;l,Bz6a,Dach,DCC,DGEG,Dienste," +
                    "Dienstfahrzeuge,Digitalbetrieb,Direkt,D-Modell," +
                    "ehemaliger,Eichfahrzeuge,eignet," +
                    "eisenbahndienstfahrzeuge,Eisenbahn-Magazin,Elektronik," +
                    "eMail,eMailAndGithub,Entfernung,entworfen,Epoche," +
-                   "erfolgte,erfuhr,Ergänzung,erhalten,erhielten,Ersatz," +
-                   "erschienen,erwähnt,Fahrzeugbau,Fahrzeuge,Fäkalienwagen," +
-                   "fand,Federpuffer,Fertigmodell,Feuerwehr,früheren,gab," +
-                   "gedeckter,gelbem,Gerätewagen,Gleisstopfmaschine,Gls," +
+                   "erfolgte,erfuhr,Erg&auml;nzung,erhalten,erhielten,Ersatz," +
+                   "erschienen,erw&auml;hnt,Fahrzeugbau,Fahrzeuge,F&auml;kalienwagen," +
+                   "fand,Federpuffer,Fertigmodell,Feuerwehr,fr&uuml;heren,gab," +
+                   "gedeckter,gelbem,Ger&auml;tewagen,Gleisstopfmaschine,Gls," +
                    "Gls205,Gms256,Gms54,goldgelbe,goldgelben," +
-                   "Griffstangenhalter,Großherzoglichen,grünen,Güterwagen," +
-                   "Güterzugsteuerwagen,handelt,Heizöl,Helfen,herangezogen," +
-                   "Hersteller,Hilfsgerätewagen,Hilfskesselwagen,Hilfszug," +
-                   "Hilfszüge,hinterstellte,III,Impressum," +
-                   "Industriemodelle/Bausätze,Informationen,Inhalt,ISBN," +
+                   "Griffstangenhalter,Großherzoglichen,gr&uuml;nen,G&uuml;terwagen," +
+                   "G&uuml;terzugsteuerwagen,handelt,Heiz&ouml;l,Helfen,herangezogen," +
+                   "Hersteller,Hilfsger&auml;tewagen,Hilfskesselwagen,Hilfszug," +
+                   "Hilfsz&uuml;ge,hinterstellte,III,Impressum," +
+                   "Industriemodelle/Baus&auml;tze,Informationen,Inhalt,ISBN," +
                    "Jahresmodell,kam,Karlsruhe,Kastentender,Kesselwagen," +
                    "Kleid,Kohelkasten,Kohlekastens,Kombination,konnte,Kran," +
-                   "Krümelbahn,Kupplungsadapter,L240131,Lackierung," +
+                   "Kr&uuml;melbahn,Kupplungsadapter,L240131,Lackierung," +
                    "Ladestation,lhilfszug-Tenderkupplung,Liliput,Links," +
-                   "Literatur,Magazin,Mannheim,Märklin,Mercedes-Benz," +
+                   "Literatur,Magazin,Mannheim,M&auml;rklin,Mercedes-Benz," +
                    "Miba-Report,Modell,Modellbahn,Modellfahrzeuge," +
                    "Modernisierung,Modulbau,Navigation,NEM,NEM-Schacht," +
-                   "Neustadt,Nummer,Oelhilfszug,Öl-Alarm,Ölhilfszug," +
-                   "Öltankzug,Ölunfälle,Ölwehrtender,Oppeln,passenden," +
-                   "Podszun,Polnik,Radsätze,Radsatztransportwagen,RAL,Rbf," +
+                   "Neustadt,Nummer,Oelhilfszug,&ouml;l-Alarm,&ouml;lhilfszug," +
+                   "&ouml;ltankzug,&ouml;lunf&auml;lle,&ouml;lwehrtender,Oppeln,passenden," +
+                   "Podszun,Polnik,Rads&auml;tze,Radsatztransportwagen,RAL,Rbf," +
                    "Retten,Roco,Rottenkraftwagen,Schiene,Seite," +
                    "Seitenanfang,Solingen,Spieth,Staatseisenbahn," +
-                   "Startseite,stl,Stückliste,Suchen,T21,Tankgerätewagen," +
+                   "Startseite,stl,St&uuml;ckliste,Suchen,T21,Tankger&auml;tewagen," +
                    "Tender,Transport,Transportwagen,Umbau,Umbauanleitung," +
                    "Umbaus,Umbausatz,umfangreiche,Umrissmesswagen,Umwelt," +
                    "Unkrautvertilgungszug,verbirgt,Verlag,verschrottet," +
                    "Verwendung,vierachsige,Vorbild,vorgefunden,vormals," +
                    "Wagen,Wannentender,Wannentendern,Weinert,Weinstraße," +
                    "wiederum,Winterdienst,zugeordnet,zuletzt," +
-                   "zurückgegriffen,zusammen";
+                   "zur&uuml;ckgegriffen,zusammen";
        seite[16] = "bau_oelh.htm";
 beschreibung[16] = "Kr&uuml;melbahn - &Ouml;lhilfszug";
-     begriff[17] = "achsige,Aktivitäten,Allgemeine,anfordern,angefügt," +
+     begriff[17] = "achsige,Aktivit&auml;ten,Allgemeine,anfordern,angef&uuml;gt," +
                    "angewiesen,Anlagengestaltung,Artikelnummer,ASF," +
                    "Aufgetankt,Bahn,Bahnbetriebswerke,Bahndienstwagen," +
                    "Bahnen,Bahnsinniges,Bau,Bauanleitungen,Bauart," +
-                   "bauart-ähnlicher,Baubeschreibung,Bausatz,Bauzeit,Bebra," +
-                   "Bebraner,Bekohlungs,bekommen,benötigte,Beschreibung," +
+                   "bauart-&auml;hnlicher,Baubeschreibung,Bausatz,Bauzeit,Bebra," +
+                   "Bebraner,Bekohlungs,bekommen,ben&ouml;tigte,Beschreibung," +
                    "Beschreibungen,Betankungsrohr,Betrieb,Betriebsnummer," +
-                   "bietet,Boxenstopp,Brückenprüfwagen,damaligen," +
+                   "bietet,Boxenstopp,Br&uuml;ckenpr&uuml;fwagen,damaligen," +
                    "Dampflokomotve,Darmstadt-Kranichstein,DCC,Deutz," +
                    "Dienstfahrzeuge,Digitalbetrieb,Direkt,durchgehenden," +
                    "Eichfahrzeuge,eigentlich,Eilige,Einsatz,einsetzen," +
-                   "Eisenbahn-Kurier,Elektronik,eMail,enthält,entspricht," +
-                   "erhältlich,erhältliche,erschienen,Erwähnt,Fahrzeugbau," +
-                   "Fäkalienwagen,Feuerwehr,Firma,fungierte,G02,G10," +
-                   "Gebrauchtwarenhändler,Gleisstopfmaschine,Güterwagen," +
-                   "Güterzugsteuerwagen,Hannover,Heizölwagen,Impressum," +
+                   "Eisenbahn-Kurier,Elektronik,eMail,enth&auml;lt,entspricht," +
+                   "erh&auml;ltlich,erh&auml;ltliche,erschienen,Erw&auml;hnt,Fahrzeugbau," +
+                   "F&auml;kalienwagen,Feuerwehr,Firma,fungierte,G02,G10," +
+                   "Gebrauchtwarenh&auml;ndler,Gleisstopfmaschine,G&uuml;terwagen," +
+                   "G&uuml;terzugsteuerwagen,Hannover,Heiz&ouml;lwagen,Impressum," +
                    "Informationen,Inhalt,Jahresmodell,Kastentender,Kessel," +
-                   "Kesselwagen,Kran,Krümelbahn,Ladestation,Längsträger," +
+                   "Kesselwagen,Kran,Kr&uuml;melbahn,Ladestation,L&auml;ngstr&auml;ger," +
                    "Laternen,Laufsteg,Leichtbaudrehgestellkesselwagen," +
                    "Leiter,Liliput,Links,Literatur,ltankzug,lung,Mai," +
-                   "Märklin,Mercedes-Benz,Miba-Report,Miba-Spezial,mobile," +
+                   "M&auml;rklin,Mercedes-Benz,Miba-Report,Miba-Spezial,mobile," +
                    "Modell,Modellbahn,Modelleisenbahner,Modellfahrzeuge," +
                    "Modulbau,Museum,Navigation,Nummer,Oeltankzug,offenen," +
-                   "öffnenden,Ölhilfszug,Ölkran,Öltankzug,Ölung,Ölwagen," +
+                   "&ouml;ffnenden,&ouml;lhilfszug,&ouml;lkran,&ouml;ltankzug,&ouml;lung,&ouml;lwagen," +
                    "Original,passt,Programm,Pumpenwagen," +
                    "Radsatztransportwagen,Rottenkraftwagen,schwenkbaren," +
                    "Seite,Seitenanfang,selbsttragender,Solingen,Spezial," +
                    "Startseite,Stelle,Suchen,T21,Tankstelle,Tankzug," +
-                   "Tankzugwagens,Türen,Umbau,umfangreiche,Umlackierung," +
+                   "Tankzugwagens,T&uuml;ren,Umbau,umfangreiche,Umlackierung," +
                    "Umrissmesswagen,Unkrautvertilgungszug,verschwiegen," +
                    "verwendet,Vorbild,Wagen,Weinert,Winterdienst,Zuglok," +
-                   "Zurüstsatz";
+                   "Zur&uuml;stsatz";
        seite[17] = "bau_oelt.htm";
 beschreibung[17] = "Kr&uuml;melbahn - &Ouml;ltankzug";
      begriff[18] = "abdrehen,abgefahren,Abhilfe,Abstand,Achse,Achsen," +
-                   "Achslager,Achsstummeln,Aktivitäten,ALBA,Allgemeine," +
+                   "Achslager,Achsstummeln,Aktivit&auml;ten,ALBA,Allgemeine," +
                    "alte,alten,Alterung,Anbau,Andreas,anfordern," +
                    "angegossenen,angeordnet,Anlagengestaltung,Anordnung," +
-                   "Anschriften,anzuordnen,ASF,Ätzplatte,Ätzteile," +
+                   "Anschriften,anzuordnen,ASF,&auml;tzplatte,&auml;tzteile," +
                    "aufbohren,Außenkante,B104,BA192,Bahnbetriebswerke," +
                    "Bahndienst,Bahnen,Bahnsinniges,BahnSinn-Shop,Band," +
                    "Basis,Basiswagen,Baubeschreibung,bauen,Bausatz," +
                    "Bauteile,Bauteilliste,befestigt,Befestigung,beiden," +
                    "beinhaltet,Bekohlungs,beladen,Beladung,belegt," +
-                   "Bemerkungen,Benennung,benötigt,berücksichtigt,beruht," +
+                   "Bemerkungen,Benennung,ben&ouml;tigt,ber&uuml;cksichtigt,beruht," +
                    "beschreibt,Beschriftung,Beschriftungen,besitzen,Best," +
-                   "Besten,beträgt,Betrieb,Bohrer,Bremserbühne," +
-                   "Bremsschläuche,Bremsumstellhebel,Brückenprüfwagen," +
+                   "Besten,betr&auml;gt,Betrieb,Bohrer,Bremserb&uuml;hne," +
+                   "Bremsschl&auml;uche,Bremsumstellhebel,Br&uuml;ckenpr&uuml;fwagen," +
                    "BTms33,BTms55,Busch,Dampflokachse,Dampflokachsen," +
                    "Darmstadt-Kranichstein,Daten,DCC,dezente," +
-                   "Dienstfahrzeuge,Dienstgüterwagen,Digitalbetrieb,Direkt," +
+                   "Dienstfahrzeuge,Dienstg&uuml;terwagen,Digitalbetrieb,Direkt," +
                    "Drehgestellen,drei,Eichfahrzeuge,eigentlich," +
                    "einbaufertig,eingeschraubt,eisenbahndienstfahrzeuge," +
                    "Eisenbahn-Magazin,Elektronik,eMail,entfernen,entfernt," +
-                   "enthalten,Epoche,ergänzt,erhältlich,ersetzen,Erwähnt," +
+                   "enthalten,Epoche,erg&auml;nzt,erh&auml;ltlich,ersetzen,Erw&auml;hnt," +
                    "existiert,Fahrgestell,Fahrwerken,Fahrzeugbau," +
-                   "Fahrzeugen,Fahrzeugkupplung,Fäkalienwagen,falsch,Farbe," +
+                   "Fahrzeugen,Fahrzeugkupplung,F&auml;kalienwagen,falsch,Farbe," +
                    "Fehl,fehlen,feine,Fertigmodell,Fixierte,Fleischmann," +
-                   "Freien,gebogen,gefertigt,gegenüber,geschwärzt,Gestells," +
-                   "Gewicht,glänzenden,glatt,Gleisstopfmaschine,großen," +
-                   "grün,Grundierung,Güterwagenzurüstsatz," +
-                   "Güterwagenzurüstsatzes,Güterzugsteuerwagen," +
+                   "Freien,gebogen,gefertigt,gegen&uuml;ber,geschw&auml;rzt,Gestells," +
+                   "Gewicht,gl&auml;nzenden,glatt,Gleisstopfmaschine,großen," +
+                   "gr&uuml;n,Grundierung,G&uuml;terwagenzur&uuml;stsatz," +
+                   "G&uuml;terwagenzur&uuml;stsatzes,G&uuml;terzugsteuerwagen," +
                    "Hakenkupplung,Hersteller,herum,hingewiesen,Hinweis," +
-                   "Hinweise,Holzklötzchen,H-Profil,H-Profile,III," +
-                   "Impressum,Industriemodelle/Bausätze,Informationen," +
+                   "Hinweise,Holzkl&ouml;tzchen,H-Profil,H-Profile,III," +
+                   "Impressum,Industriemodelle/Baus&auml;tze,Informationen," +
                    "Inhalt,inzwischen,Jahresmodell,Kabelisolierung," +
-                   "Kastentender,kegelförmigen,kleinen,Kleingedrucktes," +
-                   "Kleinlok,kommt,komplett,Kran,Krüger-Modellbau," +
-                   "Krümelbahn,Kupferlackdraht,L221511,Lackierung," +
-                   "Ladefähigkeit,Ladegestell,Ladegut,Ladestation,Ladung," +
-                   "lang,Länge,Lastgrenze,Laufflächen,Liliput,Links," +
-                   "Literatur,Literaturhinweise,L-Profil,LüP,markiert," +
+                   "Kastentender,kegelf&ouml;rmigen,kleinen,Kleingedrucktes," +
+                   "Kleinlok,kommt,komplett,Kran,Kr&uuml;ger-Modellbau," +
+                   "Kr&uuml;melbahn,Kupferlackdraht,L221511,Lackierung," +
+                   "Ladef&auml;higkeit,Ladegestell,Ladegut,Ladestation,Ladung," +
+                   "lang,L&auml;nge,Lastgrenze,Lauffl&auml;chen,Liliput,Links," +
+                   "Literatur,Literaturhinweise,L-Profil,L&uuml;P,markiert," +
                    "Maßangaben,maximal,Mercedes-Benz,Messingdrehteil," +
                    "Messingprofil,Miba-Report,miteinander,Mittelplatte," +
                    "Mittenabstand,Modell,Modellbahn,Modellbahnbeispiel," +
                    "Modellbahnpraxis,Modellfahrzeuge,Modulbau," +
                    "Montageskizze,Museum,nachgereicht,Navigation,Nieten," +
-                   "normalen,Nothaft,Nummer,Ölhilfszug,Öltankzug,original," +
+                   "normalen,Nothaft,Nummer,&ouml;lhilfszug,&ouml;ltankzug,original," +
                    "Originalkupplungen,Pack,Platte,Platz,poliertem,Profils," +
                    "Puffer,Pufferbohlen,Pufferplatten,Puffersockelplatten," +
-                   "Querschienen,Rad,Räder,Radlager,Radsatz,Radsätze," +
-                   "Radsatzgestell,Radsatzgestells,Radsatzträger," +
+                   "Querschienen,Rad,R&auml;der,Radlager,Radsatz,Rads&auml;tze," +
+                   "Radsatzgestell,Radsatzgestells,Radsatztr&auml;ger," +
                    "Radsatztransportwagen,Radsatzwagen,Rahmen,RAL," +
-                   "Rangieren,Rangiertritte,Reisen,richtig,Röhrchen,Rost," +
+                   "Rangieren,Rangiertritte,Reisen,richtig,R&ouml;hrchen,Rost," +
                    "rostfarbene,rot,Rottenkraftwagen,Ruhende,Rungenwagen," +
                    "Schaken,Schienen,Schienenprofil,Schraubgewinde," +
-                   "Schutzhüllen,schwarz,Seite,Seitenanfang,Seitenplatten," +
+                   "Schutzh&uuml;llen,schwarz,Seite,Seitenanfang,Seitenplatten," +
                    "Selbstbau,setzt,Sicherung,sieht,sinnigerweise,Solingen," +
                    "Sonstige,sparsam,Spezial,Spezialwagen,Spieth," +
-                   "Spieth-Bausatz,Spitzenlager,springen,Spurkränze," +
-                   "Spurkränzen,Stahl,Stange,Startseite,Stelle,Störend," +
-                   "Stückzahl,Suchen,T21,Techn,Teile,Teilen,Tillig," +
+                   "Spieth-Bausatz,Spitzenlager,springen,Spurkr&auml;nze," +
+                   "Spurkr&auml;nzen,Stahl,Stange,Startseite,Stelle,St&ouml;rend," +
+                   "St&uuml;ckzahl,Suchen,T21,Techn,Teile,Teilen,Tillig," +
                    "T-Profil,Transport,Transportaufgaben,Transportgestell," +
-                   "transportiert,Transportpalette,überhöhten,Umbau," +
+                   "transportiert,Transportpalette,&uuml;berh&ouml;hten,Umbau," +
                    "umfassend,Umrissmesswagen,Umstellhebel," +
                    "Unkrautvertilgungszug,unlackiert,unterschiedl," +
                    "unterschiedlichen,U-Profil,U-Profile,verbunden," +
                    "Verfeinerungswunsch,verladen,Verladung,verwendet," +
-                   "Verwendung,vielfältigen,vier,Vorbild,vorliegt,Wagen," +
+                   "Verwendung,vielf&auml;ltigen,vier,Vorbild,vorliegt,Wagen," +
                    "wegrollen,Weinert,Wem,werkseigenen,wiegt,Winterdienst," +
-                   "wirken,Zeichnungen,Zettelkasten,Zettelkästen," +
-                   "zusammengelötet,Zusatz,zusätzliche,Zweck," +
-                   "zylinderförmige";
+                   "wirken,Zeichnungen,Zettelkasten,Zettelk&auml;sten," +
+                   "zusammengel&ouml;tet,Zusatz,zus&auml;tzliche,Zweck," +
+                   "zylinderf&ouml;rmige";
        seite[18] = "bau_rad.htm";
 beschreibung[18] = "Kr&uuml;melbahn - Radsatztransportwagen";
-     begriff[19] = "abgekickte,abgeschabten,Abschließend,Abstützung,achs," +
-                   "achsigen,akribisch,Aktionskünstler,Aktivitäten,aktuell," +
+     begriff[19] = "abgekickte,abgeschabten,Abschließend,Abst&uuml;tzung,achs," +
+                   "achsigen,akribisch,Aktionsk&uuml;nstler,Aktivit&auml;ten,aktuell," +
                    "Allgemeine,Altenbeken,Anbau,anbieten,Andreas,anfordern," +
                    "angebracht,angepasst,Anlagengestaltung,anschließend," +
-                   "Anspruch,anstelle,Äquivalente,arbeiten,ASF,Ätzplatten," +
-                   "aufgebracht,aufgelötet,auflöten,Aufstellung,ausbleiben," +
+                   "Anspruch,anstelle,&auml;quivalente,arbeiten,ASF,&auml;tzplatten," +
+                   "aufgebracht,aufgel&ouml;tet,aufl&ouml;ten,Aufstellung,ausbleiben," +
                    "ausgeschnitten,Autor,B101,B101-A,B101-B,B102,B103,B127," +
                    "B128,B201,B201-A,B202,BA834,BA844,BA845,Bahnalltag," +
                    "Bahnen,Bahnsinniges,Basierend,Basisfahrzeug," +
                    "Basistender,Basiswagen,Bau,Bauart,Baubeschreibung," +
                    "Bausatz,Bayern,beiden,Beispiel,Bekohlungs,Bemerkungen," +
-                   "Benennung,benötigt,Berger,Berlin,beruht,beschränkt," +
+                   "Benennung,ben&ouml;tigt,Berger,Berlin,beruht,beschr&auml;nkt," +
                    "beschreibt,Beschreibungen,beschrieben,Beschriftung," +
                    "Beschriftungen,Beschriftungsatz,Beschriftungssatz," +
                    "Beschriftungsvorschalg,Beschriftungsvorschlag," +
                    "besonderer,besorgt,Best,besteht,Bestellnummer,besten," +
                    "Besuch,Betrieb,Bezeichnung,Bezug,Bhf,Biegen," +
                    "Bildersuche,Bimmelbahnen,BLS,Bochum-Dahlhausen,Boden," +
-                   "Bodengruppe,Bodens,BR41,Bremen,Bremsschläuche,Brett," +
-                   "Brilon-Wald,Brückenprüfwagen,Bz5,Celophanfolie," +
-                   "chromoxidgrün,Conrad,Dach,Dampflokmuseum,Dampfpfeife," +
+                   "Bodengruppe,Bodens,BR41,Bremen,Bremsschl&auml;uche,Brett," +
+                   "Brilon-Wald,Br&uuml;ckenpr&uuml;fwagen,Bz5,Celophanfolie," +
+                   "chromoxidgr&uuml;n,Conrad,Dach,Dampflokmuseum,Dampfpfeife," +
                    "Dampfschneeschleuder,Daten,DB-Einheitslaternen,DCC," +
                    "Deutschen,Deutsches,DGEG,Dienstfahrzeuge," +
                    "Digitalbetrieb,Direkt,diverse,DK-Model," +
                    "Drehgestellbefestigungen,Drehscheibe-Online,drei," +
-                   "Dreiecken,dünnem,dürftig,E36-Fahrwerk,ebenso,Ecke," +
+                   "Dreiecken,d&uuml;nnem,d&uuml;rftig,E36-Fahrwerk,ebenso,Ecke," +
                    "Eichfahrzeuge,Eigenentwurf,eigentliche,einfacher," +
                    "eingebaut,eingeklebt,eingesetzt,Einsatz,Einzelteile," +
                    "Eisenbahnausbesserungswerk,Eisenbahnbildarchiv," +
                    "eisenbahndienstfahrzeuge,Eisenbahnfreunde," +
                    "Eisenbahn-Kurier,Eisenbahn-Magazin,Eisenbahnmuseum," +
-                   "Eisenbahnverein,Elektronik,eMail,empfiehlt,endgültig," +
+                   "Eisenbahnverein,Elektronik,eMail,empfiehlt,endg&uuml;ltig," +
                    "entfernt,Entfetten,entstand,entsteht,Epoche,erfolgt," +
-                   "Ergänzungen,erhält,Erhaltene,erhaltenen,erhältlich," +
+                   "Erg&auml;nzungen,erh&auml;lt,Erhaltene,erhaltenen,erh&auml;ltlich," +
                    "erhebt,erkennt,erleiden,Ersatzteile,erschienen," +
-                   "ersetzen,ersetzt,erwähnt,Erweiterung,ETB,Exemplare," +
+                   "ersetzen,ersetzt,erw&auml;hnt,Erweiterung,ETB,Exemplare," +
                    "Explosionszeichnungen,Fabriknummer,Fahrgestell," +
                    "Fahrgestelle,Fahrzeug,Fahrzeugbau,Fahrzeuge," +
                    "Fahrzeug-Geschichte,Fahrzeugkupplung,Fahrzeugnummer," +
-                   "Fahrzeugtyp,Fäkalienwagen,Farbe,Farbschicht," +
+                   "Fahrzeugtyp,F&auml;kalienwagen,Farbe,Farbschicht," +
                    "Federpuffer,fehlt,Fenster,Fensterausschnitt," +
                    "Fertigmodell,findet,Firma,fixiert,Fixierung," +
-                   "Fleischmann,Form,Forum,Foto,Fotos,Fragen,Führerhaus," +
-                   "G10,gab,gebogen,gebracht,gefräst,Gehäuse,gehts," +
-                   "gekröpft,gelb,genauer,genauso,geschweißt,gestossen," +
+                   "Fleischmann,Form,Forum,Foto,Fotos,Fragen,F&uuml;hrerhaus," +
+                   "G10,gab,gebogen,gebracht,gefr&auml;st,Geh&auml;use,gehts," +
+                   "gekr&ouml;pft,gelb,genauer,genauso,geschweißt,gestossen," +
                    "GI-Modell,Glasscheibenersatz,glatt,Gleisstopfmaschine," +
-                   "Griffstangen,Griffstangenhalter,grün,grundiert," +
-                   "Grundierung,Grundkörpers,gründlichen,Günther," +
-                   "Güterwagenzurüstsatz,Güterzugsteuerwagen,H0e,Hagen," +
+                   "Griffstangen,Griffstangenhalter,gr&uuml;n,grundiert," +
+                   "Grundierung,Grundk&ouml;rpers,gr&uuml;ndlichen,G&uuml;nther," +
+                   "G&uuml;terwagenzur&uuml;stsatz,G&uuml;terzugsteuerwagen,H0e,Hagen," +
                    "Hakenkupplung,Halterung,handeln,Hannover,hb179," +
                    "Heilbronn,Heimat-Bw,Henschel,Herrn,Hersteller," +
                    "Hersteller/Lieferant,Hilfe,hilft,hinten,Hinweis," +
                    "Historischen,Homepage,hv179,III,Impressum," +
-                   "Industriemodelle/Bausätze,Informationen,Inhalt,inneren," +
+                   "Industriemodelle/Baus&auml;tze,Informationen,Inhalt,inneren," +
                    "insgesamt,interessiert,Internet,Internetquellen," +
-                   "I-Profil,ISBN,Jahresmodell,Jünkerath,Kar,Kassel," +
+                   "I-Profil,ISBN,Jahresmodell,J&uuml;nkerath,Kar,Kassel," +
                    "Kastentender,Kastentenders,Klappen,Klarlack,Klarsicht," +
                    "Klarsichtfolie,Klima,Klimaschneepflug," +
                    "Klima-Schneepflug,Kohlenattrappe,Kohlenkasten,kommen," +
-                   "komplett,Komplettbeschriftung,komplettes,Königsberg," +
-                   "Korrekturen,Kran,Krüger-Modellbau,Krümelbahn," +
+                   "komplett,Komplettbeschriftung,komplettes,K&ouml;nigsberg," +
+                   "Korrekturen,Kran,Kr&uuml;ger-Modellbau,Kr&uuml;melbahn," +
                    "Kunststoffplatte,Kunsttstoffprofilen," +
                    "Kupplungsschacht-Klappe,Kurzkupplungskulissen,Kuswa," +
                    "Lackieren,lackiert,Lackierung,Ladestation,Lampen," +
-                   "Lauterbach,lebende,Lektüre,liegen,Liliput,Links," +
-                   "Literatur,Literaturhinweise,Lokomotive,los,Lötdraht," +
-                   "Lötflamme,Lothar,Lötkolben,m13B,Magdeburg,Mai,Märklin," +
+                   "Lauterbach,lebende,Lekt&uuml;re,liegen,Liliput,Links," +
+                   "Literatur,Literaturhinweise,Lokomotive,los,L&ouml;tdraht," +
+                   "L&ouml;tflamme,Lothar,L&ouml;tkolben,m13B,Magdeburg,Mai,M&auml;rklin," +
                    "mattem,Meiningen,meistens,Mercedes-Benz,Messingbausatz," +
                    "Messingblech,Messingdraht,Messingprofile," +
                    "Messingprofilen,Messingtritte,Miba,Miba-Report,Mitte," +
                    "mm-Rundstab,Modellbahn,Modellfahrzeuge,Modulbau," +
-                   "Montage,München,Museen,Museum,Muttern,Nachbau," +
-                   "Navigation,NEM-Radsätze,Neubau-Schneepflug," +
+                   "Montage,M&uuml;nchen,Museen,Museum,Muttern,Nachbau," +
+                   "Navigation,NEM-Rads&auml;tze,Neubau-Schneepflug," +
                    "Neuenmarkt-Wirsberg,Neustadt,Nieten,Nothaft,Nummer," +
-                   "Nummern,nv079,nv179,nv379,ÖBB,Offenburg,Ölhilfszug," +
-                   "Öltankzug,Original,Österreich,P8-Kastentender,Pack," +
-                   "Passauer,passend,paste,PDF-Datei,Pflug,Pflüge," +
+                   "Nummern,nv079,nv179,nv379,&ouml;BB,Offenburg,&ouml;lhilfszug," +
+                   "&ouml;ltankzug,Original,&ouml;sterreich,P8-Kastentender,Pack," +
+                   "Passauer,passend,paste,PDF-Datei,Pflug,Pfl&uuml;ge," +
                    "Pflugschar,Pflugscharen,Piko,Plexiglasplatte,Profile," +
-                   "Prora,Puffer,Pufferbohle,Puffersockelplatten,Radsätze," +
+                   "Prora,Puffer,Pufferbohle,Puffersockelplatten,Rads&auml;tze," +
                    "Radsatztransportwagen,Radschuhe,Rahden,RAILHOO,RAL," +
                    "Rangiergriffe,Rangiertritte,RAW,Rbd,reichen," +
                    "Reihenfolge,Reitz-Modellbau,Resinkleinteile,Riga,Roco," +
-                   "rot,rotbraun,Rottenkraftwagen,RP25-Radsätze,Rücken," +
-                   "Rückstellung,Rückwand,Rügen,S110f,S139,S16,S18,S28,S39," +
-                   "S48,S50,S70,S96,Saalfeld,Sachsen,sächsische," +
+                   "rot,rotbraun,Rottenkraftwagen,RP25-Rads&auml;tze,R&uuml;cken," +
+                   "R&uuml;ckstellung,R&uuml;ckwand,R&uuml;gen,S110f,S139,S16,S18,S28,S39," +
+                   "S48,S50,S70,S96,Saalfeld,Sachsen,s&auml;chsische," +
                    "Schaufelrad,Schaufelradkasten,Scheibenwischer," +
                    "Schicksal,Schiebebildersatz,Schienen,Schleudergang," +
                    "Schleudern,Schluß,Schmalspurbahnen,Schnee,Schneepflug," +
-                   "Schneepflüge,Schneepfluges,Schneepflugliste," +
-                   "Schneeräum-Einsatz,Schneeräumfahrzeuge,Schneeschleuder," +
-                   "Schneeschleuder-Gehäuse,Schneeschleuder-Tender," +
+                   "Schneepfl&uuml;ge,Schneepfluges,Schneepflugliste," +
+                   "Schneer&auml;um-Einsatz,Schneer&auml;umfahrzeuge,Schneeschleuder," +
+                   "Schneeschleuder-Geh&auml;use,Schneeschleuder-Tender," +
                    "schneiden,Schrauben,Schriften,Schutz,schwarz," +
-                   "Schwenkwände,sehen,Seiten,Seitenanfang,Seitenflügel," +
+                   "Schwenkw&auml;nde,sehen,Seiten,Seitenanfang,Seitenfl&uuml;gel," +
                    "Seitenwand,Selbstbau,senkrechten,sichern,Signalkasten," +
-                   "Signalscheibenhalter,Solingen,Sondereinsätze," +
-                   "Sonnenblende,Spanten,spartanischer,Speichenräder," +
-                   "Spieth,Spieth-Bausatz,Spieth-Bausätze,Spitzensignal," +
+                   "Signalscheibenhalter,Solingen,Sondereins&auml;tze," +
+                   "Sonnenblende,Spanten,spartanischer,Speichenr&auml;der," +
+                   "Spieth,Spieth-Bausatz,Spieth-Baus&auml;tze,Spitzensignal," +
                    "SPM,Spur,SSH,Startseite,Staßfurt,Staßfurter," +
                    "stationiert,Statisten,stellenweise,Stirnwand,Strolche," +
-                   "Stückzahl,Stuttgart,Suchen,T16,T20,T21,T26,T31,tb179," +
+                   "St&uuml;ckzahl,Stuttgart,Suchen,T16,T20,T21,T26,T31,tb179," +
                    "tb197,tb198,Techn,Technikmuseum,Teil,Teile,Tender," +
-                   "Tender-Basis,Tenderboden,Tendergehäuse,Tenderrückwand," +
-                   "Terroristen,TEV,Text,Thüringer,Titisee," +
-                   "Transpress-Verlag,Trix,trug,Tür,Überblick,Übersicht," +
+                   "Tender-Basis,Tenderboden,Tendergeh&auml;use,Tenderr&uuml;ckwand," +
+                   "Terroristen,TEV,Text,Th&uuml;ringer,Titisee," +
+                   "Transpress-Verlag,Trix,trug,T&uuml;r,&uuml;berblick,&uuml;bersicht," +
                    "Ulm,Umbau,Umbauanleitung,Umfangreiche,Umrissmesswagen," +
                    "unbekannt,Unkrautvertilgungszug,verbessern,Verbleib," +
-                   "verschrottet,verweist,verwendet,Vollständigkeit," +
+                   "verschrottet,verweist,verwendet,Vollst&auml;ndigkeit," +
                    "vorgegebene,vorhandene,vormals,vormontiert,vorne," +
                    "Vorschlag,Vorsicht,vorteilhaft,Wannentender," +
                    "Wasserkasten,Weg,weggeschabt,Weinert,weißaluminium," +
                    "weiterer,Wen,wichtig,willkommen,Winkelprofile,Winter," +
                    "Winterdienst,wirft,Wolkenstein,Wpt,Wuppertal,Xrot," +
                    "Xrotm,zahlreiche,zerlegt,zierliche,Zittau,Zug," +
-                   "zugefeilt,zugehörige,Zugfedern,Zukauf,zunächst," +
-                   "Zurüstteile,zusammen,Zusammenbau,Zusammenfassung," +
+                   "zugefeilt,zugeh&ouml;rige,Zugfedern,Zukauf,zun&auml;chst," +
+                   "Zur&uuml;stteile,zusammen,Zusammenbau,Zusammenfassung," +
                    "zusammengebaut";
        seite[19] = "bau_sch.htm";
 beschreibung[19] = "Kr&uuml;melbahn - Schneepflug & Schneeschleuder";
-     begriff[20] = "abgegeben,Aktivitäten,Allgemeine,Andreas,anfordern," +
+     begriff[20] = "abgegeben,Aktivit&auml;ten,Allgemeine,Andreas,anfordern," +
                    "Anlagengestaltung,Anm,anzunehmen,April,ASF," +
                    "aufgenommene,Aufnahme,Auftakt,Ausbesserungswerk," +
-                   "ausgemustert,ausrüsten,BA634,Bad,Bahnen,Bahnhof," +
+                   "ausgemustert,ausr&uuml;sten,BA634,Bad,Bahnen,Bahnhof," +
                    "Bahnsinniges,Bamberg,Bauart,Baubeschreibung,BDWg," +
                    "beiden,bekannt,Bekohlungs,belegt,Bemerkungen," +
-                   "benötigten,Beschreibung,beschriebenen,Beschriftung," +
+                   "ben&ouml;tigten,Beschreibung,beschriebenen,Beschriftung," +
                    "Betrieb,Betriebsnummer,Bilddokument,bleiben,Bremen," +
-                   "Bromberg,Brückenprüfwagen,Bundesbahndirektion,com," +
+                   "Bromberg,Br&uuml;ckenpr&uuml;fwagen,Bundesbahndirektion,com," +
                    "cults3d,Daten,DCC,D-Druck,D-Drucker,deutschen," +
                    "Diesellokomotiven,Dieselloks,Digitalbetrieb,Direkt," +
                    "Drehbank,Drehgestell,Drehzapfen-Abstand,drei,drucken," +
-                   "dürfte,dürften,Eichfahrzeuge,Eigengewicht,Einbaus," +
-                   "eingebaut,eingefügt,eingenummert,eingesetzt,einmännig," +
-                   "Einsatz,Einsätze,einzige,eisenbahndienstfahrzeuge," +
+                   "d&uuml;rfte,d&uuml;rften,Eichfahrzeuge,Eigengewicht,Einbaus," +
+                   "eingebaut,eingef&uuml;gt,eingenummert,eingesetzt,einm&auml;nnig," +
+                   "Einsatz,Eins&auml;tze,einzige,eisenbahndienstfahrzeuge," +
                    "Eisenbahn-Journal,Eisenbahn-Kurier,Eisenbahn-Magazin," +
                    "Eisenbahnstiftung,Elektronik,eMail,Ende,endete,endeten," +
-                   "Epoche,erfolgte,erschienen,Erwähnt,erworben," +
+                   "Epoche,erfolgte,erschienen,Erw&auml;hnt,erworben," +
                    "Expressgut-Kurswagen,Fahrzeug,Fahrzeugbau," +
-                   "Fahrzeug-Geschichte,Fäkalienwagen,Fenster," +
+                   "Fahrzeug-Geschichte,F&auml;kalienwagen,Fenster," +
                    "Fensterrahmen,Fenstersatz,Foto,Gattung,Gattungsbezirk," +
-                   "GDB,GDS,GDS145,gebaut,gedeckte,gefahren,gefräst," +
-                   "gemacht,Gerätewagen,gestrichenen,GGhs,GGths," +
-                   "Gihms-Wagen,Gleisstopfmaschine,grün," +
-                   "Gueterzugsteuerwagen,Güter-Steuerwagen,Güterverkehr," +
-                   "Güterwagen,Güterwagen-Komplettbeschriftung,Güterzug," +
-                   "Güterzügen,Güterzugsteuerwagen,Güterzug-Steuerwagen," +
-                   "Güterzug-Wendezugsteuerwagens,GVS,H0-Umbau,Hann," +
+                   "GDB,GDS,GDS145,gebaut,gedeckte,gefahren,gefr&auml;st," +
+                   "gemacht,Ger&auml;tewagen,gestrichenen,GGhs,GGths," +
+                   "Gihms-Wagen,Gleisstopfmaschine,gr&uuml;n," +
+                   "G&uuml;terzugsteuerwagen,G&uuml;ter-Steuerwagen,G&uuml;terverkehr," +
+                   "G&uuml;terwagen,G&uuml;terwagen-Komplettbeschriftung,G&uuml;terzug," +
+                   "G&uuml;terz&uuml;gen,G&uuml;terzugsteuerwagen,G&uuml;terzug-Steuerwagen," +
+                   "G&uuml;terzug-Wendezugsteuerwagens,GVS,H0-Umbau,Hann," +
                    "Hannover,Hbf,Herbst,hergerichtet,Hersteller,Hgbf," +
-                   "hinterlegte,hinzugefügt,III,illustriert,Impressum," +
+                   "hinterlegte,hinzugef&uuml;gt,III,illustriert,Impressum," +
                    "Individualisieren,Informationen,Inhalt,inzwischen," +
                    "Jahres,Jahresmodell,Kassel,Kastentender,Klarsichtfolie," +
-                   "kompletten,Kran,Kreuztisch,Krümelbahn,kurzgekuppelten," +
-                   "Ladefläche,Ladegewicht,Ladelänge,Ladestation,Leig," +
-                   "Leig-Verkehr,Leig-Wendezüge,letzte,liefen,Linden," +
-                   "Lindner,Links,Literatur,lokbespannten,Loks,Lüp,Mann," +
+                   "kompletten,Kran,Kreuztisch,Kr&uuml;melbahn,kurzgekuppelten," +
+                   "Ladefl&auml;che,Ladegewicht,Ladel&auml;nge,Ladestation,Leig," +
+                   "Leig-Verkehr,Leig-Wendez&uuml;ge,letzte,liefen,Linden," +
+                   "Lindner,Links,Literatur,lokbespannten,Loks,L&uuml;p,Mann," +
                    "Mercedes-Benz,Meter-Wagen,mitfahren,mitlief,Mitte," +
-                   "Modellbahn,Modellfahrzeuge,Modulbau,Möglichkeiten," +
-                   "Monatsleistung,Motorlokbetrieb,München,Münster-Lager," +
-                   "nahm,Navigation,Nenndorf,Nothaft,Nürnberg,nützlich," +
-                   "offenbar,Offiziell,Ölhilfszug,Öltankzug,Papier," +
-                   "Planmäßig,plastischer,Plexiglasplatte,prüfte," +
+                   "Modellbahn,Modellfahrzeuge,Modulbau,M&ouml;glichkeiten," +
+                   "Monatsleistung,Motorlokbetrieb,M&uuml;nchen,M&uuml;nster-Lager," +
+                   "nahm,Navigation,Nenndorf,Nothaft,N&uuml;rnberg,n&uuml;tzlich," +
+                   "offenbar,Offiziell,&ouml;lhilfszug,&ouml;ltankzug,Papier," +
+                   "Planm&auml;ßig,plastischer,Plexiglasplatte,pr&uuml;fte," +
                    "Radsatztransportwagen,Radstand,Rangierdienst," +
-                   "rätselhaft,Regensburg,Reichsbahn,Reichsbahn-Zentralamt," +
+                   "r&auml;tselhaft,Regensburg,Reichsbahn,Reichsbahn-Zentralamt," +
                    "Reservelok,richtig,Roco-Bromberg,Rottenkraftwagen,RZA," +
                    "Seite,Seitenanfang,Sicherheitsfahrschaltung," +
-                   "Sichtungsbild,Sifa,Solingen,Soltau,späteres,Startseite," +
+                   "Sichtungsbild,Sifa,Solingen,Soltau,sp&auml;teres,Startseite," +
                    "Station,Stationierungen,Stelle,Steuerabteilen," +
-                   "Steuerwagen,STL-Datei,Strecken,Stück," +
-                   "Stückgutschnellverkehr,Suchen,T21,tauchten,Teile," +
-                   "Triebwagen,übernommen,Umbau,Umbauanleitung," +
+                   "Steuerwagen,STL-Datei,Strecken,St&uuml;ck," +
+                   "St&uuml;ckgutschnellverkehr,Suchen,T21,tauchten,Teile," +
+                   "Triebwagen,&uuml;bernommen,Umbau,Umbauanleitung," +
                    "Umbauarbeiten,umbenannt,Umfangreiche,umgebaut," +
                    "umgebauten,Umrissmesswagen,Umzeichnung," +
                    "Unkrautvertilgungszug,V36,vermutlich,Versuch," +
-                   "versuchsweise,Vierachser-Güterwagen,vorgahalten," +
+                   "versuchsweise,Vierachser-G&uuml;terwagen,vorgahalten," +
                    "vorhanden,vorn,Wagen,Wehrmacht,weiteres," +
-                   "weiterverwendet,Wendezüge,Wendezug-Führerstände," +
+                   "weiterverwendet,Wendez&uuml;ge,Wendezug-F&uuml;hrerst&auml;nde," +
                    "wenigstens,Winterdienst,wirkt,zeigt,Zeitpunkt," +
-                   "Zugewiesen,Zusammenlauf,Zweck,Zweiachser-Pärchen," +
+                   "Zugewiesen,Zusammenlauf,Zweck,Zweiachser-P&auml;rchen," +
                    "zweite,zweiter";
        seite[20] = "bau_stwg.htm";
 beschreibung[20] = "Kr&uuml;melbahn - G&uuml;terzugsteuerwagen";
      begriff[21] = "Abbildung,abgehoben,abgesenkt,Achsanordnung,Achse," +
-                   "Achsstand,ähnliche,ähnliches,Aktivitäten,Allgemeine," +
-                   "Änderungen,andeuten,anfordern,Angaben," +
-                   "Anlagengestaltung,Anordnung,Anschließend,Arbeitsbühne," +
+                   "Achsstand,&auml;hnliche,&auml;hnliches,Aktivit&auml;ten,Allgemeine," +
+                   "&auml;nderungen,andeuten,anfordern,Angaben," +
+                   "Anlagengestaltung,Anordnung,Anschließend,Arbeitsb&uuml;hne," +
                    "Art,ASF,Aufgaben,aufmerksam,Aufnahmen,ausfahrbare," +
                    "Ausgehend,ausklapp,aussehen,BA746,Bahnen,Bahnsinniges," +
                    "Batteriekastens,Bauart,Baubeschreibung,Baureihe," +
                    "Bauteilliste,befestigt,Befestigungsnasen,begegnete," +
-                   "beiden,Bekohlungs,Benennung,benötigt,benutzt,bequem," +
+                   "beiden,Bekohlungs,Benennung,ben&ouml;tigt,benutzt,bequem," +
                    "Beschriftung,besitzt,Best,besteht,Betrieb,bezogen,Bi29," +
                    "bietet,Bild,bleiben,bleibt,Bochum-Dahlhausen,braunen," +
-                   "Bremsgestänge,Bremsschläuche,Bremsventil," +
-                   "Brückenprüfwagen,Dach,Dachlüfter,dahinter,Daten,DCC," +
+                   "Bremsgest&auml;nge,Bremsschl&auml;uche,Bremsventil," +
+                   "Br&uuml;ckenpr&uuml;fwagen,Dach,Dachl&uuml;fter,dahinter,Daten,DCC," +
                    "Dienstfahrzeuge,Dienstmasse,Digitalbetrieb,Direkt," +
                    "Drehpunkt,Drehscheibe-Online,drei,Drittel,ebenso," +
                    "Eichfahrzeuge,eingebracht,einhalten,Einschnitte," +
-                   "Einstiegstüre,Einzelteile,eisenbahndienstfahrzeuge," +
+                   "Einstiegst&uuml;re,Einzelteile,eisenbahndienstfahrzeuge," +
                    "Eisenbahn-Kurier,Eisenbahnmuseum,Elektronik,eMail,Ende," +
-                   "entfernt,erfährt,erhalten,erPack,Erwähnt,Fahrgestell," +
-                   "Fahrwerk,Fahrzeug,Fahrzeugbau,Fahrzeuges,Fäkalienwagen," +
-                   "Farbe,Federpuffer,Fenster,Fensteröffnung,Fensters," +
-                   "fertig,Foto,Fotografien,Funktionsweise,geändert," +
-                   "gebogen,gedreht,gefertigt,Gehäuse,Gehäuseumbau,geklebt," +
-                   "Gerüst,geschnitten,glatt,Gleisstopfmaschine," +
-                   "Griffstangen,große,guten,Güterwagenzurüstteile," +
-                   "Güterzugsteuerwagen,Hakenkupplung,halber,Handbremse," +
-                   "hängt,hinteren,hinterlegt,Höhe,imitiert,Impressum," +
+                   "entfernt,erf&auml;hrt,erhalten,erPack,Erw&auml;hnt,Fahrgestell," +
+                   "Fahrwerk,Fahrzeug,Fahrzeugbau,Fahrzeuges,F&auml;kalienwagen," +
+                   "Farbe,Federpuffer,Fenster,Fenster&ouml;ffnung,Fensters," +
+                   "fertig,Foto,Fotografien,Funktionsweise,ge&auml;ndert," +
+                   "gebogen,gedreht,gefertigt,Geh&auml;use,Geh&auml;useumbau,geklebt," +
+                   "Ger&uuml;st,geschnitten,glatt,Gleisstopfmaschine," +
+                   "Griffstangen,große,guten,G&uuml;terwagenzur&uuml;stteile," +
+                   "G&uuml;terzugsteuerwagen,Hakenkupplung,halber,Handbremse," +
+                   "h&auml;ngt,hinteren,hinterlegt,H&ouml;he,imitiert,Impressum," +
                    "Informationen,Inhalt,Jahresmodell,Kastentender," +
                    "Kenntnis,komplett,komplette,korrigiert,Kran," +
-                   "Krepppapier,Krümelbahn,Kunststoff,Kunststoffplatte," +
-                   "Lademaß,Ladestation,Lampen,Lampensatz,Länge,langen," +
+                   "Krepppapier,Kr&uuml;melbahn,Kunststoff,Kunststoffplatte," +
+                   "Lademaß,Ladestation,Lampen,Lampensatz,L&auml;nge,langen," +
                    "Lehren,leicht,Leiter,L-Form,Lichtraumprofil,Links," +
-                   "Literatur,Literaturhinweise,Löcher,Lösezug," +
-                   "Lüftergitter,Lüfterlöcher,Lüftern,Luftsauger," +
-                   "Lüftungsgitter,Lüftungsschlitze,markiert,Maße," +
+                   "Literatur,Literaturhinweise,L&ouml;cher,L&ouml;sezug," +
+                   "L&uuml;ftergitter,L&uuml;fterl&ouml;cher,L&uuml;ftern,Luftsauger," +
+                   "L&uuml;ftungsgitter,L&uuml;ftungsschlitze,markiert,Maße," +
                    "mechanische,Mercedes-Benz,Messachse,Messer," +
-                   "Messgerüstes,Messgestell,Messingdraht,Messingprofil," +
+                   "Messger&uuml;stes,Messgestell,Messingdraht,Messingprofil," +
                    "Messwagen,Miba-Report,Mitte,mittlere,mittleren,Modell," +
                    "Modellbahn,Modellbahnmagazinen,Modelleisenbahner," +
                    "Modellfahrzeuge,Modulbau,montiert,muss,nachzubauen," +
-                   "nachzuempfinden,Nähe,Navigation,Nietenreihen,N-Radsatz," +
-                   "offenen,Ölhilfszug,Öltankzug,Plättchen,Preiser,prüft," +
-                   "Prüfwagen,Puffer,Pufferbohle,Pufferplatten," +
-                   "Raddurchmesser,Radsatz,Radsätze,Radsatztransportwagen," +
+                   "nachzuempfinden,N&auml;he,Navigation,Nietenreihen,N-Radsatz," +
+                   "offenen,&ouml;lhilfszug,&ouml;ltankzug,Pl&auml;ttchen,Preiser,pr&uuml;ft," +
+                   "Pr&uuml;fwagen,Puffer,Pufferbohle,Pufferplatten," +
+                   "Raddurchmesser,Radsatz,Rads&auml;tze,Radsatztransportwagen," +
                    "rechten,Resultat,richtig,Roco,Rottenkraftwagen,RP25," +
                    "Rundstab,scharfen,schmalen,Schnitte,Schnittstellen," +
-                   "sehen,Seite,Seitenanfang,senkrechte,sinngemäß,Solingen," +
+                   "sehen,Seite,Seitenanfang,senkrechte,sinngem&auml;ß,Solingen," +
                    "Spieth,Spur,Spurweite,Startseite,Steckdose,Steckdosen," +
-                   "Stirnseite,Stück,Stückzahl,Suchen,T21,Technische," +
-                   "Teilen,Toilettenfenster,Trennstelle,Trennwände," +
+                   "Stirnseite,St&uuml;ck,St&uuml;ckzahl,Suchen,T21,Technische," +
+                   "Teilen,Toilettenfenster,Trennstelle,Trennw&auml;nde," +
                    "Triebwagen,Trittgestell,Trittgestellen,Trittgitter," +
-                   "Tunneligel,Tunnels,Türen,Türöffnung,Überblick," +
-                   "überflüssigen,U-Form,umgebauter,Umrissmesswagen," +
-                   "Umrisswagen,Unkrautvertilgungszug,vergrößert," +
-                   "verlängert,verschlossen,versucht,versuchte,vielfältige," +
-                   "vorgegebene,vorgestellte,Vorhänge,VT137,Wagen," +
+                   "Tunneligel,Tunnels,T&uuml;ren,T&uuml;r&ouml;ffnung,&uuml;berblick," +
+                   "&uuml;berfl&uuml;ssigen,U-Form,umgebauter,Umrissmesswagen," +
+                   "Umrisswagen,Unkrautvertilgungszug,vergr&ouml;ßert," +
+                   "verl&auml;ngert,verschlossen,versucht,versuchte,vielf&auml;ltige," +
+                   "vorgegebene,vorgestellte,Vorh&auml;nge,VT137,Wagen," +
                    "Wagenboden,Wagenkasten,Wagenkastenende," +
                    "Wagenkastenenden,Wagenkastens,Weinert,Weise,weißer," +
                    "Wendler,wesentlichen,Winterdienst,Zeitschriften," +
-                   "zerlegt,Zettelkasten,Zettelkästen,Zunächst,Zylinder";
+                   "zerlegt,Zettelkasten,Zettelk&auml;sten,Zun&auml;chst,Zylinder";
        seite[21] = "bau_um.htm";
 beschreibung[21] = "Kr&uuml;melbahn - Umrissmesswagen";
      begriff[22] = "Abbildung,abgedreht,abgeleitet,abgeschnittenen," +
                    "abgestellt,Abschließend,Abschluß,absolvieren," +
-                   "Abstandshaltern,abstützen,abweichen,Achsen,achsigen," +
-                   "achsiger,Acht,Adapter,Aktivitäten,Allgemeine,alte," +
+                   "Abstandshaltern,abst&uuml;tzen,abweichen,Achsen,achsigen," +
+                   "achsiger,Acht,Adapter,Aktivit&auml;ten,Allgemeine,alte," +
                    "Alterung,Anbau,Andreas,anfordern,angebracht," +
-                   "angebrachten,angegebene,angeklebt,angelötet,angesagt," +
-                   "Anlagengestaltung,Anlöten,Anordnung,anschließend,ASF," +
-                   "Ätzblech,Ätzbleches,Ätzplatte,Ätzteil,Aufbau," +
+                   "angebrachten,angegebene,angeklebt,angel&ouml;tet,angesagt," +
+                   "Anlagengestaltung,Anl&ouml;ten,Anordnung,anschließend,ASF," +
+                   "&auml;tzblech,&auml;tzbleches,&auml;tzplatte,&auml;tzteil,Aufbau," +
                    "Aufbringen,Aufenthaltskabine,Aufenthaltswagen," +
-                   "aufgefüllt,aufgelötet,aufgesetzt,Aufnahme,aufnimmt," +
-                   "Aufstieg,Aufstiegsleiter,Aufstiegsleitern,aufzulöten," +
+                   "aufgef&uuml;llt,aufgel&ouml;tet,aufgesetzt,Aufnahme,aufnimmt," +
+                   "Aufstieg,Aufstiegsleiter,Aufstiegsleitern,aufzul&ouml;ten," +
                    "auseinandergenommen,Ausfahrt,Ausmusterung," +
-                   "Ausnahmefällen,aussen,Aussenrahmen,Aussparung,B3yg," +
+                   "Ausnahmef&auml;llen,aussen,Aussenrahmen,Aussparung,B3yg," +
                    "BA124,BA234,BA884,BA924,Bahndienst,Bahnen,Bahnhof," +
-                   "Bahnhofs,Bahnkörper,Bahnsinniges,Band,Basis," +
+                   "Bahnhofs,Bahnk&ouml;rper,Bahnsinniges,Band,Basis," +
                    "Basisfahrzeug,Basisfahrzeuge,Bauanleitung," +
                    "Baubeschreibung,Bausatz,Bauteilliste,Bauzugwagen," +
                    "Bdwg884,Bedarf,Bedienmannschaft,Bedienungskabine," +
                    "Bedingt,Befesitung,befestigen,befestigt,Befestigung," +
-                   "Begleitpersonal,Behälter,beide,beiden,beidseitigen," +
-                   "beiliegt,beispielsweise,Bekämpfung,bekämpfungs-Wagen," +
-                   "Bekohlungs,Bemerkungen,bemessen,Benennung,benötigt," +
+                   "Begleitpersonal,Beh&auml;lter,beide,beiden,beidseitigen," +
+                   "beiliegt,beispielsweise,Bek&auml;mpfung,bek&auml;mpfungs-Wagen," +
+                   "Bekohlungs,Bemerkungen,bemessen,Benennung,ben&ouml;tigt," +
                    "beruht,beschaffte,beschreibt,beschrieben,Beschriftung," +
                    "Beschriftungen,Beschriftungssatz,Beseitigung," +
                    "besonderer,besprengen,Best,bestand,bestehenden,besten," +
-                   "Betrieb,betriebsgefährdenden,Betriebsstoffwagen,Biegen," +
+                   "Betrieb,betriebsgef&auml;hrdenden,Betriebsstoffwagen,Biegen," +
                    "Bild,Bilder,Biologischen,Blechplatte,Boden,Bodenplatte," +
-                   "Bodenventile,Braunschweig,Bremsschläuche,bringen," +
-                   "Brückenprüfwagen,Bühnenende,Bühnengitter,Bundesanstalt," +
+                   "Bodenventile,Braunschweig,Bremsschl&auml;uche,bringen," +
+                   "Br&uuml;ckenpr&uuml;fwagen,B&uuml;hnenende,B&uuml;hnengitter,Bundesanstalt," +
                    "Bundesbahn,Bz12,Chemikalenvorratswagen,Chemikalien," +
-                   "Dach,Dachlüfter,Dampflokomotiven,dass,Daten," +
+                   "Dach,Dachl&uuml;fter,Dampflokomotiven,dass,Daten," +
                    "DB-Einheitslaternen,DCC,Detailierungswunsch,Deutschen," +
-                   "Deutz,Dienstfahrzeuge,Dienstgüterwagen," +
-                   "Dienstsonderzüge,dient,dienten,Digitalbetrieb,Direkt," +
+                   "Deutz,Dienstfahrzeuge,Dienstg&uuml;terwagen," +
+                   "Dienstsonderz&uuml;ge,dient,dienten,Digitalbetrieb,Direkt," +
                    "diverse,D-Modell,Doppelpack,Drehgestellabstand," +
                    "Drehgestellblenden,Drehgestelle,Drehgestelles," +
                    "Drehgestellzapfens,drei,dreiachsige,dreiachsigen," +
-                   "Dreilichtspitzensignal,DRG,Druck,Dsts,dünne,dünnen," +
-                   "durchgehende,Durchmessers,Düsen,ehemaligen," +
+                   "Dreilichtspitzensignal,DRG,Druck,Dsts,d&uuml;nne,d&uuml;nnen," +
+                   "durchgehende,Durchmessers,D&uuml;sen,ehemaligen," +
                    "Eichfahrzeuge,Eigengewicht,einfachem,eingeklebt," +
-                   "eingesetzt,eingestellt,Einlauföffnungen,Einsatz," +
-                   "Einsätzen,Einsatzzweck,einseitig,Einzelteile," +
+                   "eingesetzt,eingestellt,Einlauf&ouml;ffnungen,Einsatz," +
+                   "Eins&auml;tzen,Einsatzzweck,einseitig,Einzelteile," +
                    "eisenbahndienstfahrzeuge,Eisenbahn-Magazin,Elektronik," +
-                   "eMail,eMailAndGithub,Empfangsgebäudes,Ende,entfernt," +
-                   "Entfernung,enthält,enthalten,entsprechen,entstand," +
-                   "entworfen,Epoche,erfolgt,erfolgte,erhält,erkennen," +
+                   "eMail,eMailAndGithub,Empfangsgeb&auml;udes,Ende,entfernt," +
+                   "Entfernung,enth&auml;lt,enthalten,entsprechen,entstand," +
+                   "entworfen,Epoche,erfolgt,erfolgte,erh&auml;lt,erkennen," +
                    "erlaubt,erlaubten,Ersatz,erstmals,etwa,exakt,existiert," +
                    "Fabrikhalle,fahren,Fahrgeschwindigkeit,Fahrgestell," +
                    "Fahrtrichtung,Fahrwerksbereich,Fahrzeug,Fahrzeugbau," +
                    "Fahrzeuge,Fahrzeugkupplung,Fahrzeugseiten," +
-                   "Fäkalienwagen,Fall,fanden,Farbe,Farben,Fässern,fasste," +
+                   "F&auml;kalienwagen,Fall,fanden,Farbe,Farben,F&auml;ssern,fasste," +
                    "Federblechstreifen,Federpuffer,fehlt,feilen,Feldzug," +
                    "Fenster,Fensterrahmen,fertige,Fertigmodell,fertigte," +
                    "Feuerwehrset,fixiert,Fixierung,Flansch,Flanschen," +
-                   "flexiblen,Flüssigkeit,Fortsetzung,Fotos,Franckh,Frisch," +
-                   "führen,führt,führten,gab,garantiert,gebogen,gebogene," +
+                   "flexiblen,Fl&uuml;ssigkeit,Fortsetzung,Fotos,Franckh,Frisch," +
+                   "f&uuml;hren,f&uuml;hrt,f&uuml;hrten,gab,garantiert,gebogen,gebogene," +
                    "gebracht,gedeckten,gedeckter,gefahrlosem,gefertigt," +
-                   "geformt,gefräst,geführt,Gegenüberstellung," +
-                   "Gehäuse-Ätzplatte,Gehäuseboden,gekuppelten,gekürzt," +
-                   "Geländer,gelötet,Gesamterscheinungsbildes,geschehen," +
+                   "geformt,gefr&auml;st,gef&uuml;hrt,Gegen&uuml;berstellung," +
+                   "Geh&auml;use-&auml;tzplatte,Geh&auml;useboden,gekuppelten,gek&uuml;rzt," +
+                   "Gel&auml;nder,gel&ouml;tet,Gesamterscheinungsbildes,geschehen," +
                    "geschieht,geschlossene,gezielt,gezogen,glatt," +
                    "Gleichstrom/DCC-System,Gleis,Gleisbettung,Gleise," +
                    "Gleispflege,Gleisstopfmaschine,Goldgelb,griffe," +
-                   "grundiert,Grundierung,Güterwagen," +
-                   "Güterwagenfahrgestelle,Güterzugsteuerwagen,H0e," +
+                   "grundiert,Grundierung,G&uuml;terwagen," +
+                   "G&uuml;terwagenfahrgestelle,G&uuml;terzugsteuerwagen,H0e," +
                    "Hakenkupplung,halbiert,Haltebleche,Halterung," +
-                   "Handgriffe,Handgriffen,Handläufe,Handrad,hatten,häufig," +
+                   "Handgriffe,Handgriffen,Handl&auml;ufe,Handrad,hatten,h&auml;ufig," +
                    "Hauptgleis,Heizleitung,Heizung,hellgraue,Herbizide," +
                    "Herbiziden,Herpa,Hersteller,Hilfreich,hinein,hinten," +
-                   "hinteren,hinweg,Hinweis,höchsten,Höchstgeschwindigkeit," +
-                   "Höhe,hört,Humusbildung,ige,III,Impressum," +
-                   "Industriemodelle/Bausätze,Informationen,Inhalt,innere," +
+                   "hinteren,hinweg,Hinweis,h&ouml;chsten,H&ouml;chstgeschwindigkeit," +
+                   "H&ouml;he,h&ouml;rt,Humusbildung,ige,III,Impressum," +
+                   "Industriemodelle/Baus&auml;tze,Informationen,Inhalt,innere," +
                    "interessante,Internet,Inzwischen,I-Profil,ISBN," +
                    "isoliert,Jahre,Jahresmodell,Kabine,Kabinenboden," +
-                   "Kabinentüren,kamen,kämen,Kasten,Kastentender," +
+                   "Kabinent&uuml;ren,kamen,k&auml;men,Kasten,Kastentender," +
                    "Kastentenderkabine,Kastentenders,Keramikperle," +
-                   "Kesselecke,Kesselecken,Kesselrückwand,Kesselseite," +
+                   "Kesselecke,Kesselecken,Kesselr&uuml;ckwand,Kesselseite," +
                    "Kesselwagen,Kesselwagens,Kesselwagentypen,kg/cm," +
                    "Klarlack,Klarsichtfolie,kleiner,km/h,Kohlenaufsatz," +
-                   "Kohlenkasten,kommt,komplett,komplette,Kran,Krümelbahn," +
+                   "Kohlenkasten,kommt,komplett,komplette,Kran,Kr&uuml;melbahn," +
                    "Kunststoffblock,Kunststoffplatte,Kunststoffplatten," +
-                   "Kupplung,Kupplungsadapter,kürzester,L236000,L236490," +
-                   "Lackieren,lackiert,Lackierung,Ladestation,lag,längere," +
-                   "längs,Längsleitung,Längsrichtung,Laufsteges,Leerfahrt," +
+                   "Kupplung,Kupplungsadapter,k&uuml;rzester,L236000,L236490," +
+                   "Lackieren,lackiert,Lackierung,Ladestation,lag,l&auml;ngere," +
+                   "l&auml;ngs,L&auml;ngsleitung,L&auml;ngsrichtung,Laufsteges,Leerfahrt," +
                    "Leitern,liefen,ließen,Liliput,Links,Linkseiten," +
-                   "Literatur,Literaturhinweise,Loch,Lösung,L-Profil," +
-                   "L-Profilen,Luken,M2-Schraube,M2-Schrauben,Märklin,Maße," +
+                   "Literatur,Literaturhinweise,Loch,L&ouml;sung,L-Profil," +
+                   "L-Profilen,Luken,M2-Schraube,M2-Schrauben,M&auml;rklin,Maße," +
                    "materials,maximal,Mercedes-Benz,Messerschmidt," +
                    "Messingdraht,Messingprofil,Messingprofilen,Messingrohr," +
-                   "Messingstreifen,Miba,Miba-Report,Mineralöl,Mischwagen," +
-                   "Mischwagens,mitgeführt,Modell,Modellbahn," +
-                   "Modellfahrzeuge,moderne,modernen,Modulbau,möglichst," +
+                   "Messingstreifen,Miba,Miba-Report,Mineral&ouml;l,Mischwagen," +
+                   "Mischwagens,mitgef&uuml;hrt,Modell,Modellbahn," +
+                   "Modellfahrzeuge,moderne,modernen,Modulbau,m&ouml;glichst," +
                    "Montage,montiert,m-Typ,muss,Mutter,Nachbildung," +
-                   "nachgebildet,nachgelesen,Nachmessen,nachts,Nähe,nahezu," +
+                   "nachgebildet,nachgelesen,Nachmessen,nachts,N&auml;he,nahezu," +
                    "Natriumchlorat,Navigation,NEM,Nenninhalt," +
                    "Nietenstreifen,normalspurigen,Nothaft,Nutzvolumen," +
-                   "oberen,oberhalb,Oberseite,offen,Öffnung,Ölhilfszug," +
-                   "Öltankzug,Oppeln,Originalen,ortsüblichen," +
+                   "oberen,oberhalb,Oberseite,offen,&ouml;ffnung,&ouml;lhilfszug," +
+                   "&ouml;ltankzug,Oppeln,Originalen,orts&uuml;blichen," +
                    "P8-Kastentender,Pack,passend,passenden,passt," +
-                   "Pendelwagen,Piko,Präparatewagen,Profile,Puffer," +
+                   "Pendelwagen,Piko,Pr&auml;paratewagen,Profile,Puffer," +
                    "Pufferbohlen,Pufferplatten,quer,Querblech,Querrichtung," +
                    "Radsatztransportwagen,Rahmen,RAL,Rangiertritte," +
                    "realistischen,Rechteck-Profil,rechten,Regel," +
                    "Rekonstruktion,Reserve,Richtlinien,Richtungen," +
                    "Riffelblech,Roco,Rohr,Rohrende,Rohres,Rohrleitung," +
                    "Rohrleitungen,Rohrletungen,Rotbraun,Rottenkraftwagen," +
-                   "rückseitige,rudimentäre,Rund,Rundholz,Rundstab,Rundung," +
+                   "r&uuml;ckseitige,rudiment&auml;re,Rund,Rundholz,Rundstab,Rundung," +
                    "S74,S76,sche,Scheibenwischer,Schienenoberkante," +
-                   "Schläuchen,schleifen,Schleifzüge,Schlitz,schneiden," +
+                   "Schl&auml;uchen,schleifen,Schleifz&uuml;ge,Schlitz,schneiden," +
                    "Schraube,sehen,Seite,Seitenanfang,seitlich,seitlichen," +
                    "Selbstbau,Selbstbaudrehgestell,setzte,Signalhorn," +
-                   "signalmäßig,Signalscheibenhalter,Solingen,sorgt," +
+                   "signalm&auml;ßig,Signalscheibenhalter,Solingen,sorgt," +
                    "Spezialwagen,Spieth,Spieth-Beschriftungssatz," +
-                   "Spieth-Beschriftungssatzes,Sprengwagen,Sprengzüge," +
-                   "Sprengzügen,Sprengzugwagen,Spritzbalken,Spritzbrühe," +
+                   "Spieth-Beschriftungssatzes,Sprengwagen,Sprengz&uuml;ge," +
+                   "Sprengz&uuml;gen,Sprengzugwagen,Spritzbalken,Spritzbr&uuml;he," +
                    "Spritziger,Spritzmittel,Spritzug,Spritzwagen,Spritzzug," +
-                   "Sprühwagen,Spurkränze,starke,stärker,Startseite," +
+                   "Spr&uuml;hwagen,Spurkr&auml;nze,starke,st&auml;rker,Startseite," +
                    "stehend,Steifrahmenfahrwerk,Steigrohr,Steuerung," +
                    "Stichwort,Stirnseiten,stl,Streckenspritzung," +
-                   "Streubreiteneinstellung,Stückzahl,Stumpfgleis," +
+                   "Streubreiteneinstellung,St&uuml;ckzahl,Stumpfgleis," +
                    "Stuttgart,Suche,Suchen,T21,Techn,Technik,Technische," +
                    "Teile,Tender,Tenderabdeckung,Tenderabdenkung," +
-                   "Tenderaufbauten,Tenderbühne,Tenderdach,Tenderdeckel," +
-                   "Tenderende,Tenderfahrgestelle,Tendergehäuse," +
+                   "Tenderaufbauten,Tenderb&uuml;hne,Tenderdach,Tenderdeckel," +
+                   "Tenderende,Tenderfahrgestelle,Tendergeh&auml;use," +
                    "Tenderkabine,Tenderkasten,Tenderkastens,Tendern," +
-                   "Tenders,Tenderwanne,tiefen,Tiefschwarz,Tragfähigkeit," +
-                   "trägt,Treibstoffwagen,Trittbrett,Türen,Typ,Übergang," +
-                   "Übergangsblech,Übergangsbleche,Übergangstüren," +
-                   "Übergansgtüre,übrigens,Uerdingen,Umbau,Umbauwagens," +
-                   "umgebaut,Umrissmesswagen,Unkrautbekämpfung," +
-                   "Unkrautbekämpfungszug,Unkrautbekämpfungszüge," +
+                   "Tenders,Tenderwanne,tiefen,Tiefschwarz,Tragf&auml;higkeit," +
+                   "tr&auml;gt,Treibstoffwagen,Trittbrett,T&uuml;ren,Typ,&uuml;bergang," +
+                   "&uuml;bergangsblech,&uuml;bergangsbleche,&uuml;bergangst&uuml;ren," +
+                   "&uuml;bergansgt&uuml;re,&uuml;brigens,Uerdingen,Umbau,Umbauwagens," +
+                   "umgebaut,Umrissmesswagen,Unkrautbek&auml;mpfung," +
+                   "Unkrautbek&auml;mpfungszug,Unkrautbek&auml;mpfungsz&uuml;ge," +
                    "Unkrautbeseitigung,Unkrautes,unkrautfrei,Unkrautspreng," +
-                   "Unkrautsprengzug,Unkrautsprengzüge,Unkrautspritzzug," +
+                   "Unkrautsprengzug,Unkrautsprengz&uuml;ge,Unkrautspritzzug," +
                    "Unkrautvertilgung,Unkrautvertilgungs," +
                    "Unkrautvertilgungszug,Unkrautvertilgungszuges," +
                    "unterblieb,untereinander,unterhalb,Unterseite," +
                    "unverzichtbar,U-Profil,U-Profile," +
                    "Vegetationskontrollzug,Ventil,Verband,Verbindung," +
-                   "vergessen,vergrößert,verkrautetes,Verlagshandlung," +
-                   "verlängert,Verlängerung,verlegte,verringert," +
-                   "verschlossen,Verschmutzung,versehen,versprühen," +
-                   "verstärkt,verwendbar,verwendet,Verwendete,Verwendung," +
+                   "vergessen,vergr&ouml;ßert,verkrautetes,Verlagshandlung," +
+                   "verl&auml;ngert,Verl&auml;ngerung,verlegte,verringert," +
+                   "verschlossen,Verschmutzung,versehen,verspr&uuml;hen," +
+                   "verst&auml;rkt,verwendbar,verwendet,Verwendete,Verwendung," +
                    "vierachsige,vollgetankte,vorbereitet,Vorbild," +
                    "vorbildgerechter,vordere,vorderen,vorhanden,vorhandene," +
-                   "Vorräten,Vorratswagen,vorzusehen,Wagen,Wagenkasten," +
+                   "Vorr&auml;ten,Vorratswagen,vorzusehen,Wagen,Wagenkasten," +
                    "Wagens,Wagenseite,Wannen,Wannentender,Wannentenders," +
-                   "Wärmeschutz,Wärmeschutzmantel,Wartungsbühne,Wasser," +
-                   "Wasserkessel,Wasserkränen,Wasserwagen,Weinert," +
+                   "W&auml;rmeschutz,W&auml;rmeschutzmantel,Wartungsb&uuml;hne,Wasser," +
+                   "Wasserkessel,Wasserkr&auml;nen,Wasserwagen,Weinert," +
                    "Weißaluminium,weisse,weiteren,Werkzeugkasten," +
                    "Werkzeugkastens,Wert,Westwaggon,Wider,Wildwuchs," +
                    "Wildwuchses,Winkelprofil,Winterdienst,Wohnwagen," +
                    "Wolfgang,Zapfen,zeigen,Zeit,Zeiten,zerlegt,Zug,Zugang," +
-                   "zugelassenen,Zugfahrzeug,Zugleiter,Zugnummer,zulässig," +
-                   "zunächst,zusammengebaut,zusammengelötet,Zweck," +
-                   "zweiachsige,zwölf";
+                   "zugelassenen,Zugfahrzeug,Zugleiter,Zugnummer,zul&auml;ssig," +
+                   "zun&auml;chst,zusammengebaut,zusammengel&ouml;tet,Zweck," +
+                   "zweiachsige,zw&ouml;lf";
        seite[22] = "bau_unkr.htm";
 beschreibung[22] = "Kr&uuml;melbahn - Unkrautvertilgungszug";
      begriff[23] = "Abschnitt,Anspruch,aufgebaut,aufgenommen,Ausbruchdes," +
                    "Ausgangspunkts,Bahn,Bahnen,Bahnlinie,Bahnsinniges," +
-                   "Beförderung,benutzte,Berlin,Besetzung,besiegelt,Boxtel," +
+                   "Bef&ouml;rderung,benutzte,Berlin,Besetzung,besiegelt,Boxtel," +
                    "Boxteler,Brennpunkt,Buch,Clemens,Dampfer,dankbar," +
                    "deutsche,Deutschlands,DGEG-Medien,Dienstvorschriften," +
                    "Direkt,Duitse,ebenso,eingestellt,Eisenbahn,eMail," +
                    "England,erhebt,Erweiterung,existierende," +
                    "Fernreiseverkehr,Fernverbindung,fertiggestellte," +
-                   "festmachten,Freriks,geänderte,gebraucht,Gegenüber," +
-                   "genannt,genauer,Gerard,Geschäft,Gleispläne,Großeltern," +
-                   "Güterzugfahrpläne,Haan,Haltern,Hamburg,Hans,Hassum,Het," +
+                   "festmachten,Freriks,ge&auml;nderte,gebraucht,Gegen&uuml;ber," +
+                   "genannt,genauer,Gerard,Gesch&auml;ft,Gleispl&auml;ne,Großeltern," +
+                   "G&uuml;terzugfahrpl&auml;ne,Haan,Haltern,Hamburg,Hans,Hassum,Het," +
                    "Hinweise,Impressum,Inhalt,internationalen,ISBN,Jos,kam," +
-                   "Kriegsende,Krümelbahn,Lijntje,Linkliste,Links,Liste," +
+                   "Kriegsende,Kr&uuml;melbahn,Lijntje,Linkliste,Links,Liste," +
                    "Literatur,London,lukratives,Mandos,Mittelpunkt," +
-                   "Modellbahn,Münster,musste,Nachschublinie,Navigation," +
-                   "NBDS,Niederlande,niederländische,Niederländischen," +
-                   "Nord-Brabant-Deutsche,Norden,Norderney,Osnabrück," +
-                   "Petersburg,Post,Privatbahn,Reichsbahn,Rheinbrücke," +
-                   "Rogmann,rückte,Salching,Sascha,schicken,Schicksal," +
+                   "Modellbahn,M&uuml;nster,musste,Nachschublinie,Navigation," +
+                   "NBDS,Niederlande,niederl&auml;ndische,Niederl&auml;ndischen," +
+                   "Nord-Brabant-Deutsche,Norden,Norderney,Osnabr&uuml;ck," +
+                   "Petersburg,Post,Privatbahn,Reichsbahn,Rheinbr&uuml;cke," +
+                   "Rogmann,r&uuml;ckte,Salching,Sascha,schicken,Schicksal," +
                    "Schlieper,schloss,Seehafen,sogenannte,Solingen," +
                    "StaatsbahnenUnterschlupf,stand,Startseite,Strecke," +
                    "Suchen,Teil,Thema,Truppen,Uedemerbruch,Venloer," +
-                   "Verbindungsbahn,Vincent,Vlissingen,Vollständigkeit," +
+                   "Verbindungsbahn,Vincent,Vlissingen,Vollst&auml;ndigkeit," +
                    "von/nach,Weltkrieg,Weltkriegs,Wesel,Weseler,westlichen," +
-                   "Wikipedia,wohnten,Zentrum,zerstört,Zweiten";
+                   "Wikipedia,wohnten,Zentrum,zerst&ouml;rt,Zweiten";
        seite[23] = "boxtel.htm";
 beschreibung[23] = "Kr&uuml;melbahn - Het Duitse Lijntje";
-     begriff[24] = "Anzahl,Augsburg,Bahnanlagen,Bahnen,Bahnhöfe," +
-                   "Bahnsinniges,Bauausführung,Bauherr,Baukosten," +
-                   "Bogenschluss,Bogenweite,Brücke,Brückenbau,Deutschlands," +
-                   "Direkt,Eisenbahn,Eisenbahnbrücke,Eisenbahndirection," +
-                   "Elberfeld,erhaltene,Eröffnung,Fahrzeuge," +
-                   "Farbfläche/Farbgewicht,feste,Firma,Friedrich,gebaut," +
-                   "gehen,Gesamthöhe,Gewicht,Gustavsburg,hieß,höchste," +
-                   "Höchstgeschwindigkeit,Höhe,Impressum,Inhalt," +
-                   "interessante,Jahre,Jahren,Kaiser-Wilhelm-Brücke,km/h," +
-                   "Königliche,Krümelbahn,Länge,Leopold,Links,Literatur," +
+     begriff[24] = "Anzahl,Augsburg,Bahnanlagen,Bahnen,Bahnh&ouml;fe," +
+                   "Bahnsinniges,Bauausf&uuml;hrung,Bauherr,Baukosten," +
+                   "Bogenschluss,Bogenweite,Br&uuml;cke,Br&uuml;ckenbau,Deutschlands," +
+                   "Direkt,Eisenbahn,Eisenbahnbr&uuml;cke,Eisenbahndirection," +
+                   "Elberfeld,erhaltene,Er&ouml;ffnung,Fahrzeuge," +
+                   "Farbfl&auml;che/Farbgewicht,feste,Firma,Friedrich,gebaut," +
+                   "gehen,Gesamth&ouml;he,Gewicht,Gustavsburg,hieß,h&ouml;chste," +
+                   "H&ouml;chstgeschwindigkeit,H&ouml;he,Impressum,Inhalt," +
+                   "interessante,Jahre,Jahren,Kaiser-Wilhelm-Br&uuml;cke,km/h," +
+                   "K&ouml;nigliche,Kr&uuml;melbahn,L&auml;nge,Leopold,Links,Literatur," +
                    "Lokstation,Mark,Maschinenfabrik,Michael,Modellbahn," +
-                   "Müngstener,Navigation,Nieten,Normalnull,Nürnberg," +
+                   "M&uuml;ngstener,Navigation,Nieten,Normalnull,N&uuml;rnberg," +
                    "Planungen,Preußen,Prinz,Remscheid,Seitenanfang," +
-                   "Solingen,Solingen-Müngsten,Solingen-Ohligs," +
-                   "Sonderpostwertzeichen,Spatenstich,Städte,Startseite," +
-                   "Stellwerke,Strecken,Suchen,Tal,tiefe,Überquerung," +
+                   "Solingen,Solingen-M&uuml;ngsten,Solingen-Ohligs," +
+                   "Sonderpostwertzeichen,Spatenstich,St&auml;dte,Startseite," +
+                   "Stellwerke,Strecken,Suchen,Tal,tiefe,&uuml;berquerung," +
                    "Verbindung,verhinderte,Werk,Wikipedia,Wupper," +
-                   "Zimmermann,zunächst,zurück,zweigleisige";
+                   "Zimmermann,zun&auml;chst,zur&uuml;ck,zweigleisige";
        seite[24] = "bruecke.htm";
 beschreibung[24] = "Kr&uuml;melbahn - M&uuml;ngstener Br&uuml;cke";
      begriff[25] = "abgekoppelt,abgerissen,abwickelten,Anfang,angebaut," +
-                   "angegliedert,angrenzenden,Anhänger,Anlagen,Anlegen," +
-                   "aufgelöst,Auflösung,ausgebaut,Außenstelle,Bahnanlagen," +
-                   "Bahnbetriebswerke,Bahnen,Bahnhof,Bahnhöfe,Bahnhofs," +
+                   "angegliedert,angrenzenden,Anh&auml;nger,Anlagen,Anlegen," +
+                   "aufgel&ouml;st,Aufl&ouml;sung,ausgebaut,Außenstelle,Bahnanlagen," +
+                   "Bahnbetriebswerke,Bahnen,Bahnhof,Bahnh&ouml;fe,Bahnhofs," +
                    "Bahnmeisterei,Bahnsinniges,Bauarbeiten,Baureihe," +
-                   "befanden,befördert,Beginn,beheimatet,beheimatete," +
+                   "befanden,bef&ouml;rdert,Beginn,beheimatet,beheimatete," +
                    "beheimateten,Beheimatung,Bemerkungen,besaß,Bestehens," +
-                   "betreuen,Betriebswerkstätte,bleiben,blieben," +
-                   "blob/main/Solingen/Krümelbahn,bot,Brücke,Dienststelle," +
-                   "diente,Direkt,draußen,Drehscheibe,Düsseldorf," +
-                   "Einheitslok,Elberfeld,Ende,endet,Ergänzen,erhalten," +
-                   "erhaltene,erkennen,erlebte,Eröffnung,ersetzt," +
+                   "betreuen,Betriebswerkst&auml;tte,bleiben,blieben," +
+                   "blob/main/Solingen/Kr&uuml;melbahn,bot,Br&uuml;cke,Dienststelle," +
+                   "diente,Direkt,draußen,Drehscheibe,D&uuml;sseldorf," +
+                   "Einheitslok,Elberfeld,Ende,endet,Erg&auml;nzen,erhalten," +
+                   "erhaltene,erkennen,erlebte,Er&ouml;ffnung,ersetzt," +
                    "fabrikneuen,Fahrt,Fahrzeuge,G10,gestellt,githubinfo," +
-                   "Gleise,Gräfrath,größeren,hatten,Haupteinsatzgebiet," +
-                   "hauptsächlich,Herbst,heruntergestuft,Hilden,Höhepunkt," +
+                   "Gleise,Gr&auml;frath,gr&ouml;ßeren,hatten,Haupteinsatzgebiet," +
+                   "haupts&auml;chlich,Herbst,heruntergestuft,Hilden,H&ouml;hepunkt," +
                    "Impressum,Info,Inhalt,Insgesamt,Instandhaltung,Jahre," +
-                   "Jahren,Juli,kam,KED,Kla,kleine,Klv,Kohle,Kohlenbühne," +
-                   "Krümelbahn,lang,Lennep,Links,Literatur,Lokbahnhof," +
+                   "Jahren,Juli,kam,KED,Kla,kleine,Klv,Kohle,Kohlenb&uuml;hne," +
+                   "Kr&uuml;melbahn,lang,Lennep,Links,Literatur,Lokbahnhof," +
                    "Lokomotiven,Lokomotivnummer,Lokschuppen,Lokschuppens," +
                    "Lokstation,Mai,Maschinenamtes,maximal,m-Drehscheibe," +
-                   "Mitarbeiter,Modellbahn,moderne,Müngstener,muss," +
+                   "Mitarbeiter,Modellbahn,moderne,M&uuml;ngstener,muss," +
                    "Navigation,offiziell,Ohligs,OhligsWald,Oktober,Opladen," +
                    "pdf,Platz,realisiert,reinen,Remise,Remscheid,renoviert," +
-                   "Reparaturaufgaben,Richtung,Rottenkraftwagen,Rückwand," +
+                   "Reparaturaufgaben,Richtung,Rottenkraftwagen,R&uuml;ckwand," +
                    "schaffen,Schlackengruben,Schuppen,Schuppengleis,sechs," +
                    "Seitenanfang,September,Signale,Solingen," +
-                   "Solingen-Ohligs,ständige,Startseite,stationiert," +
+                   "Solingen-Ohligs,st&auml;ndige,Startseite,stationiert," +
                    "stationierte,stationierten,Stationsschlosserei," +
                    "Stellwerke,Strecken,Suchen,T11,T12,T16,Tenderlok-Bw," +
-                   "Tenderlokomotiven,Typ,überflüssige,Übersicht,umbenannt," +
+                   "Tenderlokomotiven,Typ,&uuml;berfl&uuml;ssige,&uuml;bersicht,umbenannt," +
                    "Verbleib,Verkehr,verwaltungstechnisch,Vohwinkel," +
                    "Wagen-Ausbesserungswerkstatt,Wagenremise,Wald," +
-                   "Wasserturm,Wasservorräte,Weichen,Wenden,Werkstatt," +
+                   "Wasserturm,Wasservorr&auml;te,Weichen,Wenden,Werkstatt," +
                    "wesentlich,Wikipedia,zehn";
        seite[25] = "bwohligs.htm";
 beschreibung[25] = "Kr&uuml;melbahn - Bw Solingen-Ohligs";
      begriff[26] = "Ausfahrt,Bahnanlagen,Bahnbetriebswerke,Bahnen,Bahnhof," +
-                   "Bahnhöfe,Bahnsinniges,Bau,besaß,Betriebsvorräte," +
-                   "blob/main/Solingen/Krümelbahn,Brücke,Direkt,drehen," +
-                   "Einfachheit,Elberfeld,ergänzen,erhaltene,Eröffnung," +
+                   "Bahnh&ouml;fe,Bahnsinniges,Bau,besaß,Betriebsvorr&auml;te," +
+                   "blob/main/Solingen/Kr&uuml;melbahn,Br&uuml;cke,Direkt,drehen," +
+                   "Einfachheit,Elberfeld,erg&auml;nzen,erhaltene,Er&ouml;ffnung," +
                    "Fahrzeuge,fiel,Fundamentarbeiten,geplanter,geschaffen," +
                    "gestrichen,githubinfo,Gleisanlagen,Impressum,Info," +
-                   "Inhalt,KED,Kohlebansen,Kohleladebühne,Korkenzieherbahn," +
-                   "Krümelbahn,liegen,Links,Literatur,Lokbehandlung," +
+                   "Inhalt,KED,Kohlebansen,Kohleladeb&uuml;hne,Korkenzieherbahn," +
+                   "Kr&uuml;melbahn,liegen,Links,Literatur,Lokbehandlung," +
                    "Lokbehandlungsanlage,Lokomotiven,Lokschuppen," +
-                   "Lokstation,m-Drehscheibe,Modellbahn,Möglichkeit," +
-                   "Müngstener,Navigation,Ohligs,Opfer,pdf,Richtung," +
+                   "Lokstation,m-Drehscheibe,Modellbahn,M&ouml;glichkeit," +
+                   "M&uuml;ngstener,Navigation,Ohligs,Opfer,pdf,Richtung," +
                    "Rotstift,Seitenanfang,September,Solingen," +
                    "Solingen/Hauptbahnhof,Solingen-Ohligs,Startseite," +
-                   "Stellwerke,Strecken,Suchen,Südbahnhof,Südbahnhofes," +
+                   "Stellwerke,Strecken,Suchen,S&uuml;dbahnhof,S&uuml;dbahnhofes," +
                    "umfangreicher,verdeutlichen,Wasserturm,Weyersberg," +
                    "Weyersberger,Wikipedia,Zweigbahn";
        seite[26] = "bwsoling.htm";
 beschreibung[26] = "Kr&uuml;melbahn - Lokstation Solingen";
-     begriff[27] = "A/S,Adressierung,Advance,Aktivitäten,AMW,and,Angaben," +
+     begriff[27] = "A/S,Adressierung,Advance,Aktivit&auml;ten,AMW,and,Angaben," +
                    "Anlagengestaltung,Appel,Aristo-Crafts,Arnold,Ataras," +
                    "Atlas,A-Train,AuroTrains,Bachmann,Bahnen,Bahnsinniges," +
-                   "bestem,Brawa,Brelec,Büro,CML,Coast,Command,Computer," +
+                   "bestem,Brawa,Brelec,B&uuml;ro,CML,Coast,Command,Computer," +
                    "Con-com,Control,Controls,Corp,Corporation,CV8,CVP," +
                    "Datentechnik,DCC,Decodereinbauten,Decoders,Design,dez," +
                    "Dialysis,Dietz,Digital,Digitalbetrieb,Digitrax," +
                    "Digsight,Direkt,Do-lt-Yourself,Domain,Dynatrol,ECCO," +
                    "Effects,Electric,Electronic,Electronics,Electronik," +
-                   "Elektronik,Elproma,eMail,Engineering,Ergänzung," +
-                   "Ergänzungen/Korrekturen,Ernst,Fahrzeugbau,Fleischmann," +
-                   "for,formerly,France,Gebr,Gewähr,GITmbH,GmbH,Group,Haas," +
+                   "Elektronik,Elproma,eMail,Engineering,Erg&auml;nzung," +
+                   "Erg&auml;nzungen/Korrekturen,Ernst,Fahrzeugbau,Fleischmann," +
+                   "for,formerly,France,Gebr,Gew&auml;hr,GITmbH,GmbH,Group,Haas," +
                    "Haber,Heljan,Helper,Hersteller,Herstellercode,hex,HKE," +
                    "hler,Impressum,Inc,Industries,Ing,Inhalt,Intelligent," +
-                   "Jahresmodell,JMRI,Junction,KAM,König,Kreischer," +
-                   "Krümelbahn,Kuehn,Lehmann,Lenz,LGB,Limited,Links," +
+                   "Jahresmodell,JMRI,Junction,KAM,K&ouml;nig,Kreischer," +
+                   "Kr&uuml;melbahn,Kuehn,Lehmann,Lenz,LGB,Limited,Links," +
                    "Literatur,LLC,Ltd,Massoth,MBTronik,Mercedes-Benz," +
                    "Mistral,MoBaTron,Model,Modellbahn,Modellbahntechnik," +
                    "Modelleisenbahn,Modellfahrzeuge,Modellspielwaren," +
@@ -1400,12 +1376,12 @@ beschreibung[26] = "Kr&uuml;melbahn - Lokstation Solingen";
                    "Viessmann,Wangrow,Way,Wissen,Zimo,ZTC";
        seite[27] = "cv8.htm";
 beschreibung[27] = "Kr&uuml;melbahn - Herstellercode in CV8";
-     begriff[28] = "#18,Adresse,Adressierung,Adresslänge,Aktivitäten," +
+     begriff[28] = "#18,Adresse,Adressierung,Adressl&auml;nge,Aktivit&auml;ten," +
                    "Analogbetrieb,Anlagengestaltung,Bahnen,Bahnsinniges," +
                    "Bitberechnung,CV8,DCC,Decoder,Decodereinbauten,Digital," +
                    "Digitalbetrieb,Direkt,Elektronik,Fahrstufen," +
                    "Fahrtrichtung,Fahrzeugbau,Geschw,Herstellercode," +
-                   "Impressum,Inhalt,Jahresmodell,Krümelbahn,lang,Links," +
+                   "Impressum,Inhalt,Jahresmodell,Kr&uuml;melbahn,lang,Links," +
                    "Literatur,Mercedes-Benz,Modellbahn,Modellfahrzeuge," +
                    "Modulbau,Navigation,nein,RailCOM,Solingen,Startseite," +
                    "Suchen,Tabelle,umkehren,verwendet";
@@ -1416,92 +1392,92 @@ beschreibung[28] = "Kr&uuml;melbahn - Adressen in CV 1 / 17,18";
                    "#40300,#4165,#4264S,#4265S,#43216,#43244,#43306,#43522," +
                    "#43620,#43644,#45242,#45243,#45244,#45248,#456,#460," +
                    "#4613,#4822,#5/6325,#520,#600,#6104,#63010,#63030," +
-                   "#63040,#64404,#64434,AB4yg,Abgasstutzen,abgelötet," +
-                   "abgelötet/entfernt,abgenommen,abgeschnitten,Abgestellt," +
+                   "#63040,#64404,#64434,AB4yg,Abgasstutzen,abgel&ouml;tet," +
+                   "abgel&ouml;tet/entfernt,abgenommen,abgeschnitten,Abgestellt," +
                    "Abhilfe,abkleben,Abmessungen,Abstand,abzudrehen," +
                    "abzuziehen,achs,Achsen,achsige,achsigen,achsiger," +
                    "Achslagern,achten,Achtung,Adapterschale,Adresse," +
-                   "Adressierung,ähnliches,Akkumulator-Triebwagen," +
-                   "Akkutriebwagen,Aktivieren,aktiviert,Aktivitäten," +
-                   "Aktuell,aktuelle,Albert,allgemeine,alte,ältere,älteren," +
-                   "Alternativ/zusätzlich,altroten,Analogbetrieb," +
+                   "Adressierung,&auml;hnliches,Akkumulator-Triebwagen," +
+                   "Akkutriebwagen,Aktivieren,aktiviert,Aktivit&auml;ten," +
+                   "Aktuell,aktuelle,Albert,allgemeine,alte,&auml;ltere,&auml;lteren," +
+                   "Alternativ/zus&auml;tzlich,altroten,Analogbetrieb," +
                    "Analogbetriebes,analoge,analogen,Anbau,and,Andreas," +
                    "andreas-nothaft,Anfahren,anfuhren,Angabe,Angaben," +
-                   "angebenen,angebracht,angelötet,angepasst,Angeregt," +
+                   "angebenen,angebracht,angel&ouml;tet,angepasst,Angeregt," +
                    "angeschlossen,angesenkt,angesteuert,Anlage," +
-                   "Anlagengestaltung,anlehnen,Anleitung,anlöten,Anmerkung," +
+                   "Anlagengestaltung,anlehnen,Anleitung,anl&ouml;ten,Anmerkung," +
                    "Anode,Anpassungen,Ansatz,anschließend,Anschluß," +
-                   "Anschlußdrähte,Anschlüsse,Anschlüssen,Anschlußkabel," +
+                   "Anschlußdr&auml;hte,Anschl&uuml;sse,Anschl&uuml;ssen,Anschlußkabel," +
                    "anstelle,Ansteuerung,Antrieb,Anzahl,anzeigen," +
-                   "anzubringen,anzulötende,anzunehmen,anzupassen," +
+                   "anzubringen,anzul&ouml;tende,anzunehmen,anzupassen," +
                    "anzuschließen,Arbeitsleuchte,Arbeitstier,Arno,Art," +
                    "Artikel,ASF,Asmus,A-Teil,Athearn,Attrappe,ATW,Aufbau," +
-                   "Aufgabe,aufgebohrt,aufgefeilt,aufgemöbelt,aufgerieben," +
+                   "Aufgabe,aufgebohrt,aufgefeilt,aufgem&ouml;belt,aufgerieben," +
                    "aufgespielt,Aufnahme,Aufstiegsleiter,auftreten," +
-                   "aufzutrennen,Ausfräsung,ausführliche,Ausführung," +
-                   "Ausgang,ausgebaut,ausgebauten,ausgelesen,ausgelötet," +
-                   "ausgerüstet,ausgetauscht,Ausland,auslöten,aussehen," +
+                   "aufzutrennen,Ausfr&auml;sung,ausf&uuml;hrliche,Ausf&uuml;hrung," +
+                   "Ausgang,ausgebaut,ausgebauten,ausgelesen,ausgel&ouml;tet," +
+                   "ausger&uuml;stet,ausgetauscht,Ausland,ausl&ouml;ten,aussehen," +
                    "aussen,Aussenseite,Aussichtstriebwagen,Aussparung," +
-                   "Aussparungen,Auswahlkriterien,auszufräsen,auszulöten," +
+                   "Aussparungen,Auswahlkriterien,auszufr&auml;sen,auszul&ouml;ten," +
                    "auszuprobieren,auszutauschen,Auwahl,AUX1,AUX2,B4yg,Bad," +
                    "Bahn,Bahnen,Bahnsinniges,BahnWahn,Bakelit," +
                    "Balastgewicht,Balastgewichten,Ballastgewicht,Band," +
                    "Basic,Basisiwiderstand,Batteriewanne,Bauarten,Bauch," +
-                   "Bauform,Baugröße,Baujahr,Baureihe,Baureihen,Bausatz," +
+                   "Bauform,Baugr&ouml;ße,Baujahr,Baureihe,Baureihen,Bausatz," +
                    "Bautiefe,BC337,BDnf,beantwortet,bearbeitet," +
-                   "Bedienungsanleitung,beeinträchtigen,beengten,befeilen," +
+                   "Bedienungsanleitung,beeintr&auml;chtigen,beengten,befeilen," +
                    "befeilt,befestigt,Befestigungsschrauben,befindet," +
                    "behoben,beide,beiden,beidseitige,beigelegte," +
                    "beiliegenden,beispielsweise,bekommt,belastbar,belasten," +
                    "belastet,beleuchtet,Beleuchtung,Beleuchtungseffekten," +
-                   "benötigt,benötigten,benutzerdefinierbaren," +
+                   "ben&ouml;tigt,ben&ouml;tigten,benutzerdefinierbaren," +
                    "benutzerdefinierte,bequem,Bereich,Bericht,berichtet," +
-                   "berühren,berührt,beschafft,beschreibt,Beschreibung," +
+                   "ber&uuml;hren,ber&uuml;hrt,beschafft,beschreibt,Beschreibung," +
                    "beschrieben,beschriebenen,Beseitigung,besitzt,Best," +
                    "bestehenden,Bestellnummer,bestem,betagtes," +
-                   "Betriebsanleitung,beugt,bevorzugt,bewährten," +
+                   "Betriebsanleitung,beugt,bevorzugt,bew&auml;hrten," +
                    "bezeichnete,BFD-01,bietet,Bild,Bildern,Bit,Bit4,Bits," +
                    "blaue,blauen,blaues,Bleche,bleibt,Blindstecker," +
                    "Blindsteckers,Bnrzb,Bocholter,Boden,bohren,Bohrer," +
                    "Bohrung,Booster/Versorgungsabschnitte,BPw4yg,BR38,BR41," +
-                   "BR50,brachte,braucht,braun,braunem,Brawa,Brawa-Köf," +
+                   "BR50,brachte,braucht,braun,braunem,Brawa,Brawa-K&ouml;f," +
                    "Brawas,Brekina,Brekina-Platine,Bretschneider,brock," +
-                   "Bronzeblech,Bronzestreifen,Brückensteckers,brüniert," +
-                   "B-Teil,Bühne,Bühnenreif,Bundesbahn,Bus,bw-rheinbrueck," +
+                   "Bronzeblech,Bronzestreifen,Br&uuml;ckensteckers,br&uuml;niert," +
+                   "B-Teil,B&uuml;hne,B&uuml;hnenreif,Bundesbahn,Bus,bw-rheinbrueck," +
                    "Carl,Christopher,cloud,Code83-Profile,connector,Conrad," +
                    "CV29,CV8,CV-Configuration,CV-Einstellungen,CVs,Dach," +
                    "Dachaufstieg,Dampftriebwagen,DasFahrzeug,dass," +
                    "Dauerstrom,DB29-3,DB-Baureihe,DB-Baureihen,Dber,DCC," +
                    "DCC-CV,DCC-Decoder,DCC-Decodereinbauten,dcc-mueller," +
-                   "DCC-Müller,DCC-Tempo-Tuning,DDS," +
+                   "DCC-M&uuml;ller,DCC-Tempo-Tuning,DDS," +
                    "de/t128163f5-Digitalisieren-von-Brawa-VB," +
                    "de/t134502f2-Fragen-zu-Brawa,Deaktivieren,Deckelplatte," +
                    "Decoder,Decoderanleitung,Decoderanschlussdraht," +
                    "Decoderauswahl,Decoderbeschreibung,Decodereinbau," +
-                   "Decodereinbauten,Decodergröße,Decoderkabel,Decodern," +
+                   "Decodereinbauten,Decodergr&ouml;ße,Decoderkabel,Decodern," +
                    "Decoders,Decoderschaden,Deichsel,dein,Dekoder," +
-                   "Dekoderdrähte,Dekoderherstellers,Deodereinbau,derer," +
+                   "Dekoderdr&auml;hte,Dekoderherstellers,Deodereinbau,derer," +
                    "Dessel,Detailbeschreibungen,Deutsche," +
                    "deutsche-kleinloks,Deutschen,deutscher,DH500Ca," +
                    "dhuenntalbahn,dienen,Dienstfahrzeuge,Dienstreise," +
-                   "Diesellokomotiven,Diesel-Pärchen,Digital," +
+                   "Diesellokomotiven,Diesel-P&auml;rchen,Digital," +
                    "Digitalbetrieb,Digitale,digitalisieren,digitalisiert," +
                    "digitalisierten,Digitalspannung,Digitalsystem," +
                    "Digitalumbauten,Dioden,Direkt,direkten,Doppellok," +
-                   "doppelseitigen,Draht,Drahtbrücke,Drahtdurchführung," +
-                   "Drähte,Drähten,Drahtverbindungen,Draisinen,Drehachse," +
+                   "doppelseitigen,Draht,Drahtbr&uuml;cke,Drahtdurchf&uuml;hrung," +
+                   "Dr&auml;hte,Dr&auml;hten,Drahtverbindungen,Draisinen,Drehachse," +
                    "Drehbewegung,drehen,Drehgestell,Drehgestellblenden," +
                    "Drehgestelle,Drehgestellen,Drehgestellkontakten," +
                    "Drehpunkt,Drehscheibe-Online,Drehscheibe-Verlag,drei," +
-                   "Drücken,drückt,Dummy,dunkelgrau,dunkler,dünnen,dünner," +
-                   "DUO-LED,DUO-LEDs,Durchblick,Durchführung,Durchmesser," +
+                   "Dr&uuml;cken,dr&uuml;ckt,Dummy,dunkelgrau,dunkler,d&uuml;nnen,d&uuml;nner," +
+                   "DUO-LED,DUO-LEDs,Durchblick,Durchf&uuml;hrung,Durchmesser," +
                    "DW8,E67B,E6SG,e94114,Ebel,ebenso,effektive,Egbert," +
                    "eigenes,eigentlich,eigentlichen,eigenwillig,Einbau," +
                    "Einbauanleitungen,Einbauaufwand,Einbaubeschreibung," +
-                   "einbauen,Einbaumöglichkeiten,Einbauplatz," +
+                   "einbauen,Einbaum&ouml;glichkeiten,Einbauplatz," +
                    "Einbausituation,einfache,Einfachheit,eingebaut," +
                    "eingebaute,eingebautem,eingebauten,eingebracht," +
-                   "eingeführt,eingeklebt,eingelötet,eingeschaltet," +
+                   "eingef&uuml;hrt,eingeklebt,eingel&ouml;tet,eingeschaltet," +
                    "eingesetzt,eingesetzte,eingesteckt,Eingriffe,Einsatz," +
                    "Einsatzfahrzeuge,Einsatzgeschichte,Einsetzen," +
                    "einstellen,Einstellung,Einteilen,einwandfreise,einzig," +
@@ -1510,64 +1486,64 @@ beschreibung[28] = "Kr&uuml;melbahn - Adressen in CV 1 / 17,18";
                    "elastischen,Elektrik,elektrisch,Elektronik," +
                    "Elektronikversender,empfehlen,empfiehlt,Ende,entfallen," +
                    "entfallenen,entfernen,entfernt,Entkuppeln,entkuppelt," +
-                   "Entkupplungsbügel,entscheidend,entschlossen," +
+                   "Entkupplungsb&uuml;gel,entscheidend,entschlossen," +
                    "entsprechend,entsprechende,entsprechenden,entspricht," +
-                   "Entstörelemente,entwickelt,Erfahrungen,erfasst," +
-                   "erfolgen,erfolgt,erfolgte,erforderlich,ergeben,erhält," +
-                   "erhalten,erhältlich,er-Jahren,erkennen,Erleuchtung," +
+                   "Entst&ouml;relemente,entwickelt,Erfahrungen,erfasst," +
+                   "erfolgen,erfolgt,erfolgte,erforderlich,ergeben,erh&auml;lt," +
+                   "erhalten,erh&auml;ltlich,er-Jahren,erkennen,Erleuchtung," +
                    "erlischt,ermittelte,erneuern,erreicht,Ersatz," +
                    "Ersatzmotor,Ersatzteilnummer,erschienen,ersetzen," +
-                   "ersetzt,erwähnte,erweitert,erworben,erworbener," +
+                   "ersetzt,erw&auml;hnte,erweitert,erworben,erworbener," +
                    "erzeugte,ESA,ESU,ESU-Soundprojekt,ETA,ETA-Herbst," +
                    "ETA-Unterhaltung,etwa,eventuelle,Extra,fahren," +
-                   "Fahrgäste,Fahrgestell,Fahrgestelles," +
+                   "Fahrg&auml;ste,Fahrgestell,Fahrgestelles," +
                    "Fahrleitungsmeistereien,Fahrregler,Fahrspannung," +
-                   "Fahrspannungsversorgungsdrähten,Fahrtlichtung," +
-                   "Fahrtrichtung,fahrtrichtungsunabhängig,Fahrzeug," +
+                   "Fahrspannungsversorgungsdr&auml;hten,Fahrtlichtung," +
+                   "Fahrtrichtung,fahrtrichtungsunabh&auml;ngig,Fahrzeug," +
                    "Fahrzeugbau,Fahrzeugbeleuchtung,Fahrzeuge,Fahrzeuges," +
                    "Fahrzeuginnenbeleuchtung,Fahrzeugplatine,Fahrzeugs," +
-                   "Fahrzeugseite,Falle,Fällen,farbigen,farblich,Fazit," +
+                   "Fahrzeugseite,Falle,F&auml;llen,farbigen,farblich,Fazit," +
                    "FD-R,Federbronze,Federdraht,Federkontakte,Fehler,fehlt," +
-                   "fehlten,feilen,Fenster,Fenstereinsatz,Fenstereinsätze," +
-                   "Fensterrahmen,festgeschraubt,Feuerbüchse,finde,finden," +
+                   "fehlten,feilen,Fenster,Fenstereinsatz,Fenstereins&auml;tze," +
+                   "Fensterrahmen,festgeschraubt,Feuerb&uuml;chse,finde,finden," +
                    "findet,fingen,Firma,fixiert,flach,Flachbandkabel," +
                    "Fleischmann,Fliegende,Fliegenden,folgende,folgt,Fotos," +
-                   "Frage,Franz,Fräsarbeiten,fräsen,FRED,freiem,freien," +
-                   "Fremo,Friedenseinsätzen,Front,Frontglas,Führerstand," +
-                   "Führerstands,Führerstandsbeleuchtung," +
-                   "Führerstandsbeleuchtungen,Führerstandspult,führt,Fünf," +
-                   "fünften,fünfter,Funkenstörelemente,Funkentstörelemente," +
-                   "Funktionen,Funktionsausgang,Funktionsausgänge," +
+                   "Frage,Franz,Fr&auml;sarbeiten,fr&auml;sen,FRED,freiem,freien," +
+                   "Fremo,Friedenseins&auml;tzen,Front,Frontglas,F&uuml;hrerstand," +
+                   "F&uuml;hrerstands,F&uuml;hrerstandsbeleuchtung," +
+                   "F&uuml;hrerstandsbeleuchtungen,F&uuml;hrerstandspult,f&uuml;hrt,F&uuml;nf," +
+                   "f&uuml;nften,f&uuml;nfter,Funkenst&ouml;relemente,Funkentst&ouml;relemente," +
+                   "Funktionen,Funktionsausgang,Funktionsausg&auml;nge," +
                    "Funktionsdekoder,Funktionstaste,Funktionstasten,G12," +
-                   "gab,geändert,Geänderte,gebohrt,gebraucht,gedreht," +
-                   "geeignet,gefächerten,Gefahr,gefällt,gefielen,geführt," +
-                   "gefunden,Gegengewicht,Gegensatz,gegönnt,gehalten," +
-                   "Gehäuse,Gehäuses,gehörte,gekauft,geklebt,gekürzt," +
+                   "gab,ge&auml;ndert,Ge&auml;nderte,gebohrt,gebraucht,gedreht," +
+                   "geeignet,gef&auml;cherten,Gefahr,gef&auml;llt,gefielen,gef&uuml;hrt," +
+                   "gefunden,Gegengewicht,Gegensatz,geg&ouml;nnt,gehalten," +
+                   "Geh&auml;use,Geh&auml;uses,geh&ouml;rte,gekauft,geklebt,gek&uuml;rzt," +
                    "gelangen,gelb,gelbe,gelben,gelbes,gelegt,geliefert," +
-                   "gelötet,gemacht,gemeinsame,gemeinsamer,gemessene," +
-                   "geneigt,Generationswechsel,genug,genüge,genügend," +
-                   "genutzt,gepaart,Gepäckkasten,gerät,gering,geringes," +
+                   "gel&ouml;tet,gemacht,gemeinsame,gemeinsamer,gemessene," +
+                   "geneigt,Generationswechsel,genug,gen&uuml;ge,gen&uuml;gend," +
+                   "genutzt,gepaart,Gep&auml;ckkasten,ger&auml;t,gering,geringes," +
                    "gesamten,geschafft,geschah,geschaltet,Geschichte," +
                    "geschnittenes,geschoben,Geschwindigkeit," +
                    "Geschwindigkeiten,Geschwindigkeitsparameter," +
                    "Geschwindigkeitstabele,Geschwindigkeitstabelle,gesetzt," +
                    "gestalten,gestossen,gestutzt,gesucht,getauscht,geteilt," +
-                   "getrennt,Getriebeblock,Gewähr,Gewährleistung,Gewicht," +
-                   "Gewissen,gewünschte,gezeigt,gezeigte,gezogen,Gieseler," +
-                   "ging,githubinfo,Gläserne,Gleichstrombetrieb,Gleisen," +
-                   "Glühlämpchen,Glühlampe,Glühlampen,Gold,GP38-2,grau," +
+                   "getrennt,Getriebeblock,Gew&auml;hr,Gew&auml;hrleistung,Gewicht," +
+                   "Gewissen,gew&uuml;nschte,gezeigt,gezeigte,gezogen,Gieseler," +
+                   "ging,githubinfo,Gl&auml;serne,Gleichstrombetrieb,Gleisen," +
+                   "Gl&uuml;hl&auml;mpchen,Gl&uuml;hlampe,Gl&uuml;hlampen,Gold,GP38-2,grau," +
                    "grauen,graues,Griffstangen,Großdiesellokomotive," +
-                   "Großdiesellokomotiven,Große,Größe,großen,grün,Grund," +
-                   "grundlegende,grünen,guter,Güterzuggigant," +
+                   "Großdiesellokomotiven,Große,Gr&ouml;ße,großen,gr&uuml;n,Grund," +
+                   "grundlegende,gr&uuml;nen,guter,G&uuml;terzuggigant," +
                    "h0-modellbahnforum,Haan,Haftreifen,Haftreifenwechsel," +
-                   "Haken,hält,Halteloch,Halterung,Hamburger,handelt," +
-                   "Handregler,hängt,Hansjürgen,Hans-Peter,hartnäckig," +
-                   "hauchdünne,haus,Heck,Heft,Heinz,heiß,heißer,Heitmann," +
+                   "Haken,h&auml;lt,Halteloch,Halterung,Hamburger,handelt," +
+                   "Handregler,h&auml;ngt,Hansj&uuml;rgen,Hans-Peter,hartn&auml;ckig," +
+                   "hauchd&uuml;nne,haus,Heck,Heft,Heinz,heiß,heißer,Heitmann," +
                    "helfen,hellbraun,heller,herausnehmbaren,hergestellt," +
                    "Hersteller,Herstellercode,Herstellers,Herstellerseite," +
-                   "hinfällig,hinten,Hinterachse,hintere,Hinweis,Hinweise," +
-                   "Hobbytrade,hochfrequenten,Högemann,Höhe,hohen,höher," +
-                   "höhere,Homepage,Horst,Hp1,HT75332,html,http,https," +
+                   "hinf&auml;llig,hinten,Hinterachse,hintere,Hinweis,Hinweise," +
+                   "Hobbytrade,hochfrequenten,H&ouml;gemann,H&ouml;he,hohen,h&ouml;her," +
+                   "h&ouml;here,Homepage,Horst,Hp1,HT75332,html,http,https," +
                    "Hubbel,Huebsch,I/1989,I/2006,Idee,Ideen,identische," +
                    "I-II-II-V60,Impressum,Indes,Info,Infoletter," +
                    "Informationen,Inhalt,inklusive,Innenbeleuchtung," +
@@ -1577,266 +1553,266 @@ beschreibung[28] = "Kr&uuml;melbahn - Adressen in CV 1 / 17,18";
                    "Inspiriert,integriert,integriertem,integrierter," +
                    "Internet,Inzwischen,Isolierband,isoliert,isolierte," +
                    "Isolierung,IV/1995,Jahre,Jahren,Jahresmodell,jegliche," +
-                   "John,Josef,Jungbrunnen,Jürgen,Justage,Kab,Kabel," +
-                   "Kabeldurchführung,Kabelschacht,Kabinenbeleuchtung," +
+                   "John,Josef,Jungbrunnen,J&uuml;rgen,Justage,Kab,Kabel," +
+                   "Kabeldurchf&uuml;hrung,Kabelschacht,Kabinenbeleuchtung," +
                    "Kabinentenderbeleuchtung,Kadee,Kadee-Kupplung," +
                    "Kadee-Kupplungskopf,Kadee-System,kam,kamen,Kato," +
                    "Kehrschleifenmodul,Kenning,kennt,Kennung," +
-                   "Kesselballastgewicht,Kfz-Flachsteckerhülse,Kittel," +
-                   "Kittel-Dampftriebwagen,KK-Köpfe,Klapptreppe,Klasse," +
+                   "Kesselballastgewicht,Kfz-Flachsteckerh&uuml;lse,Kittel," +
+                   "Kittel-Dampftriebwagen,KK-K&ouml;pfe,Klapptreppe,Klasse," +
                    "Klaue,Klebeband,Klebepad,kleine,kleinen,kleinere," +
                    "kleineren,kleines,Kleinlokomotiven,Klv,Klv20,Klv51," +
-                   "Klv60,Köf,kOhm,kOhm-Vorwiderstand,Kollektoren,Kölner," +
+                   "Klv60,K&ouml;f,kOhm,kOhm-Vorwiderstand,Kollektoren,K&ouml;lner," +
                    "kommen,kommt,Kompakte,komplett,Konfigurieren,konnte," +
                    "Konrad,Konstantstrom,Kontakt,Kontakte,Kontaktprobleme," +
-                   "Kontaktstreifen,Kopf,Köpfen,Koschinski,Krepppapier," +
-                   "Krüger-Modellbau,Krümelbahn,Kuehn,Kugelfräser," +
-                   "Kunststoffeinsätze,Kunststoffplatte,Kunststoffstreifen," +
+                   "Kontaktstreifen,Kopf,K&ouml;pfen,Koschinski,Krepppapier," +
+                   "Kr&uuml;ger-Modellbau,Kr&uuml;melbahn,Kuehn,Kugelfr&auml;ser," +
+                   "Kunststoffeins&auml;tze,Kunststoffplatte,Kunststoffstreifen," +
                    "Kupferlackdraht,Kupferlaschen,Kuppellinse,Kuppeln," +
                    "Kuppelns/Entkuppelns,Kupplung,Kupplungsadapter," +
                    "Kupplungsadapters,Kupplungshaken,Kupplungskopf," +
-                   "Kupplungsmöglichkeit,kürzen,Kuswa,lackieren,Ladefläche," +
-                   "laden,lagen,lagern,lagert,Lämpchen,Lampe," +
-                   "Lampenhalterung,Lampr,Land,Länderbahnlackierung,Länge," +
-                   "langen,langer,längliche,Lasche,Lastregelung,laterne," +
+                   "Kupplungsm&ouml;glichkeit,k&uuml;rzen,Kuswa,lackieren,Ladefl&auml;che," +
+                   "laden,lagen,lagern,lagert,L&auml;mpchen,Lampe," +
+                   "Lampenhalterung,Lampr,Land,L&auml;nderbahnlackierung,L&auml;nge," +
+                   "langen,langer,l&auml;ngliche,Lasche,Lastregelung,laterne," +
                    "Laternen,Lauscher,lautet,Lautsprecher,LCW,LD-G-7," +
                    "LD-G-8,LE0511D,LE1014E,LE1035A,LE1835,LE1835A,Leben," +
                    "LED,LED-Bauformen,ledernen,LED-Lichtleiste," +
                    "LED-Lichtleisten,LEDs,Leichtleiste,Leistungsgruppen," +
                    "Leiter,Leiterbahnen,Leiterplatten,Lenz,Lenz-Decoder," +
                    "lesen,letzte,leuchten,leuchtet,leuchtete,Leuchtmittel," +
-                   "LH10,Licht,Lichtaustrittsöffnungen,lichtdicht," +
-                   "Lichtleiste,Lichtleiter,Lichtleiterführung," +
-                   "Lichtleiterlücke,Lichtsteuerung,Lichtwechsel,liefert," +
+                   "LH10,Licht,Lichtaustritts&ouml;ffnungen,lichtdicht," +
+                   "Lichtleiste,Lichtleiter,Lichtleiterf&uuml;hrung," +
+                   "Lichtleiterl&uuml;cke,Lichtsteuerung,Lichtwechsel,liefert," +
                    "Lieferung,liegen,liegend,liegenden,Liliput,Lima,Link," +
-                   "linke,linken,Links,Linse,Literatur,Loch,Löcher," +
-                   "Logikausgang,Logikausgänge,Lok,Lokbahnhof,Lokdecodern," +
+                   "linke,linken,Links,Linse,Literatur,Loch,L&ouml;cher," +
+                   "Logikausgang,Logikausg&auml;nge,Lok,Lokbahnhof,Lokdecodern," +
                    "Lokodex,Lokomotive,Lokomotiven,Lokomotivtender," +
-                   "Lokräder,Lokrundschau,Loks,Lokteil,Lösung," +
-                   "Lötanschlüsse,Löttgers,Lüfterhaube,mäglich,magnetisch," +
+                   "Lokr&auml;der,Lokrundschau,Loks,Lokteil,L&ouml;sung," +
+                   "L&ouml;tanschl&uuml;sse,L&ouml;ttgers,L&uuml;fterhaube,m&auml;glich,magnetisch," +
                    "Maier,Maintenance,Malutronik,manche,Manfred," +
                    "Markierungen,Marslight,Masse,massefrei,Massepotential," +
                    "massgeblich,Matthias,maximale,maximalen,maximaler," +
                    "Mehrfachstecker,meisten,Melcher,Mercedes-Benz," +
                    "Messingblech,Messingbleche,Messingblechzapfen," +
-                   "Messingglanz,Messingplättchen,Messverfahren,Metall," +
+                   "Messingglanz,Messingpl&auml;ttchen,Messverfahren,Metall," +
                    "Metall-Kupplung,Miba,Miba-Spezial,Microlampe," +
                    "Microlampen,Microsteckern,mini,minimal,Mitleidenschaft," +
                    "Mittelpunkt,mittig,mittleren,Modell,Modellbahn," +
-                   "Modellbauhütte,Modellfahrzeuge,Modellumschau,modernen," +
-                   "Modulbau,Modulgruppe,möglicher,möglicherweise,Montage," +
+                   "Modellbauh&uuml;tte,Modellfahrzeuge,Modellumschau,modernen," +
+                   "Modulbau,Modulgruppe,m&ouml;glicher,m&ouml;glicherweise,Montage," +
                    "Montageskizze,montiert,Moosgummi,Motor,Motoranschluss," +
-                   "Motordauerstrom,Motoren,Motorersatz,Motorgeräusche," +
+                   "Motordauerstrom,Motoren,Motorersatz,Motorger&auml;usche," +
                    "Motorkontakte,Motorplatine,Motorschild,Motorstrom," +
-                   "Motorwagen,Motorwelle,MTC,MTC-Schnittstelle,Müller," +
+                   "Motorwagen,Motorwelle,MTC,MTC-Schnittstelle,M&uuml;ller," +
                    "musste,MX617,N025,N045,N045-P8,Nachfrage,nachmessen," +
-                   "Nachteil,Nägel,Nahverkehrs,Nahverkehrssteuerwagen," +
-                   "natürlich,Navigation,Nebengleis,nehmen,NEM,NEM-Schacht," +
+                   "Nachteil,N&auml;gel,Nahverkehrs,Nahverkehrssteuerwagen," +
+                   "nat&uuml;rlich,Navigation,Nebengleis,nehmen,NEM,NEM-Schacht," +
                    "net/index,Newsletter,niedriger,nimmt,nirgendwo,Nothaft," +
                    "Null,Nummer,Nummern,Nummernschildbeleuchtung,n-Wagen," +
-                   "obere,oberen,Oberfläche,Oberleitungsinstandhaltung," +
-                   "Obermayer,Öffnen,Ohm,optimal,Optimierung,orange," +
+                   "obere,oberen,Oberfl&auml;che,Oberleitungsinstandhaltung," +
+                   "Obermayer,&ouml;ffnen,Ohm,optimal,Optimierung,orange," +
                    "oranges,originale,originalen,Papierstreifen,Pappe," +
                    "passen,Passend,passende,passt,pdf,Peter,Pfeiffer,Piko," +
                    "Pilot,Pionier,PI-Regler,plan,planer,Platine," +
-                   "Platinenbohrung,Platinenlöchern,Platz,Platzieren," +
-                   "platziert,PLCC-4-Gehäuse,Plexiglasscheibchen,Polarität," +
-                   "polige,Position,preisgünstig,Prellbock,preußische," +
+                   "Platinenbohrung,Platinenl&ouml;chern,Platz,Platzieren," +
+                   "platziert,PLCC-4-Geh&auml;use,Plexiglasscheibchen,Polarit&auml;t," +
+                   "polige,Position,preisg&uuml;nstig,Prellbock,preußische," +
                    "Preußisch-Hessischen,Prinzip,Privatbahnen,Probleme," +
                    "Programmieren,Programmierung,Projekte,Pufferbohle," +
-                   "Punkte,PVC-Platte,Räder,Radsätze,Radschleifer," +
+                   "Punkte,PVC-Platte,R&auml;der,Rads&auml;tze,Radschleifer," +
                    "Radschleiferblech,Rai-Mo,RAL1011,RAL3009,RAL6003," +
                    "RAL7024,ralf-bueker,Rand,Rangierdiesel,Rangieren," +
                    "Rastnasen,Rauchsatz,Rauchzeichen,Rauten,Rautenhaus," +
                    "reagieren,rechte,rechten,Regel,Regelturmtriebwagen," +
                    "Reichelt,Reichsbahn,Reichsbahngesellschaft,Reihe," +
                    "Reinhard,Reisenden,remotorisiert,Remotorisierung," +
-                   "Renoviert,Rest,Restaurierung,Reststück,Revitalisiert," +
+                   "Renoviert,Rest,Restaurierung,Restst&uuml;ck,Revitalisiert," +
                    "Rheinland,richtiges,Richtung,Richtwert,Risiko,Rittig," +
-                   "Rivarossi,Roco,Roco-Kupplungsadapter,Röder,Rolle," +
-                   "Rollendes,rollfähigen,rot,rot/weiß,rotbraun,rote,rotem," +
-                   "roten,roter,rotes,Rücken,Rudolf,Ruhrpott,S26,S32,S36," +
+                   "Rivarossi,Roco,Roco-Kupplungsadapter,R&ouml;der,Rolle," +
+                   "Rollendes,rollf&auml;higen,rot,rot/weiß,rotbraun,rote,rotem," +
+                   "roten,roter,rotes,R&uuml;cken,Rudolf,Ruhrpott,S26,S32,S36," +
                    "S38,S42,S44,S46,S50,S52,S54,S55,S56,S70,Sackgasse," +
-                   "Sammlung,Schäden,schaffen,schafft,schaltbar,Schaltbild," +
+                   "Sammlung,Sch&auml;den,schaffen,schafft,schaltbar,Schaltbild," +
                    "schaltet,Scherer,Schiene,Schienenfahrrad," +
                    "Schienenomnibusse,Schiene-Straße-Bus,Schildersatz," +
                    "schlecht,Schleif,Schleppschalter,Schlusslicht,schmalen," +
-                   "schmaler,Schneepflugs,Schneeräum-Einsatz,Schneeräumer," +
-                   "Schneeräumers,schnelle,Schnittstelle," +
-                   "Schnittstellenbuchse,Schnittstellenstecker,Schöne," +
-                   "schräg,Schrauben,schreibt,Schrottfahrzeug," +
-                   "schwalbenschwanzförmigen,Schwalbenschwanzführung," +
-                   "schwarz,schwarzen,schwarzer,schwarzes,Schwenkbühne," +
+                   "schmaler,Schneepflugs,Schneer&auml;um-Einsatz,Schneer&auml;umer," +
+                   "Schneer&auml;umers,schnelle,Schnittstelle," +
+                   "Schnittstellenbuchse,Schnittstellenstecker,Sch&ouml;ne," +
+                   "schr&auml;g,Schrauben,schreibt,Schrottfahrzeug," +
+                   "schwalbenschwanzf&ouml;rmigen,Schwalbenschwanzf&uuml;hrung," +
+                   "schwarz,schwarzen,schwarzer,schwarzes,Schwenkb&uuml;hne," +
                    "schwer,Schwierigkeiten,schwierigste,sechs,Seite,Seiten," +
                    "Seitenanfang,seitlich,seitlichen,Sekundenkleber," +
-                   "Selbstbau,selbstgedrehte,selbstgefräste,separate," +
+                   "Selbstbau,selbstgedrehte,selbstgefr&auml;ste,separate," +
                    "setzen,sieben,sieht,Signalbilder,Signale," +
-                   "Silikonschlauch,Sitzbank,Sitzbänke,Sitzbankeinsatz," +
+                   "Silikonschlauch,Sitzbank,Sitzb&auml;nke,Sitzbankeinsatz," +
                    "Sitze,sitzen,Sitzgruppe,slip,SLX871,SMD-Bauweise," +
-                   "SMD-LED,SMD-LEDs,SMD-Widerständen,soeben,sofern," +
+                   "SMD-LED,SMD-LEDs,SMD-Widerst&auml;nden,soeben,sofern," +
                    "sogleich,Solingen,Sonder,Sonderausgabe,Sonderheft," +
                    "Sound,Spannung,Spannungsbegrenzung,Spannungsregler," +
                    "Spezial,spielt,Spitzenicht,Spitzenlicht,Spitzenlichts," +
-                   "Spitzensignal,Spitzenstrom,sporadisch,Spurkränze," +
-                   "Spurkranzhöhe,Staatsbahnen," +
+                   "Spitzensignal,Spitzenstrom,sporadisch,Spurkr&auml;nze," +
+                   "Spurkranzh&ouml;he,Staatsbahnen," +
                    "Staatsbahn-Rangierlokomotiven,Staatseisenbahnen," +
                    "stahlbahn,Stand,starre,Startseite,Steckerwahl,steckt," +
                    "Steckverbinder,Stefan,stehen,steht,Stelle,stellen," +
                    "Steuber,Steuerwagen,Steuerwagens,stillgelegt," +
                    "Stirn/Schlußbeleuchtung,Stirnbeleuchtung,Stirnlampen," +
-                   "störende,Straße,Straße-Bus,Streifen,Strom,Stromabnahme," +
-                   "Stromabnehmer,Stromaufnahme,Stück,Stückchen," +
-                   "Stummiforum,Stummi-Forum,Stützkondenstor,Suchen," +
+                   "st&ouml;rende,Straße,Straße-Bus,Streifen,Strom,Stromabnahme," +
+                   "Stromabnehmer,Stromaufnahme,St&uuml;ck,St&uuml;ckchen," +
+                   "Stummiforum,Stummi-Forum,St&uuml;tzkondenstor,Suchen," +
                    "SUSI-Schnittstelle,SVT877,SVT877a,T125,T65,tab,Tams," +
                    "Tauschplatine,Technik,Technische,Teil,Tender," +
                    "Tendergewicht,Tenderkupplung,Testgleis,Tests,Text,The," +
                    "Thema,Thomas,Thyssen,tief,Tower-LEDs,Transistor," +
                    "Transistoren,Transistorschaltung,Traube,Trennsteg," +
                    "Trennung,Triebfahrzeuge,Triebwagen,Triebwagen-Beiwagen," +
-                   "Triebwagengehäuse,Triebwagen-Steuerwagen,Triebwerks," +
+                   "Triebwagengeh&auml;use,Triebwagen-Steuerwagen,Triebwerks," +
                    "Triebwerksbeleuchtung,Triebzuges,Trix,Troche,Tropfen," +
-                   "Tun,Tunneluntersuchungen,Türe,Türen,Turmtriebwagen," +
-                   "Turmwagen,Türvorhang,Übersicht,übliche,Übrigens," +
+                   "Tun,Tunneluntersuchungen,T&uuml;re,T&uuml;ren,Turmtriebwagen," +
+                   "Turmwagen,T&uuml;rvorhang,&uuml;bersicht,&uuml;bliche,&uuml;brigens," +
                    "Uerdingen,Uhlen,Uhlenbrock,Ulf,Umbau,Umbauanleitung," +
                    "Umbauanleitungen,Umbaubeschreibung,Umbaubeschreibungen," +
-                   "umbauen,Umbau-Klassiker,Umbaumöglichkeiten," +
-                   "Umbaumöglichkieten,Umbausatz,Umbauten,Umbauvorschlag," +
+                   "umbauen,Umbau-Klassiker,Umbaum&ouml;glichkeiten," +
+                   "Umbaum&ouml;glichkieten,Umbausatz,Umbauten,Umbauvorschlag," +
                    "Umbauwagen,umgeben,Umverdrahtungen,umzubauen,unbedingt," +
-                   "Unikat,unkontrolliert,Unmöglichkeiten,unmotiviert," +
+                   "Unikat,unkontrolliert,Unm&ouml;glichkeiten,unmotiviert," +
                    "unsaubere,unterblieben,unterbrechen,Unterbrechung," +
                    "Unterbrechungen,Unterbringung,untergebracht,unterhalb," +
-                   "unterstützen,Upgrade,V/15mA,V/20mA,V100,V15,V188,V200," +
+                   "unterst&uuml;tzen,Upgrade,V/15mA,V/20mA,V100,V15,V188,V200," +
                    "V23,V300,V36,V60,Variable,VB140,VB147,verabschiedete," +
                    "verantwortlich,verbauen,Verbeck,Verbesserung,verbinden," +
                    "Verbindung,Verbindungen,Verbleib,verbleibenden," +
                    "verbunden,verdrahten,verdrahtet,verdrahtung," +
-                   "vereinfachte,verfügbare,verfügbaren,Verfügung," +
+                   "vereinfachte,verf&uuml;gbare,verf&uuml;gbaren,Verf&uuml;gung," +
                    "vergessen,Verhalten,Verkabelung,verkorkste,Verlag," +
-                   "verläuft,verlegen,verlegt,verlötet,vermeiden," +
-                   "Vermutlich,vernünfigen,Verpackung,verschmort,versehen," +
+                   "verl&auml;uft,verlegen,verlegt,verl&ouml;tet,vermeiden," +
+                   "Vermutlich,vern&uuml;nfigen,Verpackung,verschmort,versehen," +
                    "versenkt,versetzen,Version,Versuch,verwendbare," +
                    "verwenden,verwendet,verwendete,verwendeten,Verwendung," +
                    "verzichte,Video,vier,Vierachser,violette,violetten," +
                    "voller,Volt,Vorbau,vorbildgerecht,Vorbildgerechte," +
                    "vorbildgerechten,Vorbildinformationen,vordere,vorderen," +
-                   "Vorgänger,vorgenommen,vorgesehen,vorgesehene," +
+                   "Vorg&auml;nger,vorgenommen,vorgesehen,vorgesehene," +
                    "vorgesehenen,vorhanden,vorhandenen,Vorkriegswagen,vorn," +
                    "vorne,Vorsatzschneepflugs,Vorsicht,vorsichtig," +
                    "vorsichtiges,Vorteil,Vorwiderstand,VS145,VT137,VT70," +
                    "VT95,waagerecht,waagerechte,Wagen,Wagenbeleuchtung," +
-                   "Wagenenden,Wagenkastens,wählen,Wände,Wandung,warmweiß," +
+                   "Wagenenden,Wagenkastens,w&auml;hlen,W&auml;nde,Wandung,warmweiß," +
                    "warm-weisse,wartungsfreie,wechselnde,Weg,Wehrmacht," +
                    "wehrt,Weinert,Weisbrod,weiss/rot,weisse,weißem,weissen," +
                    "weiteren,Wenzel,werksseitig,Werner,Wichtig,wichtige," +
-                   "Wichtigste,wichtigsten,Widerstand,Widerstände,Willhaus," +
-                   "Wissen,WN2,Worms,Wormser,Württembergerin," +
-                   "württembergische,Württembergs,www,zähle,zahlreiche," +
-                   "zählt,Zapfen,zeigt,Zeit,Zeitschrift,Zentrale," +
+                   "Wichtigste,wichtigsten,Widerstand,Widerst&auml;nde,Willhaus," +
+                   "Wissen,WN2,Worms,Wormser,W&uuml;rttembergerin," +
+                   "w&uuml;rttembergische,W&uuml;rttembergs,www,z&auml;hle,zahlreiche," +
+                   "z&auml;hlt,Zapfen,zeigt,Zeit,Zeitschrift,Zentrale," +
                    "Zentrierhilfe,zerlegen,Zg1,Zg2,Zg4,Zimo,ZIMO-Decoder," +
-                   "Züge,zugehörigen,zugelassen,zugeschnitten,Zugführers," +
+                   "Z&uuml;ge,zugeh&ouml;rigen,zugelassen,zugeschnitten,Zugf&uuml;hrers," +
                    "zugleich,Zugschlussbeleuchtung,Zugschlussignal," +
                    "Zugschlussignale,Zugschlusslicht,Zugschlussscheiben," +
                    "Zugschlußsignal,Zugspitzenbeleuchtung,zumal,zumindest," +
-                   "zunächst,zurechtgeschnitten,Zurüst,Zurüstbeutel," +
-                   "Zurüstteile,Zusammen,Zusammenbau,zusammengeklebt," +
+                   "zun&auml;chst,zurechtgeschnitten,Zur&uuml;st,Zur&uuml;stbeutel," +
+                   "Zur&uuml;stteile,Zusammen,Zusammenbau,zusammengeklebt," +
                    "zusammengeschaltet,Zusammenspiel,zusammenzubauen," +
-                   "zusätzlich,zusätzliche,zusätzlichen,zusätzlicher," +
+                   "zus&auml;tzlich,zus&auml;tzliche,zus&auml;tzlichen,zus&auml;tzlicher," +
                    "Zusatzplatine,Zuweisen,zweimal,zweite,zweiten,zweiter," +
                    "zwischenzeitlich";
        seite[29] = "decoder.htm";
 beschreibung[29] = "Kr&uuml;melbahn - DCC-Decodereinbauten";
-     begriff[30] = "aktualisieren,aktuell,ändert,anstelle,Bahn,Bahnen," +
+     begriff[30] = "aktualisieren,aktuell,&auml;ndert,anstelle,Bahn,Bahnen," +
                    "Bahnsinniges,Beschreibung,Betriebsordnung,Dateien," +
                    "Deutschen,Dienstvorschrift,Dienstvorschriften,Direkt," +
                    "Dokument,Duitse,eifrige,Eisenbahn-Bau," +
                    "Eisenbahn-Verkehrsordnung,Eisenbahnwesen,erreichen," +
                    "findet,Fotografieren,Fotografiererlaubnis," +
-                   "funktionieren,Gesetz,Gesetze,gestellt,Gleispläne," +
-                   "Güterzugfahrpläne,halten,helfen,Het,Impressum,Inhalt," +
-                   "interessanten,Internet,Krümelbahn,Lijntje,Link,Links," +
+                   "funktionieren,Gesetz,Gesetze,gestellt,Gleispl&auml;ne," +
+                   "G&uuml;terzugfahrpl&auml;ne,halten,helfen,Het,Impressum,Inhalt," +
+                   "interessanten,Internet,Kr&uuml;melbahn,Lijntje,Link,Links," +
                    "Literatur,Mitteilung,Modellbahn,Nachricht,Navigation," +
                    "Norderney,Offizielle,rechtens,Regelwerk,Seite," +
                    "Serverstrukturen,signalbuch,snb,Solingen,Startseite," +
-                   "stellt,Suchen,verbieten,Verbot,verfasst,Verfügung," +
+                   "stellt,Suchen,verbieten,Verbot,verfasst,Verf&uuml;gung," +
                    "versuche,Verweise,vorhanden,wissen,Wortlaut,Zeit";
        seite[30] = "dienst_db.htm";
 beschreibung[30] = "Kr&uuml;melbahn - Dienstvorschriften der DB";
-     begriff[31] = "Aktivitäten,anfordern,Anlage,Anlagenausgestaltungen," +
+     begriff[31] = "Aktivit&auml;ten,anfordern,Anlage,Anlagenausgestaltungen," +
                    "Anlagengestaltung,Anlagenplatte,Anschließend," +
                    "aufgebohrt,aufstellen,Ausgestaltung,Bahnen," +
-                   "Bahnsinniges,befestigen,befestigt,Benötigt,Berührung," +
-                   "beschrieben,Bevölkerung,Bild," +
-                   "blob/main/Modellbahn/Krümelbahn,bohren,Bohrer,DCC," +
+                   "Bahnsinniges,befestigen,befestigt,Ben&ouml;tigt,Ber&uuml;hrung," +
+                   "beschrieben,Bev&ouml;lkerung,Bild," +
+                   "blob/main/Modellbahn/Kr&uuml;melbahn,bohren,Bohrer,DCC," +
                    "Digitalbetrieb,Direkt,Einbau,eingesetzt,einsetzen," +
                    "Elektronik,eMail,Fahrzeugbau,fertig,Figur,Figuren," +
                    "gefragt,gemacht,githubinfo,Hand,heftigere," +
                    "Hektometertafeln,Impressum,Info,Informationen,Inhalt," +
-                   "Jahresmodell,Klarsichtplättchen,kleben,kleines," +
-                   "Klöbchen,kommt,Krümelbahn,Landschaft,Leben," +
-                   "Leuchtstoffröhren,Links,Literatur,Loch,Lösung,ltige," +
+                   "Jahresmodell,Klarsichtpl&auml;ttchen,kleben,kleines," +
+                   "Kl&ouml;bchen,kommt,Kr&uuml;melbahn,Landschaft,Leben," +
+                   "Leuchtstoffr&ouml;hren,Links,Literatur,Loch,L&ouml;sung,ltige," +
                    "Mercedes-Benz,Merscheider,Messingdraht,Modellbahn," +
                    "Modellfahrzeuge,Modulbau,Navigation,Nebenbahnsignale," +
                    "pdf,Preiser,provisorisch,Randerscheinungen,reißt," +
                    "Schacht,Schotter,Seitenanfang,Sieht,Signalen,Sitzbank," +
-                   "Solingen,Stabilität,Standbein,standsicher,Startseite," +
-                   "Straßenpfosten,Stückchen,Suchen,Teil,umkippen," +
+                   "Solingen,Stabilit&auml;t,Standbein,standsicher,Startseite," +
+                   "Straßenpfosten,St&uuml;ckchen,Suchen,Teil,umkippen," +
                    "Unsichtbarkeit,vorprogrammiert,vorsichtig";
        seite[31] = "figuren.htm";
 beschreibung[31] = "Kr&uuml;melbahn - Anlagengestaltung - Figuren befestigen";
-     begriff[32] = "Abelitz,abgeschaltet,Ansicht,ausgewählter,Bahn,Bahnen," +
-                   "bahnhof,Bahnhöfen,Bahnhofskürzel,Bahnsinniges,benötigt," +
-                   "Betriebsstelle,Betriebsstellen,Betriebstellenkürzel," +
+     begriff[32] = "Abelitz,abgeschaltet,Ansicht,ausgew&auml;hlter,Bahn,Bahnen," +
+                   "bahnhof,Bahnh&ouml;fen,Bahnhofsk&uuml;rzel,Bahnsinniges,ben&ouml;tigt," +
+                   "Betriebsstelle,Betriebsstellen,Betriebstellenk&uuml;rzel," +
                    "Button,de/apn,de/apn/KSO,Deutsche,Dienstvorschriften," +
                    "Direkt,direkte,DS100,Duitse,Emden,entsprechende," +
-                   "function,funktionieren,Gleispläne,Gleisplanes,Goch," +
-                   "Güterzugfahrpläne,HABZ,Haltepunkten,Hbf,Het,HMAR,HND," +
+                   "function,funktionieren,Gleispl&auml;ne,Gleisplanes,Goch," +
+                   "G&uuml;terzugfahrpl&auml;ne,HABZ,Haltepunkten,Hbf,Het,HMAR,HND," +
                    "HNN,https,Impressum,Inhalt,Internet,KGO,KLA,Klartext," +
-                   "KLEL,KOPL,Krümelbahn,KSGR,KSM,KSO,KSS,KSV,Kürzel," +
+                   "KLEL,KOPL,Kr&uuml;melbahn,KSGR,KSM,KSO,KSS,KSV,K&uuml;rzel," +
                    "Langenfeld,Leichlingen,length,Lijntje,Link,Links,Liste," +
                    "Literatur,Marienhafe,Modellbahn,Navigation,Norddeich," +
                    "Norden,Norderney,Opladen,PDF-Format,plan,Seiten," +
-                   "Solingen,Solingen-Grünewald,Solingen-Mitte," +
+                   "Solingen,Solingen-Gr&uuml;newald,Solingen-Mitte," +
                    "Solingen-Schaberg,Solingen-Vogelpark,Startseite,steht," +
-                   "stellt,Suchen,trassenfinder,Übersetzung,usepdf," +
-                   "Verfügung,Zeichenfolge";
+                   "stellt,Suchen,trassenfinder,&uuml;bersetzung,usepdf," +
+                   "Verf&uuml;gung,Zeichenfolge";
        seite[32] = "gleisplan.htm";
 beschreibung[32] = "Kr&uuml;melbahn - Gleispl&auml;ne";
-     begriff[33] = "Abfahrtspläne,Aktuell,altbewärtes,Ankunfts,Aufstellung," +
+     begriff[33] = "Abfahrtspl&auml;ne,Aktuell,altbew&auml;rtes,Ankunfts,Aufstellung," +
                    "Bahn,Bahnen,bahnhof,Bahnhofs,Bahnsinniges,baut,braucht," +
                    "com,dbcargo,de/bin/db/stboard,Dienstvorschriften," +
                    "Direkt,Duitse,entdecken,erfolgreich,erhielt," +
-                   "exe/dninput,function,gab,Gleispläne,gueterfahrplan," +
-                   "Güterzüge,Güterzugfahrpläne,hacon,Het,href,https," +
-                   "Impressum,Inhalt,Internet,Krümelbahn,Kürzel,Lijntje," +
+                   "exe/dninput,function,gab,Gleispl&auml;ne,gueterfahrplan," +
+                   "G&uuml;terz&uuml;ge,G&uuml;terzugfahrpl&auml;ne,hacon,Het,href,https," +
+                   "Impressum,Inhalt,Internet,Kr&uuml;melbahn,K&uuml;rzel,Lijntje," +
                    "Links,Literatur,location,Modellbahn,Navigation," +
                    "Norderney,planner,Seitenanfang,Solingen,standard," +
                    "Startseite,Suchen,target,var,verkehrenden,verschwindet," +
                    "Webseiten,zug,Zugnummernsuche";
        seite[33] = "gueterzug.htm";
 beschreibung[33] = "Kr&uuml;melbahn - G&uuml;terzugfahrpl&auml;ne";
-     begriff[34] = "Abstand,Aktivitäten,Anbieter,anfordern,angebracht," +
+     begriff[34] = "Abstand,Aktivit&auml;ten,Anbieter,anfordern,angebracht," +
                    "Anlagenausgestaltungen,Anlagenbild,Anlagengestaltung," +
                    "Ansatz,Anspruch,Antworten,Art,Artikel,Auflistung," +
-                   "aufsteigender,Ausgangspunkt,ausgeführt,Bahnen,Bahnhof," +
+                   "aufsteigender,Ausgangspunkt,ausgef&uuml;hrt,Bahnen,Bahnhof," +
                    "Bahnsinniges,bearbeitet,befestigen,Befinden,befindet," +
                    "beiden,beleben,benannt,Beschreibung,beschrieben,Best," +
-                   "beträgt,blob/main/Modellbahn/Krümelbahn,Bohrung,Brawa," +
-                   "brünieren,brüniert,Busch,DCC,Detail,dienen," +
+                   "betr&auml;gt,blob/main/Modellbahn/Kr&uuml;melbahn,Bohrung,Brawa," +
+                   "br&uuml;nieren,br&uuml;niert,Busch,DCC,Detail,dienen," +
                    "Digitalbetrieb,Direkt,dreieckige,Einbau,Einsatz," +
                    "Elektronik,eMail,entfernt,Entfernungen,entsprechend," +
                    "erhebt,erlaubt,erstellt,Fahrzeugbau,Figuren,flexibel," +
                    "Fohrmann,Folge,Fragen,Fremo,Fremo-Artikel,geklebt," +
                    "gemacht,gestaltet,gesteckt,gestossen,githubinfo,Gleis," +
-                   "Gleises,Gleismitte,größeren,halber,Heft," +
+                   "Gleises,Gleismitte,gr&ouml;ßeren,halber,Heft," +
                    "Hektometersteine,Hektometertafel,Hektometertafeln," +
-                   "Hersteller,Hp1,Hülse,Impressum,Info,Informationen," +
+                   "Hersteller,Hp1,H&uuml;lse,Impressum,Info,Informationen," +
                    "Inhalt,insbesondere,Jahresmodell,Kastens," +
                    "Kilometerbereich,Kilometerstein,Kilometertafel," +
-                   "Kilometrierung,klären,kleine,Kleinigkeiten,kommen," +
-                   "kommt,Krümelbahn,Kunststoffstreifen,Länge," +
-                   "Leuchtstoffröhren,liefert,Links,Literatur,Loch,Lösung," +
+                   "Kilometrierung,kl&auml;ren,kleine,Kleinigkeiten,kommen," +
+                   "kommt,Kr&uuml;melbahn,Kunststoffstreifen,L&auml;nge," +
+                   "Leuchtstoffr&ouml;hren,liefert,Links,Literatur,Loch,L&ouml;sung," +
                    "maßgeblich,MBZ,Mercedes-Benz,Merscheider,Messingbraun," +
-                   "Messingdraht,Messingröhrchen,Mitte,Modellbahn," +
+                   "Messingdraht,Messingr&ouml;hrchen,Mitte,Modellbahn," +
                    "Modellfahrzeuge,Modul,Modulbau,Moduleinsatz,Modulen," +
                    "Montagelehre,Nachbarmodulen,Navigation," +
                    "Nebenbahnsignale,nette,optischer,Orientierung," +
@@ -1844,139 +1820,139 @@ beschreibung[33] = "Kr&uuml;melbahn - G&uuml;terzugfahrpl&auml;ne";
                    "Randerscheinungen,Richtung,RST-Modellbau,Schacht," +
                    "Schotter,Seiten,Seitenanfang,sieht,Signalen,Sitzbank," +
                    "Solingen,standsicher,Startseite,steckbar,steckbare," +
-                   "Steckmöglichkeit,Steckmöglichkeiten,stehen," +
+                   "Steckm&ouml;glichkeit,Steckm&ouml;glichkeiten,stehen," +
                    "Straßenpfosten,Strecke,Streckenentfernung," +
-                   "Streckengleises,Streckenzeichen,Stück,Suchen,Tafeln," +
-                   "unabhängig,untere,Unterseite,Vollständigkeit," +
-                   "Weiterführung,Zeitschrift";
+                   "Streckengleises,Streckenzeichen,St&uuml;ck,Suchen,Tafeln," +
+                   "unabh&auml;ngig,untere,Unterseite,Vollst&auml;ndigkeit," +
+                   "Weiterf&uuml;hrung,Zeitschrift";
        seite[34] = "hekto.htm";
 beschreibung[34] = "Kr&uuml;melbahn - Anlagengestaltung - Hektometertafeln";
      begriff[35] = "anfordern,Angabe,auftreten,ausschließlich,Bahnen," +
-                   "Bahnsinniges,benötigt,bestehende,Betreiber,Buchenstr," +
+                   "Bahnsinniges,ben&ouml;tigt,bestehende,Betreiber,Buchenstr," +
                    "cloud_2,Commercial,Cookies,D-42699," +
                    "Darstellungsprobleme,Daten,DCC-/LocoNET,Deeplinks," +
                    "dient,Direkt,eMail,eMail-Message,erwarten,existieren," +
-                   "existierende,externe,Firmennamen,Format,geänderte," +
-                   "genannt,Gerät,Geräten,Gerätes,geschieht,gewünschten," +
+                   "existierende,externe,Firmennamen,Format,ge&auml;nderte," +
+                   "genannt,Ger&auml;t,Ger&auml;ten,Ger&auml;tes,geschieht,gew&uuml;nschten," +
                    "github,Haftung,Hinweise,Hobbies,Homepage,Homepages," +
                    "Impressum,Info,Inhalt,inhaltlicher,interessante," +
                    "Interessen,keinerlei,kommerziellen,Kontakte,Kontrolle," +
-                   "Krümelbahn,Links,Literatur,Marken,Meinung,Michael," +
+                   "Kr&uuml;melbahn,Links,Literatur,Marken,Meinung,Michael," +
                    "Modellbahn,nachbauen,Navigation,nichtgewerblicher," +
                    "Nutzer,Nutzung,Offer,personenbezogenen,Pflege," +
                    "Platinenlayouts,private,privater,Projekte,rein," +
-                   "Rücksicht,Schaltplanzeichnungen,Schutzrechte,Seiten," +
-                   "Solingen,sorgfältiger,Startseite,Suchen,Suppe,Target," +
-                   "übernehme,Unterlagen,Verantwortlich,verfügbar," +
+                   "R&uuml;cksicht,Schaltplanzeichnungen,Schutzrechte,Seiten," +
+                   "Solingen,sorgf&auml;ltiger,Startseite,Suchen,Suppe,Target," +
+                   "&uuml;bernehme,Unterlagen,Verantwortlich,verf&uuml;gbar," +
                    "verlinkten,verweise,verwendet,wider,willkommen,WWW," +
-                   "Zimmermann,zugehörigen";
+                   "Zimmermann,zugeh&ouml;rigen";
        seite[35] = "impressum.htm";
 beschreibung[35] = "Kr&uuml;melbahn - Impressum";
-     begriff[36] = "Anfänger,Ausstellungstermine,Bahn,Bahnen,Bahnsinniges," +
-                   "blob/main/Allgemein/Krümelbahn,Broschüren,cher,cloud," +
+     begriff[36] = "Anf&auml;nger,Ausstellungstermine,Bahn,Bahnen,Bahnsinniges," +
+                   "blob/main/Allgemein/Kr&uuml;melbahn,Brosch&uuml;ren,cher,cloud," +
                    "DCC,digital,Direkt,Fahrzeugselbstbau,github,githubinfo," +
                    "große,Guten,Impressum,Info,Informationen,Inhalt," +
-                   "Interessante,kleine,Krümelbahn,Kurzanleitung,Links," +
+                   "Interessante,kleine,Kr&uuml;melbahn,Kurzanleitung,Links," +
                    "Literatur,main_public,Michael,Michelstadt,Modell," +
                    "Modellbahn,Modellbahnelektronik,Modulbau,Navigation," +
                    "new,pdf,Projekte,Reihe,rund,Solingen,Suchen,Themen," +
-                   "Übersicht,Umgang,verfügbar,Vergangenheit," +
-                   "veröffentlicht,Videos,wichtige,Zimmermann";
+                   "&uuml;bersicht,Umgang,verf&uuml;gbar,Vergangenheit," +
+                   "ver&ouml;ffentlicht,Videos,wichtige,Zimmermann";
        seite[36] = "index.htm";
 beschreibung[36] = "Kr&uuml;melbahn";
      begriff[37] = "Abeler,achs,achs/2achs,achs/3achs,achs/4achs,achsig," +
-                   "Actros,Actros18,Aktivitäten,Angaben,Anlagengestaltung," +
+                   "Actros,Actros18,Aktivit&auml;ten,Angaben,Anlagengestaltung," +
                    "Anlass,Anspruch,AROCS,Aufdruck,aufgelistet,Auflieger," +
-                   "Autodesign,Autotransporter-Hängerzug,Bahnen," +
-                   "Bahnsinniges,Balkhauser,Basismodelle,begrüßen," +
-                   "Bergische,Bergischen,beziehen,Bigspace,Brücke,Burg," +
+                   "Autodesign,Autotransporter-H&auml;ngerzug,Bahnen," +
+                   "Bahnsinniges,Balkhauser,Basismodelle,begr&uuml;ßen," +
+                   "Bergische,Bergischen,beziehen,Bigspace,Br&uuml;cke,Burg," +
                    "cool,dankbar,DCC,Deutsches,Digitalbetrieb,Direkt," +
-                   "Duoplex,Elektronik,eMail,Engels,Ergänzungen,erhältlich," +
+                   "Duoplex,Elektronik,eMail,Engels,Erg&auml;nzungen,erh&auml;ltlich," +
                    "erhebt,Erweiterung,Eurokoffer-Sattelzugauflieger," +
                    "Fahrzeug,Fahrzeugbau,Fahrzeuge,Fall,Faszination,Fauna," +
                    "Friedrich,Galileum,Gesenkschmiede,Gigaspace," +
-                   "Glastransporter-Sattelzug,Glüder,Hendrichs,Herpa," +
+                   "Glastransporter-Sattelzug,Gl&uuml;der,Hendrichs,Herpa," +
                    "Hersteller,Holzkiste,Impressum,Industriemuseum,Inhalt," +
                    "Innovation,irgendwie,Jahr,Jahre,Jahresmodell," +
                    "Johannisberg,Jumbogardinenplanen-Sattelzugauflieger," +
                    "Junior,Katalognummer,Katalognummern," +
                    "Kempfkipper-Sattelzug,Klammern,Klingenmuseum," +
                    "Kofferauflieger,Koffersattelzug,Korrekturhinweise," +
-                   "Kotten,Krone,Krümelbahn,Land,Liner,Links,Liste," +
+                   "Kotten,Krone,Kr&uuml;melbahn,Land,Liner,Links,Liste," +
                    "Literatur,Mercedes-Benz,Mercedes-Benz-Niederlassung," +
-                   "Meusberger,Meuseburgerauflieger,Mobilität,Modellbahn," +
-                   "Modellfahrzeuge,Modulbau,MP2,MP3,MP4,MP5,Müngstener," +
+                   "Meusberger,Meuseburgerauflieger,Mobilit&auml;t,Modellbahn," +
+                   "Modellfahrzeuge,Modulbau,MP2,MP3,MP4,MP5,M&uuml;ngstener," +
                    "Museumsbahnen,Navigation,neuer,Niederlassung," +
                    "Nordbahntrasse,Plagiarius,Remscheid,Rheinisches,Ring," +
-                   "Ronsdorfer,Röntgenmuseum,Sammlerobjekte,Sammlung," +
+                   "Ronsdorfer,R&ouml;ntgenmuseum,Sammlerobjekte,Sammlung," +
                    "Sattelzug,Sattelzugmaschine,schicken,Schloß," +
                    "Schwebebahn,schwer,Seitenanfang,SEL,SLT,Solingen," +
                    "Solingen-Remscheid-Wuppertal,Solinger,Stadthalle," +
                    "Stadtwappen,Startseite,Suchen,Tafel,Talsperre,Taxi," +
                    "Tiefbettauflieger,Tierheim,Uhrenmuseum,Uni," +
-                   "Vollständigkeit,W198,Werkzeugmuseum,Wülfrath,Wupper," +
+                   "Vollst&auml;ndigkeit,W198,Werkzeugmuseum,W&uuml;lfrath,Wupper," +
                    "Wuppertal,Wuppertal/Solingen/Remscheid," +
                    "Wuppertalbewegung,Wuppertaler,Wuppertruck,Zeittunnel," +
                    "Zoo,Zugmaschine";
        seite[37] = "jahreswg.htm";
 beschreibung[37] = "Kr&uuml;melbahn - Mercedes-Benz Jahresmodell";
-     begriff[38] = "A46,alte,anschließend,Bahnanlagen,Bahndämme,Bahnen," +
-                   "Bahnhof,Bahnhöfe,Bahnsinniges,Bau,befahren,beliebter," +
-                   "blob/main/Solingen/Krümelbahn,Brücken,demontiert," +
-                   "Dezember,Direkt,ebenso,eingestellt,endet,endgültig," +
-                   "erhaltene,eröffnet,Fahrzeuge,Februar,genannt," +
-                   "geographisch,githubinfo,Gräfrath,Güterverkehr,Güterzug," +
+     begriff[38] = "A46,alte,anschließend,Bahnanlagen,Bahnd&auml;mme,Bahnen," +
+                   "Bahnhof,Bahnh&ouml;fe,Bahnsinniges,Bau,befahren,beliebter," +
+                   "blob/main/Solingen/Kr&uuml;melbahn,Br&uuml;cken,demontiert," +
+                   "Dezember,Direkt,ebenso,eingestellt,endet,endg&uuml;ltig," +
+                   "erhaltene,er&ouml;ffnet,Fahrzeuge,Februar,genannt," +
+                   "geographisch,githubinfo,Gr&auml;frath,G&uuml;terverkehr,G&uuml;terzug," +
                    "Haltepunkt,Hauptbahnhof,heutigen,Impressum,Info,Inhalt," +
                    "insgesamt,interessanteste,Juni,Korkenzieherbahn," +
-                   "Krümelbahn,lang,letzte,Linienverlauf,Links,Literatur," +
-                   "März,Modellbahn,Navigation,November,offiziell,pdf," +
+                   "Kr&uuml;melbahn,lang,letzte,Linienverlauf,Links,Literatur," +
+                   "M&auml;rz,Modellbahn,Navigation,November,offiziell,pdf," +
                    "Personenverkehr,Reste,restliche,Seitenanfang,Skizze," +
-                   "Solingen,Solingen-Gräfrath,Solingen-Mitte," +
+                   "Solingen,Solingen-Gr&auml;frath,Solingen-Mitte," +
                    "Solingen-Nord,Solingen-Wald,Solinger,Stadtgebiet," +
                    "Stadtteil,Startseite,Strecke,Strecken,Streckenverlauf," +
-                   "Suchen,Südbahnhof,Teilstrecke,umgehend,Umgehungsbahn," +
-                   "ursprünglichen,verbindet,Verkehr,verkehrte,verlagert," +
-                   "verlängerte,Vohwinkel,Wald,Wanderweg,Wikipedia," +
+                   "Suchen,S&uuml;dbahnhof,Teilstrecke,umgehend,Umgehungsbahn," +
+                   "urspr&uuml;nglichen,verbindet,Verkehr,verkehrte,verlagert," +
+                   "verl&auml;ngerte,Vohwinkel,Wald,Wanderweg,Wikipedia," +
                    "Wuppertal-Vohwinkel,zeigt,Zeit,Zug";
        seite[38] = "korkbahn.htm";
 beschreibung[38] = "Kr&uuml;melbahn - Korkenzieherbahn";
-     begriff[39] = "Abdeckung,abschneiden,Aktivitäten,aneinander,anfordern," +
+     begriff[39] = "Abdeckung,abschneiden,Aktivit&auml;ten,aneinander,anfordern," +
                    "angelehnt,Anlagenausgestaltungen,Anlagengestaltung," +
                    "Anschluss,Anschlussdraht,Ansteuerelektronik,ansteuern," +
                    "axialem,Bahnen,Bahnsinniges,Bahnsteigleuchte,Bedarf," +
                    "befestigen,beschrieben,Betankungsanlage,Birnchen," +
-                   "blob/main/Modellbahn/Krümelbahn,dauerhaftere,DCC,dient," +
+                   "blob/main/Modellbahn/Kr&uuml;melbahn,dauerhaftere,DCC,dient," +
                    "Dieseltankstelle,Digitalbetrieb,Direkt,Drahtanschluss," +
                    "drei,durchgebrannt,Durchmesser,Einbau,Elektronik,eMail," +
                    "Ersatz,erwischt,Fahrzeugbau,Fertig,Figuren,gefallen," +
-                   "gelötet,gemacht,gewünschter,githubinfo,Glaskuppel," +
+                   "gel&ouml;tet,gemacht,gew&uuml;nschter,githubinfo,Glaskuppel," +
                    "halbieren,halbiert,Halbschalen,Hektometertafeln," +
                    "hergestellt,Idee,Impressum,Info,Informationen,Inhalt," +
-                   "Jahresmodell,kaltweiß,Kenner,kOhm,Krümelbahn," +
-                   "Kunststoffröhrchen,Kupferlackdraht,Kupferlackdrähte," +
-                   "Länge,langes,LC10-Leuchtstoffröhren-Simulator,LEDs," +
+                   "Jahresmodell,kaltweiß,Kenner,kOhm,Kr&uuml;melbahn," +
+                   "Kunststoffr&ouml;hrchen,Kupferlackdraht,Kupferlackdr&auml;hte," +
+                   "L&auml;nge,langes,LC10-Leuchtstoffr&ouml;hren-Simulator,LEDs," +
                    "letzten,Leuchtdioden,leuchteten,Leuchtstofflampe," +
-                   "Leuchtstofflampen-Simulator,Leuchtstoffröhre," +
-                   "Leuchtstoffröhren,Leuchtstoffröhrenimitation,Links," +
-                   "Literatur,Literaturhinweise,Lösung,Mercedes-Benz," +
+                   "Leuchtstofflampen-Simulator,Leuchtstoffr&ouml;hre," +
+                   "Leuchtstoffr&ouml;hren,Leuchtstoffr&ouml;hrenimitation,Links," +
+                   "Literatur,Literaturhinweise,L&ouml;sung,Mercedes-Benz," +
                    "Merscheider,Miba,Michelstadt,Mikrobirnchen,milchig," +
                    "milchige,Mitte,Modell,Modellbahn,Modellfahrzeuge," +
-                   "Modulbau,Moduleinsatz,möglichst,musste,nachbilden," +
-                   "natürlich,Navigation,Nebenbahnsignale,Neonröhren,passt," +
-                   "pdf,Randerscheinungen,Reihe,Röhrchen,Schacht,Schotter," +
+                   "Modulbau,Moduleinsatz,m&ouml;glichst,musste,nachbilden," +
+                   "nat&uuml;rlich,Navigation,Nebenbahnsignale,Neonr&ouml;hren,passt," +
+                   "pdf,Randerscheinungen,Reihe,R&ouml;hrchen,Schacht,Schotter," +
                    "Schritte,Schritten,Seite,Seitenanfang,Signalen," +
                    "Sitzbank,SMD-Leds,Solingen,standsicher,Startseite," +
-                   "Straßenpfosten,Stück,Suchen,Tams,vergessen,verwendeten," +
+                   "Straßenpfosten,St&uuml;ck,Suchen,Tams,vergessen,verwendeten," +
                    "Viessmann,Vordach,vorhanden,Vorwiderstand,warmweiß," +
-                   "Wattestäbchen,weißem,wissen,zusammengelötet";
+                   "Wattest&auml;bchen,weißem,wissen,zusammengel&ouml;tet";
        seite[39] = "leuchtr.htm";
 beschreibung[39] = "Kr&uuml;melbahn - Anlagengestaltung - " +
                    "Leuchtstoffr&ouml;hren";
      begriff[40] = "American,amerikanische,Andreas,Anita,Anspruch,Arnold," +
-                   "Artitec,Artmaster,ASOA,Association,Ätzschilder," +
-                   "Ätztechnik,aufgenommen,Auhagen,Ausbesserungswerk,Autos," +
-                   "Bahn,Bahnen,Bahnen/Clubs/Museen,Bahnen/Förderverein," +
-                   "Bahnsinniges,Bäume,Bausätze,Bayrisches,BDEF," +
+                   "Artitec,Artmaster,ASOA,Association,&auml;tzschilder," +
+                   "&auml;tztechnik,aufgenommen,Auhagen,Ausbesserungswerk,Autos," +
+                   "Bahn,Bahnen,Bahnen/Clubs/Museen,Bahnen/F&ouml;rderverein," +
+                   "Bahnsinniges,B&auml;ume,Baus&auml;tze,Bayrisches,BDEF," +
                    "Beckert-Modellbau,Bergische,Berlin,Beschriftungen," +
                    "Blumert,Bochum-Dahlhausen,Brawa,Brekina,Brohl," +
                    "Bruchhausen-Vilsen,Bundesverband,Burscheid,Busch," +
@@ -1988,72 +1964,72 @@ beschreibung[39] = "Kr&uuml;melbahn - Anlagengestaltung - " +
                    "Eisenbahn-Kurier,Eisenbahnlinks,Eisenbahn-Magazin," +
                    "Eisenbahnmuseum,Eisenbahn-News,Eisenbahnromantik," +
                    "Elektronik,eMail,Engeln,erheben,Erkrath-Hochdahl," +
-                   "Erweiterung,Europäischer,Europas,existierende," +
+                   "Erweiterung,Europ&auml;ischer,Europas,existierende," +
                    "Fahrzeuge,Faller,Figuren,Firmen,Fleischmann,Fohrmann," +
-                   "Förderverein,FREMO,Freunde,Freundeskreis," +
-                   "Führerstandsimulation,Gahler,Gassner,geänderte,Gebäude," +
-                   "Gipsbauformen,Günther,Haan,Heico,Heki,Heris,Herpa," +
+                   "F&ouml;rderverein,FREMO,Freunde,Freundeskreis," +
+                   "F&uuml;hrerstandsimulation,Gahler,Gassner,ge&auml;nderte,Geb&auml;ude," +
+                   "Gipsbauformen,G&uuml;nther,Haan,Heico,Heki,Heris,Herpa," +
                    "Hersteller,Hinweise,historische,Historischer," +
-                   "Hobby-Ecke,Hölscher,IGM,IIm,Impressum,IMT-Frowein," +
+                   "Hobby-Ecke,H&ouml;lscher,IGM,IIm,Impressum,IMT-Frowein," +
                    "Inhalt,Interessengemeinschaft,Japan,Joswood,Kaarst," +
                    "Kadee,Kantoor,Kato,Kibri,Kleinbahn-Museum," +
-                   "Kleinserien-Fahrzeuge,Koblenz,Krümelbahn,Kupplungen," +
-                   "Kuswa,Lahnstein-Koblenz,Länderbahnforum," +
+                   "Kleinserien-Fahrzeuge,Koblenz,Kr&uuml;melbahn,Kupplungen," +
+                   "Kuswa,Lahnstein-Koblenz,L&auml;nderbahnforum," +
                    "Landschaftsgestaltung,LaserCut-Modelle,Lauer,Lemke," +
                    "Lenz,Leuchten,LGB,Liliput,Lima,Linkliste,Links,Liste," +
                    "Listen,Literatur,Lok-Magazin,Lok-Report,Lokschuppen," +
-                   "Magazin,Märklin,Mber,MBZ,MEC,Meiningen,Menden," +
-                   "Messingbausätze,Messing-Präzisionsmodelle,MIBA," +
-                   "Micro-Metakit,Militär,MKB-Modelle,MK-Schilderversand," +
+                   "Magazin,M&auml;rklin,Mber,MBZ,MEC,Meiningen,Menden," +
+                   "Messingbaus&auml;tze,Messing-Pr&auml;zisionsmodelle,MIBA," +
+                   "Micro-Metakit,Milit&auml;r,MKB-Modelle,MK-Schilderversand," +
                    "MOBA,Modell,Modellbahn,Modellbahnen,Modellbahner," +
                    "Modellbahnprodukte,Modellbahnverband,Modellbau-Joachim," +
-                   "Modellbauzubehör,Modelleisenbahnclub,Modelleisenbahner," +
+                   "Modellbauzubeh&ouml;r,Modelleisenbahnclub,Modelleisenbahner," +
                    "Model-Loco,Modulbau,MoeBo,MOROP,Motorisierungen," +
                    "Museumsbahnen,Navigation,N-Bahn,NEM," +
                    "Neuenmarkt-Wirsberg,Neustadt/Weinstraße," +
-                   "Niedersächsisches,NMRA,Nördlingen,Normen,North,Nothaft," +
-                   "Nürnberg,Oberleitungen,Organisationen,Ostmodell,Peco," +
+                   "Nieders&auml;chsisches,NMRA,N&ouml;rdlingen,Normen,North,Nothaft," +
+                   "N&uuml;rnberg,Oberleitungen,Organisationen,Ostmodell,Peco," +
                    "Peddinghaus-Decals,Petau,Peter,Piko,Pola,Preiser," +
                    "RailCommunity,Railroad,RCN,Regional,Rheinland,Rietze," +
                    "Rivarossi,Roco,Saemann,Samba,SB-Modellbau,schicken," +
                    "Schienen,Schienenbus,Schienenverkehr,Schiffe,Schotter," +
-                   "Schuhmacher,Schwarzwaldbahn,Seilzugkanäle,Seitenanfang," +
+                   "Schuhmacher,Schwarzwaldbahn,Seilzugkan&auml;le,Seitenanfang," +
                    "Selfkantbahn,Signale,Signaltechnik,Solingen," +
-                   "Sommerfeldt,Sonstiges,Spörle,Startseite,Stellwerke," +
+                   "Sommerfeldt,Sonstiges,Sp&ouml;rle,Startseite,Stellwerke," +
                    "Stellwerkssimulation,Suchen,SWR,Technikmuseum," +
                    "TE-Miniatur-Shop,Themen,Tillig,TL-Decals,Trix," +
-                   "Überregional,Übersicht,Umbauten,USA,Verband," +
+                   "&uuml;berregional,&uuml;bersicht,Umbauten,USA,Verband," +
                    "Verkehrsmuseum,Vertrieb,Viessmann,Vohwinkel,Vollmer," +
-                   "Vollständigkeit,Vorbild,Vulkan-Express,Weinert," +
-                   "Werkstatt,Werkzeug,Wiking,WinRail,Wipperfürth," +
-                   "Wupperschiene,Wuppertal,Württemberg,Württembergische," +
-                   "Zeitschriften,Zubehör,ZuSi";
+                   "Vollst&auml;ndigkeit,Vorbild,Vulkan-Express,Weinert," +
+                   "Werkstatt,Werkzeug,Wiking,WinRail,Wipperf&uuml;rth," +
+                   "Wupperschiene,Wuppertal,W&uuml;rttemberg,W&uuml;rttembergische," +
+                   "Zeitschriften,Zubeh&ouml;r,ZuSi";
        seite[40] = "link_bn.htm";
 beschreibung[40] = "Kr&uuml;melbahn - Eisenbahnlinks";
      begriff[41] = "amerikanische,Anspruch,ATMEL,aufgenommen,Bahnen," +
-                   "Bahnsinniges,benötigt,Bormann,Brenner8,dankbar,DCC," +
+                   "Bahnsinniges,ben&ouml;tigt,Bormann,Brenner8,dankbar,DCC," +
                    "DCC-Voltmeter,Deloof,DIAMEX,Digital,DigiTrax,Direkt," +
                    "Downloads,Ebenso,Eisenbahn,eMail,eMailAndGithub," +
                    "erheben,Erweiterung,ESU,existierende,finden,Fragen," +
                    "Frankenzentrale,Franken-Zentrale,Franz,FRED,FREDI," +
-                   "Fremo,geänderte,genannten,Grundlagen,Handregler,Hans," +
+                   "Fremo,ge&auml;nderte,genannten,Grundlagen,Handregler,Hans," +
                    "Hardware,Hersteller,Hilfsmittel,Hinweise,Impressum," +
-                   "Informationen,Inhalt,JMRI,Krümelbahn,Lenz,Linkliste," +
+                   "Informationen,Inhalt,JMRI,Kr&uuml;melbahn,Lenz,Linkliste," +
                    "Links,Liste,Listen,Literatur,LocoBuffer," +
                    "LocoIO/blob/main/Documentation/LocoIO," +
                    "LocoIO-Zusammenfassung,LocoNET,LocoNET-Kabeltester," +
                    "LocoNET-Monitor,LocoNET-PC-Interface," +
                    "LocoNET-Pegeltester,LocoNet-Pullup," +
-                   "LocoNET-Spezifikation,LocoNET-Uhr,LocoNET-Verstärker," +
-                   "MicroChip,Microcontroller,Modellbahn,MS-SH,Müller," +
+                   "LocoNET-Spezifikation,LocoNET-Uhr,LocoNET-Verst&auml;rker," +
+                   "MicroChip,Microcontroller,Modellbahn,MS-SH,M&uuml;ller," +
                    "Navigation,Nebenuhr,Nebenuhr-Statusanzeige,offizielle," +
-                   "OpenDCC,over,pdf,PIC-Programmiergerät,PICs,PolEi," +
-                   "Polungsprüfer,Processoren,Programmiergeräte,PROG-S2E," +
+                   "OpenDCC,over,pdf,PIC-Programmierger&auml;t,PICs,PolEi," +
+                   "Polungspr&uuml;fer,Processoren,Programmierger&auml;te,PROG-S2E," +
                    "Reinhard,RocRail,RSCLD,schicken,Seiten,Seitenanfang," +
                    "sicherlich,Software,Solingen,Spaxbooster,Spax-Booster," +
                    "Startseite,Stefan,Suchen,Tams,TCP,Thema,Themen,Treiber," +
                    "Uhlenbrock,Uhrendecoder-Franz,Uhrenzentrale," +
-                   "USB-AVR-PROG,USBurn,Vollständigkeit,wiFred,WinAVR,WLAN," +
+                   "USB-AVR-PROG,USBurn,Vollst&auml;ndigkeit,wiFred,WinAVR,WLAN," +
                    "WWW,Zimo,Zusammenfassung";
        seite[41] = "link_dcc.htm";
 beschreibung[41] = "Kr&uuml;melbahn - Digitallinks";
@@ -2061,7 +2037,7 @@ beschreibung[41] = "Kr&uuml;melbahn - Digitallinks";
                    "Athearn,Atlas,Bachmann,Bahnen,Bahnsinniges,Casting," +
                    "change,club,Clubs,complete,DCC,Digital,Direkt,Dorado," +
                    "Eisenbahn,eMail,engineer,feel,for,free,happy,have," +
-                   "Hersteller,Impressum,Inc,Inhalt,Kadee,Kato,Krümelbahn," +
+                   "Hersteller,Impressum,Inc,Inhalt,Kadee,Kato,Kr&uuml;melbahn," +
                    "Life-Like,linklist,Links,Lionel,list,lists,Literatur," +
                    "Magazines,Manufacturer,manufacturers,may,mistake,Model," +
                    "Modellbahn,Modelrailroader,MRR,Navigation,NMRA,North," +
@@ -2074,63 +2050,63 @@ beschreibung[41] = "Kr&uuml;melbahn - Digitallinks";
 beschreibung[42] = "Kr&uuml;melbahn - Links to american manufacturers";
      begriff[43] = "Adolf,alte,Anspruch,Anton,Arbeit,Arbeitsheft," +
                    "Arbeitskreis,Artikel,Auflage,Aufnahme,Aufstellung," +
-                   "außergewöhnliche,Autorenteam,Bahnbetriebswerk," +
+                   "außergew&ouml;hnliche,Autorenteam,Bahnbetriebswerk," +
                    "Bahnbetriebswerke,Bahndienstfahrzeuge,Bahnen," +
                    "Bahngeschehen,Bahnhofswandel,Bahnlinie,Bahnsinniges," +
-                   "Balkanexpress,Band,bbecke,Beiträge,Belz,bemühen,Bendig," +
+                   "Balkanexpress,Band,bbecke,Beitr&auml;ge,Belz,bem&uuml;hen,Bendig," +
                    "Benrath,Berg,Bergische,Bergischen,Bergisches," +
-                   "Bergisch-Märkische,Bergisch-Märkischen,Berichte,Beruf," +
+                   "Bergisch-M&auml;rkische,Bergisch-M&auml;rkischen,Berichte,Beruf," +
                    "Betriebsmaschienendienst,bietet,Bildern," +
-                   "Bochum-Dahlhausen,Boll,Bonn,Born-Verlag,Brinker,Brücke," +
-                   "Brückenfest,Brückenschlag,Brügge,Büchern,Buchhandlung," +
+                   "Bochum-Dahlhausen,Boll,Bonn,Born-Verlag,Brinker,Br&uuml;cke," +
+                   "Br&uuml;ckenfest,Br&uuml;ckenschlag,Br&uuml;gge,B&uuml;chern,Buchhandlung," +
                    "Bundesbahn,Christian,Dampf,Dampfeisenbahn,dankbar," +
-                   "Denkmäler,Deutsche,Deutschland,Deutschlands," +
+                   "Denkm&auml;ler,Deutsche,Deutschland,Deutschlands," +
                    "Dieringhausen,Dieter,Direkt,Dirk,Dirlam,DVD," +
                    "Eckehard/Reimann,Eidam,eingestellt,Eisenbahn," +
-                   "Eisenbahn-Ausbesserungswerk,Eisenbahnbrücke," +
+                   "Eisenbahn-Ausbesserungswerk,Eisenbahnbr&uuml;cke," +
                    "Eisenbahnchronik,Eisenbahnen,Eisenbahnfilme," +
                    "Eisenbahnfotograf,Eisenbahnfreunde,Eisenbahngeschichte," +
                    "Eisenbahn-Journal,Eisenbahn-Kurier,Eisenbahnliteratur," +
                    "Eisenbahnverbindung,Elektrischen,eMail,Entlang,Erfurt," +
-                   "Ergänzungen,erhebt,Ernst,Erscheinen,Erweiterung,Fall," +
+                   "Erg&auml;nzungen,erhebt,Ernst,Erscheinen,Erweiterung,Fall," +
                    "Faszination,FILM,Filme,finden,folgenden," +
-                   "Fotodokumentation,Frank,Freiburg,Frenz,frühes,Galunder," +
-                   "gebaut,GeraMond,Geschichte,gesperrt,Große,Güterzüge," +
+                   "Fotodokumentation,Frank,Freiburg,Frenz,fr&uuml;hes,Galunder," +
+                   "gebaut,GeraMond,Geschichte,gesperrt,Große,G&uuml;terz&uuml;ge," +
                    "Harald,Hauptsache,Hbf,Heft,Hehl,Heimatkunde,Helmut," +
                    "Henning,Heßler,Heuschele,Hinweise,HISTORIC,Historie," +
-                   "historische,höchste,Hoffnungsträger,Höltge," +
-                   "Horst/Reimann,Hundertjährig,Impressum,industriellen," +
-                   "Inhalt,Inkeller,ISBN,Jahre,jung,Jürgen,Jürgen/Reimann," +
+                   "historische,h&ouml;chste,Hoffnungstr&auml;ger,H&ouml;ltge," +
+                   "Horst/Reimann,Hundertj&auml;hrig,Impressum,industriellen," +
+                   "Inhalt,Inkeller,ISBN,Jahre,jung,J&uuml;rgen,J&uuml;rgen/Reimann," +
                    "Kaiß,Kampen,Karl-Wilhelm,Kenning,Kierdorf,Klassiker," +
-                   "Klee,Kohl,Köln,Korkenzieherbahn,Korkenziehertrasse," +
-                   "Korrekturhinweise,Krümelbahn,Künftig,Kurt," +
+                   "Klee,Kohl,K&ouml;ln,Korkenzieherbahn,Korkenziehertrasse," +
+                   "Korrekturhinweise,Kr&uuml;melbahn,K&uuml;nftig,Kurt," +
                    "Kurt/Zimmermann,Land,Landeskonservator,Lebenslauf," +
                    "Lehmann,Leichlingen,Links,Liste,Literatur," +
                    "Literaturliste,Lok-Report,Mackensen,Magazin,Manfred," +
                    "Mark,Markus,Martina,Menninghaus/Krause/van,Michael," +
-                   "mittleren,Modellbahn,Monika,Müngsten,Müngstener," +
-                   "Münster,Museumsbahnen,Nahverkehrsliteratur,Navigation," +
+                   "mittleren,Modellbahn,Monika,M&uuml;ngsten,M&uuml;ngstener," +
+                   "M&uuml;nster,Museumsbahnen,Nahverkehrsliteratur,Navigation," +
                    "N-Bahn,Nebenbahn,Nebenbahngleisen,Nordbahn,Nordhorn," +
-                   "Nümbrecht,Oberbergischen,Obus,O-Bus,Ohligs," +
+                   "N&uuml;mbrecht,Oberbergischen,Obus,O-Bus,Ohligs," +
                    "Ohligs-Lennep,Opladen,Orchester,Periodika,Pillmann," +
                    "Projekt,Prominente,Publikationen,Radevormwald,Ralf," +
-                   "Raum,regionale,Reimann,Reiseführer,Remscheid," +
+                   "Raum,regionale,Reimann,Reisef&uuml;hrer,Remscheid," +
                    "Remscheid-Lennep,Revolution,rga-Buchverlag," +
                    "Rheinbahn-Triebwagenserie,Rheinisch-Bergische," +
-                   "Rheinland,Rieppel,Rückblende,Rückblicke,Rudolf,Ruhrtal," +
-                   "Sammlung,Sanierungsfall,Säuberlich,Schandfleck," +
+                   "Rheinland,Rieppel,R&uuml;ckblende,R&uuml;ckblicke,Rudolf,Ruhrtal," +
+                   "Sammlung,Sanierungsfall,S&auml;uberlich,Schandfleck," +
                    "Schatten,schicken,Schienen,Schmorleiz/Tappert," +
                    "Schriften,Schwindlefreie,Seitenanfang,Siegerland," +
                    "Soechting,Solingen,Solingen-Ohligs,Solingen-Vohwinkel," +
-                   "Solinger,Stadt,Stadtbahnen,Städtedreieck,Städten," +
+                   "Solinger,Stadt,Stadtbahnen,St&auml;dtedreieck,St&auml;dten," +
                    "Stadtgebiet,Startseite,Straßen,Straßenbahn," +
                    "Straßenbahnen,Straßenbahn-Zeitreise,Strecke,Strecken," +
                    "Suchen,Sutton,Sutton-Verlag,Symphonie,Tageblatt," +
-                   "Talbrücke,Talquerung,Technik,Technische,Teiltraum," +
-                   "Thalbrücke,Thema,Themen,Tram-Revue,überarbeitete," +
-                   "Überregionale,Uhle,unterwegs,VDI-Verlag,Verbindung," +
-                   "Verkehrsknoten,Verkümmerns,Verlag,VHS-Video,Vogelsang," +
-                   "Vohwinkel,Volbild,Vollständigkeit,Walther,Weihrauch," +
+                   "Talbr&uuml;cke,Talquerung,Technik,Technische,Teiltraum," +
+                   "Thalbr&uuml;cke,Thema,Themen,Tram-Revue,&uuml;berarbeitete," +
+                   "&uuml;berregionale,Uhle,unterwegs,VDI-Verlag,Verbindung," +
+                   "Verkehrsknoten,Verk&uuml;mmerns,Verlag,VHS-Video,Vogelsang," +
+                   "Vohwinkel,Volbild,Vollst&auml;ndigkeit,Walther,Weihrauch," +
                    "Werner,Westf,Wolfgang,Wupper,Wuppergrund,Wuppertal," +
                    "Wuppertalbahn,Wupper-Talbahn,Wuppertaler,Wuppertals," +
                    "Wuppertal-Steinbeck,zahlreichen,Zeitschriften,Zeno," +
@@ -2138,87 +2114,87 @@ beschreibung[42] = "Kr&uuml;melbahn - Links to american manufacturers";
        seite[43] = "literat.htm";
 beschreibung[43] = "Kr&uuml;melbahn - Solingen-Literatur";
      begriff[44] = "Anspruch,Arend,Aufgaben,Axel,Bad,Bahndienst," +
-                   "Bahndienstfahrzeuge,Bahndienst-Güterwagen," +
+                   "Bahndienstfahrzeuge,Bahndienst-G&uuml;terwagen," +
                    "Bahndienst-Triebfahrzeuge,Bahndienstwagen,Bahnen," +
                    "Bahnfeuerwehren,Bahnpostwagen,Bahnsinniges,Band,Bauen," +
                    "Baureihen,Best,Betrieb,Bilder,Boldt,Bothe,Carstens," +
                    "Culemeyer-Fahrzeuge,dankbar,Deppmeyer,Deutsche," +
-                   "Deutschen,deutscher,Dienstfahrzeuge,Dienstgüterwagen," +
+                   "Deutschen,deutscher,Dienstfahrzeuge,Dienstg&uuml;terwagen," +
                    "Dietrich,Direkt,Draisinen-Katalog,Driesch,Eigenverlag," +
                    "eisenbahndienstfahrzeuge,Eisenbahnen,Eisenbahnfreunde," +
-                   "Eisenbahngeschichte,Eisenbahn-Kurier,eMail,Ergänzungen," +
+                   "Eisenbahngeschichte,Eisenbahn-Kurier,eMail,Erg&auml;nzungen," +
                    "erhebt,Erweiterung,Estler,Fall,Feuerwehr," +
                    "Generationswechsel,Gleisbau,Gleisbaufahrzeuge,Goliath," +
-                   "Gülzow,Güterwagenbauart,Heft,Henn,Herkules,Hilfszüge," +
+                   "G&uuml;lzow,G&uuml;terwagenbauart,Heft,Henn,Herkules,Hilfsz&uuml;ge," +
                    "Impressum,Infrastruktur,Inhalt,ISBN,John,Kandler," +
                    "Kirsch,Kleine,Klv01,Klv98,kommen,Korrekturhinweise," +
-                   "Krümelbahn,Links,Liste,Literatur,Literaturliste," +
+                   "Kr&uuml;melbahn,Links,Liste,Literatur,Literaturliste," +
                    "Lokrundschau,Lok-Versuchsamt,Meßwagen,Miba,Modell," +
                    "Modellbahn,Modellbahn-Kurier,Motorbuch-Verlag,Nauheim," +
                    "Navigation,Nebenfahrzeuge,Peter,Plasser,Podszun-Verlag," +
                    "Polnik,Publikationen,Regel,Reichsbahn,Report," +
-                   "Rettungszüge,Rheinisch-Bergische,Sammlung,schfahrzeuge," +
+                   "Rettungsz&uuml;ge,Rheinisch-Bergische,Sammlung,schfahrzeuge," +
                    "schicken,Schiene,Schienenfahrrad,Schnellumbauzug," +
                    "Schwerlasteinsatz,Seite,Solingen,Sonderlinge," +
                    "Spezialwagen,Spitzhacke,Startseite,Stefan,Stepputats," +
                    "Straßenroller,Suchen,Technik,Thomas,Turmtriebwagen," +
-                   "Typenkompass,Typenkunde,Übersicht,Udo,Verlag," +
-                   "Versorgung,Vollständigkeit,Wagenpark,Wagner,Wetterau," +
+                   "Typenkompass,Typenkunde,&uuml;bersicht,Udo,Verlag," +
+                   "Versorgung,Vollst&auml;ndigkeit,Wagenpark,Wagner,Wetterau," +
                    "Wohnenk,Wolfgang,Zugmaschinen,Zweck,Zwischenhalt";
        seite[44] = "literatd.htm";
 beschreibung[44] = "Kr&uuml;melbahn - Literatur Bahndienstfahrzeuge";
      begriff[45] = "aktualisierte,Armin,Auflage,Bahnbetriebswerk," +
                    "Bahndienstfahrzeuge,Bahnen,Bahnlinie,Bahnsinniges," +
-                   "Balkanexpress,Brückenschlag,Brügge,Cronenberg,Direkt," +
+                   "Balkanexpress,Br&uuml;ckenschlag,Br&uuml;gge,Cronenberg,Direkt," +
                    "Eisenbahnen,Eisenbahngeschichte,Eisenbahnlinie," +
                    "Eisenbahnverbindung,Elberfeld,erweitere,Filiale,Hasten," +
                    "Hbf,Heft,Impressum,Inhalt,Inkeller,ISBN,Kaiß," +
-                   "Korkenzieherbahn,Krümelbahn,Kurt,Kurt/Kugel," +
+                   "Korkenzieherbahn,Kr&uuml;melbahn,Kurt,Kurt/Kugel," +
                    "Kurt/Peplies,Kurt/Zimmermann,Leichlingen,Lennep,Links," +
-                   "Literatur,Michael,Modellbahn,Müngsten,Navigation," +
+                   "Literatur,Michael,Modellbahn,M&uuml;ngsten,Navigation," +
                    "Nebenbahn,Nebenbahngleisen,Neuauflage,Oberbergische," +
                    "Opladen,Pillmann,Publikationen,Radevormwald,Remscheid," +
                    "Remscheid-Lennep,Rheinisch-Bergische,Rudolf,Samba," +
                    "Seitenanfang,Solingen,Startseite,Stichbahn,Suchen," +
-                   "Thomas/Peplies,überarbeitete,Verlag,Vohwinkel,Westf," +
-                   "Wuppertal,Wuppertalbahn,Zeno/Schürings,Zwischenhalt";
+                   "Thomas/Peplies,&uuml;berarbeitete,Verlag,Vohwinkel,Westf," +
+                   "Wuppertal,Wuppertalbahn,Zeno/Sch&uuml;rings,Zwischenhalt";
        seite[45] = "literatr.htm";
 beschreibung[45] = "Kr&uuml;melbahn - Rheinisch-Bergische " +
                    "Eisenbahngeschichte";
      begriff[46] = "Bahnbetriebswerk,Bahndienstfahrzeuge,Bahnen,Bahnhof," +
-                   "Bahnsinniges,Birgit,Blumenberg,Bördedorf,Direkt," +
+                   "Bahnsinniges,Birgit,Blumenberg,B&ouml;rdedorf,Direkt," +
                    "Eisenbahn,Eisenbahnen,Eisenbahngeschichte," +
-                   "Fußgängerbrücke,Geschichte,Impressum,Inhalt,Inkeller," +
-                   "ISBN,Kaiß,Kleinbahn,Krümelbahn,Kurt,Kurt/Becker," +
-                   "Leichlingen,Links,Literatur,Lützenkirchen,Modellbahn," +
+                   "Fußg&auml;ngerbr&uuml;cke,Geschichte,Impressum,Inhalt,Inkeller," +
+                   "ISBN,Kaiß,Kleinbahn,Kr&uuml;melbahn,Kurt,Kurt/Becker," +
+                   "Leichlingen,Links,Literatur,L&uuml;tzenkirchen,Modellbahn," +
                    "Navigation,Ohligs,Opladen,Publikationen," +
                    "Rheinisch-Bergische,Rudolf,Solingen,Startseite,Suchen," +
                    "Verlag,Wandel,Weg,Werk,Zeit,Zwischenhalt";
        seite[46] = "literatz.htm";
 beschreibung[46] = "Kr&uuml;melbahn - Zwischenhalt";
      begriff[47] = "Abbildung,Abteiweg,achs,Actros,Aktien-Brauerei," +
-                   "Aktivitäten,Albedo,Alt,Angaben,Anlagengestaltung," +
-                   "Anmerkungen,Anspruch,Aufderhöhe,Aufdruck," +
+                   "Aktivit&auml;ten,Albedo,Alt,Angaben,Anlagengestaltung," +
+                   "Anmerkungen,Anspruch,Aufderh&ouml;he,Aufdruck," +
                    "Aufdruck/Anlass,aufgelistet,Aufkleber,Automodelle,AWM," +
                    "Bahnen,Bahnhof,Bahnsinniges,Balkhauser,Basis4473," +
-                   "Basis4481,Basismodelle,Baugröße,Baugrößen,Baumschule," +
+                   "Basis4481,Basismodelle,Baugr&ouml;ße,Baugr&ouml;ßen,Baumschule," +
                    "Baustoffe,Bauverein,Beckes,Beckmann,Benz,Bergisch," +
                    "Bergischen,Berufsfeuerwehr,Besitz,beziehen,Bier," +
-                   "Bierlastwagen,Bigspace,blau,braun,Brawa,Brekina,Brücke," +
+                   "Bierlastwagen,Bigspace,blau,braun,Brawa,Brekina,Br&uuml;cke," +
                    "Burg,Burger,Bus,Busch,Busdepot,Bus-Nr,Citaro,C-Klasse," +
                    "Com,Crossley,Dampflastwagen,dankbar,DCC,Decals,Design," +
                    "Design-RTW,Deutsches,Digitalbetrieb,Diller,Direkt,DLA," +
                    "DLK,Drehleiter,dreiteilig,Dreizackwerk," +
                    "Einsatzfahrzeuge,Eisenbahn,Eisenbahnwagen,elasto," +
-                   "Elektronik,eMail,Emil,Ergänzungen,erhältlich,erhebt," +
+                   "Elektronik,eMail,Emil,Erg&auml;nzungen,erh&auml;ltlich,erhebt," +
                    "erkennbar,Erweiterung,Fahrzeug,Fahrzeugbau,Fahrzeuge," +
                    "Fall,Faller,Fauna,Feinkostfabrik,Feuerwehr," +
                    "Feuerwehrfahrzeugen,FJ/2104,Fleischmann,Foden,Ford," +
-                   "form,Fortwo,FuRW,G10,Galileum,geänderte,gelb," +
-                   "Gesenkschmiede,Gigaspace,Gittern,Glasdach,Glr22,Glüder," +
-                   "GMC,Gms30,Golf,Gr20,Gräfrath,Grafweg," +
-                   "Graf-Wilhelm-Platz,Großwäscherei,grün,grünem,GT-HD," +
-                   "H0-N-Z,Haan-SG,Hahn,Hängerzug,Hanns,Haribo," +
+                   "form,Fortwo,FuRW,G10,Galileum,ge&auml;nderte,gelb," +
+                   "Gesenkschmiede,Gigaspace,Gittern,Glasdach,Glr22,Gl&uuml;der," +
+                   "GMC,Gms30,Golf,Gr20,Gr&auml;frath,Grafweg," +
+                   "Graf-Wilhelm-Platz,Großw&auml;scherei,gr&uuml;n,gr&uuml;nem,GT-HD," +
+                   "H0-N-Z,Haan-SG,Hahn,H&auml;ngerzug,Hanns,Haribo," +
                    "Hauptbahnhof,Heinen,Henckels,Hendrichs,Henschel,Herpa," +
                    "Hersteller,Hess,Hillers,historische,Holden,Ichqrs," +
                    "Ichqrs377,III,Impressum,Industriemuseum,Informationen," +
@@ -2227,22 +2203,22 @@ beschreibung[46] = "Kr&uuml;melbahn - Zwischenhalt";
                    "Klammern,Klingen,Klingenmuseum,Klinikum,Kmmgks58," +
                    "Knirps,Koffersattelzug,Kohlsberg,Koll,Kombi," +
                    "Kommandowagen,Korrekturhinweise,Kotten," +
-                   "Krankentransport,Kreuz,Kronprinz-Räder,Krümelbahn," +
+                   "Krankentransport,Kreuz,Kronprinz-R&auml;der,Kr&uuml;melbahn," +
                    "Krups,KTW,KTW4,Kuga,L1500S,L408G,L4500,Lamellendach," +
                    "Land,LF20/10,LF20/16,LF25,LF8,Links,Liste,Literatur," +
-                   "Löhmers,Luchtenberg,M32L-AS,Mack,made,Magirus,Malteser," +
-                   "Malz,Mangenberg,Märklin,Matchbox,MEC-Wuppertal,Meisen," +
+                   "L&ouml;hmers,Luchtenberg,M32L-AS,Mack,made,Magirus,Malteser," +
+                   "Malz,Mangenberg,M&auml;rklin,Matchbox,MEC-Wuppertal,Meisen," +
                    "meisten,Mendoza,Mercedes,Mercedes-Benz,Merscheid," +
-                   "Meuseburgerauflieger,Minichamps,Minitrix,Mitteltüren," +
-                   "Möbel,Möbelhaus,mobil,Modellbahn,Modellbau,Modelle," +
-                   "Modellfahrzeuge,Modellfahrzeugliste,Modulbau,moosgrün," +
-                   "Morris,MP5,Müngstener,Museumswagen,muss,Mykonos,N-3," +
+                   "Meuseburgerauflieger,Minichamps,Minitrix,Mittelt&uuml;ren," +
+                   "M&ouml;bel,M&ouml;belhaus,mobil,Modellbahn,Modellbau,Modelle," +
+                   "Modellfahrzeuge,Modellfahrzeugliste,Modulbau,moosgr&uuml;n," +
+                   "Morris,MP5,M&uuml;ngstener,Museumswagen,muss,Mykonos,N-3," +
                    "Navigation,NEF,neutral,Niederlassung,Notfallseelsorge," +
                    "O302-11,O305,O405,O405N,O530,OBI,Obus,O-Bus," +
-                   "O-Bus-Anhänger,Obusmodelle,Obus-Museum,Ohligs,Ohligser," +
+                   "O-Bus-Anh&auml;nger,Obusmodelle,Obus-Museum,Ohligs,Ohligser," +
                    "Oldtimerfreunde,Orion,Ortsbezug,Panel,patiniert," +
                    "PCX871073,Pfefferminz,PHZ,Pils,Plagiarius,Preiser," +
-                   "Pritsche,Pritschenwagen,Qualität,Quality,RAL,Reifen," +
+                   "Pritsche,Pritschenwagen,Qualit&auml;t,Quality,RAL,Reifen," +
                    "Rheinisches,Rietze,Rlmms,Rmmso,Roco,Roskopf,Rotes,Rstn," +
                    "RTW,Rundhauber,S328DT,Samba,Sammlerobjekte,Sammlung," +
                    "Sattelzug,Scania,scharf,schicken,Schlingmann,Schloß," +
@@ -2255,28 +2231,28 @@ beschreibung[46] = "Kr&uuml;melbahn - Zwischenhalt";
                    "Stadtwappen,Stadtwerke,Startseite,Streifen,Suchen," +
                    "SwissTrolley3,Sword,SWS,Tageblatt,Taverne," +
                    "Termingerecht,TGM,Tierheim,Tierpark,Tk01,TLF,TLF16," +
-                   "Transit,Transporter,TroLf,U5023,ÜHIIIs,Uhs,Van,Variant," +
+                   "Transit,Transporter,TroLf,U5023,&uuml;HIIIs,Uhs,Van,Variant," +
                    "Veltins,Verkehrsaufsicht,Vito,VK-Modelle,Volksbank," +
-                   "Volkswagen,Vollständigkeit,VW-Kasten,Wagen,Walbusch," +
+                   "Volkswagen,Vollst&auml;ndigkeit,VW-Kasten,Wagen,Walbusch," +
                    "Wald,WDV,weiß/rot,Weltruf,Werbedruck,Werbung," +
                    "Wiedenhoff,Wiegand,WIETMARSCHER,Wiking,Wilkinson," +
                    "Wilkinson/Grell,Wilkinson-Quattro,WP100,WP101,Wupper," +
-                   "Wuppertal-Solingen-Remscheid,Wüsthof,Wüsthoff-Dreizack," +
+                   "Wuppertal-Solingen-Remscheid,W&uuml;sthof,W&uuml;sthoff-Dreizack," +
                    "W-Vohwinkel,YEX-04,YFE05-SA,YHN01/SC,YSG-01,YSG-02," +
                    "YSG-03,YSG-04,YSG-05,Zwilling";
        seite[47] = "modelle.htm";
 beschreibung[47] = "Kr&uuml;melbahn - Eisenbahn- und Modellfahrzeuge aus " +
                    "Solingen";
      begriff[48] = "Ablage,Ablagen,Abmessung,abzweigender,Akkutriebwagen," +
-                   "Aktivitäten,aktuelle,anfordern,angeschlossene," +
+                   "Aktivit&auml;ten,aktuelle,anfordern,angeschlossene," +
                    "angrenzende,Anlagengestaltung,Anlehnung,Attraktiver," +
                    "August,Ausbau,Ausflugspunkt,Außen,B02,B96," +
                    "Bahnbetriebswerk,Bahndamms,Bahnen,bahnhof," +
                    "Bahnhofsdatenblatt,Bahnsinniges,Batterien,baue," +
-                   "Bausätze,Begrasungsgerät,beherrschen,benötigte,Bereich," +
-                   "Betrieb,Betriebes,bewährt,bietet,Bild,Bogen,Brosch," +
+                   "Baus&auml;tze,Begrasungsger&auml;t,beherrschen,ben&ouml;tigte,Bereich," +
+                   "Betrieb,Betriebes,bew&auml;hrt,bietet,Bild,Bogen,Brosch," +
                    "chronologisch,cloud,cmt,Cronenberger,Dampflokomotiven," +
-                   "DCC,Details,Diesellokomotiven,Dieselzugförderung," +
+                   "DCC,Details,Diesellokomotiven,Dieselzugf&ouml;rderung," +
                    "Digitalbetrieb,Dioramen,Direkt,Download,DRK-Wersten," +
                    "ebenso,Eigeninitiative,eigentlich,Eisenbahntage," +
                    "elektrischen,Elektronik,eMail,eMailAndCloud," +
@@ -2284,60 +2260,60 @@ beschreibung[47] = "Kr&uuml;melbahn - Eisenbahn- und Modellfahrzeuge aus " +
                    "Erkrath-Hochdahl,erleichtert,erstellen,existieren," +
                    "Fahrzeug,Fahrzeugbau,Fahrzeuge,Fahrzeugkarte," +
                    "Fahrzeugpark,Fahrzeugparkes,FdE-Burscheid,Februar," +
-                   "fiktives,Frachtaufträge,Frage,Fred,fred_ablage," +
-                   "FRED-Karten,Fremo-Kopf,FREMO-Norm,füllen,gehalten," +
-                   "geignet,genauer,gestaltet,gewünscht,Gipsabdrücken," +
-                   "githubinfo,gleichgültig,Güterumschlag,H0-Bergprofil," +
+                   "fiktives,Frachtauftr&auml;ge,Frage,Fred,fred_ablage," +
+                   "FRED-Karten,Fremo-Kopf,FREMO-Norm,f&uuml;llen,gehalten," +
+                   "geignet,genauer,gestaltet,gew&uuml;nscht,Gipsabdr&uuml;cken," +
+                   "githubinfo,gleichg&uuml;ltig,G&uuml;terumschlag,H0-Bergprofil," +
                    "H0-Europa,Haan,Haaner-Sommer,Hafen,handelt,Handregler," +
-                   "Harald,Hauptblütezeit,Heft,helfen,Herstellung,Hinweis," +
+                   "Harald,Hauptbl&uuml;tezeit,Heft,helfen,Herstellung,Hinweis," +
                    "III,Impressum,Info,Informationen,Infos,Inhalt," +
                    "Internationale,inzwischen,irgendwann,ISBN,Jahren," +
-                   "Jahresmodell,Juli,Juni,Kanal,Kanalüberquerung,Karten," +
+                   "Jahresmodell,Juli,Juni,Kanal,Kanal&uuml;berquerung,Karten," +
                    "Kern,Kirchengemeinde,Klein-Bahnbetriebswerk,kleine," +
-                   "kleinster,komplett,Kopfprofil,Krieg,Krümelbahn," +
+                   "kleinster,komplett,Kopfprofil,Krieg,Kr&uuml;melbahn," +
                    "Kurvenmodul,Lahnstein,Landschaftsgestaltung,Langerfeld," +
                    "lege,Leichlinger,leicht,Leverkusen,linke,Links," +
-                   "Literatur,Lok,Lokschuppen,Mai,März,MEC,Mercedes-Benz," +
-                   "Miba,Michelstadt,Michelstädter,mitbringt,miteinander," +
+                   "Literatur,Lok,Lokschuppen,Mai,M&auml;rz,MEC,Mercedes-Benz," +
+                   "Miba,Michelstadt,Michelst&auml;dter,mitbringt,miteinander," +
                    "Modellbahn,Modellbahnausstellung,Modellbahnpraxis," +
                    "Modellbahntage,Modelleisenbahntage,Modellfahrzeuge," +
-                   "modernen,Modul,modul_daten,Modulbau,Moduldatenblätter," +
+                   "modernen,Modul,modul_daten,Modulbau,Moduldatenbl&auml;tter," +
                    "Module,Modulen,Modulenden,Modulseiten,Modultreffen," +
-                   "Modulübersicht,muss,N/S-Wender,Nachdenken,Navigation," +
+                   "Modul&uuml;bersicht,muss,N/S-Wender,Nachdenken,Navigation," +
                    "Nebenbahnstrecke,November,offenen,Oktober,passt,pdf," +
-                   "Profil,Radius,rechte,repräsentieren,restaurierte," +
-                   "Römerturm,S/N-Wender,Segmente,sehen,Seitenanfang," +
+                   "Profil,Radius,rechte,repr&auml;sentieren,restaurierte," +
+                   "R&ouml;merturm,S/N-Wender,Segmente,sehen,Seitenanfang," +
                    "Sensenhammer,September,sieht,Signal,Signale," +
                    "Signalisierung,Signalkunde,Signalmodul,Signalwerkstadt," +
-                   "Silikonformen,Skizze,Solingen,Spezial,Spörle," +
+                   "Silikonformen,Skizze,Solingen,Spezial,Sp&ouml;rle," +
                    "Startseite,stattfand,Steht,stellen,stellt,Steuerung," +
                    "Strecke,Streckenmodul,Stuhl,Suchen,Tag,Tanks," +
                    "technischen,Tisch,Traktionswechsel,Trassenbrett," +
-                   "Triebfahrzeuge,tun,Tür,typisches,umgestellt," +
-                   "Veranstaltungen,verbindet,Verfügung,verschiedenen," +
+                   "Triebfahrzeuge,tun,T&uuml;r,typisches,umgestellt," +
+                   "Veranstaltungen,verbindet,Verf&uuml;gung,verschiedenen," +
                    "Wagen,Wagenkarten,Weichen,weiteren,Werkstatt," +
                    "Wiederaufbau,Wuppertal-Cronenberg,zugeordnet,zuordnen," +
-                   "zusätzlich,zuständig";
+                   "zus&auml;tzlich,zust&auml;ndig";
        seite[48] = "modulbau.htm";
 beschreibung[48] = "Kr&uuml;melbahn - Modulbau";
-     begriff[49] = "abgeschaltet,Ablage,abrupt,Abschnitt,Abständen," +
-                   "Abweichnung,Adresse,Adressierung,Aktivitäten,aktuell," +
+     begriff[49] = "abgeschaltet,Ablage,abrupt,Abschnitt,Abst&auml;nden," +
+                   "Abweichnung,Adresse,Adressierung,Aktivit&auml;ten,aktuell," +
                    "aktuelle,aktuellen,alt,alter,Analog,analogen,analoger," +
-                   "Änderungen,anfordern,Anforderungen,Angabe,angebunden," +
+                   "&auml;nderungen,anfordern,Anforderungen,Angabe,angebunden," +
                    "angelehnt,angeschlossen,angeschlossenen,angesteuert," +
                    "anhalten,Anlage,Anlagenbetreiber,Anlagengestaltung," +
                    "Anleitungen,anrollende,Anschlußkabel,anstelle," +
                    "Ansteuerung,Antworten,Anzeige,arbeiten,arbeitende," +
                    "arbeitet,Arduino-Plattform,Arrangements,Artikel,Aufbau," +
-                   "Aufgaben,aufgeführt,aufwändig,Ausstellungen,Auswahl," +
-                   "auszuführen,Bahnen,Bahnhof,Bahnhofsfahrordnung," +
+                   "Aufgaben,aufgef&uuml;hrt,aufw&auml;ndig,Ausstellungen,Auswahl," +
+                   "auszuf&uuml;hren,Bahnen,Bahnhof,Bahnhofsfahrordnung," +
                    "Bahnhofsfahrordung,Bahnsinniges,Bau,Bauvorschlag," +
                    "Beachten,bearbeiten,bedienende,Bedienhandlung," +
                    "Bedienungsanleitung,bedingt,befindet,befindliche," +
                    "bekannten,bekomme,bekommen,belastet,Beleuchtung," +
-                   "benötige,benötigen,benötigt,benötigten/verwendeten," +
+                   "ben&ouml;tige,ben&ouml;tigen,ben&ouml;tigt,ben&ouml;tigten/verwendeten," +
                    "Beschreibung,beschrieben,bestanden,besteht,Betrieb," +
-                   "Betriebssystem,bewährt,Bewährungsprobe,Bild,bilden," +
+                   "Betriebssystem,bew&auml;hrt,Bew&auml;hrungsprobe,Bild,bilden," +
                    "bleibt,Blocksteuerung,Booster,bot,brems_gen," +
                    "Bremsgenerator,Bremsgenerator/Pendelautomatik," +
                    "Bremsgeneratoren,Bremsgenerators,Bremsweg,bringen," +
@@ -2356,8 +2332,8 @@ beschreibung[48] = "Kr&uuml;melbahn - Modulbau";
                    "eMailAndCloud,eMailAndGithub,emos,enthaltenen," +
                    "entsprechenden,entwickelt,Erfahrungen,erforderlich," +
                    "Erinnerung,Ersatz,erschien,ersetzt,erstellt," +
-                   "Erweiterungen,existieren,F12,F13,F16,Fähigkeit,fahre," +
-                   "Fahren,Fahrplan,Fahrplandatei,Fahrpläne,Fahrstrom," +
+                   "Erweiterungen,existieren,F12,F13,F16,F&auml;higkeit,fahre," +
+                   "Fahren,Fahrplan,Fahrplandatei,Fahrpl&auml;ne,Fahrstrom," +
                    "Fahrzeug,Fahrzeugbau,Fahrzeuge,Fahrzeuges," +
                    "Fahrzeuginformationen,Fall,FastClock,FastClock-Decoder," +
                    "Fehler,festgelegt,festzulegen,fill,finden,Firma,fka," +
@@ -2365,14 +2341,14 @@ beschreibung[48] = "Kr&uuml;melbahn - Modulbau";
                    "Frankenzentrale,Franz,FRED,FREDI,FREDI-Diagnose,FREDIs," +
                    "freie,Fremo,FREMO-Bauvorschlag,FREMO-Regeln," +
                    "FREMO-Telefon,Funktionen,funktionieren,gab,gebaut," +
-                   "Gedanken,geeignet,gehalten,gemacht,genügend,Gerät," +
-                   "Geräte,Geräten,Gerätes,geschaltet," +
-                   "Geschwindigkeitsgeber,gesendet,getätigt,getrennt," +
-                   "gewünscht,gewünschten,githubinfo,Gleis,Gleisanlagen," +
-                   "großen,größeren,Grundlagen,Grundversorgung,Halten," +
+                   "Gedanken,geeignet,gehalten,gemacht,gen&uuml;gend,Ger&auml;t," +
+                   "Ger&auml;te,Ger&auml;ten,Ger&auml;tes,geschaltet," +
+                   "Geschwindigkeitsgeber,gesendet,get&auml;tigt,getrennt," +
+                   "gew&uuml;nscht,gew&uuml;nschten,githubinfo,Gleis,Gleisanlagen," +
+                   "großen,gr&ouml;ßeren,Grundlagen,Grundversorgung,Halten," +
                    "Handregler,Hans,Hardware,Hardwarebasis," +
                    "Hardwareschnittstelle,Hersteller,Herstellercode," +
-                   "hilfreich,hinein,höher,hover,Hp0,Hub,Huber,identisch," +
+                   "hilfreich,hinein,h&ouml;her,hover,Hp0,Hub,Huber,identisch," +
                    "Implementierungen,Impressum,Inbetriebnahme,infacher," +
                    "Info,Informationen,Inhalt,inklusive,Inkremental," +
                    "Inkrementalgeber,insgesamt,Interessante,Interessenten," +
@@ -2380,8 +2356,8 @@ beschreibung[48] = "Kr&uuml;melbahn - Modulbau";
                    "Kabeltester,Kabelverbindungen,kam,Kehrschleifenmodul," +
                    "klare,kleine,kleinen,kleines,klicken,kommen," +
                    "kommerzielle,kommt,Kompakteinheit,Komponenten," +
-                   "Konfiguration,Kontakt,konvertieren,Krümelbahn,Lage," +
-                   "längste,Laptop,Laptops,laufen,Leitungen,Lenz,Lesen," +
+                   "Konfiguration,Kontakt,konvertieren,Kr&uuml;melbahn,Lage," +
+                   "l&auml;ngste,Laptop,Laptops,laufen,Leitungen,Lenz,Lesen," +
                    "letztlich,Leuchten,liefert,Links,Literatur,LK100," +
                    "ln_hub,ln_test,LocoBuffer,LocoIO," +
                    "LocoIO/blob/main/Documentation/LocoIO," +
@@ -2389,219 +2365,215 @@ beschreibung[48] = "Kr&uuml;melbahn - Modulbau";
                    "LocoIO-Zusammenfassung,LocoNET,LocoNET-HubSupply," +
                    "LocoNET-Nebenuhr,LocoNET-Nebenuhr-Statusanzeige," +
                    "LocoNet-Pegeltester,LocoNet-Pullup,LocoNET-Tester,Lok," +
-                   "Lokadresse,Lokmaus,Lösung,Lösungen,Manuel,meines," +
+                   "Lokadresse,Lokmaus,L&ouml;sung,L&ouml;sungen,Manuel,meines," +
                    "Mercedes-Benz,mittels,Modellbahn,Modellbahnzeit," +
                    "Modellfahrzeuge,modifiziertes,Modulaufbau,Modulbau," +
-                   "Modulen,Möglichkeit,Monitor,Nachbau,nachbauen," +
-                   "nachempfunden,nachfolgenden,nachlesen,Nachrüstung," +
+                   "Modulen,M&ouml;glichkeit,Monitor,Nachbau,nachbauen," +
+                   "nachempfunden,nachfolgenden,nachlesen,Nachr&uuml;stung," +
                    "Navigation,Nebenuhr,Nebenuhren,Nebenuhr-Statusanzeige," +
                    "nkremental,normalen,Null,Offer,OLED,opacity," +
                    "OPC_IMM_PACKET,OPC_LOCO_F912,OPC_UHLI_FUN,OpenDCC," +
                    "OpenDCC-Zentrale,OpenDCC-Zusammenbau," +
                    "Open-Source-Komponente,over,parallele,paralleler," +
                    "passende,passt,pdf,Pegeltester,pendel,Pendelautomatik," +
-                   "PiLocoBuffer,Platinenlayouts,PolEi,polig,Polungsprüfer," +
+                   "PiLocoBuffer,Platinenlayouts,PolEi,polig,Polungspr&uuml;fer," +
                    "Potentiometer,praktikable,Prinzip,Problem," +
                    "Problemstellung,Programm,QR-Code,QR-Code-Leser," +
                    "RaspBerry,reagiert,realisiert,rect,redesignten,Regel," +
-                   "regelmäßigen,rehregler,Reichelt,Reparatur,richtet,RJ12," +
+                   "regelm&auml;ßigen,rehregler,Reichelt,Reparatur,richtet,RJ12," +
                    "Roco,Roco-Format,Roco-Lokmaus2,Roco-System,RocRail,rot," +
                    "RS232-Schnittstelle,RS232-USB-Wandler,RSCLD," +
                    "SaddleBrown,Saft,Schaltplanzeichnungen,scheitert," +
                    "Schienen,schnellere,Schnittstelle,Schreiben,schwach," +
-                   "schwieriger,Seite,Seitenanfang,selbständig," +
-                   "selbstverständlich,sende,serielle,serieller,Servos," +
+                   "schwieriger,Seite,Seitenanfang,selbst&auml;ndig," +
+                   "selbstverst&auml;ndlich,sende,serielle,serieller,Servos," +
                    "Shift-Taste,sieht,Signal,Signalabschnitt,Signale," +
                    "Signalen,simpel,Skizze,Software,Software-Version," +
                    "Solingen,Spannungs,Spaxbooster,spezielle,speziellen," +
                    "spezieller,Spezifikation,Startseite,Steckverbinder," +
-                   "stehen,stellen,Stellvorgänge,Steuern,Steuerung," +
-                   "Steuerungsprogramm,Steuerungssoftware,Strommessgerät," +
+                   "stehen,stellen,Stellvorg&auml;nge,Steuern,Steuerung," +
+                   "Steuerungsprogramm,Steuerungssoftware,Strommessger&auml;t," +
                    "Suche,Suchen,SWD-FREDI,System,Tabelle,Taktgeber,Tams," +
-                   "Target,TCP,Telefonanlage,Telegrammen,Testen,Testgeräte," +
+                   "Target,TCP,Telefonanlage,Telegrammen,Testen,Testger&auml;te," +
                    "teuer,Thema,Throttle,Trennung,Triebfahrzeug," +
-                   "Triebfahrzeuge,überall,überflüssig,übernommen," +
-                   "Übersicht,übertragen,Uhlenbrock,Uhr,Uhrendecoder," +
+                   "Triebfahrzeuge,&uuml;berall,&uuml;berfl&uuml;ssig,&uuml;bernommen," +
+                   "&uuml;bersicht,&uuml;bertragen,Uhlenbrock,Uhr,Uhrendecoder," +
                    "Uhrenzentrale,Umbauanleitung,Umstellung,umzubauen," +
                    "unbedingt,unbekannt,unendlich,uninteressant," +
-                   "universellen,Unterlagen,unterschiedliche,unterstützt," +
+                   "universellen,Unterlagen,unterschiedliche,unterst&uuml;tzt," +
                    "uordnungsbox,uralt,USB,USB-Isolator,USB-Leitung," +
-                   "Variante,Verbesserung,Verbindung,Verdrahtung,verfügbar," +
-                   "Verfügung,Vergangenheit,verschiedenen,Version," +
-                   "Versionen,Verstärker,Verteilerboxen,Verwaltung," +
+                   "Variante,Verbesserung,Verbindung,Verdrahtung,verf&uuml;gbar," +
+                   "Verf&uuml;gung,Vergangenheit,verschiedenen,Version," +
+                   "Versionen,Verst&auml;rker,Verteilerboxen,Verwaltung," +
                    "verwende,verwenden,verwendet,verwendete,verwendeten," +
                    "vier,volle,Vorgehensweise,vorhanden,Vorraussetzung," +
                    "Vorsicht,Wege,Weicheneinbau,Weiten,weiterentwickelt," +
-                   "weiteres,weiterführende,weitläufige,wiFRED,wiFREDs," +
+                   "weiteres,weiterf&uuml;hrende,weitl&auml;ufige,wiFRED,wiFREDs," +
                    "windows-basierten,wiThrottle-Server,WSK,WWW,x6-6," +
                    "XPressNet-Protokoll,zahlreiche,zeigenden,zeigt,Zeit," +
-                   "Zenrale,Zentrale,Zentralen-Konzept,Zubehör,zufährt,Zug," +
-                   "Zugegeben,zugehörigen,zugewiesen,Zugführer,Zugriff," +
-                   "Zukunft,zukunftsfähig,Zuordnung,zusammen,Zusammenbau," +
-                   "Zusammenfassung,zusammengefasst,zuständig,Zuweisung," +
+                   "Zenrale,Zentrale,Zentralen-Konzept,Zubeh&ouml;r,zuf&auml;hrt,Zug," +
+                   "Zugegeben,zugeh&ouml;rigen,zugewiesen,Zugf&uuml;hrer,Zugriff," +
+                   "Zukunft,zukunftsf&auml;hig,Zuordnung,zusammen,Zusammenbau," +
+                   "Zusammenfassung,zusammengefasst,zust&auml;ndig,Zuweisung," +
                    "zuzuweisen,zweiten,zwingend";
        seite[49] = "modulbau-digital.htm";
-beschreibung[49] = "Kr&uuml;melbahn - " +
-                   "Modulbau-DigitalVerdrahtungs&uuml;bersichtZentraleLaptop " +
-                   "/ PCLocoNETDCCDecodereinbautenFred / Fredi / " +
-                   "wiFredDispa (fka Franz)Uhrenzentrale und " +
-                   "NebenuhrBoosterBremsgeneratorLocoIO";
-     begriff[50] = "abgestellt,Aufenthaltsräume,aufgestellt,Aufstellung," +
+beschreibung[49] = "Kr&uuml;melbahn - Modulbau-Digital";
+     begriff[50] = "abgestellt,Aufenthaltsr&auml;ume,aufgestellt,Aufstellung," +
                    "August,Auslieferung,Bahnen,Bahnfahrzeuge," +
-                   "Bahnfahrzeugen,Bahnhof,Bahnhöfe,Bahnsinniges,Bau," +
+                   "Bahnfahrzeugen,Bahnhof,Bahnh&ouml;fe,Bahnsinniges,Bau," +
                    "Bauart,Baujahr,B-dm,begonnen,benachbarten,Bn2t," +
-                   "Breitspurgüterwagen,Breslau,britischen,Buckau,Bygkr," +
+                   "Breitspurg&uuml;terwagen,Breslau,britischen,Buckau,Bygkr," +
                    "Corps,Cyklop,dienen,diente,dienten,Direkt,ehemalige," +
                    "eingestellt,Engelsberger,erhalten,erhaltene,erhaltenen," +
                    "Eugen,Fabrik-Nummer,Fahrgestell,Fahrzeuge,Fahrzeugen," +
                    "Fahrzeugnummer,Fahrzeugnummern,Firma,Fuhr,Gbs,gebaut," +
-                   "gebauten,gedeckte,Gelände,Geschichte,Gesenkschmiede," +
-                   "gespielt,Getränkehandler,Gewicht,GmbH,Gräfrath," +
-                   "Grevenbroich,Güterwagen,Hannover,Hattingen,Hebebühnen," +
+                   "gebauten,gedeckte,Gel&auml;nde,Geschichte,Gesenkschmiede," +
+                   "gespielt,Getr&auml;nkehandler,Gewicht,GmbH,Gr&auml;frath," +
+                   "Grevenbroich,G&uuml;terwagen,Hannover,Hattingen,Hebeb&uuml;hnen," +
                    "Hersteller,Hof,Hywema,Impressum,Inhalt,insgesamt," +
                    "inzwischen,jahrzehntelang,Jung-Jungenthal,kamen," +
                    "Kirchen/Sieg,Kletterlok,Korkenziehertrasse,Kronprinz," +
-                   "Krümelbahn,Krupp,Lager,Lazarettzugwagen,Leistung," +
+                   "Kr&uuml;melbahn,Krupp,Lager,Lazarettzugwagen,Leistung," +
                    "Lieferung,Linke-Hoffmann-Busch,Links,Literatur," +
-                   "Lokgattung,Lokomotiv-Farbrik,Lüp,Mannesmann,Marine," +
+                   "Lokgattung,Lokomotiv-Farbrik,L&uuml;p,Mannesmann,Marine," +
                    "Maschinen,Maschinenfabrik,Maschinentechnik,Modellbahn," +
-                   "Mönchengladbach-Rheindahlen,nahezu,Navigation,nebem," +
-                   "öffentlich,Ort,ortsansässigen,Rabbasol-Chemie," +
+                   "M&ouml;nchengladbach-Rheindahlen,nahezu,Navigation,nebem," +
+                   "&ouml;ffentlich,Ort,ortsans&auml;ssigen,Rabbasol-Chemie," +
                    "Raddurchmesser,Radstand,Railway,RCT,Recycling," +
-                   "Renovierung,Reuschling,Rheinarmee,Richtung,Röhrenwerke," +
+                   "Renovierung,Reuschling,Rheinarmee,Richtung,R&ouml;hrenwerke," +
                    "Royal,russischer,Scalabrin,Schmalzgrube,Schutzgittern," +
-                   "Seitenanfang,September,Sicherheitsgründen," +
+                   "Seitenanfang,September,Sicherheitsgr&uuml;nden," +
                    "Signalmeisterei,Solingen,Solingen-Nord,Solingen-Wald," +
-                   "Solinger,spätere,Spielplatz,Squadron,Stadtgebiet," +
+                   "Solinger,sp&auml;tere,Spielplatz,Squadron,Stadtgebiet," +
                    "Stadtteil-Cafe,Startseite,stehen,steht,Strecken,Suchen," +
                    "Transport,Treffpunkt,Typ,umgezogen,unbekannt," +
                    "unfallfrei,Verbleib,verschiedensten,verschrotten," +
                    "verschrottet,verunstaltet,VN234,vorhanden,Vorortbahn," +
-                   "Wagen,Werbelokomotive,Werftbahn,Westfälische,Wikipedia," +
+                   "Wagen,Werbelokomotive,Werftbahn,Westf&auml;lische,Wikipedia," +
                    "Wilhelmshaven,WLH,Wohnwerkstattwagen," +
-                   "Wohn-Werkstattwagen,Wolf,zugänglichen,zuletzt,Zwecken";
+                   "Wohn-Werkstattwagen,Wolf,zug&auml;nglichen,zuletzt,Zwecken";
        seite[50] = "museal.htm";
 beschreibung[50] = "Kr&uuml;melbahn - erhaltene Fahrzeuge";
-     begriff[51] = "Abbildung,Abstand,Aderendhülse,Aktivitäten,akustisch," +
+     begriff[51] = "Abbildung,Abstand,Aderendh&uuml;lse,Aktivit&auml;ten,akustisch," +
                    "Alternative,anfordern,Ankleben,Anlagengestaltung," +
                    "Anlagenspannung,anschließend,Anschluss,Ansicht," +
                    "Anspruch,anstelle,Antrieb,Arbeit,Artikel,Auflistung," +
                    "Aufstellen,Aufstellort,Auftrag,aufweicht,ausgedruckt," +
-                   "ausgerüstete,ausprobieren,ausschließlich," +
-                   "Außendurchmesser,auszurüsten,Bahnen,Bahnhof," +
-                   "Bahnsinniges,Batterie,Baugröße,Baum,befestigen,beiden," +
-                   "Benötigt,benötigte,benötigten,berechnet,beschrieben," +
+                   "ausger&uuml;stete,ausprobieren,ausschließlich," +
+                   "Außendurchmesser,auszur&uuml;sten,Bahnen,Bahnhof," +
+                   "Bahnsinniges,Batterie,Baugr&ouml;ße,Baum,befestigen,beiden," +
+                   "Ben&ouml;tigt,ben&ouml;tigte,ben&ouml;tigten,berechnet,beschrieben," +
                    "besten,Betriebsspannung,Betriebsstelle,bietet,Bild," +
                    "Bildbearbeitungsprogramm," +
-                   "blob/main/Modellbahn/Krümelbahn,Bodenplatte,BRD," +
-                   "brünierten,Bü4,Conrad,dass,DCC,definiert,Dicke," +
-                   "Digitalbetrieb,Direkt,Draht,Drähte,Drähten,dünner," +
+                   "blob/main/Modellbahn/Kr&uuml;melbahn,Bodenplatte,BRD," +
+                   "br&uuml;nierten,B&uuml;4,Conrad,dass,DCC,definiert,Dicke," +
+                   "Digitalbetrieb,Direkt,Draht,Dr&auml;hte,Dr&auml;hten,d&uuml;nner," +
                    "echtes,Einbau,einfacher,Einfahrt,Einfahrtsignal," +
                    "eingefeilt,Eisenbahn-Magazin,Elektronik,eMail," +
                    "eMailAndCloud,Ende,entfernt,entsprechend,Entwicklung," +
-                   "Erfahrungen,erfolgen,erfolgreich,erfolgt,erhält," +
-                   "erhalten,erhältlich,erhebt,erhöhter,erkennen,Ersatz," +
+                   "Erfahrungen,erfolgen,erfolgreich,erfolgt,erh&auml;lt," +
+                   "erhalten,erh&auml;ltlich,erhebt,erh&ouml;hter,erkennen,Ersatz," +
                    "erschienen,fahren,Fahrzeugbau,Farbdrucker,Farbe," +
-                   "Feierabendbastelei,fertigt,Figuren,finden,floodland," +
-                   "folgt,Gebäude,gedruckt,geeignet,gefädelt,gefädelten," +
-                   "geführt,gegeben,geklebt,gekürzt,gekürzte,gelötet," +
+                   "Feierabendbastelei,fertig,Figuren,finden,floodland," +
+                   "folgt,Geb&auml;ude,gedruckt,geeignet,gef&auml;delt,gef&auml;delten," +
+                   "gef&uuml;hrt,gegeben,geklebt,gek&uuml;rzt,gek&uuml;rzte,gel&ouml;tet," +
                    "gemacht,geschehen,geschieht,gesteuert,gestreiftem," +
                    "gewerbliche,gezeichnet,Github,githubinfo," +
-                   "githubRepository,Gleis,Gleismitte,Glühlampe,Glühlampen," +
-                   "Glühlampenlänge,größere,halten,Hauch,Hektometertafeln," +
+                   "githubRepository,Gleis,Gleismitte,Gl&uuml;hlampe,Gl&uuml;hlampen," +
+                   "Gl&uuml;hlampenl&auml;nge,gr&ouml;ßere,halten,Hauch,Hektometertafeln," +
                    "herzustellen,hrender,htm,https,Impressum,Info," +
                    "info_opschriften_borden_1,Informationen,Inhalt," +
                    "interessanter,Jahresmodell,Karton,Kartonpappe,Kartons," +
                    "Kennlicht,Kennzeichnung,Klebt,kleine,Klick," +
-                   "klitzekleinen,Konsequenz,Kostenfaktor,Krümelbahn," +
-                   "kurzes,lackiert,Lampe,lang,Länge,langes,leicht,letzte," +
-                   "letzten,Leuchtstoffröhren,Leuchttest," +
+                   "klitzekleinen,Konsequenz,Kostenfaktor,Kr&uuml;melbahn," +
+                   "kurzes,lackiert,Lampe,lang,L&auml;nge,langes,leicht,letzte," +
+                   "letzten,Leuchtstoffr&ouml;hren,Leuchttest," +
                    "Lichtsignalisierung,Lichtzeichen,Link,Links,Literatur," +
-                   "LM317,Logische,Lokführer,Lokomotive,Lüsterklemme,Maße," +
+                   "LM317,Logische,Lokf&uuml;hrer,Lokomotive,L&uuml;sterklemme,Maße," +
                    "Mast,Mastschild,Mercedes-Benz,Merscheider,Messing," +
-                   "Messingdraht,Messingrohr,Miba,Mikroglühlampe," +
+                   "Messingdraht,Messingrohr,Miba,Mikrogl&uuml;hlampe," +
                    "Modellbahn,Modellfahrzeuge,Modulbau,Module,Modulen," +
-                   "Modulplatte,montiert,muss,nachgerüstet,nächstes," +
-                   "nächsthöherer,Navigation,Ne1,Nebenbahn,Nebenbahnen," +
+                   "Modulplatte,montiert,muss,nachger&uuml;stet,n&auml;chstes," +
+                   "n&auml;chsth&ouml;herer,Navigation,Ne1,Nebenbahn,Nebenbahnen," +
                    "Nebenbahnsignal,Nebenbahnsignale,Nebenbahnsignalen," +
                    "Nebenbahnsignaltafeln,nl/aim,Normwert,Nothaft,nutzbar," +
-                   "Nutzung,oberen,Öffnung,Ohm,Paketen,passen,passend,PDF," +
+                   "Nutzung,oberen,&ouml;ffnung,Ohm,Paketen,passen,passend,PDF," +
                    "PDF-Format,Pfahl,Pfeiftafel,Pfosten,Pinsel,polige," +
-                   "Preiser,preisgünstige,Privatgebrauch,Problem,Punkt,RAL," +
+                   "Preiser,preisg&uuml;nstige,Privatgebrauch,Problem,Punkt,RAL," +
                    "Rand,Randerscheinungen,Regel,richtige,Rubrik,Schacht," +
-                   "Schaltungen,Schilder,Schotter,schräg,schreibt," +
+                   "Schaltungen,Schilder,Schotter,schr&auml;g,schreibt," +
                    "Schutzrohr,schwarz,schwarzem,sehen,Seite,Seitenanfang," +
                    "Sekundenkleber,Selbstbau,Signal,signalbuch,Signale," +
                    "Signalen,Signalling,Signaltafeln,Signalwerkstatt," +
                    "Sitzbank,Solingen,Sortiment,Spannungsbegrenzung," +
-                   "Spurweiten,Stahlstifte,standsicher,Stärke,Startseite," +
+                   "Spurweiten,Stahlstifte,standsicher,St&auml;rke,Startseite," +
                    "stehenden,steht,Stelle,stellen,stellte,Straßenpfosten," +
                    "Straßenschilder,Streckenbereich,Suche,Suchen,Teil," +
-                   "teuer,Tipps,Trapeztafel,Trocknen,Tropfen,typische,Über," +
-                   "untere,untersagt,V/15mA,verfügbar,vergessen," +
-                   "Verkleinern/Vergrößern,verlassen,verlaufendem,verlötet," +
-                   "versehen,Vollständigkeit,vordere,vorne,Vorsicht," +
+                   "teuer,Tipps,Trapeztafel,Trocknen,Tropfen,typische,&uuml;ber," +
+                   "untere,untersagt,V/15mA,verf&uuml;gbar,vergessen," +
+                   "Verkleinern/Vergr&ouml;ßern,verlassen,verlaufendem,verl&ouml;tet," +
+                   "versehen,Vollst&auml;ndigkeit,vordere,vorne,Vorsicht," +
                    "Vorwiderstand,Wagenwerk,Wechsel,Weinert,weiße,Weiterer," +
                    "www,Zahnstocher,Zeichnung,Zeit,zementgrau,Zp11,Zug," +
-                   "Züge,zugeordneten,Zunächst,zutraut,zweimal," +
+                   "Z&uuml;ge,zugeordneten,Zun&auml;chst,zutraut,zweimal," +
                    "Zwischenzeit";
        seite[51] = "ne1.htm";
 beschreibung[51] = "Kr&uuml;melbahn - Anlagengestaltung - Nebenbahnsignale";
      begriff[52] = "Anspruch,aufgenommen,Bahnen,Bahnsinniges,beschaulichen," +
                    "Bestehens,dankbar,Dienstvorschriften,diente,Direkt," +
                    "Duitse,Ebenso,ehemaligen,eigentlich,Eisenbahn,eMail," +
-                   "erhebt,Erweiterung,existierende,gab,geänderte,gefahren," +
+                   "erhebt,Erweiterung,existierende,gab,ge&auml;nderte,gefahren," +
                    "gefunden,Geschichtliche,glauben,Gleis," +
-                   "Gleismannsbahnhof,Gleispläne,Gotha,Güterzugfahrpläne," +
+                   "Gleismannsbahnhof,Gleispl&auml;ne,Gotha,G&uuml;terzugfahrpl&auml;ne," +
                    "Het,Hinweise,Impressum,Inhalt,Inselbahn,Insel-Bahn," +
-                   "Juister,Krümelbahn,Lijntje,Linkliste,Links,Liste," +
-                   "Literatur,Marinebahn,Militärbahn,militärischen," +
+                   "Juister,Kr&uuml;melbahn,Lijntje,Linkliste,Links,Liste," +
+                   "Literatur,Marinebahn,Milit&auml;rbahn,milit&auml;rischen," +
                    "Modellbahn,Navigation,Norderney,Norderneyer," +
                    "Nordseeinsel,Portrait,Rastatt,schicken,Seite,Solingen," +
-                   "Startseite,Suchen,Thema,Triebwagen,Überblicke," +
-                   "Verwendung,Vollständigkeit,Wikipedia,Yachthafen,Zeit," +
+                   "Startseite,Suchen,Thema,Triebwagen,&uuml;berblicke," +
+                   "Verwendung,Vollst&auml;ndigkeit,Wikipedia,Yachthafen,Zeit," +
                    "Zwecken";
        seite[52] = "norderney.htm";
 beschreibung[52] = "Kr&uuml;melbahn - Norderney";
-     begriff[53] = "abgeschnittene,abschneiden,Acrylfarbe,Aktivitäten," +
+     begriff[53] = "abgeschnittene,abschneiden,Acrylfarbe,Aktivit&auml;ten," +
                    "anbringen,anfasen,anfordern,Anlagenausgestaltungen," +
                    "Anlagengestaltung,anschließend,Anspruch,Art,Auflistung," +
                    "Aufmerksamkeit,Bahnen,Bahnsinniges,befestigen," +
                    "beschrieben,Betrachters," +
-                   "blob/main/Modellbahn/Krümelbahn,Boden,DCC," +
+                   "blob/main/Modellbahn/Kr&uuml;melbahn,Boden,DCC," +
                    "Digitalbetrieb,Direkt,Dremel,e2322,Einbau,eingesetzt," +
                    "Elektronik,eMail,Ende,entfernt,erhebt,erwecken," +
-                   "Fahrbahnrandes,Fahrzeugbau,Farbe,färben,fertig,Figuren," +
-                   "fünf,gemacht,githubinfo,Gleisisolierung,Grenzzeichen," +
+                   "Fahrbahnrandes,Fahrzeugbau,Farbe,f&auml;rben,fertig,Figuren," +
+                   "f&uuml;nf,gemacht,githubinfo,Gleisisolierung,Grenzzeichen," +
                    "Hektometertafeln,hergestellt,hergestellte,Herstellung," +
-                   "hervor,Herzstückbereich,Impressum,individuell,Info," +
+                   "hervor,Herzst&uuml;ckbereich,Impressum,individuell,Info," +
                    "Informationen,Inhalt,Isolierzeichen,Jahresmodell," +
-                   "kaufen,Kennzeichnung,Krümelbahn,Kuswa,Lehre,Leit," +
-                   "Leuchtstoffröhren,Links,Literatur,Markierung," +
+                   "kaufen,Kennzeichnung,Kr&uuml;melbahn,Kuswa,Lehre,Leit," +
+                   "Leuchtstoffr&ouml;hren,Links,Literatur,Markierung," +
                    "Mercedes-Benz,Merscheider,Messer,Modellbahn," +
-                   "Modellfahrzeuge,Modulbau,Natürlich,Navigation," +
+                   "Modellfahrzeuge,Modulbau,Nat&uuml;rlich,Navigation," +
                    "Nebenbahnsignale,nehme,obere,oberen,pdf,Pfosten," +
-                   "Planschleifen,Positionierung,Preiser,preisgünstiger," +
+                   "Planschleifen,Positionierung,Preiser,preisg&uuml;nstiger," +
                    "Proxxon,Ra12,Ra13,Randerscheinungen,Ring,Schacht," +
                    "scharfen,schauen,Schleifscheibe,Schotter,Schritte," +
                    "Schritten,schwarzer,sehen,Seitenanfang,Selbstbau," +
                    "Signalen,Sitzbank,SMF-Modelle,Solingen,Spitze," +
                    "standsicher,Startseite,Straßen,Straßenpfosten," +
-                   "Straßenrand,Suchen,Vollständigkeit,Weichenbereich," +
+                   "Straßenrand,Suchen,Vollst&auml;ndigkeit,Weichenbereich," +
                    "Weichengrenzzeichen,Weinert,Weise,weißen,Zahnstocher," +
                    "Zahnstochers,zutraut";
        seite[53] = "pfosten.htm";
 beschreibung[53] = "Kr&uuml;melbahn - Anlagengestaltung - " +
                    "Stra&szlig;enpfosten";
-     begriff[54] = "Aktivitäten,anfordern,Anlage,Anlagengestaltung,Antrieb," +
+     begriff[54] = "Aktivit&auml;ten,anfordern,Anlage,Anlagengestaltung,Antrieb," +
                    "Austausch,Bahnen,Bahnsinniges,befestigen," +
-                   "betriebssicher,blob/main/Modellbahn/Krümelbahn,DCC," +
+                   "betriebssicher,blob/main/Modellbahn/Kr&uuml;melbahn,DCC," +
                    "Digitalbetrieb,digitalen,Direkt,Einbau,einfache," +
                    "einfacher,Einheit,Elektronik,eMail,erweitertes," +
                    "Fahrzeugbau,Fehlerfall,Figuren,gemacht,gestoßen," +
                    "githubinfo,handelt,Hektometertafeln,Impressum,Info," +
-                   "Informationen,Inhalt,Jahresmodell,kleinen,Krümelbahn," +
-                   "Leuchtstoffröhren,Links,Literatur,mechanische," +
+                   "Informationen,Inhalt,Jahresmodell,kleinen,Kr&uuml;melbahn," +
+                   "Leuchtstoffr&ouml;hren,Links,Literatur,mechanische," +
                    "Mercedes-Benz,Merscheider,Modellbahn,Modellfahrzeuge," +
                    "Modulbau,Module,Modulen,Montage,montiert,Navigation," +
                    "Nebenbahnsignale,pdf,Prinzip,Schacht,schließlich," +
@@ -2612,89 +2584,89 @@ beschreibung[53] = "Kr&uuml;melbahn - Anlagengestaltung - " +
        seite[54] = "schacht.htm";
 beschreibung[54] = "Kr&uuml;melbahn - Anlagengestaltung - Merscheider " +
                    "Schacht";
-     begriff[55] = "abgewaschen,achten,Aktivitäten,alte,Alternativmaterial," +
+     begriff[55] = "abgewaschen,achten,Aktivit&auml;ten,alte,Alternativmaterial," +
                    "anfordern,angestellt,Anlagenausgestaltungen," +
                    "Anlagengestaltung,anschließend,Antrocknen,Aufbringen," +
-                   "auftupfen,Aufwand,ausspülen,Bahnen,Bahnsinniges,Basalt," +
+                   "auftupfen,Aufwand,aussp&uuml;len,Bahnen,Bahnsinniges,Basalt," +
                    "Basaltschotter,Basaltsteinchen,Baumarkt,Bedarf," +
-                   "befestigen,befeuchten,befeuchtet,Befeuchtung,benötigt," +
-                   "beschrieben,Bild,blob/main/Modellbahn/Krümelbahn," +
+                   "befestigen,befeuchten,befeuchtet,Befeuchtung,ben&ouml;tigt," +
+                   "beschrieben,Bild,blob/main/Modellbahn/Kr&uuml;melbahn," +
                    "Borstenpinsel,Brauch,brechen,dass,DCC,dient," +
-                   "Digitalbetrieb,Direkt,direkte,Döschen,dunkelt,eigenem," +
+                   "Digitalbetrieb,Direkt,direkte,D&ouml;schen,dunkelt,eigenem," +
                    "EILE,Einbau,einfallende,Einkehrsand,Einschottern," +
                    "einzig,Elektronik,eMail,engen,entfernen,Entfernung," +
-                   "enthält,enthaltenen,entspanntem,Entspannung,Ergebnis," +
+                   "enth&auml;lt,enthaltenen,entspanntem,Entspannung,Ergebnis," +
                    "erledigt,Fahrzeugbau,Fahrzeuge,fallen,Farbe,farbliche," +
-                   "Figuren,Film,Finger,Flasche,freibleiben,Fugen,führen," +
+                   "Figuren,Film,Finger,Flasche,freibleiben,Fugen,f&uuml;hren," +
                    "gebliebenen,gemacht,gemahlen,geschottert,gesiebt," +
                    "gestossen,getrocknet,Gewinnung,gewonnene,githubinfo," +
-                   "gleichmäßig,Gleis,Gleisbett,Gleise,Gleisen," +
-                   "grau/schwarz,Grenzen,größere,großzügig,gründlich,guter," +
-                   "halten,handelsüblichen,Hauptsache,Hektometertafeln," +
-                   "Herzstücke,hierauf,Hilfe,Hinweis,humpeln,Impressum," +
+                   "gleichm&auml;ßig,Gleis,Gleisbett,Gleise,Gleisen," +
+                   "grau/schwarz,Grenzen,gr&ouml;ßere,großz&uuml;gig,gr&uuml;ndlich,guter," +
+                   "halten,handels&uuml;blichen,Hauptsache,Hektometertafeln," +
+                   "Herzst&uuml;cke,hierauf,Hilfe,Hinweis,humpeln,Impressum," +
                    "Info,Informationen,Inhalt,insbesondere,interessant," +
                    "Jahresmodell,JASS,kg-Sack,Kleben,Kleber,Klebers," +
-                   "Kleineisen,kleinen,kleiner,klumpt,Körnung,Kosten," +
-                   "Kostenfaktor,kostet,Kraterbildung,kriecht,Krümelbahn," +
-                   "Lage,langen,Leuchtstoffröhren,Licht,Links,Literatur," +
-                   "Löffel,Material,Materialbedarf,Mercedes-Benz," +
+                   "Kleineisen,kleinen,kleiner,klumpt,K&ouml;rnung,Kosten," +
+                   "Kostenfaktor,kostet,Kraterbildung,kriecht,Kr&uuml;melbahn," +
+                   "Lage,langen,Leuchtstoffr&ouml;hren,Licht,Links,Literatur," +
+                   "L&ouml;ffel,Material,Materialbedarf,Mercedes-Benz," +
                    "Merscheider,Metall,Meter,Methode,Minuten,mischen," +
                    "Modellbahn,Modellfahrzeuge,Modulbau,Mundwasser," +
-                   "Nachbehandlung,nachbessern,natürlich,Navigation,Nebel," +
+                   "Nachbehandlung,nachbessern,nat&uuml;rlich,Navigation,Nebel," +
                    "Nebenbahnsignale,Netz,niederregnet,Nullanteile,Odol," +
-                   "örtlichen,pdf,Pipette,Ponal,Radlenker," +
+                   "&ouml;rtlichen,pdf,Pipette,Ponal,Radlenker," +
                    "Randerscheinungen,Reiniger,richtet,Schacht,schließe," +
-                   "Schotter,Schotterbett,Schotterkleber,Schottermühle," +
-                   "Schottern,Schotters,Schottersteine,Schwellen,schwört," +
+                   "Schotter,Schotterbett,Schotterkleber,Schotterm&uuml;hle," +
+                   "Schottern,Schotters,Schottersteine,Schwellen,schw&ouml;rt," +
                    "sehen,Seitenanfang,Sieb,Signalen,Sitzbank,sofern," +
                    "Solingen,sonderlich,Spurweiten,Stand,standsicher," +
                    "Startseite,Staub,Staubpartikel,Steine,Straßenpfosten," +
                    "Strecken,Stunde,Stunden,Suche,Suchen,Teil,Teile,Teilen," +
-                   "teuren,Tipp,Tipps,Tricks,trocknen,Tropfen,Über," +
-                   "überschüssigen,Übrigens,umrühren,ungeschickt,verändern," +
-                   "verdünnen,Vergnügen,Verhältnis,Verkleben,verklebt," +
-                   "verläuft,Verteilen,verteilt,verwendet,Verwendung," +
+                   "teuren,Tipp,Tipps,Tricks,trocknen,Tropfen,&uuml;ber," +
+                   "&uuml;bersch&uuml;ssigen,&uuml;brigens,umr&uuml;hren,ungeschickt,ver&auml;ndern," +
+                   "verd&uuml;nnen,Vergn&uuml;gen,Verh&auml;ltnis,Verkleben,verklebt," +
+                   "verl&auml;uft,Verteilen,verteilt,verwendet,Verwendung," +
                    "vorhanden,Wahre,waschen,Wasser,Wassers," +
-                   "Wasserzerstäuber,Wattestäbchen,Weichenbereich,WEILE," +
-                   "Weißleim,Werkzeugliste,wiegt,Zeit,Zerstäubers,zugeben," +
-                   "zunächst,Zungen,zusammen";
+                   "Wasserzerst&auml;uber,Wattest&auml;bchen,Weichenbereich,WEILE," +
+                   "Weißleim,Werkzeugliste,wiegt,Zeit,Zerst&auml;ubers,zugeben," +
+                   "zun&auml;chst,Zungen,zusammen";
        seite[55] = "schottern.htm";
 beschreibung[55] = "Kr&uuml;melbahn - Anlagengestaltung - Schottern";
-     begriff[56] = "Aktivitäten,alternative,anfordern,angesteuert," +
+     begriff[56] = "Aktivit&auml;ten,alternative,anfordern,angesteuert," +
                    "Anlagengestaltung,Ansteuerung,Antriebstechnik,Arduino," +
                    "Artikelreihe,AVR-Sound,Bahnen,Bahnsinniges,bekommen," +
-                   "benötigen,benötigt,Bereich," +
+                   "ben&ouml;tigen,ben&ouml;tigt,Bereich," +
                    "Bremsgenerator/Pendelautomatik,Commercial,Controller," +
                    "DCC,Digitalbetrieb,digitalen,Digitalsysteme,Direkt," +
                    "DISPA,Drehen,Einfach-Ansteuerung,einsetzen,Elektronik," +
                    "Elektronikteile,eMailAndGithub,Endlage," +
                    "Endlagenansteuerung,Endlagenanzeige," +
                    "Endlageneinstellung,erreicht,Fahrzeugbau," +
-                   "Faller-CarSystem,FRANZ,fügt,gängigen,geänderter,gebaut," +
+                   "Faller-CarSystem,FRANZ,f&uuml;gt,g&auml;ngigen,ge&auml;nderter,gebaut," +
                    "gefragt,Hard,harmonisch,herberts-n-projekt," +
-                   "Herzstückpolarisierung,https,Ideen,Impressum," +
+                   "Herzst&uuml;ckpolarisierung,https,Ideen,Impressum," +
                    "Impulsansteuerung,Informationen,Inhalt,Jahresmodell," +
-                   "Kosten,Krümelbahn,lässt,LED,Links,Literatur," +
+                   "Kosten,Kr&uuml;melbahn,l&auml;sst,LED,Links,Literatur," +
                    "Mercedes-Benz,Miba,Mitgedreht,Modellbahn," +
                    "modellbahn-dortmund,Modellfahrzeuge,Modul,Modulbau," +
                    "Move,nachzulesen,Navigation,Offer,Paket,PIC,Preise," +
-                   "Rückmeldeausgang,Rückmeldung,schaltet,Schaltungen," +
+                   "R&uuml;ckmeldeausgang,R&uuml;ckmeldung,schaltet,Schaltungen," +
                    "Schnick-Schnack,Schrankenantrieb,Seite,Seitenanfang," +
                    "Selbstbau,Servo,Servo2,Servoansteuerung," +
                    "Servobefestigungen,Servos,Servostellung,sicherlich," +
                    "Signalantrieb,Signal-Z,Software,Solingen,Stand," +
                    "Startseite,Suchen,Taster,Teil,teuer,Thema,Torantrieb," +
-                   "Trimmer,unabhängig,Variante,vereinfacht,Verwendung," +
-                   "vielfältig,voneinander,Weiche,Weichen," +
+                   "Trimmer,unabh&auml;ngig,Variante,vereinfacht,Verwendung," +
+                   "vielf&auml;ltig,voneinander,Weiche,Weichen," +
                    "Weichenansteuerung,Weichenantrieb,Weichenlaternen," +
                    "Weiten,weiteren,WWW,zusammen,zweifach," +
                    "Zweifach-Ansteuerung,Zweifach-Servoansteuerung";
        seite[56] = "servo.htm";
 beschreibung[56] = "Kr&uuml;melbahn - Elektronik - Servoansteuerung";
-     begriff[57] = "Aktivitäten,anfordern,angeschlossen,Anlagengestaltung," +
+     begriff[57] = "Aktivit&auml;ten,anfordern,angeschlossen,Anlagengestaltung," +
                    "Anlass,anstelle,Ansteuerung,Arduino,aufgebaut," +
                    "AVR-Sound,Bahnen,Bahnsinniges,Beeinflussung,billiger," +
-                   "bistabile,Blockfunktionalität," +
+                   "bistabile,Blockfunktionalit&auml;t," +
                    "Bremsgenerator/Pendelautomatik,Commercial,DCC," +
                    "Digitalbetrieb,Direkt,DISPA,Ebenso,einfacher," +
                    "Elektronik,Elektronikentwicklung,eMailAndGithub," +
@@ -2703,51 +2675,51 @@ beschreibung[56] = "Kr&uuml;melbahn - Elektronik - Servoansteuerung";
                    "Halteabschnitt,Hauptsignal,Herausgekommen,Hersteller," +
                    "Herstellers,Hp0,Hp00,Hp1,Hp2,Impressum,Informationen," +
                    "Inhalt,insbesondere,Jahresmodell,kleine,Kosten," +
-                   "Kostenersparnis,Krümelbahn,Lichthauptsignals," +
+                   "Kostenersparnis,Kr&uuml;melbahn,Lichthauptsignals," +
                    "Lichtsignalen,Links,Literatur,Mercedes-Benz," +
                    "Merscheider,Modellbahn,Modellfahrzeuge,Modulbau,muss," +
-                   "namhafter,natürlich,Navigation,Offer,original," +
+                   "namhafter,nat&uuml;rlich,Navigation,Offer,original," +
                    "Originalkomponenten,passend,PIC,Platine,Preise,Relais," +
-                   "Schacht,Schlappe,schön,Seitenanfang,Servoansteuerung," +
+                   "Schacht,Schlappe,sch&ouml;n,Seitenanfang,Servoansteuerung," +
                    "Sh1,Signal,Signalansteuerung,Signalbilder,Signals," +
                    "Signalschirm,Signal-Z,Solingen,Stand,Startseite," +
                    "Stellen,Stellpulten,stolze,Suchen,Tastenansteuerung," +
                    "Tastendruck,Umschaltsperre,verhindern,verlangt," +
-                   "vorhanden,Vorsignal,zugehörige,zurückgestellt";
+                   "vorhanden,Vorsignal,zugeh&ouml;rige,zur&uuml;ckgestellt";
        seite[57] = "signalz.htm";
 beschreibung[57] = "Kr&uuml;melbahn - Elektronik - Signal-Z";
-     begriff[58] = "Achse,Aktivitäten,alt,alten,älter,Alterungsmethode," +
+     begriff[58] = "Achse,Aktivit&auml;ten,alt,alten,&auml;lter,Alterungsmethode," +
                    "anfordern,Anlagenausgestaltungen,Anlagengestaltung," +
                    "ausruhen,aussieht,Bahnen,Bahnsinniges,befestigen," +
-                   "beschrieben,besseren,blob/Modellbahn/mainKrümelbahn," +
+                   "beschrieben,besseren,blob/main/Modellbahn/Kr&uuml;melbahn," +
                    "Dampfbahn,DCC,dienen,Digitalbetrieb,Direkt,Einbau," +
                    "Eisenbahn-Tour,Elektronik,eMail,Enden,Fahrzeugbau," +
-                   "fertig,Figuren,Fränkische,Furnierholzstreifen,gebadet," +
+                   "fertig,Figuren,Fr&auml;nkische,Furnierholzstreifen,gebadet," +
                    "gefunden,geklebt,gemacht,Geschmack,githubinfo," +
                    "Hauptsache,Hektometertafeln,Impressum,Info," +
-                   "Informationen,Inhalt,Jahresmodell,Juli,Krümelbahn," +
-                   "lasiert,ler,Leuchtstoffröhren,Links,Literatur," +
+                   "Informationen,Inhalt,Jahresmodell,Juli,Kr&uuml;melbahn," +
+                   "lasiert,ler,Leuchtstoffr&ouml;hren,Links,Literatur," +
                    "Mercedes-Benz,Merscheider,Messingbraun,Mittagspause," +
-                   "Modellbahn,Modellfahrzeuge,Modulbau,möglichst,muss," +
+                   "Modellbahn,Modellfahrzeuge,Modulbau,m&ouml;glichst,muss," +
                    "Navigation,Nebenbahnsignale,nehme,Optik,passend,pdf," +
-                   "Räder,Radsatz,Randerscheinungen,rostig,RP25," +
-                   "Rückenlehne,Schacht,Schotter,Schweiz,Seitenanfang," +
+                   "R&auml;der,Radsatz,Randerscheinungen,rostig,RP25," +
+                   "R&uuml;ckenlehne,Schacht,Schotter,Schweiz,Seitenanfang," +
                    "Selbstbau,sieht,Signalen,Sitz,Sitzbank,Solingen," +
                    "Spitzen,standsicher,Startseite,Straßenpfosten,Suchen," +
                    "tausche,zurechtgeschnittene,zylindrischem";
        seite[58] = "sitzbank.htm";
 beschreibung[58] = "Kr&uuml;melbahn - Anlagengestaltung - Sitzbank";
-     begriff[59] = "abzuspielen,Aktivitäten,anfordern,Anforderungen," +
+     begriff[59] = "abzuspielen,Aktivit&auml;ten,anfordern,Anforderungen," +
                    "Anlagengestaltung,ansteuerbar,ansteuert,Anwendung," +
                    "Arduino,ATMEGA,ATMEL,AVR-Sound,AVR-Sound-FRED,Bahnen," +
                    "Bahnsinniges,Basis,blieb," +
                    "Bremsgenerator/Pendelautomatik,Commercial,DCC,DFPlayer," +
                    "Digitalbetrieb,Direkt,DISPA,Elektronik,eMailAndGithub," +
-                   "entsprechendes,Entwicklungsumgebung,erweiterungsfähig," +
-                   "Fahrzeugbau,Feuerwehr,FRANZ,FRED-Gehäuse,Geräte," +
+                   "entsprechendes,Entwicklungsumgebung,erweiterungsf&auml;hig," +
+                   "Fahrzeugbau,Feuerwehr,FRANZ,FRED-Geh&auml;use,Ger&auml;te," +
                    "gespeichert,Ideen,Impressum,Informationen,Inhalt," +
-                   "integrierten,Jahresmodell,Kanalbrücke,kommerzielle," +
-                   "kommt,kostengünstig,Krümelbahn,ladbar,Links,LiPo-Akku," +
+                   "integrierten,Jahresmodell,Kanalbr&uuml;cke,kommerzielle," +
+                   "kommt,kosteng&uuml;nstig,Kr&uuml;melbahn,ladbar,Links,LiPo-Akku," +
                    "Literatur,LocoNET,Mercedes-Benz,Micro-SD-Karte,Mini," +
                    "Modellbahn,Modellbahnanlage,Modellfahrzeuge,Modul," +
                    "Modulbau,MP3,MP3-Sounds,Navigation,Offer,passend," +
@@ -2758,32 +2730,32 @@ beschreibung[58] = "Kr&uuml;melbahn - Anlagengestaltung - Sitzbank";
                    "verwendbar,verwendet,vier";
        seite[59] = "sound.htm";
 beschreibung[59] = "Kr&uuml;melbahn - Elektronik - AVR-Sound";
-     begriff[60] = "abgerissen,Ablaufberg,Ablösung,Abriss,Abzw,Abzweig," +
+     begriff[60] = "abgerissen,Ablaufberg,Abl&ouml;sung,Abriss,Abzw,Abzweig," +
                    "alten,anschließenden,aufgestellt,August,Ausfahrt," +
-                   "ausgerüstet,ausschließlich,außer,Außerdienststellung," +
-                   "Bahnanlagen,Bahnen,Bahnhöfe,Bahnsinniges,Bahnsteig," +
-                   "Bahnsteigüberdachung,Bahnübergänge,Batterie,Bauart," +
-                   "Baujahr,Baukosten,bedient,Bedienung,benötigte,Berliner," +
-                   "beschrankten,Betriebsübernahme,Betriebszentrale," +
-                   "blob/main/Solingen/Krümelbahn,Blockverdichtung,Brücke," +
+                   "ausger&uuml;stet,ausschließlich,außer,Außerdienststellung," +
+                   "Bahnanlagen,Bahnen,Bahnh&ouml;fe,Bahnsinniges,Bahnsteig," +
+                   "Bahnsteig&uuml;berdachung,Bahn&uuml;berg&auml;nge,Batterie,Bauart," +
+                   "Baujahr,Baukosten,bedient,Bedienung,ben&ouml;tigte,Berliner," +
+                   "beschrankten,Betriebs&uuml;bernahme,Betriebszentrale," +
+                   "blob/main/Solingen/Kr&uuml;melbahn,Blockverdichtung,Br&uuml;cke," +
                    "Daten,Dienst,diente,Dieselaggregat,Direkt,Duisburg," +
-                   "ehemaligen,eigenes,Einrichtungen,Empfangsgebäude," +
-                   "erfolgte,erhaltene,ertüchtigt,ESTW-UZ,etwa,Euro," +
+                   "ehemaligen,eigenes,Einrichtungen,Empfangsgeb&auml;ude," +
+                   "erfolgte,erhaltene,ert&uuml;chtigt,ESTW-UZ,etwa,Euro," +
                    "Fahrstrom,Fahrzeuge,Fallerslebenweg,Februar,Feldern," +
-                   "ferngesteuerte,Fernsteuerung,Firma,gebaut,gegenüber," +
-                   "Gesamtfläche,githubinfo,Gleis,Gleisdreieck,Gleise," +
-                   "Gleislänge,Gleissperren,Gleiswechselbetrieb,Gräfrath," +
+                   "ferngesteuerte,Fernsteuerung,Firma,gebaut,gegen&uuml;ber," +
+                   "Gesamtfl&auml;che,githubinfo,Gleis,Gleisdreieck,Gleise," +
+                   "Gleisl&auml;nge,Gleissperren,Gleiswechselbetrieb,Gr&auml;frath," +
                    "Gruiten,Haan,Haltepunkt,Hauptbahnhof,Hauptsignale,Hbf," +
                    "Hilden,Impressum,Inbetriebnahme,Indusi,Info,Inhalt," +
-                   "insgesamt,Januar,Köln,Köln-Mülheim,Korkenzieherbahn," +
-                   "Krümelbahn,L84,Leichlingen,Leitungsgruppen,Links," +
-                   "Literatur,lokalen,Lokstation,Lorenz,löst,Magnete,Mill," +
-                   "Millionen,Modellbahn,Müngstener,Navigation,Nordbahnhof," +
+                   "insgesamt,Januar,K&ouml;ln,K&ouml;ln-M&uuml;lheim,Korkenzieherbahn," +
+                   "Kr&uuml;melbahn,L84,Leichlingen,Leitungsgruppen,Links," +
+                   "Literatur,lokalen,Lokstation,Lorenz,l&ouml;st,Magnete,Mill," +
+                   "Millionen,Modellbahn,M&uuml;ngstener,Navigation,Nordbahnhof," +
                    "Notbedienplatz,Notbetrieb,Ohl,Opladen,pdf,Radaranlagen," +
                    "Rangierbetriebes,Rangierbewegungen,Rangierstraßen," +
                    "Remscheid,Richtung,Schnittert,Seitenanfang,September," +
                    "Siemens,Signale,Signalsteuerkabel,Sno,Sof,Solingen," +
-                   "Solingen/Fahrdienstleiter,Solingen-Gräfrath," +
+                   "Solingen/Fahrdienstleiter,Solingen-Gr&auml;frath," +
                    "Solingen-Hauptbahnhof,Solingen-Mitte,Solingen-Nord," +
                    "Solingen-Ohligs,Solingen-Ohligs/Fahrdienstleiter," +
                    "Solingen-Vogelpark,Solingen-Wald,Solingen-West,Som,Son," +
@@ -2792,46 +2764,46 @@ beschreibung[59] = "Kr&uuml;melbahn - Elektronik - AVR-Sound";
                    "Stellbereich,Stelle,Stelltisch,Stellwerk,Stellwerke," +
                    "Steuerung,Straße,Strecke,Strecken," +
                    "Stromversorgungskabel,Suchen,technisch,Technische," +
-                   "Überwachung,verlegte,Vorsignale,Wärterstellwerk,Weg," +
-                   "Weichen,werktäglich,Wikipedia,Wilzhaus,Wilzhauser," +
+                   "&uuml;berwachung,verlegte,Vorsignale,W&auml;rterstellwerk,Weg," +
+                   "Weichen,werkt&auml;glich,Wikipedia,Wilzhaus,Wilzhauser," +
                    "Wuppertal,x80cm,zahlreiche,Zugfahrten,Zughilfsstraßen," +
-                   "Zugstraßen,zurückgebaut";
+                   "Zugstraßen,zur&uuml;ckgebaut";
        seite[60] = "stellwrk.htm";
 beschreibung[60] = "Kr&uuml;melbahn - Stellwerke";
-     begriff[61] = "Bahnen,Bahnsinniges,berücksichtigen,Betätigen,Direkt," +
+     begriff[61] = "Bahnen,Bahnsinniges,ber&uuml;cksichtigen,Bet&auml;tigen,Direkt," +
                    "Eingabetaste,Gross-/Kleinschreibung,Homepage,Impressum," +
-                   "Inhalt,Krümelbahn,Links,Literatur,Modellbahn," +
+                   "Inhalt,Kr&uuml;melbahn,Links,Literatur,Modellbahn," +
                    "Navigation,Solingen,startet,Startseite,Suchbegriff," +
-                   "Suche,suchen,Wortanfänge";
+                   "Suche,suchen,Wortanf&auml;nge";
        seite[61] = "suchen.htm";
 beschreibung[61] = "Kr&uuml;melbahn - Suchen";
      begriff[62] = "abgerissen,Abschnitten,Abzweig,August,Bahnanlagen," +
-                   "Bahnen,Bahnlinie,Bahnsinniges,Bahnstrecke,Bau,benötigt," +
-                   "benötigten,benutzen,benutzt,bestehende,bewilligt," +
-                   "blob/main/Solingen/Krümelbahn,Brücke,Brücken," +
-                   "Brückenreste,Busch,Bussche-Kessel-Weg,demontiert," +
+                   "Bahnen,Bahnlinie,Bahnsinniges,Bahnstrecke,Bau,ben&ouml;tigt," +
+                   "ben&ouml;tigten,benutzen,benutzt,bestehende,bewilligt," +
+                   "blob/main/Solingen/Kr&uuml;melbahn,Br&uuml;cke,Br&uuml;cken," +
+                   "Br&uuml;ckenreste,Busch,Bussche-Kessel-Weg,demontiert," +
                    "Direkt,Dortmund,Eisenbahner-Kleingartensiedlung," +
                    "Eisenbahnverwaltung,entlang,erahnen,erfolgte,erhaltene," +
-                   "Fahrzeuge,Flakgeschützen,geblieben,gehenst,Gelder," +
-                   "githubinfo,Gleise,Hackhauser,heutigen,Höhe,Impressum," +
-                   "Info,Inhalt,Jahr,Köln,Korkenzieherbahn,Krümelbahn," +
-                   "kuriose,Links,Literatur,Modellbahn,Mühlenstraße," +
-                   "mündete,Navigation,Ohligs,pdf,Pläne,planmäßige," +
+                   "Fahrzeuge,Flakgesch&uuml;tzen,geblieben,gehenst,Gelder," +
+                   "githubinfo,Gleise,Hackhauser,heutigen,H&ouml;he,Impressum," +
+                   "Info,Inhalt,Jahr,K&ouml;ln,Korkenzieherbahn,Kr&uuml;melbahn," +
+                   "kuriose,Links,Literatur,Modellbahn,M&uuml;hlenstraße," +
+                   "m&uuml;ndete,Navigation,Ohligs,pdf,Pl&auml;ne,planm&auml;ßige," +
                    "Projektierung,renoviert,riesige,Scharrenbergerdamm," +
                    "Schnellverbindung,Schwelm,Seitenanfang,Solingen," +
                    "Startseite,Strecke,Strecken,Streckenabschnitte,Suchen," +
                    "tauchen,umfassend,Umgehungsbahn,unterquerte,verkehrten," +
-                   "Verlängerung,Verlauf,verschrottet,Viadukt," +
+                   "Verl&auml;ngerung,Verlauf,verschrottet,Viadukt," +
                    "Viehbachtalstraße,Weiche,weitest,Weltkrieg," +
-                   "Wiefeldickerstraße,Wikipedia,Witten,wollte,zerstört," +
-                   "Zeugenaussagen,Züge,zweiten";
+                   "Wiefeldickerstraße,Wikipedia,Witten,wollte,zerst&ouml;rt," +
+                   "Zeugenaussagen,Z&uuml;ge,zweiten";
        seite[62] = "umgehung.htm";
 beschreibung[62] = "Kr&uuml;melbahn - Umgehungsbahn";
      begriff[63] = "anfordern,Auflage,Bahndienstfahrzeuge,Bahnen,Bahnhofs," +
-                   "Bahnsinniges,Becher,Buchveröffentlichung,Direkt," +
+                   "Bahnsinniges,Becher,Buchver&ouml;ffentlichung,Direkt," +
                    "Dokumentationen,Eisenbahnen,Eisenbahngeschichte,eMail," +
                    "erbeten,Format,gab,Heft,Impressum,Info,Informationen," +
-                   "Inhalt,ISBN,Jahre,Kaiß,Korkenzieherbahn,Krümelbahn," +
+                   "Inhalt,ISBN,Jahre,Kaiß,Korkenzieherbahn,Kr&uuml;melbahn," +
                    "Kurt/Zimmermann,Leichlingen,Links,Literatur,Michael," +
                    "Modellbahn,Motiv,Navigation,Nebenbahngleisen,Passend," +
                    "passenden,Publikationen,Rheinisch-Bergische,Seiten," +
@@ -2839,17 +2811,6 @@ beschreibung[62] = "Kr&uuml;melbahn - Umgehungsbahn";
                    "Verlag,Vohwinkel,Wald,Zwischenhalt";
        seite[63] = "video.htm";
 beschreibung[63] = "Kr&uuml;melbahn - eigene Publikationen";
-}
-
-function replaceUmlauts(begriff)
-{
-  begriff.replaceAll('ä', '&auml;');
-  begriff.replaceAll('ö', '&ouml;');
-  begriff.replaceAll('ü', '&uuml;');
-  begriff.replaceAll('Ä', '&Auml;');
-  begriff.replaceAll('Ö', '&Ouml;');
-  begriff.replaceAll('Ü', '&Uuml;');
-  return begriff;
 }
 
 function sort(gefunden) {
@@ -3082,19 +3043,19 @@ function suchen(eingabe, wortanfaenge, grossklein) {
       if(wortanfaenge == true) {
         if ((komma_vor == (pos - 1)) || (pos == 0)) {
           gefunden++;
-          gefunden_beschreibung[gefunden]   = beschreibung[i] + '</br>';
+          gefunden_beschreibung[gefunden]   = beschreibung[i];
           gefunden_seite[gefunden]          = seite[i];
           gefunden_prozent[gefunden]        = prozent;
-          gefunden_begriff_einzel[gefunden] = replaceUmlauts(begriff_einzel);
+          gefunden_begriff_einzel[gefunden] = begriff_einzel;
           gefunden_i[gefunden]              = i;
         }
       }
       else {
         gefunden++;
-          gefunden_beschreibung[gefunden]   = beschreibung[i] + '</br>';
+          gefunden_beschreibung[gefunden]   = beschreibung[i];
           gefunden_seite[gefunden]          = seite[i];
           gefunden_prozent[gefunden]        = prozent;
-          gefunden_begriff_einzel[gefunden] = replaceUmlauts(begriff_einzel);
+          gefunden_begriff_einzel[gefunden] = begriff_einzel;
           gefunden_i[gefunden]              = i;
       }
     }; // elseif
