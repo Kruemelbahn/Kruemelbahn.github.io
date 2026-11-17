@@ -2901,7 +2901,7 @@ function kopf(eingabe, optionstext) {
       '<div id="topnav">' +
         '<a class="skip" href="#navigation" title="skip link">Direkt zur Navigation</a><span class="hideme">.</span>' +
         '<a class="skip" href="#content" title="skip link">Direkt zum Inhalt</a><span class="hideme">.</span>' +
-        '<span><a href="index.htm">Startseite</a> | <a href="suchen.htm">Suchen</a> | <a href="impressum.htm">Impressum</a></span>' +
+        '<span><a href="index.htm">Startseite</a> | <a href="suchen.htm">neue Suche</a> | <a href="impressum.htm">Impressum</a></span>' +
       '</div>' +
       '<h1><img alt="Frontansicht einer Dampflok" src="images/dlok.gif"/> Kr&uuml;melbahn</h1>' +
     '</div>' +
@@ -2933,31 +2933,30 @@ function kopf(eingabe, optionstext) {
 }
 
 function zeile(gefunden,prozent,begriff_tmp,seite,ausgabe,beschreibung) {
-  var begriffout = replaceUmlauts(begriff_tmp);
   if (seite == "") { // nichts gefunden
     document.write('<tr><td colstart="1" bgcolor=#"A0A0A0"><font color="#FFFFFF">' +
         gefunden + '.</font></td>' +
         '<td colstart="2" style="text-align:center">' + prozent + '%</td>' +
-        '<td colstart="3">' + begriffout +
+        '<td colstart="3">' + begriff_tmp +
         '</td>' +
-        '<td colstart="4">' + beschreibung + '</br></td></tr>');
+        '<td colstart="4">' + beschreibung + '</td></tr>');
   }
   else {
     if (ausgabe == false) {
       document.write('<tr><td colstart="1" bgcolor="#A0A0A0"><font color="#FFFFFF">' +
           gefunden + '.</font></td>' +
           '<td colstart="2" style="vertical-align:top; text-align:center;">' + prozent + '%</td>' +
-          '<td colstart="3" style="vertical-align:top"><a href="' + seite + '">' + begriffout +
+          '<td colstart="3" style="vertical-align:top"><a href="' + seite + '">' + begriff_tmp +
           '</a></td>' +
-          '<td colstart="4" style="vertical-align:top">' + beschreibung + '</br></td></tr>');
+          '<td colstart="4" style="vertical-align:top">' + beschreibung + '</td></tr>');
       }
     else {
       document.write('<tr><td colstart="1" bgcolor="#A0A0A0"><font color="#FFFFFF">' +
           gefunden + '.</font></td>' +
           '<td colstart="2" style="vertical-align:top; text-align:center;">' + prozent + '%</td>' +
-          '<td colstart="3" style="vertical-align:top"><a href="' + seite + '" target="_parent">' + begriffout +
+          '<td colstart="3" style="vertical-align:top"><a href="' + seite + '" target="_parent">' + begriff_tmp +
           '</a></td>' +
-          '<td colstart="4" style="vertical-align:top">' + beschreibung + '</br></td></tr>');
+          '<td colstart="4" style="vertical-align:top">' + beschreibung + '</td></tr>');
     }
   }
 }
@@ -3083,19 +3082,19 @@ function suchen(eingabe, wortanfaenge, grossklein) {
       if(wortanfaenge == true) {
         if ((komma_vor == (pos - 1)) || (pos == 0)) {
           gefunden++;
-          gefunden_beschreibung[gefunden]   = beschreibung[i];
+          gefunden_beschreibung[gefunden]   = beschreibung[i] + '</br>';
           gefunden_seite[gefunden]          = seite[i];
           gefunden_prozent[gefunden]        = prozent;
-          gefunden_begriff_einzel[gefunden] = begriff_einzel;
+          gefunden_begriff_einzel[gefunden] = replaceUmlauts(begriff_einzel);
           gefunden_i[gefunden]              = i;
         }
       }
       else {
         gefunden++;
-          gefunden_beschreibung[gefunden]   = beschreibung[i];
+          gefunden_beschreibung[gefunden]   = beschreibung[i] + '</br>';
           gefunden_seite[gefunden]          = seite[i];
           gefunden_prozent[gefunden]        = prozent;
-          gefunden_begriff_einzel[gefunden] = begriff_einzel;
+          gefunden_begriff_einzel[gefunden] = replaceUmlauts(begriff_einzel);
           gefunden_i[gefunden]              = i;
       }
     }; // elseif
