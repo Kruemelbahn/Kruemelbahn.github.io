@@ -2843,12 +2843,12 @@ beschreibung[63] = "Kr&uuml;melbahn - eigene Publikationen";
 
 function replaceUmlauts(begriff)
 {
-  begriff.replaceAll("ä", "&auml;");
-  begriff.replaceAll("ö", "&ouml;");
-  begriff.replaceAll("ü", "&uuml;");
-  begriff.replaceAll("Ä", "&Auml;");
-  begriff.replaceAll("Ö", "&Ouml;");
-  begriff.replaceAll("Ü", "&Uuml;");
+  begriff.replaceAll('ä', '&auml;');
+  begriff.replaceAll('ö', '&ouml;');
+  begriff.replaceAll('ü', '&uuml;');
+  begriff.replaceAll('Ä', '&Auml;');
+  begriff.replaceAll('Ö', '&Ouml;');
+  begriff.replaceAll('Ü', '&Uuml;');
   return begriff;
 }
 
@@ -2940,7 +2940,7 @@ function zeile(gefunden,prozent,begriff_tmp,seite,ausgabe,beschreibung) {
         '<td colstart="2" style="text-align:center">' + prozent + '%</td>' +
         '<td colstart="3">' + begriffout +
         '</td>' +
-        '<td colstart="4">' + beschreibung + '</td></tr>');
+        '<td colstart="4">' + beschreibung + '</br></td></tr>');
   }
   else {
     if (ausgabe == false) {
@@ -2949,7 +2949,7 @@ function zeile(gefunden,prozent,begriff_tmp,seite,ausgabe,beschreibung) {
           '<td colstart="2" style="vertical-align:top; text-align:center;">' + prozent + '%</td>' +
           '<td colstart="3" style="vertical-align:top"><a href="' + seite + '">' + begriffout +
           '</a></td>' +
-          '<td colstart="4" style="vertical-align:top">' + beschreibung + '</td></tr>');
+          '<td colstart="4" style="vertical-align:top">' + beschreibung + '</br></td></tr>');
       }
     else {
       document.write('<tr><td colstart="1" bgcolor="#A0A0A0"><font color="#FFFFFF">' +
@@ -2957,7 +2957,7 @@ function zeile(gefunden,prozent,begriff_tmp,seite,ausgabe,beschreibung) {
           '<td colstart="2" style="vertical-align:top; text-align:center;">' + prozent + '%</td>' +
           '<td colstart="3" style="vertical-align:top"><a href="' + seite + '" target="_parent">' + begriffout +
           '</a></td>' +
-          '<td colstart="4" style="vertical-align:top">' + beschreibung + '</td></tr>');
+          '<td colstart="4" style="vertical-align:top">' + beschreibung + '</br></td></tr>');
     }
   }
 }
